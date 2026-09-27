@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import questionManager from '../managers/QuestionManager.js';
+import questionLoader from '../questions/questionLoader.js';
 import localizationManager from '../managers/LocalizationManager.js';
 import audioManager from '../managers/AudioManager.js';
 import analyticsManager from '../managers/AnalyticsManager.js';
@@ -119,6 +120,17 @@ export class MathChallengeScene extends Phaser.Scene {
     this.onComplete = data.onComplete;
     this.onBankExhausted = data.onBankExhausted;
     this.isCoopChallenge = !!data.isCoopChallenge;
+    this.isIndividualClassroom = !!data.isIndividualClassroom;
+    this.classroomQuestionCount = Math.max(1, Number(data.questionCount) || 10);
+    this.classroomCompletedQuestions = Math.max(0, Number(data.completedQuestions) || 0);
+    this.timeLimitMinutes = Math.max(1, Number(data.timeLimitMinutes) || 10);
+    this.classroomDeadline = Number(data.challengeDeadline) || multiplayerManager.room?.challengeDeadline || 0;
+    this.isClassroomChallengeFinished = false;
+    this.classroomQuestionIds = Array.isArray(data.questionIds) ? data.questionIds : [];
+    if (this.isIndividualClassroom && this.classroomQuestionIds.length) {
+      this.classroomQuestionCount = this.classroomQuestionIds.length;
+      this.questionId = this.classroomQuestionIds[this.classroomCompletedQuestions] || this.classroomQuestionIds[0];
+    }
     this.attempts = 0;
     this.selectedOption = null;
   }
@@ -143,6 +155,10 @@ export class MathChallengeScene extends Phaser.Scene {
     }
 
     if (!currentQ) {
+      if (this.isIndividualClassroom) {
+        this.finishIndividualClassroomChallenge();
+        return;
+      }
       if (typeof this.onBankExhausted === 'function') {
         this.onBankExhausted();
       } else if (typeof this.onComplete === 'function') {
@@ -176,6 +192,11 @@ export class MathChallengeScene extends Phaser.Scene {
     this.createQuestionBody();
     this.createOptions();
     this.createFooterControls();
+    if (this.isIndividualClassroom) {
+      if (!this.classroomDeadline) this.classroomDeadline = Date.now() + this.timeLimitMinutes * 60 * 1000;
+      this.classroomTimerEvent = this.time.addEvent({ delay: 1000, loop: true, callback: () => this.updateClassroomTimer() });
+      this.updateClassroomTimer();
+    }
   }
 
   createHeader() {
@@ -203,9 +224,12 @@ export class MathChallengeScene extends Phaser.Scene {
     const diffLabel = (this.difficulty || 'medium').toUpperCase();
     const remaining = questionManager.getRemainingCount({ chapter: chNum, difficulty: this.difficulty });
     const remainingText = isMs ? `Baki: ${remaining}` : `Left: ${remaining}`;
-    const badgeText = hasSub
+    const baseBadgeText = hasSub
       ? `${chapPrefix}: ${translatedSub} • [${diffLabel}] • 📚 ${remainingText}`
       : `${chapPrefix} • [${diffLabel}] • 📚 ${remainingText}`;
+    const badgeText = this.isIndividualClassroom
+      ? `${baseBadgeText} • ${isMs ? 'Soalan' : 'Question'} ${this.classroomCompletedQuestions + 1}/${this.classroomQuestionCount}`
+      : baseBadgeText;
 
     this.chapterText = this.add.text(cx, chapY, badgeText, {
       fontFamily: 'Nunito, sans-serif',
@@ -214,7 +238,7 @@ export class MathChallengeScene extends Phaser.Scene {
       fontStyle: 'bold'
     }).setOrigin(0.5);
 
-    if (this.isCoopChallenge) {
+    if (this.isCoopChallenge || this.isIndividualClassroom) {
       const scoreX = cx + (isPort ? 235 : 360);
       const scoreY = isPort ? 205 : titleY;
       const scoreBg = this.add.graphics();
@@ -222,8 +246,13 @@ export class MathChallengeScene extends Phaser.Scene {
       scoreBg.fillRoundedRect(scoreX - (isPort ? 90 : 105), scoreY - 17, isPort ? 180 : 210, 34, 12);
       scoreBg.lineStyle(2, THEME.outlineDark, 1);
       scoreBg.strokeRoundedRect(scoreX - (isPort ? 90 : 105), scoreY - 17, isPort ? 180 : 210, 34, 12);
+      const localScore = multiplayerManager.getLocalPlayer()?.challengePoints || 0;
+      const scoreKey = this.isIndividualClassroom ? 'math.individualScoreHud' : 'math.coopScoreHud';
       this.coopScoreText = this.add.text(scoreX, scoreY,
-        localizationManager.t('math.coopScoreHud', { points: multiplayerManager.room?.challengeScore || 0 }), {
+        localizationManager.t(scoreKey, {
+          points: this.isIndividualClassroom ? localScore : (multiplayerManager.room?.challengeScore || 0),
+          time: this.isIndividualClassroom ? this.formatClassroomTime() : ''
+        }), {
           fontFamily: 'Nunito, sans-serif',
           fontSize: isPort ? '14px' : '15px',
           color: THEME.textDark,
@@ -459,11 +488,17 @@ export class MathChallengeScene extends Phaser.Scene {
     this.attempts += 1;
     const result = questionManager.checkAnswer(value);
     const currQ = questionManager.getCurrentQuestion();
-    const challengeScore = this.isCoopChallenge
-      ? multiplayerManager.recordChallengeAnswer(result.isCorrect, this.attempts)
-      : null;
+    const challengeScore = this.isIndividualClassroom
+      ? multiplayerManager.recordClassroomChallengeAnswer(result.isCorrect, this.attempts)
+      : this.isCoopChallenge
+        ? multiplayerManager.recordChallengeAnswer(result.isCorrect, this.attempts)
+        : null;
     if (this.coopScoreText && challengeScore) {
-      this.coopScoreText.setText(localizationManager.t('math.coopScoreHud', { points: challengeScore.total }));
+      const scoreKey = this.isIndividualClassroom ? 'math.individualScoreHud' : 'math.coopScoreHud';
+      this.coopScoreText.setText(localizationManager.t(scoreKey, {
+        points: challengeScore.total,
+        time: this.isIndividualClassroom ? this.formatClassroomTime() : ''
+      }));
     }
 
     analyticsManager.recordQuestionAttempt({
@@ -481,7 +516,7 @@ export class MathChallengeScene extends Phaser.Scene {
       audioManager.playCorrect();
       this.burstAnswerFeedback(true, buttonObj.container.x, buttonObj.container.y);
       const coopFeedback = challengeScore
-        ? ` • ${localizationManager.t('math.coopScoreEarned', { points: challengeScore.points, total: challengeScore.total })}`
+        ? ` • ${localizationManager.t(this.isIndividualClassroom ? 'math.individualScoreEarned' : 'math.coopScoreEarned', { points: challengeScore.points, total: challengeScore.total })}`
         : '';
       this.feedbackText.setText(`✓ ${result.feedback || localizationManager.t('math.correct')}${coopFeedback}`);
       this.feedbackText.setColor('#4ade80');
@@ -709,7 +744,9 @@ export class MathChallengeScene extends Phaser.Scene {
 
     const btnLabel = isStudyMode
       ? (isMs ? 'FAHAM! CUBA LAGI →' : 'UNDERSTOOD! TRY AGAIN →')
-      : 'CONTINUE TO COOKING →';
+      : this.isIndividualClassroom
+        ? (isMs ? 'SOALAN SETERUSNYA →' : 'NEXT QUESTION →')
+        : 'CONTINUE TO COOKING →';
 
     const actionBtn = createButton(this, 0, contY, btnLabel, {
       width: contW,
@@ -720,6 +757,27 @@ export class MathChallengeScene extends Phaser.Scene {
       onClick: () => {
         explContainer.destroy();
         if (!isStudyMode) {
+          if (this.isIndividualClassroom) {
+            this.classroomCompletedQuestions += 1;
+            if (this.classroomCompletedQuestions >= this.classroomQuestionCount) {
+              this.finishIndividualClassroomChallenge();
+            } else {
+              this.scene.restart({
+                isIndividualClassroom: true,
+                difficulty: this.difficulty,
+                questionCount: this.classroomQuestionCount,
+                completedQuestions: this.classroomCompletedQuestions,
+                timeLimitMinutes: this.timeLimitMinutes,
+                questionIds: this.classroomQuestionIds,
+                questionId: this.classroomQuestionIds[this.classroomCompletedQuestions] || undefined,
+                challengeDeadline: this.classroomDeadline,
+                chapter: this.classroomQuestionIds.length
+                  ? (questionLoader.getQuestionById(this.classroomQuestionIds[this.classroomCompletedQuestions])?.chapter || this.chapter)
+                  : this.chapter
+              });
+            }
+            return;
+          }
           const accuracy = this.attempts === 1 ? 1.0 : Math.max(0.4, 1.0 - (this.attempts - 1) * 0.2);
           if (this.onComplete) {
             this.onComplete(accuracy);
@@ -728,6 +786,68 @@ export class MathChallengeScene extends Phaser.Scene {
       }
     });
     explContainer.add(actionBtn.container);
+  }
+
+  finishIndividualClassroomChallenge() {
+    if (this.isClassroomChallengeFinished) return;
+    this.isClassroomChallengeFinished = true;
+    multiplayerManager.completeClassroomChallenge();
+    if (this.classroomTimerEvent) this.classroomTimerEvent.remove(false);
+    const isPort = this.isPortrait();
+    const cx = this.cameras.main.width / 2;
+    const cy = this.cameras.main.height / 2;
+    const player = multiplayerManager.getLocalPlayer();
+    const score = player?.challengePoints || 0;
+    const correct = player?.challengeCorrect || this.classroomCompletedQuestions;
+    const panel = this.add.container(cx, cy).setDepth(2000);
+    const blocker = this.add.zone(0, 0, this.cameras.main.width, this.cameras.main.height)
+      .setInteractive().setOrigin(0.5);
+    panel.add(blocker);
+    const bg = this.add.graphics();
+    const x = isPort ? -310 : -360;
+    const y = isPort ? -230 : -190;
+    const w = isPort ? 620 : 720;
+    const h = isPort ? 460 : 380;
+    bg.fillStyle(0xfff7e6, 0.99);
+    bg.fillRoundedRect(x, y, w, h, 22);
+    bg.lineStyle(3, THEME.outlineDark, 1);
+    bg.strokeRoundedRect(x, y, w, h, 22);
+    panel.add(bg);
+    const title = this.add.text(0, isPort ? -155 : -125, '🏆 ' + localizationManager.t('math.individualCompleteTitle'), {
+      fontFamily: 'Fredoka, sans-serif', fontSize: isPort ? '26px' : '28px', color: '#087f5b', fontStyle: 'bold'
+    }).setOrigin(0.5);
+    const scoreLine = this.add.text(0, isPort ? -65 : -45,
+      localizationManager.t('math.individualFinalScore', { points: score, correct, total: this.classroomQuestionCount }), {
+        fontFamily: 'Nunito, sans-serif', fontSize: isPort ? '21px' : '22px', color: THEME.textDark,
+        fontStyle: 'bold', align: 'center', wordWrap: { width: isPort ? 520 : 620 }
+      }).setOrigin(0.5);
+    panel.add(title);
+    panel.add(scoreLine);
+    const returnButton = createButton(this, 0, isPort ? 115 : 105, localizationManager.t('math.returnToClassRoom'), {
+      width: isPort ? 420 : 360, height: 54, fontSize: isPort ? '17px' : '16px',
+      bgColor: THEME.secondary, bgDarkColor: THEME.secondaryDark,
+      onClick: () => this.scene.start('MultiplayerRoomScene')
+    });
+    panel.add(returnButton.container);
+  }
+
+  formatClassroomTime() {
+    const remaining = Math.max(0, Math.ceil((this.classroomDeadline - Date.now()) / 1000));
+    const minutes = Math.floor(remaining / 60).toString().padStart(2, '0');
+    const seconds = (remaining % 60).toString().padStart(2, '0');
+    return `${minutes}:${seconds}`;
+  }
+
+  updateClassroomTimer() {
+    if (!this.isIndividualClassroom || this.isClassroomChallengeFinished) return;
+    const player = multiplayerManager.getLocalPlayer();
+    if (this.coopScoreText) {
+      this.coopScoreText.setText(localizationManager.t('math.individualScoreHud', {
+        points: player?.challengePoints || 0,
+        time: this.formatClassroomTime()
+      }));
+    }
+    if (this.classroomDeadline <= Date.now()) this.finishIndividualClassroomChallenge();
   }
 }
 

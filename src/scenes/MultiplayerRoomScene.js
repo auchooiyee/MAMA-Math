@@ -43,6 +43,18 @@ export class MultiplayerRoomScene extends Phaser.Scene {
         return;
       }
       if (room.status === ROOM_STATUS.PLAYING) {
+        if (room.gameMode === MULTIPLAYER_MODES.CLASSROOM) {
+          if (multiplayerManager.isObservant()) {
+            this.createActionButtons();
+            return;
+          }
+          if (!multiplayerManager.getLocalPlayer()?.challengeCompleted) {
+            this.startIndividualClassChallenge();
+            return;
+          }
+          this.createActionButtons();
+          return;
+        }
         this.scene.start('CoopCookingScene');
         return;
       }
@@ -605,6 +617,47 @@ export class MultiplayerRoomScene extends Phaser.Scene {
 
     this.actionContainer = this.add.container(cx, actionY);
 
+    if (room.gameMode === MULTIPLAYER_MODES.CLASSROOM && room.status === ROOM_STATUS.PLAYING) {
+      const localPlayer = multiplayerManager.getLocalPlayer();
+      if (multiplayerManager.isObservant()) {
+        const title = this.add.text(0, -135, localizationManager.t('mp.classLiveStandings'), {
+          fontFamily: 'Fredoka, sans-serif', fontSize: isPort ? '19px' : '17px',
+          color: '#facc15', fontStyle: 'bold'
+        }).setOrigin(0.5);
+        this.actionContainer.add(title);
+        const ranked = [...room.players]
+          .filter(player => !player.isObservant)
+          .sort((a, b) => (b.challengePoints || 0) - (a.challengePoints || 0));
+        const rows = ranked.length ? ranked : [{ name: localizationManager.t('mp.classWaitingStudents'), challengePoints: 0 }];
+        const visibleRows = rows.slice(0, 30);
+        const rowsPerColumn = Math.ceil(visibleRows.length / 3);
+        visibleRows.forEach((player, index) => {
+          const column = Math.floor(index / rowsPerColumn);
+          const rowIndex = index % rowsPerColumn;
+          const status = player.challengeCompleted ? ` • ${localizationManager.t('mp.classComplete')}` : '';
+          const row = this.add.text((column - 1) * (isPort ? 205 : 250), -105 + rowIndex * 22,
+            `${index + 1}. ${player.name} — ${player.challengePoints || 0} PTS${status}`, {
+              fontFamily: 'Nunito, sans-serif', fontSize: isPort ? '13px' : '12px',
+              color: player.challengeCompleted ? '#6ee7b7' : '#fff7e6', fontStyle: 'bold'
+            }).setOrigin(0.5);
+          this.actionContainer.add(row);
+        });
+      } else if (localPlayer?.challengeCompleted) {
+        const done = this.add.text(0, 0,
+          localizationManager.t('mp.classYourComplete', { points: localPlayer.challengePoints || 0 }), {
+            fontFamily: 'Fredoka, sans-serif', fontSize: isPort ? '18px' : '16px',
+            color: '#6ee7b7', fontStyle: 'bold'
+          }).setOrigin(0.5);
+        this.actionContainer.add(done);
+      } else {
+        const waiting = this.add.text(0, 0, localizationManager.t('mp.classReadyHere'), {
+          fontFamily: 'Nunito, sans-serif', fontSize: isPort ? '16px' : '14px', color: '#fff7e6'
+        }).setOrigin(0.5);
+        this.actionContainer.add(waiting);
+      }
+      return;
+    }
+
     const isHost = multiplayerManager.isHost();
     const isHostObservant = (room.hostRoleMode === 'observant');
     const activePlayers = isHostObservant
@@ -643,7 +696,12 @@ export class MultiplayerRoomScene extends Phaser.Scene {
           const missionId = room?.missionId || 'M01-01';
           gameManager.startMission(missionId);
           multiplayerManager.startCoopGame(missionId);
-          this.scene.start('CoopCookingScene');
+          if (room?.gameMode === MULTIPLAYER_MODES.CLASSROOM) {
+            if (!multiplayerManager.isObservant()) this.startIndividualClassChallenge();
+            else this.createActionButtons();
+          } else {
+            this.scene.start('CoopCookingScene');
+          }
         }
       });
       this.actionContainer.add(btnStart.container);
@@ -685,6 +743,20 @@ export class MultiplayerRoomScene extends Phaser.Scene {
       }).setOrigin(0.5);
       this.actionContainer.add(sub);
     }
+  }
+
+  startIndividualClassChallenge() {
+    const room = multiplayerManager.room;
+    if (!room || room.gameMode !== MULTIPLAYER_MODES.CLASSROOM) return;
+    this.scene.start('MathChallengeScene', {
+      isIndividualClassroom: true,
+      chapter: room.targetChapter ?? 1,
+      difficulty: room.difficulty || 'medium',
+      questionCount: room.questionCount || 10,
+      timeLimitMinutes: room.timeLimitMinutes || 10,
+      questionIds: room.questionIds || [],
+      challengeDeadline: room.challengeDeadline
+    });
   }
 }
 

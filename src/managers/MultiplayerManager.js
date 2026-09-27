@@ -287,11 +287,17 @@ class MultiplayerManager {
         this.room.missionId = msg.missionId || this.room.missionId;
         if (msg.targetChapter !== undefined) this.room.targetChapter = msg.targetChapter;
         if (msg.difficulty) this.room.difficulty = msg.difficulty;
+        if (msg.questionCount) this.room.questionCount = msg.questionCount;
+        if (msg.timeLimitMinutes) this.room.timeLimitMinutes = msg.timeLimitMinutes;
+        if (msg.questionIds) this.room.questionIds = msg.questionIds;
+        if (msg.challengeDeadline) this.room.challengeDeadline = msg.challengeDeadline;
+        if (msg.isIndividualCompetition !== undefined) this.room.isIndividualCompetition = msg.isIndividualCompetition;
         this.room.challengeScore = 0;
         this.room.players.forEach(player => {
           player.challengePoints = 0;
           player.challengeCorrect = 0;
           player.challengeMisses = 0;
+          player.challengeCompleted = false;
         });
         this.notifyStateListeners();
         break;
@@ -303,6 +309,18 @@ class MultiplayerManager {
           scorer.challengeCorrect = Math.max(0, Number(msg.correct) || 0);
           scorer.challengeMisses = Math.max(0, Number(msg.misses) || 0);
           this.room.challengeScore = this.room.players.reduce((sum, player) => sum + (player.challengePoints || 0), 0);
+          this.notifyStateListeners();
+        }
+        break;
+      }
+
+      case 'CLASSROOM_PLAYER_SCORE': {
+        const scorer = this.room.players.find(player => player.id === msg.playerId);
+        if (scorer) {
+          scorer.challengePoints = Math.max(0, Number(msg.points) || 0);
+          scorer.challengeCorrect = Math.max(0, Number(msg.correct) || 0);
+          scorer.challengeMisses = Math.max(0, Number(msg.misses) || 0);
+          scorer.challengeCompleted = Boolean(msg.completed);
           this.notifyStateListeners();
         }
         break;
@@ -397,6 +415,9 @@ class MultiplayerManager {
       recipeId: options.recipeId || 'nasi_lemak',
       targetChapter: (options.targetChapter !== undefined) ? options.targetChapter : (options.chapter ?? 1),
       difficulty: options.difficulty || 'medium',
+      questionCount: Math.max(1, Number(options.questionCount) || 10),
+      timeLimitMinutes: Math.max(1, Number(options.timeLimitMinutes) || 10),
+      questionIds: Array.isArray(options.questionIds) ? options.questionIds : [],
       players: [
         {
           id: this.localPlayerId,
@@ -452,6 +473,8 @@ class MultiplayerManager {
       recipeId: 'nasi_lemak',
       targetChapter: 1,
       difficulty: 'medium',
+      questionCount: 10,
+      timeLimitMinutes: 10,
       players: [
         {
           id: this.localPlayerId,
@@ -520,17 +543,26 @@ class MultiplayerManager {
     this.room.currentStep = 0;
     this.room.unlockedSteps = [0];
     this.room.challengeScore = 0;
+    if (this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM) {
+      this.room.challengeDeadline = Date.now() + (this.room.timeLimitMinutes || 10) * 60 * 1000;
+    }
     this.room.players.forEach(player => {
       player.challengePoints = 0;
       player.challengeCorrect = 0;
       player.challengeMisses = 0;
+      player.challengeCompleted = false;
     });
 
     this.broadcast({
       type: 'START_GAME',
       missionId: this.room.missionId,
       targetChapter: this.room.targetChapter,
-      difficulty: this.room.difficulty
+      difficulty: this.room.difficulty,
+      questionCount: this.room.questionCount,
+      timeLimitMinutes: this.room.timeLimitMinutes,
+      questionIds: this.room.questionIds,
+      challengeDeadline: this.room.challengeDeadline,
+      isIndividualCompetition: this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM
     });
 
     this.notifyStateListeners();
@@ -555,6 +587,42 @@ class MultiplayerManager {
     });
     this.notifyStateListeners();
     return { points, total: this.room.challengeScore };
+  }
+
+  recordClassroomChallengeAnswer(isCorrect, attempts = 1) {
+    if (!this.room || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM) return { points: 0, total: 0 };
+    const player = this.getLocalPlayer();
+    if (!player || player.isObservant) return { points: 0, total: 0 };
+    const safeAttempts = Math.max(1, Number(attempts) || 1);
+    const points = isCorrect ? Math.max(25, 100 - (safeAttempts - 1) * 25) : 0;
+    player.challengePoints = (player.challengePoints || 0) + points;
+    player.challengeCorrect = (player.challengeCorrect || 0) + (isCorrect ? 1 : 0);
+    player.challengeMisses = (player.challengeMisses || 0) + (isCorrect ? 0 : 1);
+    this.broadcast({
+      type: 'CLASSROOM_PLAYER_SCORE',
+      playerId: player.id,
+      points: player.challengePoints,
+      correct: player.challengeCorrect,
+      misses: player.challengeMisses,
+      completed: Boolean(player.challengeCompleted)
+    });
+    this.notifyStateListeners();
+    return { points, total: player.challengePoints };
+  }
+
+  completeClassroomChallenge() {
+    const player = this.getLocalPlayer();
+    if (!player || !this.room || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || player.isObservant) return;
+    player.challengeCompleted = true;
+    this.broadcast({
+      type: 'CLASSROOM_PLAYER_SCORE',
+      playerId: player.id,
+      points: player.challengePoints || 0,
+      correct: player.challengeCorrect || 0,
+      misses: player.challengeMisses || 0,
+      completed: true
+    });
+    this.notifyStateListeners();
   }
 
   unlockStepByMath(stepIndex, accuracy = 1.0) {

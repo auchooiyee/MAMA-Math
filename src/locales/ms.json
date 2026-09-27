@@ -162,7 +162,12 @@
     "enterValue": "Pilih atau masukkan jawapan anda:",
     "coopScoreHud": "MATA PASUKAN: {points}",
     "coopScoreEarned": "+{points} MATA • JUMLAH {total}",
-    "coopScoreMiss": "0 MATA • CUBA LAGI"
+    "coopScoreMiss": "0 MATA • CUBA LAGI",
+    "individualScoreHud": "MATA ANDA: {points} • {time}",
+    "individualScoreEarned": "+{points} MATA • JUMLAH ANDA {total}",
+    "individualCompleteTitle": "CABARAN SELESAI!",
+    "individualFinalScore": "Skor anda: {points} mata\nJawapan betul: {correct} / {total}",
+    "returnToClassRoom": "KEMBALI KE BILIK KELAS"
   },
   "result": {
     "title": "PESANAN SELESAI!",
@@ -262,7 +267,12 @@
     "networkOffline": "LUAR TALIAN",
     "networkReady": "MASA NYATA SEDIA",
     "networkLocal": "PERANTI TEMPATAN",
-    "challengePoints": "Mata Cabaran Matematik:"
+    "challengePoints": "Mata Cabaran Matematik:",
+    "classLiveStandings": "CABARAN INDIVIDU • KEDUDUKAN LANGSUNG",
+    "classWaitingStudents": "Menunggu murid menyertai…",
+    "classComplete": "SELESAI",
+    "classYourComplete": "✓ CABARAN ANDA SELESAI • {points} MATA",
+    "classReadyHere": "Cabaran individu anda sedia pada peranti ini."
   },
   "achievements": {
     "title": "PENCAPAIAN SAYA",

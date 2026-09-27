@@ -162,7 +162,12 @@
     "enterValue": "Select or enter your answer:",
     "coopScoreHud": "TEAM POINTS: {points}",
     "coopScoreEarned": "+{points} PTS • TEAM {total}",
-    "coopScoreMiss": "0 PTS • TRY AGAIN"
+    "coopScoreMiss": "0 PTS • TRY AGAIN",
+    "individualScoreHud": "YOUR POINTS: {points} • {time}",
+    "individualScoreEarned": "+{points} PTS • YOUR TOTAL {total}",
+    "individualCompleteTitle": "CHALLENGE COMPLETE!",
+    "individualFinalScore": "Your score: {points} points\nCorrect answers: {correct} / {total}",
+    "returnToClassRoom": "RETURN TO CLASS ROOM"
   },
   "result": {
     "title": "ORDER COMPLETE!",
@@ -262,7 +267,12 @@
     "networkOffline": "OFFLINE",
     "networkReady": "REALTIME READY",
     "networkLocal": "LOCAL DEVICE",
-    "challengePoints": "Math Challenge Points:"
+    "challengePoints": "Math Challenge Points:",
+    "classLiveStandings": "INDIVIDUAL CHALLENGE • LIVE STANDINGS",
+    "classWaitingStudents": "Waiting for students to join…",
+    "classComplete": "COMPLETE",
+    "classYourComplete": "✓ YOUR CHALLENGE IS COMPLETE • {points} PTS",
+    "classReadyHere": "Your individual challenge is ready on this device."
   },
   "achievements": {
     "title": "MY ACHIEVEMENTS",

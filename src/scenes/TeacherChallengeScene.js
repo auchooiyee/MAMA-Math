@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import localizationManager from '../managers/LocalizationManager.js';
 import analyticsManager from '../managers/AnalyticsManager.js';
+import questionLoader from '../questions/questionLoader.js';
 import multiplayerManager, { MULTIPLAYER_MODES } from '../managers/MultiplayerManager.js';
 import audioManager from '../managers/AudioManager.js';
 import { createButton } from '../ui/buttons.js';
@@ -316,6 +317,21 @@ export class TeacherChallengeScene extends Phaser.Scene {
       questionCount: 10,
       hintsAllowed: this.hintsAllowed
     });
+    const questionPool = questionLoader.getQuestionsByChapterAndDifficulty(
+      this.selectedChapter > 0 ? this.selectedChapter : null,
+      this.selectedDifficulty
+    );
+    let seed = [...challenge.id].reduce((value, char) => (value * 31 + char.charCodeAt(0)) >>> 0, 7);
+    const seededRandom = () => {
+      seed = (seed * 1664525 + 1013904223) >>> 0;
+      return seed / 0x100000000;
+    };
+    const orderedQuestions = [...questionPool];
+    for (let index = orderedQuestions.length - 1; index > 0; index--) {
+      const swapIndex = Math.floor(seededRandom() * (index + 1));
+      [orderedQuestions[index], orderedQuestions[swapIndex]] = [orderedQuestions[swapIndex], orderedQuestions[index]];
+    }
+    challenge.questionIds = orderedQuestions.slice(0, challenge.questionCount).map(question => question.id);
 
     // Determine suitable mission recipe matching chapter or default to M01-01
     let missionId = 'M01-01';
@@ -339,7 +355,10 @@ export class TeacherChallengeScene extends Phaser.Scene {
       nickname: 'Teacher (Host)',
       missionId: missionId,
       targetChapter: this.selectedChapter,
-      difficulty: this.selectedDifficulty
+      difficulty: this.selectedDifficulty,
+      questionCount: challenge.questionIds.length || challenge.questionCount,
+      questionIds: challenge.questionIds,
+      timeLimitMinutes: challenge.timeLimitMinutes
     });
 
     // Confirmation Modal
@@ -360,7 +379,7 @@ export class TeacherChallengeScene extends Phaser.Scene {
     }).setOrigin(0.5);
     modal.add(title);
 
-    const desc = this.add.text(0, -45, `Students can now join using 4-Digit PIN:\n\n${this.classCode}\n\nChallenge rules and question sets are live.`, {
+    const desc = this.add.text(0, -45, `Students can now join using 4-Digit PIN:\n\n${this.classCode}\n\nEach student competes individually on the same question set. Scores are shown live to the teacher.`, {
       fontFamily: 'Nunito, sans-serif',
       fontSize: '17px',
       color: '#ffffff',

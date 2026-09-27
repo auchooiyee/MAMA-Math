@@ -376,9 +376,11 @@ console.log(`  ✓ Reconnect deduplication, 2 phones joined (${room2p.players.fi
 const roomClass = multiplayerManager.createRoom(MULTIPLAYER_MODES.CLASSROOM, {
   classCode: 'AMC-F4-2026',
   targetChapter: 6,
-  difficulty: 'medium'
+  difficulty: 'medium',
+  questionCount: 2,
+  questionIds: ['F4-C06-MED-01', 'F4-C06-MED-02']
 });
-if (roomClass.classCode !== 'AMC-F4-2026' || roomClass.gameMode !== MULTIPLAYER_MODES.CLASSROOM || roomClass.targetChapter !== 6) {
+if (roomClass.classCode !== 'AMC-F4-2026' || roomClass.gameMode !== MULTIPLAYER_MODES.CLASSROOM || roomClass.targetChapter !== 6 || roomClass.questionCount !== 2 || roomClass.questionIds.length !== 2) {
   console.error('FAILED: Classroom room creation failed or targetChapter not preserved', roomClass);
   process.exit(1);
 }
@@ -394,6 +396,30 @@ if (multiplayerManager.isStepUnlocked(1)) {
   console.error('FAILED: Step 1 should be locked before math unlock');
   process.exit(1);
 }
+const classroomWrong = multiplayerManager.recordClassroomChallengeAnswer(false, 1);
+if (classroomWrong.points !== 0 || classroomWrong.total !== 0) {
+  console.error('FAILED: Wrong individual classroom answer should award zero personal points', classroomWrong);
+  process.exit(1);
+}
+const classroomCorrect = multiplayerManager.recordClassroomChallengeAnswer(true, 2);
+if (classroomCorrect.points !== 75 || classroomCorrect.total !== 75) {
+  console.error('FAILED: Individual classroom score should belong to the answering student', classroomCorrect);
+  process.exit(1);
+}
+multiplayerManager.room.players.push({ id: 'student_peer', name: 'Student Peer', challengePoints: 0, challengeCorrect: 0, challengeMisses: 0 });
+multiplayerManager.handleBroadcastMessage({
+  type: 'CLASSROOM_PLAYER_SCORE', playerId: 'student_peer', points: 100, correct: 1, misses: 0, completed: false
+});
+if (multiplayerManager.getLocalPlayer().challengePoints !== 75 || multiplayerManager.room.players.find(player => player.id === 'student_peer').challengePoints !== 100 || multiplayerManager.room.challengeScore !== 0) {
+  console.error('FAILED: Classroom scores should be stored independently per student');
+  process.exit(1);
+}
+multiplayerManager.completeClassroomChallenge();
+if (!multiplayerManager.getLocalPlayer().challengeCompleted) {
+  console.error('FAILED: Individual challenge completion should sync to the teacher room');
+  process.exit(1);
+}
+multiplayerManager.startCoopGame('M01-01');
 const wrongChallengeScore = multiplayerManager.recordChallengeAnswer(false, 1);
 if (wrongChallengeScore.points !== 0 || wrongChallengeScore.total !== 0) {
   console.error('FAILED: Wrong co-op challenge answer should award zero points', wrongChallengeScore);
@@ -414,7 +440,7 @@ if (!multiplayerManager.isStepUnlocked(1)) {
   console.error('FAILED: Step 1 should be unlocked after math solving');
   process.exit(1);
 }
-console.log('  ✓ Co-op wrong-answer zero score, retry scoring, team total & math station unlock verified.');
+console.log('  ✓ Individual classroom scoring, per-student scores & co-op team scoring/unlock verified.');
 
 // 8.5 Achievements remain local and progression-backed; no mock global leaderboard.
 const achievementList = badgeManager.getAllBadges();
