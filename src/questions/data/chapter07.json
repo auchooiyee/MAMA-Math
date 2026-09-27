@@ -1,0 +1,2063 @@
+[
+  {
+    "id": "F4-C07-E01",
+    "chapter": 7,
+    "topic": "distance_time_stationary",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "On a distance-time graph, what does a horizontal straight line segment indicate about the vehicle's motion?",
+      "ms": "Pada graf jarak-masa, apakah yang ditunjukkan oleh bahagian garis lurus mengufuk tentang gerakan kenderaan?"
+    },
+    "equation": "Gradient = 0 → Speed = 0",
+    "options": [
+      {
+        "value": "Stationary",
+        "text": "The vehicle is stationary (at rest)",
+        "feedback": {
+          "en": "Correct! Distance is not changing, so speed = 0.",
+          "ms": "Tepat! Jarak tidak berubah, maka laju = 0 (pegun)."
+        }
+      },
+      {
+        "value": "Constant speed",
+        "text": "The vehicle moves at constant speed",
+        "feedback": {
+          "en": "Constant speed on distance-time graph is an inclined straight line.",
+          "ms": "Laju malar pada graf jarak-masa ialah garis lurus condong."
+        }
+      },
+      {
+        "value": "Accelerating",
+        "text": "The vehicle is accelerating",
+        "feedback": {
+          "en": "Acceleration on distance-time graph is a curve.",
+          "ms": "Pecutan pada graf jarak-masa berbentuk lengkung."
+        }
+      },
+      {
+        "value": "Moving backwards",
+        "text": "The vehicle is moving backwards",
+        "feedback": {
+          "en": "Moving backwards corresponds to a negative gradient.",
+          "ms": "Bergerak ke belakang diwakili oleh kecerunan negatif."
+        }
+      }
+    ],
+    "answer": "Stationary",
+    "hints": {
+      "en": [
+        "Speed is the gradient of a distance-time graph. A horizontal line has gradient 0."
+      ],
+      "ms": [
+        "Laju ialah kecerunan graf jarak-masa. Garis mengufuk mempunyai kecerunan 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Gradient = 0 → Speed = 0 (vehicle is stationary)."
+      ],
+      "ms": [
+        "Kecerunan = 0 → Laju = 0 (kenderaan pegun)."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "distance_time_interpretation"
+    ]
+  },
+  {
+    "id": "F4-C07-E02",
+    "chapter": 7,
+    "topic": "speed_from_gradient",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "On a distance-time graph, a rider travels from distance 20 km to 80 km between time t = 1 h and t = 2 h. What is the speed of the rider?",
+      "ms": "Pada graf jarak-masa, penunggang bergerak dari jarak 20 km ke 80 km antara masa t = 1 j dan t = 2 j. Apakah laju penunggang itu?"
+    },
+    "equation": "Speed = (80 - 20) / (2 - 1)",
+    "options": [
+      {
+        "value": 60,
+        "text": "60 km/h",
+        "feedback": {
+          "en": "Correct! (80 - 20) / (2 - 1) = 60 / 1 = 60 km/h.",
+          "ms": "Tepat! (80 - 20) / (2 - 1) = 60 / 1 = 60 km/j."
+        }
+      },
+      {
+        "value": 80,
+        "text": "80 km/h",
+        "feedback": {
+          "en": "80 is the final distance, not the change in distance.",
+          "ms": "80 ialah jarak akhir, bukan perubahan jarak."
+        }
+      },
+      {
+        "value": 50,
+        "text": "50 km/h",
+        "feedback": {
+          "en": "Change in distance is 80 - 20 = 60 km.",
+          "ms": "Perubahan jarak ialah 80 - 20 = 60 km."
+        }
+      },
+      {
+        "value": 100,
+        "text": "100 km/h",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": 60,
+    "hints": {
+      "en": [
+        "Speed = (d₂ - d₁) / (t₂ - t₁)."
+      ],
+      "ms": [
+        "Laju = (d₂ - d₁) / (t₂ - t₁)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Speed = (80 - 20) / (2 - 1) = 60 km/h."
+      ],
+      "ms": [
+        "Laju = (80 - 20) / (2 - 1) = 60 km/j."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "speed_calculation"
+    ]
+  },
+  {
+    "id": "F4-C07-E03",
+    "chapter": 7,
+    "topic": "average_speed_formula",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A food delivery van travels a total distance of 150 km in 2.5 hours. Calculate its average speed.",
+      "ms": "Sebuah van penghantaran makanan meliputi jumlah jarak 150 km dalam masa 2.5 jam. Hitung laju puratanya."
+    },
+    "equation": "Average Speed = Total Distance / Total Time",
+    "options": [
+      {
+        "value": 60,
+        "text": "60 km/h",
+        "feedback": {
+          "en": "Correct! 150 / 2.5 = 60 km/h.",
+          "ms": "Tepat! 150 / 2.5 = 60 km/j."
+        }
+      },
+      {
+        "value": 75,
+        "text": "75 km/h",
+        "feedback": {
+          "en": "150 / 2 = 75, but time is 2.5 hours.",
+          "ms": "150 / 2 = 75, tetapi masa ialah 2.5 jam."
+        }
+      },
+      {
+        "value": 50,
+        "text": "50 km/h",
+        "feedback": {
+          "en": "150 / 2.5 = 60 km/h.",
+          "ms": "150 / 2.5 = 60 km/j."
+        }
+      },
+      {
+        "value": 65,
+        "text": "65 km/h",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": 60,
+    "hints": {
+      "en": [
+        "Divide total distance (150 km) by total time (2.5 h)."
+      ],
+      "ms": [
+        "Bahagi jumlah jarak (150 km) dengan jumlah masa (2.5 j)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Average speed = 150 / 2.5 = 60 km/h."
+      ],
+      "ms": [
+        "Laju purata = 150 / 2.5 = 60 km/j."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "average_speed"
+    ]
+  },
+  {
+    "id": "F4-C07-E04",
+    "chapter": 7,
+    "topic": "speed_time_horizontal",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "On a speed-time graph, what does a horizontal straight line segment represent?",
+      "ms": "Pada graf laju-masa, apakah yang diwakili oleh bahagian garis lurus mengufuk?"
+    },
+    "equation": "Gradient = 0 → Acceleration = 0",
+    "options": [
+      {
+        "value": "Constant speed",
+        "text": "Uniform / constant speed (acceleration = 0)",
+        "feedback": {
+          "en": "Correct! Speed remains unchanged over time.",
+          "ms": "Tepat! Laju kekal tidak berubah sepanjang masa."
+        }
+      },
+      {
+        "value": "Stationary",
+        "text": "The vehicle is stationary",
+        "feedback": {
+          "en": "Stationary is speed = 0 (on the time axis). A horizontal line at speed v > 0 is moving at constant speed.",
+          "ms": "Pegun jika laju = 0. Garis mengufuk pada laju v > 0 bermaksud bergerak dengan laju malar."
+        }
+      },
+      {
+        "value": "Constant acceleration",
+        "text": "Constant acceleration",
+        "feedback": {
+          "en": "Acceleration is the gradient; here gradient is 0.",
+          "ms": "Pecutan ialah kecerunan; di sini kecerunan ialah 0."
+        }
+      },
+      {
+        "value": "Deceleration",
+        "text": "Deceleration",
+        "feedback": {
+          "en": "Deceleration has a negative gradient.",
+          "ms": "Nyahpecutan mempunyai kecerunan negatif."
+        }
+      }
+    ],
+    "answer": "Constant speed",
+    "hints": {
+      "en": [
+        "On a speed-time graph, horizontal line means speed is not changing."
+      ],
+      "ms": [
+        "Pada graf laju-masa, garis mengufuk bermaksud laju tidak berubah."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Speed is constant and acceleration = 0."
+      ],
+      "ms": [
+        "Laju adalah malar dan pecutan = 0."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "speed_time_interpretation"
+    ]
+  },
+  {
+    "id": "F4-C07-E05",
+    "chapter": 7,
+    "topic": "acceleration_from_gradient",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "On a speed-time graph, a car's speed increases from 10 m/s to 30 m/s in 4 seconds. What is its acceleration?",
+      "ms": "Pada graf laju-masa, laju sebuah kereta meningkat dari 10 m/s ke 30 m/s dalam masa 4 saat. Apakah pecutannya?"
+    },
+    "equation": "a = (v - u) / t",
+    "options": [
+      {
+        "value": 5,
+        "text": "5 m/s²",
+        "feedback": {
+          "en": "Correct! a = (30 - 10) / 4 = 20 / 4 = 5 m/s².",
+          "ms": "Tepat! a = (30 - 10) / 4 = 20 / 4 = 5 m/s²."
+        }
+      },
+      {
+        "value": 10,
+        "text": "10 m/s²",
+        "feedback": {
+          "en": "Check division: 20 / 4 = 5.",
+          "ms": "Semak pembahagian: 20 / 4 = 5."
+        }
+      },
+      {
+        "value": 4,
+        "text": "4 m/s²",
+        "feedback": {
+          "en": "4 is the time duration.",
+          "ms": "4 ialah tempoh masa."
+        }
+      },
+      {
+        "value": 7.5,
+        "text": "7.5 m/s²",
+        "feedback": {
+          "en": "30 / 4 = 7.5, but remember to subtract initial speed 10.",
+          "ms": "Ingat untuk menolak laju awal 10."
+        }
+      }
+    ],
+    "answer": 5,
+    "hints": {
+      "en": [
+        "a = (v - u) / t = (30 - 10) / 4."
+      ],
+      "ms": [
+        "a = (v - u) / t = (30 - 10) / 4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "a = (30 - 10) / 4 = 5 m/s²."
+      ],
+      "ms": [
+        "a = (30 - 10) / 4 = 5 m/s²."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "acceleration_calc"
+    ]
+  },
+  {
+    "id": "F4-C07-M01",
+    "chapter": 7,
+    "topic": "deceleration_calculation",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A motorcycle decelerates from 25 m/s to a complete stop in 5 seconds. What is its deceleration?",
+      "ms": "Sebuah motosikal mengalami nyahpecutan dari 25 m/s sehingga berhenti sepenuhnya dalam masa 5 saat. Apakah nyahpecutannya?"
+    },
+    "equation": "Deceleration = - (v - u) / t",
+    "options": [
+      {
+        "value": 5,
+        "text": "5 m/s²",
+        "feedback": {
+          "en": "Correct! Deceleration = (25 - 0) / 5 = 5 m/s².",
+          "ms": "Tepat! Nyahpecutan = (25 - 0) / 5 = 5 m/s²."
+        }
+      },
+      {
+        "value": -5,
+        "text": "-5 m/s²",
+        "feedback": {
+          "en": "Acceleration is -5 m/s²; deceleration is stated as a positive magnitude: 5 m/s².",
+          "ms": "Pecutan ialah -5 m/s²; nyahpecutan dinyatakan sebagai magnitud positif: 5 m/s²."
+        }
+      },
+      {
+        "value": 20,
+        "text": "20 m/s²",
+        "feedback": {
+          "en": "25 - 5 = 20 is not the rate of change.",
+          "ms": "25 - 5 = 20 bukan kadar perubahan."
+        }
+      },
+      {
+        "value": 125,
+        "text": "125 m/s²",
+        "feedback": {
+          "en": "Do not multiply.",
+          "ms": "Jangan darab."
+        }
+      }
+    ],
+    "answer": 5,
+    "hints": {
+      "en": [
+        "Deceleration is the rate of decrease in speed: (Initial - Final) / Time."
+      ],
+      "ms": [
+        "Nyahpecutan ialah kadar penurunan laju: (Awal - Akhir) / Masa."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Deceleration = (25 - 0) / 5 = 5 m/s²."
+      ],
+      "ms": [
+        "Nyahpecutan = (25 - 0) / 5 = 5 m/s²."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "deceleration"
+    ]
+  },
+  {
+    "id": "F4-C07-M02",
+    "chapter": 7,
+    "topic": "distance_from_trapezium_area",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "On a speed-time graph, the motion forms a trapezium with parallel sides of length 10 s and 16 s, and height 20 m/s. What is the total distance traveled?",
+      "ms": "Pada graf laju-masa, gerakan membentuk trapezium dengan sisi selari berukuran 10 s dan 16 s, serta tinggi 20 m/s. Apakah jumlah jarak yang dilalui?"
+    },
+    "equation": "Area = ½(a + b)h",
+    "options": [
+      {
+        "value": 260,
+        "text": "260 m",
+        "feedback": {
+          "en": "Correct! Area = ½ × (10 + 16) × 20 = 13 × 20 = 260 m.",
+          "ms": "Tepat! Luas = ½ × (10 + 16) × 20 = 13 × 20 = 260 m."
+        }
+      },
+      {
+        "value": 520,
+        "text": "520 m",
+        "feedback": {
+          "en": "Did you forget the ½ factor in the trapezium area formula?",
+          "ms": "Adakah anda terlupa faktor ½ dalam rumus luas trapezium?"
+        }
+      },
+      {
+        "value": 200,
+        "text": "200 m",
+        "feedback": {
+          "en": "10 × 20 = 200 is only part of the area.",
+          "ms": "10 × 20 = 200 hanya sebahagian daripada luas."
+        }
+      },
+      {
+        "value": 320,
+        "text": "320 m",
+        "feedback": {
+          "en": "16 × 20 = 320 is the bounding rectangle.",
+          "ms": "16 × 20 = 320 ialah segi empat tepat sempadan."
+        }
+      }
+    ],
+    "answer": 260,
+    "hints": {
+      "en": [
+        "Distance = Area under speed-time graph = ½ × (sum of parallel sides) × height."
+      ],
+      "ms": [
+        "Jarak = Luas di bawah graf laju-masa = ½ × (hasil tambah sisi selari) × tinggi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Distance = ½(10 + 16)(20) = 260 m."
+      ],
+      "ms": [
+        "Jarak = ½(10 + 16)(20) = 260 m."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "area_under_graph"
+    ]
+  },
+  {
+    "id": "F4-C07-M03",
+    "chapter": 7,
+    "topic": "composite_distance_calculation",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A vehicle accelerates uniformly from 0 to 12 m/s in 4 s (triangle), then cruises at 12 m/s for 6 s (rectangle). Find the total distance traveled.",
+      "ms": "Sebuah kenderaan memecut secara seragam dari 0 ke 12 m/s dalam 4 s (segitiga), kemudian bergerak pada 12 m/s selama 6 s (segi empat tepat). Cari jumlah jarak yang dilalui."
+    },
+    "equation": "Area = Triangle + Rectangle",
+    "options": [
+      {
+        "value": 96,
+        "text": "96 m",
+        "feedback": {
+          "en": "Correct! Triangle = ½(4)(12) = 24 m; Rectangle = 6(12) = 72 m. Total = 24 + 72 = 96 m.",
+          "ms": "Tepat! Segitiga = ½(4)(12) = 24 m; Segi empat tepat = 6(12) = 72 m. Jumlah = 24 + 72 = 96 m."
+        }
+      },
+      {
+        "value": 120,
+        "text": "120 m",
+        "feedback": {
+          "en": "10 × 12 = 120 ignores the acceleration phase.",
+          "ms": "10 × 12 = 120 mengabaikan fasa pecutan."
+        }
+      },
+      {
+        "value": 72,
+        "text": "72 m",
+        "feedback": {
+          "en": "72 m is only the constant speed phase.",
+          "ms": "72 m hanya fasa laju malar."
+        }
+      },
+      {
+        "value": 84,
+        "text": "84 m",
+        "feedback": {
+          "en": "Calculation error in triangle area.",
+          "ms": "Ralat pengiraan luas segitiga."
+        }
+      }
+    ],
+    "answer": 96,
+    "hints": {
+      "en": [
+        "Total distance = Area of triangle (½ × 4 × 12) + Area of rectangle (6 × 12)."
+      ],
+      "ms": [
+        "Jumlah jarak = Luas segitiga (½ × 4 × 12) + Luas segi empat tepat (6 × 12)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Distance = 24 + 72 = 96 m."
+      ],
+      "ms": [
+        "Jarak = 24 + 72 = 96 m."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "composite_area"
+    ]
+  },
+  {
+    "id": "F4-C07-M04",
+    "chapter": 7,
+    "topic": "speed_unit_conversion",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A rider travels 45 km in 45 minutes. What is the speed in km/h?",
+      "ms": "Seorang penunggang bergerak sejauh 45 km dalam masa 45 minit. Apakah lajunya dalam km/j?"
+    },
+    "equation": "Speed = Distance / (Minutes / 60)",
+    "options": [
+      {
+        "value": 60,
+        "text": "60 km/h",
+        "feedback": {
+          "en": "Correct! 45 minutes = 0.75 h. Speed = 45 / 0.75 = 60 km/h.",
+          "ms": "Tepat! 45 minit = 0.75 j. Laju = 45 / 0.75 = 60 km/j."
+        }
+      },
+      {
+        "value": 45,
+        "text": "45 km/h",
+        "feedback": {
+          "en": "45 km in 45 min means 1 km per minute = 60 km per hour.",
+          "ms": "45 km dalam 45 minit bermaksud 1 km seminit = 60 km sejam."
+        }
+      },
+      {
+        "value": 90,
+        "text": "90 km/h",
+        "feedback": {
+          "en": "Overestimated.",
+          "ms": "Terlebih anggaran."
+        }
+      },
+      {
+        "value": 75,
+        "text": "75 km/h",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": 60,
+    "hints": {
+      "en": [
+        "Convert 45 minutes to hours: 45 / 60 = 0.75 hours."
+      ],
+      "ms": [
+        "Tukar 45 minit kepada jam: 45 / 60 = 0.75 jam."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Speed = 45 / 0.75 = 60 km/h."
+      ],
+      "ms": [
+        "Laju = 45 / 0.75 = 60 km/j."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "unit_conversion_speed"
+    ]
+  },
+  {
+    "id": "F4-C07-M05",
+    "chapter": 7,
+    "topic": "motion_transition_time",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A van starts from rest with acceleration 3 m/s² until it reaches 18 m/s. How long (in seconds) does this acceleration take?",
+      "ms": "Sebuah van bermula dari keadaan pegun dengan pecutan 3 m/s² sehingga mencapai 18 m/s. Berapa lamakah (dalam saat) fasa pecutan ini berlangsung?"
+    },
+    "equation": "t = (v - u) / a",
+    "options": [
+      {
+        "value": 6,
+        "text": "6 s",
+        "feedback": {
+          "en": "Correct! t = (18 - 0) / 3 = 6 seconds.",
+          "ms": "Tepat! t = (18 - 0) / 3 = 6 saat."
+        }
+      },
+      {
+        "value": 9,
+        "text": "9 s",
+        "feedback": {
+          "en": "18 / 2 = 9, but acceleration is 3 m/s².",
+          "ms": "18 / 2 = 9, tetapi pecutan ialah 3 m/s²."
+        }
+      },
+      {
+        "value": 5,
+        "text": "5 s",
+        "feedback": {
+          "en": "5 × 3 = 15 m/s, not 18 m/s.",
+          "ms": "5 × 3 = 15 m/s, bukan 18 m/s."
+        }
+      },
+      {
+        "value": 54,
+        "text": "54 s",
+        "feedback": {
+          "en": "Do not multiply speed by acceleration.",
+          "ms": "Jangan darab laju dengan pecutan."
+        }
+      }
+    ],
+    "answer": 6,
+    "hints": {
+      "en": [
+        "Use t = (v - u) / a where v = 18, u = 0, a = 3."
+      ],
+      "ms": [
+        "Gunakan t = (v - u) / a dengan v = 18, u = 0, a = 3."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "t = 18 / 3 = 6 s."
+      ],
+      "ms": [
+        "t = 18 / 3 = 6 s."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "time_calculation"
+    ]
+  },
+  {
+    "id": "F4-C07-H01",
+    "chapter": 7,
+    "topic": "solve_unknown_time_trapezium",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "The speed-time graph of a journey forms a trapezium of height 20 m/s, with base t seconds and top (t - 4) seconds. If the total distance is 240 m, find the total time t.",
+      "ms": "Graf laju-masa suatu perjalanan membentuk trapezium berketinggian 20 m/s, dengan tapak t saat dan sisi atas (t - 4) saat. Jika jumlah jarak ialah 240 m, cari jumlah masa t."
+    },
+    "equation": "½(t + t - 4)(20) = 240",
+    "options": [
+      {
+        "value": 14,
+        "text": "t = 14 s",
+        "feedback": {
+          "en": "Correct! 10(2t - 4) = 240 → 2t - 4 = 24 → 2t = 28 → t = 14 s.",
+          "ms": "Tepat! 10(2t - 4) = 240 → 2t - 4 = 24 → 2t = 28 → t = 14 s."
+        }
+      },
+      {
+        "value": 12,
+        "text": "t = 12 s",
+        "feedback": {
+          "en": "For t = 12, Area = 10(24 - 4) = 200 ≠ 240.",
+          "ms": "Bagi t = 12, Luas = 10(20) = 200 ≠ 240."
+        }
+      },
+      {
+        "value": 16,
+        "text": "t = 16 s",
+        "feedback": {
+          "en": "For t = 16, Area = 10(32 - 4) = 280.",
+          "ms": "Bagi t = 16, Luas = 10(28) = 280."
+        }
+      },
+      {
+        "value": 10,
+        "text": "t = 10 s",
+        "feedback": {
+          "en": "Check algebraic solving.",
+          "ms": "Semak penyelesaian algebra."
+        }
+      }
+    ],
+    "answer": 14,
+    "hints": {
+      "en": [
+        "Area = ½ × (t + t - 4) × 20 = 10(2t - 4) = 240."
+      ],
+      "ms": [
+        "Luas = ½ × (t + t - 4) × 20 = 10(2t - 4) = 240."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "10(2t - 4) = 240 → 2t - 4 = 24 → 2t = 28 → t = 14 s."
+      ],
+      "ms": [
+        "10(2t - 4) = 240 → 2t - 4 = 24 → 2t = 28 → t = 14 s."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "algebraic_graph_solve"
+    ]
+  },
+  {
+    "id": "F4-C07-H02",
+    "chapter": 7,
+    "topic": "solve_max_speed_from_distance",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A delivery drone accelerates to maximum speed v in 5 s, cruises for 15 s, and lands in 10 s (total time 30 s). If total distance is 500 m, find the maximum speed v.",
+      "ms": "Sebuah dron penghantaran memecut ke laju maksimum v dalam 5 s, terbang malar selama 15 s, dan mendarat dalam 10 s (jumlah masa 30 s). Jika jumlah jarak ialah 500 m, cari laju maksimum v."
+    },
+    "equation": "½(15 + 30)v = 500",
+    "options": [
+      {
+        "value": 22.22,
+        "text": "22.2 m/s",
+        "feedback": {
+          "en": "Correct! ½(15 + 30)v = 22.5v = 500 → v = 500 / 22.5 ≈ 22.2 m/s.",
+          "ms": "Tepat! ½(15 + 30)v = 22.5v = 500 → v = 500 / 22.5 ≈ 22.2 m/s."
+        }
+      },
+      {
+        "value": 25,
+        "text": "25 m/s",
+        "feedback": {
+          "en": "22.5 × 25 = 562.5 m ≠ 500 m.",
+          "ms": "22.5 × 25 = 562.5 m ≠ 500 m."
+        }
+      },
+      {
+        "value": 20,
+        "text": "20 m/s",
+        "feedback": {
+          "en": "22.5 × 20 = 450 m ≠ 500 m.",
+          "ms": "22.5 × 20 = 450 m ≠ 500 m."
+        }
+      },
+      {
+        "value": 16.67,
+        "text": "16.7 m/s",
+        "feedback": {
+          "en": "Check trapezium dimensions.",
+          "ms": "Semak dimensi trapezium."
+        }
+      }
+    ],
+    "answer": 22.22,
+    "hints": {
+      "en": [
+        "Parallel sides are 15 s and 30 s. Area = ½(15 + 30)v = 500."
+      ],
+      "ms": [
+        "Sisi selari ialah 15 s dan 30 s. Luas = ½(15 + 30)v = 500."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "22.5v = 500 → v = 22.22 m/s."
+      ],
+      "ms": [
+        "22.5v = 500 → v = 22.22 m/s."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "solve_max_speed"
+    ]
+  },
+  {
+    "id": "F4-C07-H03",
+    "chapter": 7,
+    "topic": "two_vehicle_encounter",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Rider A departs from Town P towards Town Q (60 km apart) at 40 km/h. At the same time, Rider B departs from Q towards P at 20 km/h. After how many hours do they meet?",
+      "ms": "Penunggang A bertolak dari Bandar P ke Bandar Q (jarak 60 km) dengan laju 40 km/j. Pada masa yang sama, Penunggang B bertolak dari Q ke P dengan laju 20 km/j. Selepas berapa jamkah mereka bertemu?"
+    },
+    "equation": "40t + 20t = 60",
+    "options": [
+      {
+        "value": 1,
+        "text": "1 hour",
+        "feedback": {
+          "en": "Correct! Relative speed = 40 + 20 = 60 km/h. Time = 60 / 60 = 1 hour.",
+          "ms": "Tepat! Laju relatif = 40 + 20 = 60 km/j. Masa = 60 / 60 = 1 jam."
+        }
+      },
+      {
+        "value": 1.5,
+        "text": "1.5 hours",
+        "feedback": {
+          "en": "In 1.5 h, total distance covered is 60 × 1.5 = 90 km > 60 km.",
+          "ms": "Dalam 1.5 j, jumlah jarak ialah 90 km > 60 km."
+        }
+      },
+      {
+        "value": 2,
+        "text": "2 hours",
+        "feedback": {
+          "en": "In 2 hours they would have passed each other long ago.",
+          "ms": "Dalam 2 jam mereka telah lama berselisih."
+        }
+      },
+      {
+        "value": 0.75,
+        "text": "0.75 hours (45 min)",
+        "feedback": {
+          "en": "At 0.75 h, distance covered is 45 km < 60 km.",
+          "ms": "Pada 0.75 j, jarak dilalui ialah 45 km < 60 km."
+        }
+      }
+    ],
+    "answer": 1,
+    "hints": {
+      "en": [
+        "Since they travel towards each other, combined speed is 40 + 20 = 60 km/h."
+      ],
+      "ms": [
+        "Oleh sebab bergerak ke arah satu sama lain, laju gabungan ialah 40 + 20 = 60 km/j."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "t = 60 / (40 + 20) = 1 hour."
+      ],
+      "ms": [
+        "t = 60 / (40 + 20) = 1 jam."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "relative_motion"
+    ]
+  },
+  {
+    "id": "F4-C07-H04",
+    "chapter": 7,
+    "topic": "multi_stage_average_speed",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A delivery trip has 3 stages: accelerates for 4 s (covers 24 m), cruises for 10 s (covers 120 m), and decelerates for 6 s (covers 36 m). What is the average speed for the ENTIRE 20-second trip?",
+      "ms": "Perjalanan penghantaran mempunyai 3 fasa: memecut 4 s (jarak 24 m), laju malar 10 s (jarak 120 m), dan nyahpecut 6 s (jarak 36 m). Apakah laju purata bagi KESELURUHAN perjalanan 20 saat tersebut?"
+    },
+    "equation": "Total Distance / Total Time",
+    "options": [
+      {
+        "value": 9,
+        "text": "9 m/s",
+        "feedback": {
+          "en": "Correct! Total distance = 24 + 120 + 36 = 180 m. Total time = 4 + 10 + 6 = 20 s. Speed = 180 / 20 = 9 m/s.",
+          "ms": "Tepat! Jumlah jarak = 180 m. Jumlah masa = 20 s. Laju purata = 180 / 20 = 9 m/s."
+        }
+      },
+      {
+        "value": 12,
+        "text": "12 m/s",
+        "feedback": {
+          "en": "12 m/s is the cruising speed, not the average speed.",
+          "ms": "12 m/s ialah laju malar, bukan laju purata."
+        }
+      },
+      {
+        "value": 8,
+        "text": "8 m/s",
+        "feedback": {
+          "en": "Check addition: 24 + 120 + 36 = 180 m.",
+          "ms": "Semak penambahan: 24 + 120 + 36 = 180 m."
+        }
+      },
+      {
+        "value": 10,
+        "text": "10 m/s",
+        "feedback": {
+          "en": "180 / 20 = 9, not 10.",
+          "ms": "180 / 20 = 9, bukan 10."
+        }
+      }
+    ],
+    "answer": 9,
+    "hints": {
+      "en": [
+        "Average speed = Total Distance ÷ Total Time = (24 + 120 + 36) / (4 + 10 + 6)."
+      ],
+      "ms": [
+        "Laju purata = Jumlah Jarak ÷ Jumlah Masa = (24 + 120 + 36) / (4 + 10 + 6)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "180 m / 20 s = 9 m/s."
+      ],
+      "ms": [
+        "180 m / 20 s = 9 m/s."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "multi_stage_average_speed"
+    ]
+  },
+  {
+    "id": "F4-C07-H05",
+    "chapter": 7,
+    "topic": "comparative_motion_analysis",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Vehicle X reaches 30 m/s in 6 s. Vehicle Y reaches 24 m/s in 4 s. Which vehicle has the GREATER acceleration?",
+      "ms": "Kenderaan X mencapai 30 m/s dalam 6 s. Kenderaan Y mencapai 24 m/s dalam 4 s. Kenderaan manakah yang mempunyai pecutan LEBIH TINGGI?"
+    },
+    "equation": "a_X = 30/6, a_Y = 24/4",
+    "options": [
+      {
+        "value": "Vehicle Y",
+        "text": "Vehicle Y (6 m/s² vs 5 m/s²)",
+        "feedback": {
+          "en": "Correct! a_Y = 24 / 4 = 6 m/s², while a_X = 30 / 6 = 5 m/s².",
+          "ms": "Tepat! a_Y = 24 / 4 = 6 m/s², manakala a_X = 30 / 6 = 5 m/s²."
+        }
+      },
+      {
+        "value": "Vehicle X",
+        "text": "Vehicle X (5 m/s² vs 6 m/s²)",
+        "feedback": {
+          "en": "Vehicle X has higher final speed, but lower acceleration rate.",
+          "ms": "Kenderaan X mencapai laju akhir lebih tinggi tetapi pecutannya lebih rendah."
+        }
+      },
+      {
+        "value": "Equal",
+        "text": "Both have the same acceleration",
+        "feedback": {
+          "en": "5 m/s² ≠ 6 m/s².",
+          "ms": "5 m/s² ≠ 6 m/s²."
+        }
+      },
+      {
+        "value": "Cannot determine",
+        "text": "Cannot be determined",
+        "feedback": {
+          "en": "Both acceleration rates can be calculated precisely.",
+          "ms": "Kedua-dua kadar pecutan boleh dihitung dengan tepat."
+        }
+      }
+    ],
+    "answer": "Vehicle Y",
+    "hints": {
+      "en": [
+        "Calculate acceleration for each: a_X = 30 / 6 = 5, a_Y = 24 / 4 = 6."
+      ],
+      "ms": [
+        "Kira pecutan masing-masing: a_X = 30 / 6 = 5, a_Y = 24 / 4 = 6."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "a_X = 5 m/s², a_Y = 6 m/s². Vehicle Y has greater acceleration."
+      ],
+      "ms": [
+        "a_X = 5 m/s², a_Y = 6 m/s². Kenderaan Y mempunyai pecutan lebih tinggi."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "comparative_acceleration"
+    ]
+  },
+  {
+    "id": "F4-C07-E06",
+    "chapter": 7,
+    "topic": "distance_time_stationary",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "kitchen",
+    "question": {
+      "en": "In a distance-time graph of Mama's delivery bike, what does a horizontal straight line indicate?",
+      "ms": "Dalam graf jarak-masa bagi motosikal penghantaran Mama, apakah yang ditunjukkan oleh garis lurus mengufuk?"
+    },
+    "equation": "Gradient = 0 => Speed = 0",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "The bike is stationary (at rest)",
+          "ms": "Motosikal berada dalam keadaan pegun (berhenti)"
+        },
+        "feedback": {
+          "en": "Correct! Distance does not change over time, so speed is zero.",
+          "ms": "Tepat! Jarak tidak berubah mengikut masa, jadi laju adalah sifar."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "The bike is moving at constant high speed",
+          "ms": "Motosikal bergerak pada laju seragam yang tinggi"
+        },
+        "feedback": {
+          "en": "Constant speed is represented by an inclined line.",
+          "ms": "Laju seragam diwakili oleh garis condong."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "The bike is accelerating rapidly",
+          "ms": "Motosikal sedang memecut dengan laju"
+        },
+        "feedback": {
+          "en": "Acceleration would be a curve on a distance-time graph.",
+          "ms": "Pecutan ialah lengkung pada graf jarak-masa."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "The bike is moving backwards",
+          "ms": "Motosikal bergerak mengundur"
+        },
+        "feedback": {
+          "en": "Returning is represented by a downward slope.",
+          "ms": "Kembali diwakili oleh kecerunan menurun."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Gradient of distance-time graph is speed. A flat horizontal line has gradient 0."
+      ],
+      "ms": [
+        "Kecerunan graf jarak-masa ialah laju. Garis mengufuk mempunyai kecerunan 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A horizontal line means distance remains constant as time passes; the vehicle is stationary."
+      ],
+      "ms": [
+        "Garis mengufuk bermakna jarak tidak berubah sepanjang masa; kenderaan adalah pegun."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-E07",
+    "chapter": 7,
+    "topic": "speed_from_distance_time",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "A scooter travels 60 km in 1.5 hours at a uniform speed. What is its speed?",
+      "ms": "Sebuah skuter bergerak sejauh 60 km dalam masa 1.5 jam pada laju seragam. Apakah lajunya?"
+    },
+    "equation": "Speed = Distance / Time",
+    "options": [
+      {
+        "value": "40 km/h",
+        "text": "40 km/h",
+        "feedback": {
+          "en": "Correct! Speed = 60 / 1.5 = 40 km/h.",
+          "ms": "Tepat! Laju = 60 / 1.5 = 40 km/j."
+        }
+      },
+      {
+        "value": "45 km/h",
+        "text": "45 km/h",
+        "feedback": {
+          "en": "60 / 1.5 = 40, not 45.",
+          "ms": "60 / 1.5 = 40, bukan 45."
+        }
+      },
+      {
+        "value": "90 km/h",
+        "text": "90 km/h",
+        "feedback": {
+          "en": "Do not multiply distance and time.",
+          "ms": "Jangan darabkan jarak dan masa."
+        }
+      },
+      {
+        "value": "30 km/h",
+        "text": "30 km/h",
+        "feedback": {
+          "en": "60 / 2 = 30, but time is 1.5 hours.",
+          "ms": "60 / 2 = 30, tetapi masa ialah 1.5 jam."
+        }
+      }
+    ],
+    "answer": "40 km/h",
+    "hints": {
+      "en": [
+        "Speed = Distance ÷ Time = 60 ÷ 1.5."
+      ],
+      "ms": [
+        "Laju = Jarak ÷ Masa = 60 ÷ 1.5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Speed = Distance / Time = 60 km / 1.5 h = 40 km/h."
+      ],
+      "ms": [
+        "Laju = Jarak / Masa = 60 km / 1.5 j = 40 km/j."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-E08",
+    "chapter": 7,
+    "topic": "speed_time_area_distance",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "In a speed-time graph, what does the area under the graph represent?",
+      "ms": "Dalam graf laju-masa, apakah yang diwakili oleh luas di bawah graf?"
+    },
+    "equation": "Area under v-t graph = Distance",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Total distance travelled",
+          "ms": "Jumlah jarak yang dilalui"
+        },
+        "feedback": {
+          "en": "Correct! Area under a speed-time graph equals distance travelled.",
+          "ms": "Tepat! Luas di bawah graf laju-masa mewakili jarak perjalanan."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Acceleration",
+          "ms": "Pecutan"
+        },
+        "feedback": {
+          "en": "Acceleration is the gradient of the speed-time graph.",
+          "ms": "Pecutan ialah kecerunan graf laju-masa."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Average speed",
+          "ms": "Laju purata"
+        },
+        "feedback": {
+          "en": "Average speed = Total distance / Total time.",
+          "ms": "Laju purata = Jumlah jarak / Jumlah masa."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Rate of change of distance",
+          "ms": "Kadar perubahan jarak"
+        },
+        "feedback": {
+          "en": "Rate of change of distance is speed.",
+          "ms": "Kadar perubahan jarak ialah laju."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Units: (m/s) * s = metres (distance)."
+      ],
+      "ms": [
+        "Unit: (m/s) * s = meter (jarak)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The area under any speed-time graph represents the total distance travelled."
+      ],
+      "ms": [
+        "Luas di bawah sebarang graf laju-masa mewakili jumlah jarak yang dilalui."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-E09",
+    "chapter": 7,
+    "topic": "acceleration_formula",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "A motorcycle increases its speed from 10 m/s to 25 m/s in 5 seconds. What is its acceleration?",
+      "ms": "Sebuah motosikal meningkatkan lajunya daripada 10 m/s kepada 25 m/s dalam masa 5 saat. Apakah pecutannya?"
+    },
+    "equation": "a = (v - u) / t",
+    "options": [
+      {
+        "value": "3 m/s²",
+        "text": "3 m/s²",
+        "feedback": {
+          "en": "Correct! a = (25 - 10) / 5 = 15 / 5 = 3 m/s².",
+          "ms": "Tepat! a = (25 - 10) / 5 = 15 / 5 = 3 m/s²."
+        }
+      },
+      {
+        "value": "5 m/s²",
+        "text": "5 m/s²",
+        "feedback": {
+          "en": "25 / 5 = 5, but initial speed was 10 m/s.",
+          "ms": "25 / 5 = 5, tetapi laju awal ialah 10 m/s."
+        }
+      },
+      {
+        "value": "7 m/s²",
+        "text": "7 m/s²",
+        "feedback": {
+          "en": "Check your calculation: (25 - 10) / 5.",
+          "ms": "Semak pengiraan: (25 - 10) / 5."
+        }
+      },
+      {
+        "value": "15 m/s²",
+        "text": "15 m/s²",
+        "feedback": {
+          "en": "15 is the change in speed, divide by time 5.",
+          "ms": "15 ialah perubahan laju, bahagikan dengan masa 5."
+        }
+      }
+    ],
+    "answer": "3 m/s²",
+    "hints": {
+      "en": [
+        "Acceleration = (Final speed - Initial speed) / Time."
+      ],
+      "ms": [
+        "Pecutan = (Laju akhir - Laju awal) / Masa."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "a = (25 - 10) / 5 = 15 / 5 = 3 m/s²."
+      ],
+      "ms": [
+        "a = (25 - 10) / 5 = 15 / 5 = 3 m/s²."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-E10",
+    "chapter": 7,
+    "topic": "speed_time_constant_speed",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "In a speed-time graph, what does a horizontal straight line represent?",
+      "ms": "Dalam graf laju-masa, apakah yang diwakili oleh garis lurus mengufuk?"
+    },
+    "equation": "Speed = constant, acceleration = 0",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Uniform (constant) speed, zero acceleration",
+          "ms": "Laju seragam (malar), sifar pecutan"
+        },
+        "feedback": {
+          "en": "Correct! Speed does not change, meaning acceleration is zero.",
+          "ms": "Tepat! Laju tidak berubah, bermakna pecutan ialah sifar."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "The vehicle is stationary",
+          "ms": "Kenderaan berada dalam keadaan pegun"
+        },
+        "feedback": {
+          "en": "Only stationary if speed is 0. A non-zero flat line is constant speed.",
+          "ms": "Hanya pegun jika laju = 0. Garis mendatar bukan sifar ialah laju seragam."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Constant acceleration",
+          "ms": "Pecutan malar"
+        },
+        "feedback": {
+          "en": "Constant acceleration is represented by an inclined line.",
+          "ms": "Pecutan malar diwakili oleh garis condong."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Deceleration",
+          "ms": "Nyahpecutan"
+        },
+        "feedback": {
+          "en": "Deceleration is a downward sloping line.",
+          "ms": "Nyahpecutan ialah garis cerun ke bawah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "On a speed-time graph, a flat horizontal line means speed is constant."
+      ],
+      "ms": [
+        "Pada graf laju-masa, garis mendatar bermakna laju adalah malar."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A horizontal line indicates the speed remains constant over that duration, so acceleration = 0."
+      ],
+      "ms": [
+        "Garis mengufuk menunjukkan laju kekal malar dalam tempoh tersebut, maka pecutan = 0."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-M06",
+    "chapter": 7,
+    "topic": "average_speed_calculation",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Delivery rider Ah Ming rides 12 km in 20 minutes to deliver food, stops for 10 minutes at the warung, and rides 8 km in 10 minutes. What is his average speed for the entire journey in km/h?",
+      "ms": "Penghantar makanan Ah Ming menunggang sejauh 12 km dalam masa 20 minit untuk menghantar makanan, berhenti selama 10 minit di warung, dan menunggang 8 km dalam 10 minit. Apakah laju puratanya untuk keseluruhan perjalanan dalam km/j?"
+    },
+    "equation": "Average speed = Total distance / Total time",
+    "options": [
+      {
+        "value": "30 km/h",
+        "text": "30 km/h",
+        "feedback": {
+          "en": "Correct! Total distance = 12 + 8 = 20 km. Total time = 20 + 10 + 10 = 40 min = 2/3 h. Speed = 20 / (2/3) = 30 km/h.",
+          "ms": "Tepat! Jumlah jarak = 20 km. Jumlah masa = 40 min = 2/3 jam. Laju purata = 20 / (2/3) = 30 km/j."
+        }
+      },
+      {
+        "value": "40 km/h",
+        "text": "40 km/h",
+        "feedback": {
+          "en": "Don't omit the 10-minute rest time from the total time!",
+          "ms": "Jangan abaikan masa rehat 10 minit daripada jumlah masa!"
+        }
+      },
+      {
+        "value": "25 km/h",
+        "text": "25 km/h",
+        "feedback": {
+          "en": "Recalculate 20 km / (40/60) h.",
+          "ms": "Kira semula 20 km / (40/60) jam."
+        }
+      },
+      {
+        "value": "35 km/h",
+        "text": "35 km/h",
+        "feedback": {
+          "en": "Check your conversion of minutes to hours.",
+          "ms": "Semak penukaran minit kepada jam."
+        }
+      }
+    ],
+    "answer": "30 km/h",
+    "hints": {
+      "en": [
+        "Total distance = 20 km. Total time = 40 minutes = 40/60 hours. Divide distance by hours."
+      ],
+      "ms": [
+        "Jumlah jarak = 20 km. Jumlah masa = 40 minit = 40/60 jam. Bahagikan jarak dengan jam."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Total distance = 12 + 8 = 20 km. Total time = 20 + 10 + 10 = 40 min = 40/60 h. Average speed = 20 / (40/60) = 30 km/h."
+      ],
+      "ms": [
+        "Jumlah jarak = 12 + 8 = 20 km. Jumlah masa = 40 min = 40/60 jam. Laju purata = 20 / (2/3) = 30 km/j."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-M07",
+    "chapter": 7,
+    "topic": "speed_time_distance_trapezium",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "A car accelerates from rest to 20 m/s in 4 seconds, travels at 20 m/s for 6 seconds, and decelerates to rest in 2 seconds. What is the total distance travelled?",
+      "ms": "Sebuah kereta memecut dari keadaan pegun sehingga 20 m/s dalam masa 4 saat, bergerak pada 20 m/s selama 6 saat, dan menyahpecut hingga berhenti dalam masa 2 saat. Apakah jumlah jarak yang dilalui?"
+    },
+    "equation": "Area of trapezium = 1/2 * (a + b) * h",
+    "options": [
+      {
+        "value": "180 m",
+        "text": "180 m",
+        "feedback": {
+          "en": "Correct! Total time b = 4 + 6 + 2 = 12 s. Constant speed time a = 6 s. Distance = 1/2 * (6 + 12) * 20 = 1/2 * 18 * 20 = 180 m.",
+          "ms": "Tepat! Jumlah masa b = 12 s. Masa laju seragam a = 6 s. Jarak = 1/2 * (6 + 12) * 20 = 180 m."
+        }
+      },
+      {
+        "value": "240 m",
+        "text": "240 m",
+        "feedback": {
+          "en": "20 * 12 = 240 m would assume 20 m/s for the entire journey.",
+          "ms": "20 * 12 = 240 m mengandaikan laju 20 m/s untuk seluruh perjalanan."
+        }
+      },
+      {
+        "value": "120 m",
+        "text": "120 m",
+        "feedback": {
+          "en": "120 m is only the distance during the constant speed phase.",
+          "ms": "120 m hanya jarak semasa fasa laju seragam."
+        }
+      },
+      {
+        "value": "160 m",
+        "text": "160 m",
+        "feedback": {
+          "en": "Check your trapezium calculation.",
+          "ms": "Semak pengiraan luas trapezium anda."
+        }
+      }
+    ],
+    "answer": "180 m",
+    "hints": {
+      "en": [
+        "Use area of trapezium: 1/2 * (parallel sides sum) * height = 1/2 * (6 + 12) * 20."
+      ],
+      "ms": [
+        "Gunakan luas trapezium: 1/2 * (hasil tambah sisi selari) * tinggi = 1/2 * (6 + 12) * 20."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The graph forms a trapezium with parallel sides 6 s and 12 s, height 20 m/s. Area = 1/2 × (6 + 12) × 20 = 180 m."
+      ],
+      "ms": [
+        "Graf membentuk trapezium dengan sisi selari 6 s dan 12 s, tinggi 20 m/s. Luas = 1/2 × (6 + 12) × 20 = 180 m."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-M08",
+    "chapter": 7,
+    "topic": "deceleration_rate",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "A train travelling at 36 m/s applies its brakes and comes to a complete stop in 12 seconds. What is the rate of deceleration?",
+      "ms": "Sebuah kereta api yang bergerak pada 36 m/s menekan brek dan berhenti sepenuhnya dalam masa 12 saat. Apakah kadar nyahpecutan kereta api itu?"
+    },
+    "equation": "Deceleration = (u - v) / t",
+    "options": [
+      {
+        "value": "3 m/s²",
+        "text": "3 m/s²",
+        "feedback": {
+          "en": "Correct! Deceleration rate is positive 3 m/s² (acceleration is -3 m/s²).",
+          "ms": "Tepat! Kadar nyahpecutan ialah positif 3 m/s² (pecutannya ialah -3 m/s²)."
+        }
+      },
+      {
+        "value": "-3 m/s²",
+        "text": "-3 m/s²",
+        "feedback": {
+          "en": "'Rate of deceleration' is stated as a positive quantity.",
+          "ms": "'Kadar nyahpecutan' dinyatakan sebagai nilai positif."
+        }
+      },
+      {
+        "value": "4 m/s²",
+        "text": "4 m/s²",
+        "feedback": {
+          "en": "36 / 12 = 3.",
+          "ms": "36 / 12 = 3."
+        }
+      },
+      {
+        "value": "2 m/s²",
+        "text": "2 m/s²",
+        "feedback": {
+          "en": "36 / 12 = 3.",
+          "ms": "36 / 12 = 3."
+        }
+      }
+    ],
+    "answer": "3 m/s²",
+    "hints": {
+      "en": [
+        "Change in speed is 36 - 0 = 36 m/s. Time is 12 s."
+      ],
+      "ms": [
+        "Perubahan laju ialah 36 - 0 = 36 m/s. Masa ialah 12 s."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Deceleration = (36 - 0) / 12 = 3 m/s²."
+      ],
+      "ms": [
+        "Kadar nyahpecutan = (36 - 0) / 12 = 3 m/s²."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-M09",
+    "chapter": 7,
+    "topic": "speed_conversion_units",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "Convert a speed of 90 km/h into metres per second (m/s).",
+      "ms": "Tukarkan laju 90 km/j kepada meter sesaat (m/s)."
+    },
+    "equation": "v (m/s) = v (km/h) * (1000 / 3600) = v / 3.6",
+    "options": [
+      {
+        "value": "25 m/s",
+        "text": "25 m/s",
+        "feedback": {
+          "en": "Correct! 90 * (1000 / 3600) = 90 / 3.6 = 25 m/s.",
+          "ms": "Tepat! 90 * (1000 / 3600) = 90 / 3.6 = 25 m/s."
+        }
+      },
+      {
+        "value": "30 m/s",
+        "text": "30 m/s",
+        "feedback": {
+          "en": "108 km/h is 30 m/s.",
+          "ms": "108 km/j ialah 30 m/s."
+        }
+      },
+      {
+        "value": "20 m/s",
+        "text": "20 m/s",
+        "feedback": {
+          "en": "72 km/h is 20 m/s.",
+          "ms": "72 km/j ialah 20 m/s."
+        }
+      },
+      {
+        "value": "15 m/s",
+        "text": "15 m/s",
+        "feedback": {
+          "en": "54 km/h is 15 m/s.",
+          "ms": "54 km/j ialah 15 m/s."
+        }
+      }
+    ],
+    "answer": "25 m/s",
+    "hints": {
+      "en": [
+        "Multiply by 1000 and divide by 3600 (or divide by 3.6)."
+      ],
+      "ms": [
+        "Darab dengan 1000 dan bahagi dengan 3600 (atau bahagi 3.6)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "90 km/h = (90 × 1000 m) / (3600 s) = 90000 / 3600 = 25 m/s."
+      ],
+      "ms": [
+        "90 km/j = (90 × 1000 m) / (3600 s) = 25 m/s."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-M10",
+    "chapter": 7,
+    "topic": "distance_time_interpretation",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "A cyclist's distance-time graph shows: (0, 0) to (2, 30) and then (2, 30) to (5, 30). What was the cyclist's speed between t = 2 hours and t = 5 hours?",
+      "ms": "Graf jarak-masa seorang penunggang basikal menunjukkan: (0, 0) ke (2, 30) dan kemudian (2, 30) ke (5, 30). Apakah laju penunggang basikal antara t = 2 jam dan t = 5 jam?"
+    },
+    "equation": "Gradient = (30 - 30) / (5 - 2) = 0",
+    "options": [
+      {
+        "value": "0 km/h",
+        "text": "0 km/h",
+        "feedback": {
+          "en": "Correct! Distance remains 30 km between t = 2 and t = 5, so speed is 0 km/h.",
+          "ms": "Tepat! Jarak kekal 30 km antara t = 2 dan t = 5, jadi laju ialah 0 km/j."
+        }
+      },
+      {
+        "value": "10 km/h",
+        "text": "10 km/h",
+        "feedback": {
+          "en": "30 / 3 = 10 would be if distance changed by 30 km.",
+          "ms": "30 / 3 = 10 jika jarak berubah 30 km."
+        }
+      },
+      {
+        "value": "15 km/h",
+        "text": "15 km/h",
+        "feedback": {
+          "en": "15 km/h was the speed in the first 2 hours (30/2).",
+          "ms": "15 km/j ialah laju dalam 2 jam pertama (30/2)."
+        }
+      },
+      {
+        "value": "6 km/h",
+        "text": "6 km/h",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "0 km/h",
+    "hints": {
+      "en": [
+        "Distance at t = 2 is 30 km, distance at t = 5 is still 30 km."
+      ],
+      "ms": [
+        "Jarak pada t = 2 ialah 30 km, jarak pada t = 5 masih 30 km."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Gradient = (30 - 30) / (5 - 2) = 0 km/h. The cyclist was resting."
+      ],
+      "ms": [
+        "Kecerunan = (30 - 30) / (5 - 2) = 0 km/j. Penunggang basikal sedang berehat."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-H06",
+    "chapter": 7,
+    "topic": "speed_time_find_unknown_t",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "A speed-time graph starts at (0, 0), increases linearly to (8, 24), remains at speed 24 m/s from t = 8 to t = T, and decelerates to rest at (T + 4, 0). If the total distance travelled is 480 m, find the value of T.",
+      "ms": "Satu graf laju-masa bermula pada (0, 0), meningkat secara linear ke (8, 24), kekal pada laju 24 m/s dari t = 8 hingga t = T, dan menyahpecut hingga berhenti pada (T + 4, 0). Jika jumlah jarak yang dilalui ialah 480 m, cari nilai T."
+    },
+    "equation": "Area = 1/2 * [ (T - 8) + (T + 4) ] * 24 = 480",
+    "options": [
+      {
+        "value": "22",
+        "text": "T = 22",
+        "feedback": {
+          "en": "Correct! 12 * (2T - 4) = 480 => 2T - 4 = 40 => 2T = 44 => T = 22.",
+          "ms": "Tepat! 12 * (2T - 4) = 480 => 2T - 4 = 40 => 2T = 44 => T = 22."
+        }
+      },
+      {
+        "value": "20",
+        "text": "T = 20",
+        "feedback": {
+          "en": "For T = 20: 12 * (40 - 4) = 12 * 36 = 432 != 480.",
+          "ms": "Bagi T = 20: 12 * 36 = 432 != 480."
+        }
+      },
+      {
+        "value": "24",
+        "text": "T = 24",
+        "feedback": {
+          "en": "For T = 24: 12 * 44 = 528 != 480.",
+          "ms": "Bagi T = 24: 12 * 44 = 528 != 480."
+        }
+      },
+      {
+        "value": "18",
+        "text": "T = 18",
+        "feedback": {
+          "en": "Recalculate the trapezium area equation.",
+          "ms": "Kira semula persamaan luas trapezium."
+        }
+      }
+    ],
+    "answer": "22",
+    "hints": {
+      "en": [
+        "Trapezium parallel sides: top is (T - 8), bottom is (T + 4). 1/2 * (2T - 4) * 24 = 480."
+      ],
+      "ms": [
+        "Sisi selari trapezium: atas ialah (T - 8), bawah ialah (T + 4). 1/2 * (2T - 4) * 24 = 480."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "1/2 × [(T - 8) + (T + 4)] × 24 = 480 => 12 × (2T - 4) = 480 => 2T - 4 = 40 => 2T = 44 => T = 22."
+      ],
+      "ms": [
+        "1/2 × [(T - 8) + (T + 4)] × 24 = 480 => 12 × (2T - 4) = 480 => 2T - 4 = 40 => 2T = 44 => T = 22."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-H07",
+    "chapter": 7,
+    "topic": "speed_time_find_unknown_v",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "A motorcycle travels from rest to speed v m/s in 6 seconds, and continues at v m/s for another 14 seconds. If the average speed for the entire 20 seconds is 17 m/s, calculate the value of v.",
+      "ms": "Sebuah motosikal bergerak dari keadaan pegun ke laju v m/s dalam masa 6 saat, dan meneruskan perjalanan pada laju v m/s selama 14 saat lagi. Jika laju purata bagi keseluruhan 20 saat itu ialah 17 m/s, hitung nilai v."
+    },
+    "equation": "Total distance = Average speed * Total time = 17 * 20 = 340 m",
+    "options": [
+      {
+        "value": "20 m/s",
+        "text": "20 m/s",
+        "feedback": {
+          "en": "Correct! Distance = 1/2(6)(v) + 14v = 3v + 14v = 17v. Total distance = 17 * 20 = 340 m. 17v = 340 => v = 20 m/s.",
+          "ms": "Tepat! Jarak = 1/2(6)(v) + 14v = 17v. Jumlah jarak = 17 * 20 = 340 m. 17v = 340 => v = 20 m/s."
+        }
+      },
+      {
+        "value": "22 m/s",
+        "text": "22 m/s",
+        "feedback": {
+          "en": "17 * 22 = 374 != 340.",
+          "ms": "17 * 22 = 374 != 340."
+        }
+      },
+      {
+        "value": "18 m/s",
+        "text": "18 m/s",
+        "feedback": {
+          "en": "17 * 18 = 306 != 340.",
+          "ms": "17 * 18 = 306 != 340."
+        }
+      },
+      {
+        "value": "25 m/s",
+        "text": "25 m/s",
+        "feedback": {
+          "en": "17 * 25 = 425 != 340.",
+          "ms": "17 * 25 = 425 != 340."
+        }
+      }
+    ],
+    "answer": "20 m/s",
+    "hints": {
+      "en": [
+        "Total distance = 17 × 20 = 340 m. Also distance = area under graph = 3v + 14v = 17v."
+      ],
+      "ms": [
+        "Jumlah jarak = 17 × 20 = 340 m. Jarak juga = luas di bawah graf = 3v + 14v = 17v."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Total distance = 17 × 20 = 340 m. Triangle area = 1/2(6)v = 3v. Rectangle area = 14v. Total area = 17v = 340 => v = 20 m/s."
+      ],
+      "ms": [
+        "Jumlah jarak = 17 × 20 = 340 m. Luas segi tiga = 3v. Luas segi empat tepat = 14v. Jumlah luas = 17v = 340 => v = 20 m/s."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-H08",
+    "chapter": 7,
+    "topic": "speed_time_comparison_two_vehicles",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "Vehicle A and Vehicle B start at the same point. Vehicle A moves at a constant speed of 15 m/s. Vehicle B accelerates from rest at 3 m/s². At what time t will Vehicle B catch up with Vehicle A?",
+      "ms": "Kenderaan A dan Kenderaan B bertolak dari titik yang sama. Kenderaan A bergerak pada laju seragam 15 m/s. Kenderaan B memecut dari keadaan pegun pada 3 m/s². Pada masa t keberapakah Kenderaan B akan mengejar Kenderaan A?"
+    },
+    "equation": "s_A = 15t, s_B = 1/2 * 3 * t²",
+    "options": [
+      {
+        "value": "10 s",
+        "text": "10 s",
+        "feedback": {
+          "en": "Correct! 15t = 1/2 * 3 * t² => 15 = 1.5t => t = 10 seconds.",
+          "ms": "Tepat! 15t = 1/2 * 3 * t² => 15 = 1.5t => t = 10 saat."
+        }
+      },
+      {
+        "value": "5 s",
+        "text": "5 s",
+        "feedback": {
+          "en": "At t = 5: s_A = 75 m, s_B = 1/2 * 3 * 25 = 37.5 m.",
+          "ms": "Pada t = 5: s_A = 75 m, s_B = 37.5 m."
+        }
+      },
+      {
+        "value": "12 s",
+        "text": "12 s",
+        "feedback": {
+          "en": "15 / 1.5 = 10, not 12.",
+          "ms": "15 / 1.5 = 10, bukan 12."
+        }
+      },
+      {
+        "value": "15 s",
+        "text": "15 s",
+        "feedback": {
+          "en": "At t = 15: s_B would be far ahead.",
+          "ms": "Pada t = 15: s_B sudah jauh ke hadapan."
+        }
+      }
+    ],
+    "answer": "10 s",
+    "hints": {
+      "en": [
+        "Equate distances: Distance A = Distance B => 15t = 1.5t²."
+      ],
+      "ms": [
+        "Samakan jarak: Jarak A = Jarak B => 15t = 1.5t²."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Distance A = 15t. Distance B = 1/2(3)t² = 1.5t². When they meet: 15t = 1.5t² => t = 10 s."
+      ],
+      "ms": [
+        "Jarak A = 15t. Jarak B = 1.5t². Apabila bertemu: 15t = 1.5t² => t = 10 saat."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-H09",
+    "chapter": 7,
+    "topic": "distance_time_two_slopes",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "kitchen",
+    "question": {
+      "en": "A food delivery rider travels from Town P to Town Q (45 km away) at 60 km/h, and immediately returns from Q to P at 40 km/h. What is the average speed for the whole round trip?",
+      "ms": "Seorang penghantar makanan bergerak dari Bandar P ke Bandar Q (jarak 45 km) pada laju 60 km/j, dan segera berpatah balik dari Q ke P pada laju 40 km/j. Apakah laju purata bagi keseluruhan perjalanan pergi dan balik?"
+    },
+    "equation": "v_avg = Total distance / Total time",
+    "options": [
+      {
+        "value": "48 km/h",
+        "text": "48 km/h",
+        "feedback": {
+          "en": "Correct! t1 = 45/60 = 0.75 h, t2 = 45/40 = 1.125 h. Total t = 1.875 h. Total d = 90 km. Average speed = 90 / 1.875 = 48 km/h.",
+          "ms": "Tepat! t1 = 0.75 j, t2 = 1.125 j. Jumlah masa = 1.875 j. Jumlah jarak = 90 km. Laju purata = 90 / 1.875 = 48 km/j."
+        }
+      },
+      {
+        "value": "50 km/h",
+        "text": "50 km/h",
+        "feedback": {
+          "en": "Average speed is NOT the simple average of speeds (60+40)/2!",
+          "ms": "Laju purata BUKAN purata mudah (60+40)/2!"
+        }
+      },
+      {
+        "value": "45 km/h",
+        "text": "45 km/h",
+        "feedback": {
+          "en": "Recalculate 90 / (0.75 + 1.125).",
+          "ms": "Kira semula 90 / (0.75 + 1.125)."
+        }
+      },
+      {
+        "value": "52 km/h",
+        "text": "52 km/h",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "48 km/h",
+    "hints": {
+      "en": [
+        "Do NOT compute (60 + 40) / 2! Compute total distance (90 km) ÷ total time (1.875 h)."
+      ],
+      "ms": [
+        "JANGAN hitung (60 + 40) / 2! Hitung jumlah jarak (90 km) ÷ jumlah masa (1.875 j)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Harmonic mean: Average speed = 2(60)(40) / (60 + 40) = 4800 / 100 = 48 km/h."
+      ],
+      "ms": [
+        "Min harmonik: Laju purata = 2(60)(40) / (60 + 40) = 4800 / 100 = 48 km/j."
+      ]
+    }
+  },
+  {
+    "id": "F4-C07-H10",
+    "chapter": 7,
+    "topic": "speed_time_complex_piecewise",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M07-01",
+    "context": "general",
+    "question": {
+      "en": "A particle moves with speed v(t) = 4t for 0 ≤ t ≤ 5, constant speed 20 for 5 < t ≤ 15, and decelerates uniformly to rest at t = 20. Find the ratio of the distance travelled in the first 5 seconds to the distance travelled in the last 5 seconds.",
+      "ms": "Suatu zarah bergerak dengan laju v(t) = 4t untuk 0 ≤ t ≤ 5, laju seragam 20 untuk 5 < t ≤ 15, dan menyahpecut seragam hingga berhenti pada t = 20. Cari nisbah jarak yang dilalui dalam 5 saat pertama kepada jarak yang dilalui dalam 5 saat terakhir."
+    },
+    "equation": "d1 = 1/2 * 5 * 20 = 50 m, d3 = 1/2 * 5 * 20 = 50 m",
+    "options": [
+      {
+        "value": "1 : 1",
+        "text": "1 : 1",
+        "feedback": {
+          "en": "Correct! Distance in first 5s = 1/2(5)(20) = 50 m. Distance in last 5s (t=15 to 20) = 1/2(5)(20) = 50 m. Ratio is 50 : 50 = 1 : 1.",
+          "ms": "Tepat! Jarak 5 saat pertama = 1/2(5)(20) = 50 m. Jarak 5 saat terakhir = 1/2(5)(20) = 50 m. Nisbah ialah 1 : 1."
+        }
+      },
+      {
+        "value": "1 : 2",
+        "text": "1 : 2",
+        "feedback": {
+          "en": "Both triangles have base 5 and height 20.",
+          "ms": "Kedua-dua segi tiga mempunyai tapak 5 dan tinggi 20."
+        }
+      },
+      {
+        "value": "2 : 1",
+        "text": "2 : 1",
+        "feedback": {
+          "en": "The areas are identical.",
+          "ms": "Luas kedua-duanya adalah sama."
+        }
+      },
+      {
+        "value": "1 : 4",
+        "text": "1 : 4",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "1 : 1",
+    "hints": {
+      "en": [
+        "Both the first and last stages are triangles with base 5 seconds and height 20 m/s."
+      ],
+      "ms": [
+        "Kedua-dua peringkat pertama dan terakhir berbentuk segi tiga dengan tapak 5 saat dan tinggi 20 m/s."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Distance in first 5s = 1/2 × 5 × 20 = 50 m. Distance in last 5s = 1/2 × 5 × 20 = 50 m. Ratio = 50 : 50 = 1 : 1."
+      ],
+      "ms": [
+        "Jarak dalam 5 saat pertama = 1/2 × 5 × 20 = 50 m. Jarak dalam 5 saat terakhir = 1/2 × 5 × 20 = 50 m. Nisbah = 1 : 1."
+      ]
+    }
+  }
+]

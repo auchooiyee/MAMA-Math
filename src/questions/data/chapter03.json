@@ -1,0 +1,2171 @@
+[
+  {
+    "id": "F4-C03-E01",
+    "chapter": 3,
+    "topic": "statement_definition",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which of the following sentences is a mathematical statement?",
+      "ms": "Antara ayat berikut, yang manakah merupakan pernyataan matematik?"
+    },
+    "equation": "True or False, not both",
+    "options": [
+      {
+        "value": "A",
+        "text": "12 is a multiple of 3.",
+        "feedback": {
+          "en": "Correct! It is a declarative sentence that is true.",
+          "ms": "Tepat! Ia merupakan ayat penyata yang benar."
+        }
+      },
+      {
+        "value": "B",
+        "text": "Please clean the dining table.",
+        "feedback": {
+          "en": "This is a request/command, not a statement.",
+          "ms": "Ini ialah permintaan/arahan, bukan pernyataan."
+        }
+      },
+      {
+        "value": "C",
+        "text": "What is the price of nasi lemak?",
+        "feedback": {
+          "en": "This is a question, not a statement.",
+          "ms": "Ini ialah soalan, bukan pernyataan."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x + 3 = 7",
+        "feedback": {
+          "en": "Without a value for x, truth value cannot be determined (open sentence).",
+          "ms": "Tanpa nilai x, nilai kebenaran tidak dapat ditentukan (ayat terbuka)."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "A statement is a sentence that is either true or false, but not both."
+      ],
+      "ms": [
+        "Pernyataan ialah ayat yang sama ada benar atau palsu, tetapi bukan kedua-duanya."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "\"12 is a multiple of 3\" is a true statement."
+      ],
+      "ms": [
+        "\"12 ialah gandaan bagi 3\" ialah pernyataan yang benar."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "statement_classification"
+    ]
+  },
+  {
+    "id": "F4-C03-E02",
+    "chapter": 3,
+    "topic": "conjunction_and",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Determine the truth value of: \"4 is an even number AND 9 is a prime number\".",
+      "ms": "Tentukan nilai kebenaran bagi: \"4 ialah nombor genap DAN 9 ialah nombor perdana\"."
+    },
+    "equation": "p ∧ q",
+    "options": [
+      {
+        "value": "False",
+        "text": "False",
+        "feedback": {
+          "en": "Correct! \"9 is a prime number\" is false, so the conjunction (AND) is false.",
+          "ms": "Tepat! \"9 ialah nombor perdana\" adalah palsu, maka konjungsi (DAN) adalah palsu."
+        }
+      },
+      {
+        "value": "True",
+        "text": "True",
+        "feedback": {
+          "en": "For \"AND\" to be true, both statements must be true.",
+          "ms": "Untuk \"DAN\" menjadi benar, kedua-dua pernyataan mesti benar."
+        }
+      },
+      {
+        "value": "Neither",
+        "text": "Neither true nor false",
+        "feedback": {
+          "en": "Mathematical statements always have a definite truth value.",
+          "ms": "Pernyataan matematik sentiasa mempunyai nilai kebenaran yang pasti."
+        }
+      },
+      {
+        "value": "Incomplete",
+        "text": "Cannot be determined",
+        "feedback": {
+          "en": "Truth value is determinable.",
+          "ms": "Nilai kebenaran boleh ditentukan."
+        }
+      }
+    ],
+    "answer": "False",
+    "hints": {
+      "en": [
+        "A conjunction \"p AND q\" is true only when both p and q are true."
+      ],
+      "ms": [
+        "Konjungsi \"p DAN q\" benar hanya apabila kedua-dua p dan q adalah benar."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "p: \"4 is even\" (True). q: \"9 is prime\" (False). True AND False = False."
+      ],
+      "ms": [
+        "p: \"4 nombor genap\" (Benar). q: \"9 nombor perdana\" (Palsu). Benar DAN Palsu = Palsu."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "truth_value_and"
+    ]
+  },
+  {
+    "id": "F4-C03-E03",
+    "chapter": 3,
+    "topic": "disjunction_or",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Determine the truth value of: \"5 > 8 OR 7 is an odd number\".",
+      "ms": "Tentukan nilai kebenaran bagi: \"5 > 8 ATAU 7 ialah nombor ganjil\"."
+    },
+    "equation": "p ∨ q",
+    "options": [
+      {
+        "value": "True",
+        "text": "True",
+        "feedback": {
+          "en": "Correct! \"7 is an odd number\" is true, so the disjunction (OR) is true.",
+          "ms": "Tepat! \"7 ialah nombor ganjil\" adalah benar, maka disjungsi (ATAU) adalah benar."
+        }
+      },
+      {
+        "value": "False",
+        "text": "False",
+        "feedback": {
+          "en": "For \"OR\", only one component needs to be true.",
+          "ms": "Untuk \"ATAU\", hanya satu komponen perlu benar."
+        }
+      },
+      {
+        "value": "Neither",
+        "text": "Neither true nor false",
+        "feedback": {
+          "en": "Statements always have a truth value.",
+          "ms": "Pernyataan sentiasa mempunyai nilai kebenaran."
+        }
+      },
+      {
+        "value": "Unknown",
+        "text": "Cannot be determined",
+        "feedback": {
+          "en": "Both components have clear truth values.",
+          "ms": "Kedua-dua komponen mempunyai nilai kebenaran yang jelas."
+        }
+      }
+    ],
+    "answer": "True",
+    "hints": {
+      "en": [
+        "A disjunction \"p OR q\" is true if at least one component is true."
+      ],
+      "ms": [
+        "Disjungsi \"p ATAU q\" benar jika sekurang-kurangnya satu komponen adalah benar."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "p: 5 > 8 (False). q: 7 is odd (True). False OR True = True."
+      ],
+      "ms": [
+        "p: 5 > 8 (Palsu). q: 7 ialah ganjil (Benar). Palsu ATAU Benar = Benar."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "truth_value_or"
+    ]
+  },
+  {
+    "id": "F4-C03-E04",
+    "chapter": 3,
+    "topic": "negation_statement",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "What is the negation of the statement: \"15 is a multiple of 5\"?",
+      "ms": "Apakah penafian bagi pernyataan: \"15 ialah gandaan bagi 5\"?"
+    },
+    "equation": "~p",
+    "options": [
+      {
+        "value": "A",
+        "text": "15 is not a multiple of 5.",
+        "feedback": {
+          "en": "Correct! Negation inserts \"not\" or \"it is false that\".",
+          "ms": "Tepat! Penafian memasukkan perkataan \"bukan\" atau \"tidak\"."
+        }
+      },
+      {
+        "value": "B",
+        "text": "5 is a multiple of 15.",
+        "feedback": {
+          "en": "This swaps the numbers, which is not negation.",
+          "ms": "Ini menukar nombor, bukan penafian."
+        }
+      },
+      {
+        "value": "C",
+        "text": "15 is a factor of 5.",
+        "feedback": {
+          "en": "This changes the concept from multiple to factor.",
+          "ms": "Ini menukar konsep daripada gandaan kepada faktor."
+        }
+      },
+      {
+        "value": "D",
+        "text": "All numbers are multiples of 5.",
+        "feedback": {
+          "en": "This changes the scope to a universal quantifier.",
+          "ms": "Ini menukar kepada pengkuantiti sejagat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "The negation of statement p has the opposite truth value (~p)."
+      ],
+      "ms": [
+        "Penafian bagi pernyataan p mempunyai nilai kebenaran yang berlawanan (~p)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "~p: \"15 is not a multiple of 5\" (which is False)."
+      ],
+      "ms": [
+        "~p: \"15 bukan gandaan bagi 5\" (yang bernilai Palsu)."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "negation"
+    ]
+  },
+  {
+    "id": "F4-C03-E05",
+    "chapter": 3,
+    "topic": "implication_antecedent_consequent",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In the implication: \"If x = 3, then 2x = 6\", what is the antecedent?",
+      "ms": "Dalam implikasi: \"Jika x = 3, maka 2x = 6\", apakah anteseden?"
+    },
+    "equation": "p ⇒ q",
+    "options": [
+      {
+        "value": "x = 3",
+        "text": "x = 3",
+        "feedback": {
+          "en": "Correct! The condition following \"If\" is the antecedent.",
+          "ms": "Tepat! Syarat yang mengikuti \"Jika\" ialah anteseden."
+        }
+      },
+      {
+        "value": "2x = 6",
+        "text": "2x = 6",
+        "feedback": {
+          "en": "2x = 6 is the consequent (follows \"then\").",
+          "ms": "2x = 6 ialah akibat (mengikuti \"maka\")."
+        }
+      },
+      {
+        "value": "x = 6",
+        "text": "x = 6",
+        "feedback": {
+          "en": "x = 6 does not appear in the statement.",
+          "ms": "x = 6 tidak terdapat dalam pernyataan."
+        }
+      },
+      {
+        "value": "2x = 3",
+        "text": "2x = 3",
+        "feedback": {
+          "en": "Incorrect statement.",
+          "ms": "Pernyataan tidak tepat."
+        }
+      }
+    ],
+    "answer": "x = 3",
+    "hints": {
+      "en": [
+        "In \"If p, then q\", p is the antecedent and q is the consequent."
+      ],
+      "ms": [
+        "Dalam \"Jika p, maka q\", p ialah anteseden dan q ialah akibat."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Antecedent = x = 3; Consequent = 2x = 6."
+      ],
+      "ms": [
+        "Anteseden = x = 3; Akibat = 2x = 6."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "implication_parts"
+    ]
+  },
+  {
+    "id": "F4-C03-M01",
+    "chapter": 3,
+    "topic": "converse_of_implication",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "What is the CONVERSE of: \"If a polygon is a regular pentagon, then it has 5 equal sides\"?",
+      "ms": "Apakah AKAS bagi: \"Jika sebuah poligon ialah pentagon sekata, maka ia mempunyai 5 sisi yang sama\"?"
+    },
+    "equation": "p ⇒ q → Converse: q ⇒ p",
+    "options": [
+      {
+        "value": "A",
+        "text": "If a polygon has 5 equal sides, then it is a regular pentagon.",
+        "feedback": {
+          "en": "Correct! The converse swaps antecedent and consequent.",
+          "ms": "Tepat! Akas menukar kedudukan anteseden dan akibat."
+        }
+      },
+      {
+        "value": "B",
+        "text": "If a polygon is not a regular pentagon, then it does not have 5 equal sides.",
+        "feedback": {
+          "en": "This is the inverse (~p ⇒ ~q).",
+          "ms": "Ini ialah songsangan (~p ⇒ ~q)."
+        }
+      },
+      {
+        "value": "C",
+        "text": "If a polygon does not have 5 equal sides, then it is not a regular pentagon.",
+        "feedback": {
+          "en": "This is the contrapositive (~q ⇒ ~p).",
+          "ms": "Ini ialah kontrapositif (~q ⇒ ~p)."
+        }
+      },
+      {
+        "value": "D",
+        "text": "A polygon is a regular pentagon if and only if it has 5 equal sides.",
+        "feedback": {
+          "en": "This is a biconditional statement.",
+          "ms": "Ini ialah pernyataan jika dan hanya jika."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Converse swaps p and q: If q, then p."
+      ],
+      "ms": [
+        "Akas menukar p dan q: Jika q, maka p."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Converse of p ⇒ q is q ⇒ p."
+      ],
+      "ms": [
+        "Akas bagi p ⇒ q ialah q ⇒ p."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "converse"
+    ]
+  },
+  {
+    "id": "F4-C03-M02",
+    "chapter": 3,
+    "topic": "inverse_of_implication",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "What is the INVERSE of the implication: \"If x > 0, then x² > 0\"?",
+      "ms": "Apakah SONGSANGAN bagi implikasi: \"Jika x > 0, maka x² > 0\"?"
+    },
+    "equation": "p ⇒ q → Inverse: ~p ⇒ ~q",
+    "options": [
+      {
+        "value": "A",
+        "text": "If x ≤ 0, then x² ≤ 0.",
+        "feedback": {
+          "en": "Correct! The inverse negates both antecedent and consequent (~p ⇒ ~q).",
+          "ms": "Tepat! Songsangan menafikan kedua-dua anteseden dan akibat (~p ⇒ ~q)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "If x² > 0, then x > 0.",
+        "feedback": {
+          "en": "This is the converse (q ⇒ p).",
+          "ms": "Ini ialah akas (q ⇒ p)."
+        }
+      },
+      {
+        "value": "C",
+        "text": "If x² ≤ 0, then x ≤ 0.",
+        "feedback": {
+          "en": "This is the contrapositive (~q ⇒ ~p).",
+          "ms": "Ini ialah kontrapositif (~q ⇒ ~p)."
+        }
+      },
+      {
+        "value": "D",
+        "text": "If x < 0, then x² < 0.",
+        "feedback": {
+          "en": "Negation of > 0 is ≤ 0, including zero.",
+          "ms": "Penafian bagi > 0 ialah ≤ 0, termasuk sifar."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Inverse negates both: ~p ⇒ ~q. Note the negation of > 0 is ≤ 0."
+      ],
+      "ms": [
+        "Songsangan menafikan kedua-duanya: ~p ⇒ ~q. Perhatikan penafian > 0 ialah ≤ 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Inverse: If x ≤ 0, then x² ≤ 0."
+      ],
+      "ms": [
+        "Songsangan: Jika x ≤ 0, maka x² ≤ 0."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "inverse"
+    ]
+  },
+  {
+    "id": "F4-C03-M03",
+    "chapter": 3,
+    "topic": "contrapositive_of_implication",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "What is the CONTRAPOSITIVE of: \"If x is an even number, then x is divisible by 2\"?",
+      "ms": "Apakah KONTRAPOSITIF bagi: \"Jika x ialah nombor genap, maka x boleh dibahagi tepat dengan 2\"?"
+    },
+    "equation": "p ⇒ q → Contrapositive: ~q ⇒ ~p",
+    "options": [
+      {
+        "value": "A",
+        "text": "If x is not divisible by 2, then x is not an even number.",
+        "feedback": {
+          "en": "Correct! Contrapositive swaps and negates: ~q ⇒ ~p.",
+          "ms": "Tepat! Kontrapositif menukar kedudukan dan menafikan: ~q ⇒ ~p."
+        }
+      },
+      {
+        "value": "B",
+        "text": "If x is divisible by 2, then x is an even number.",
+        "feedback": {
+          "en": "This is the converse.",
+          "ms": "Ini ialah akas."
+        }
+      },
+      {
+        "value": "C",
+        "text": "If x is not an even number, then x is not divisible by 2.",
+        "feedback": {
+          "en": "This is the inverse.",
+          "ms": "Ini ialah songsangan."
+        }
+      },
+      {
+        "value": "D",
+        "text": "If x is odd, then x is divisible by 2.",
+        "feedback": {
+          "en": "Incorrect statement.",
+          "ms": "Pernyataan tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Contrapositive negates and reverses direction: If not q, then not p."
+      ],
+      "ms": [
+        "Kontrapositif menafikan dan menyongsangkan arah: Jika bukan q, maka bukan p."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Contrapositive: If not q, then not p."
+      ],
+      "ms": [
+        "Kontrapositif: Jika bukan q, maka bukan p."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "contrapositive"
+    ]
+  },
+  {
+    "id": "F4-C03-M04",
+    "chapter": 3,
+    "topic": "biconditional_implications",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A biconditional statement says: \"x is a multiple of 6 if and only if x is a multiple of 2 and 3\". How many implications does this represent?",
+      "ms": "Pernyataan jika dan hanya jika berbunyi: \"x ialah gandaan bagi 6 jika dan hanya jika x ialah gandaan bagi 2 dan 3\". Berapakah bilangan implikasi yang diwakilinya?"
+    },
+    "equation": "p ⇔ q = (p ⇒ q) ∧ (q ⇒ p)",
+    "options": [
+      {
+        "value": 2,
+        "text": "2 implications",
+        "feedback": {
+          "en": "Correct! (1) If p then q, and (2) If q then p.",
+          "ms": "Tepat! (1) Jika p maka q, dan (2) Jika q maka p."
+        }
+      },
+      {
+        "value": 1,
+        "text": "1 implication",
+        "feedback": {
+          "en": "A standard implication has 1, biconditional has 2.",
+          "ms": "Implikasi biasa ada 1, jika dan hanya jika ada 2."
+        }
+      },
+      {
+        "value": 4,
+        "text": "4 implications",
+        "feedback": {
+          "en": "Only 2 implications are formed.",
+          "ms": "Hanya 2 implikasi dibentuk."
+        }
+      },
+      {
+        "value": 3,
+        "text": "3 implications",
+        "feedback": {
+          "en": "Biconditional consists of exactly 2 directions.",
+          "ms": "Bikondisional terdiri daripada tepat 2 arah."
+        }
+      }
+    ],
+    "answer": 2,
+    "hints": {
+      "en": [
+        "\"p if and only if q\" means (p ⇒ q) AND (q ⇒ p)."
+      ],
+      "ms": [
+        "\"p jika dan hanya jika q\" bermaksud (p ⇒ q) DAN (q ⇒ p)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Two implications: (1) If multiple of 6, then multiple of 2 and 3; (2) If multiple of 2 and 3, then multiple of 6."
+      ],
+      "ms": [
+        "Dua implikasi: (1) Jika gandaan 6, maka gandaan 2 dan 3; (2) Jika gandaan 2 dan 3, maka gandaan 6."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "biconditional"
+    ]
+  },
+  {
+    "id": "F4-C03-M05",
+    "chapter": 3,
+    "topic": "inductive_vs_deductive",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A student observes: 1² = 1 (odd), 3² = 9 (odd), 5² = 25 (odd), and concludes: \"The square of any odd number is always an odd number.\" What type of reasoning is this?",
+      "ms": "Seorang murid memerhati: 1² = 1 (ganjil), 3² = 9 (ganjil), 5² = 25 (ganjil), dan membuat kesimpulan: \"Kuasa dua bagi sebarang nombor ganjil adalah sentiasa nombor ganjil.\" Apakah jenis penaakulan ini?"
+    },
+    "equation": "Specific cases → General rule",
+    "options": [
+      {
+        "value": "Inductive Reasoning",
+        "text": "Inductive Reasoning",
+        "feedback": {
+          "en": "Correct! Forming a general conclusion from specific observations is inductive reasoning.",
+          "ms": "Tepat! Membuat kesimpulan umum daripada pemerhatian khusus ialah penaakulan induktif."
+        }
+      },
+      {
+        "value": "Deductive Reasoning",
+        "text": "Deductive Reasoning",
+        "feedback": {
+          "en": "Deductive reasoning applies general rules to specific cases.",
+          "ms": "Penaakulan deduktif mengaplikasikan hukum umum kepada kes khusus."
+        }
+      },
+      {
+        "value": "Intuitive Guessing",
+        "text": "Intuitive Guessing",
+        "feedback": {
+          "en": "This is formal mathematical inductive reasoning.",
+          "ms": "Ini ialah penaakulan induktif matematik formal."
+        }
+      },
+      {
+        "value": "Circular Logic",
+        "text": "Circular Logic",
+        "feedback": {
+          "en": "The logic is structured inductively.",
+          "ms": "Logik ini tersusun secara induktif."
+        }
+      }
+    ],
+    "answer": "Inductive Reasoning",
+    "hints": {
+      "en": [
+        "Specific observations to general rule = Inductive. General rule to specific case = Deductive."
+      ],
+      "ms": [
+        "Pemerhatian khusus kepada hukum umum = Induktif. Hukum umum kepada kes khusus = Deduktif."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Inductive reasoning draws a general conclusion based on specific examples."
+      ],
+      "ms": [
+        "Penaakulan induktif membuat kesimpulan umum berdasarkan contoh-contoh khusus."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "inductive_reasoning"
+    ]
+  },
+  {
+    "id": "F4-C03-H01",
+    "chapter": 3,
+    "topic": "deductive_argument_form_1",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Premise 1: All multiples of 10 end with digit 0.\nPremise 2: 70 is a multiple of 10.\nWhat is the valid deductive conclusion (Form I)?",
+      "ms": "Premis 1: Semua gandaan bagi 10 berakhir dengan digit 0.\nPremis 2: 70 ialah gandaan bagi 10.\nApakah kesimpulan deduktif yang sah (Bentuk I)?"
+    },
+    "equation": "All A are B; C is A; Therefore C is B",
+    "options": [
+      {
+        "value": "A",
+        "text": "70 ends with digit 0.",
+        "feedback": {
+          "en": "Correct! Form I (Modus Ponens): C is A → C is B.",
+          "ms": "Tepat! Bentuk I (Modus Ponens): C ialah A → C ialah B."
+        }
+      },
+      {
+        "value": "B",
+        "text": "All numbers ending with 0 are 70.",
+        "feedback": {
+          "en": "This is an invalid generalization.",
+          "ms": "Ini ialah generalisasi yang tidak sah."
+        }
+      },
+      {
+        "value": "C",
+        "text": "70 is divisible by 5.",
+        "feedback": {
+          "en": "True fact, but not derived from the given premises.",
+          "ms": "Fakta benar, tetapi bukan diterbitkan daripada premis yang diberi."
+        }
+      },
+      {
+        "value": "D",
+        "text": "10 is a multiple of 70.",
+        "feedback": {
+          "en": "Incorrect statement.",
+          "ms": "Pernyataan tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Form I: All A are B. C is A. Therefore, C is B."
+      ],
+      "ms": [
+        "Bentuk I: Semua A ialah B. C ialah A. Oleh itu, C ialah B."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Premise 1: All A are B. Premise 2: 70 is A. Conclusion: 70 is B (70 ends with digit 0)."
+      ],
+      "ms": [
+        "Premis 1: Semua A ialah B. Premis 2: 70 ialah A. Kesimpulan: 70 ialah B (70 berakhir dengan digit 0)."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "deductive_form_1"
+    ]
+  },
+  {
+    "id": "F4-C03-H02",
+    "chapter": 3,
+    "topic": "deductive_argument_form_2",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Premise 1: If x is divisible by 4, then x is an even number.\nPremise 2: 15 is not an even number.\nWhat is the valid deductive conclusion (Form II)?",
+      "ms": "Premis 1: Jika x boleh dibahagi tepat dengan 4, maka x ialah nombor genap.\nPremis 2: 15 bukan nombor genap.\nApakah kesimpulan deduktif yang sah (Bentuk II)?"
+    },
+    "equation": "If p then q; Not q; Therefore not p",
+    "options": [
+      {
+        "value": "A",
+        "text": "15 is not divisible by 4.",
+        "feedback": {
+          "en": "Correct! Form II (Modus Tollens): Not q → Not p.",
+          "ms": "Tepat! Bentuk II (Modus Tollens): Bukan q → Bukan p."
+        }
+      },
+      {
+        "value": "B",
+        "text": "15 is divisible by 4.",
+        "feedback": {
+          "en": "Contradicts the logic of Modus Tollens.",
+          "ms": "Bercanggah dengan logik Modus Tollens."
+        }
+      },
+      {
+        "value": "C",
+        "text": "15 is a prime number.",
+        "feedback": {
+          "en": "Not derived from the given premises.",
+          "ms": "Bukan diterbitkan daripada premis yang diberi."
+        }
+      },
+      {
+        "value": "D",
+        "text": "4 is not divisible by 15.",
+        "feedback": {
+          "en": "Irrelevant to the logical argument.",
+          "ms": "Tidak relevan dengan hujah logik."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Form II: If p, then q. Not q. Therefore, not p."
+      ],
+      "ms": [
+        "Bentuk II: Jika p, maka q. Bukan q. Oleh itu, bukan p."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "p: x divisible by 4; q: x is even. Given ~q (15 not even) → ~p (15 not divisible by 4)."
+      ],
+      "ms": [
+        "p: x boleh dibahagi 4; q: x ialah genap. Diberi ~q (15 bukan genap) → ~p (15 tidak boleh dibahagi 4)."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "deductive_form_2"
+    ]
+  },
+  {
+    "id": "F4-C03-H03",
+    "chapter": 3,
+    "topic": "deductive_argument_form_3",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Premise 1: If it rains, the night market stalls set up tarpaulins.\nPremise 2: If the stalls set up tarpaulins, customer walking space is reduced.\nWhat is the valid conclusion (Form III)?",
+      "ms": "Premis 1: Jika hujan turun, gerai pasar malam memasang kanopi.\nPremis 2: Jika gerai memasang kanopi, ruang laluan pelanggan berkurang.\nApakah kesimpulan yang sah (Bentuk III)?"
+    },
+    "equation": "p ⇒ q, q ⇒ r → p ⇒ r",
+    "options": [
+      {
+        "value": "A",
+        "text": "If it rains, customer walking space is reduced.",
+        "feedback": {
+          "en": "Correct! Hypothetical Syllogism (p ⇒ r).",
+          "ms": "Tepat! Silogisme Hipotetis (p ⇒ r)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "If customer walking space is reduced, it rains.",
+        "feedback": {
+          "en": "This reverses the direction of implication.",
+          "ms": "Ini menyongsangkan arah implikasi."
+        }
+      },
+      {
+        "value": "C",
+        "text": "The stalls always set up tarpaulins.",
+        "feedback": {
+          "en": "Tarpaulins are only set up if it rains.",
+          "ms": "Kanopi hanya dipasang jika hujan."
+        }
+      },
+      {
+        "value": "D",
+        "text": "It is raining now.",
+        "feedback": {
+          "en": "No statement claims it is currently raining.",
+          "ms": "Tiada pernyataan menyatakan hari sedang hujan."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Form III (Syllogism): If p then q, and if q then r → If p then r."
+      ],
+      "ms": [
+        "Bentuk III: Jika p maka q, dan jika q maka r → Jika p maka r."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "p ⇒ q and q ⇒ r implies p ⇒ r."
+      ],
+      "ms": [
+        "p ⇒ q dan q ⇒ r mengimplikasikan p ⇒ r."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "deductive_form_3"
+    ]
+  },
+  {
+    "id": "F4-C03-H04",
+    "chapter": 3,
+    "topic": "inductive_pattern_conclusion",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given the number pattern: 3 = 4(1) - 1, 7 = 4(2) - 1, 11 = 4(3) - 1, 15 = 4(4) - 1, ... Make an inductive conclusion for the nth term.",
+      "ms": "Diberi pola nombor: 3 = 4(1) - 1, 7 = 4(2) - 1, 11 = 4(3) - 1, 15 = 4(4) - 1, ... Buat satu kesimpulan induktif bagi sebutan ke-n."
+    },
+    "equation": "T_n = 4n - 1, n = 1, 2, 3, ...",
+    "options": [
+      {
+        "value": "4n - 1",
+        "text": "4n - 1, where n = 1, 2, 3, ...",
+        "feedback": {
+          "en": "Correct! The general formula for the nth term is 4n - 1.",
+          "ms": "Tepat! Rumus am bagi sebutan ke-n ialah 4n - 1."
+        }
+      },
+      {
+        "value": "4n + 1",
+        "text": "4n + 1, where n = 1, 2, 3, ...",
+        "feedback": {
+          "en": "For n = 1, 4(1) + 1 = 5 ≠ 3.",
+          "ms": "Bagi n = 1, 4(1) + 1 = 5 ≠ 3."
+        }
+      },
+      {
+        "value": "3n",
+        "text": "3n, where n = 1, 2, 3, ...",
+        "feedback": {
+          "en": "For n = 2, 3(2) = 6 ≠ 7.",
+          "ms": "Bagi n = 2, 3(2) = 6 ≠ 7."
+        }
+      },
+      {
+        "value": "2n + 1",
+        "text": "2n + 1, where n = 1, 2, 3, ...",
+        "feedback": {
+          "en": "For n = 3, 2(3) + 1 = 7 ≠ 11.",
+          "ms": "Bagi n = 3, 2(3) + 1 = 7 ≠ 11."
+        }
+      }
+    ],
+    "answer": "4n - 1",
+    "hints": {
+      "en": [
+        "Notice that each term has the form 4(n) - 1 for n = 1, 2, 3, 4."
+      ],
+      "ms": [
+        "Perhatikan setiap sebutan berbentuk 4(n) - 1 bagi n = 1, 2, 3, 4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "General term T_n = 4n - 1 for n = 1, 2, 3, ..."
+      ],
+      "ms": [
+        "Sebutan am T_n = 4n - 1 untuk n = 1, 2, 3, ..."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "inductive_generalization"
+    ]
+  },
+  {
+    "id": "F4-C03-H05",
+    "chapter": 3,
+    "topic": "counterexample_refutation",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Consider the statement: \"All prime numbers are odd numbers.\" Which counterexample proves this statement is FALSE?",
+      "ms": "Pertimbangkan pernyataan: \"Semua nombor perdana ialah nombor ganjil.\" Apakah contoh penyangkal yang membuktikan pernyataan ini PALSU?"
+    },
+    "equation": "Counterexample: 2",
+    "options": [
+      {
+        "value": "2",
+        "text": "2",
+        "feedback": {
+          "en": "Correct! 2 is a prime number and it is EVEN, disproving the statement.",
+          "ms": "Tepat! 2 ialah nombor perdana dan ia GENAP, menyangkal pernyataan tersebut."
+        }
+      },
+      {
+        "value": "9",
+        "text": "9",
+        "feedback": {
+          "en": "9 is an odd number, but not prime. A counterexample must satisfy the condition (prime).",
+          "ms": "9 nombor ganjil tetapi bukan perdana. Contoh penyangkal mesti memenuhi syarat (perdana)."
+        }
+      },
+      {
+        "value": "1",
+        "text": "1",
+        "feedback": {
+          "en": "1 is neither prime nor composite.",
+          "ms": "1 bukan nombor perdana mahupun gubahan."
+        }
+      },
+      {
+        "value": "7",
+        "text": "7",
+        "feedback": {
+          "en": "7 is odd and prime, so it supports the statement rather than disproving it.",
+          "ms": "7 nombor ganjil dan perdana, ia menyokong pernyataan."
+        }
+      }
+    ],
+    "answer": "2",
+    "hints": {
+      "en": [
+        "Find a prime number that is NOT odd (i.e. an even prime number)."
+      ],
+      "ms": [
+        "Cari nombor perdana yang BUKAN ganjil (iaitu nombor perdana genap)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "2 is prime and even. Therefore, not all prime numbers are odd."
+      ],
+      "ms": [
+        "2 ialah perdana dan genap. Maka, bukan semua nombor perdana ialah ganjil."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "counterexample"
+    ]
+  },
+  {
+    "id": "F4-C03-E06",
+    "chapter": 3,
+    "topic": "negation_of_statement",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Form the negation of the statement: '17 is a prime number'.",
+      "ms": "Bentuk penafian bagi pernyataan: '17 ialah nombor perdana'."
+    },
+    "equation": "~p",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "17 is not a prime number.",
+          "ms": "17 bukan nombor perdana."
+        },
+        "feedback": {
+          "en": "Correct! Negation uses 'not' or 'bukan/tidak'.",
+          "ms": "Tepat! Penafian menggunakan perkataan 'bukan' atau 'tidak'."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "17 is an odd number.",
+          "ms": "17 ialah nombor ganjil."
+        },
+        "feedback": {
+          "en": "This is a different statement, not a negation.",
+          "ms": "Ini pernyataan berbeza, bukan penafian."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "All numbers are prime numbers.",
+          "ms": "Semua nombor ialah nombor perdana."
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "17 is a multiple of 2.",
+          "ms": "17 ialah gandaan bagi 2."
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Negation of 'p' is 'not p' (~p)."
+      ],
+      "ms": [
+        "Penafian bagi 'p' ialah 'bukan p' (~p)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The negation of '17 is a prime number' is '17 is not a prime number'."
+      ],
+      "ms": [
+        "Penafian bagi '17 ialah nombor perdana' ialah '17 bukan nombor perdana'."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-E07",
+    "chapter": 3,
+    "topic": "truth_value_or",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Determine the truth value of: '3² = 9 OR 5 > 8'.",
+      "ms": "Tentukan nilai kebenaran bagi: '3² = 9 ATAU 5 > 8'."
+    },
+    "equation": "p ∨ q",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "True",
+          "ms": "Benar"
+        },
+        "feedback": {
+          "en": "Correct! For 'OR', statement is true if at least one component is true (3²=9 is true).",
+          "ms": "Tepat! Bagi 'ATAU', pernyataan adalah benar jika sekurang-kurangnya satu komponen benar (3²=9 adalah benar)."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "False",
+          "ms": "Palsu"
+        },
+        "feedback": {
+          "en": "3² = 9 is true, so the 'OR' compound statement is true.",
+          "ms": "3² = 9 adalah benar, jadi pernyataan majmuk 'ATAU' adalah benar."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Undetermined",
+          "ms": "Tidak dapat ditentukan"
+        },
+        "feedback": {
+          "en": "Truth values are known.",
+          "ms": "Nilai kebenaran diketahui."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Both true and false",
+          "ms": "Kedua-dua benar dan palsu"
+        },
+        "feedback": {
+          "en": "A statement cannot be both.",
+          "ms": "Pernyataan tidak boleh kedua-duanya."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "'p OR q' is true as long as either p or q is true."
+      ],
+      "ms": [
+        "'p ATAU q' adalah benar asalkan salah satu daripada p atau q adalah benar."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "p: 3² = 9 (True), q: 5 > 8 (False). True OR False = True."
+      ],
+      "ms": [
+        "p: 3² = 9 (Benar), q: 5 > 8 (Palsu). Benar ATAU Palsu = Benar."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-E08",
+    "chapter": 3,
+    "topic": "antecedent_consequent",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "In the implication 'If customer orders Nasi Lemak, then Mama cooks sambal', state the consequent.",
+      "ms": "Dalam implikasi 'Jika pelanggan memesan Nasi Lemak, maka Mama memasak sambal', nyatakan akibat."
+    },
+    "equation": "p => q",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Mama cooks sambal",
+          "ms": "Mama memasak sambal"
+        },
+        "feedback": {
+          "en": "Correct! The consequent is the statement following 'then'.",
+          "ms": "Tepat! Akibat ialah pernyataan selepas 'maka'."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Customer orders Nasi Lemak",
+          "ms": "Pelanggan memesan Nasi Lemak"
+        },
+        "feedback": {
+          "en": "This is the antecedent (antejadian).",
+          "ms": "Ini ialah antejadian."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Mama cooks Nasi Lemak",
+          "ms": "Mama memasak Nasi Lemak"
+        },
+        "feedback": {
+          "en": "Not in the given implication.",
+          "ms": "Tiada dalam implikasi yang diberi."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Customer eats sambal",
+          "ms": "Pelanggan makan sambal"
+        },
+        "feedback": {
+          "en": "Not in the statement.",
+          "ms": "Tiada dalam pernyataan."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "'If p (antecedent), then q (consequent)'."
+      ],
+      "ms": [
+        "'Jika p (antejadian), maka q (akibat)'."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Consequent is the part after 'then': Mama cooks sambal."
+      ],
+      "ms": [
+        "Akibat ialah bahagian selepas 'maka': Mama memasak sambal."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-E09",
+    "chapter": 3,
+    "topic": "converse_implication",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "What is the converse of: 'If x = 5, then x² = 25'?",
+      "ms": "Apakah akas bagi: 'Jika x = 5, maka x² = 25'?"
+    },
+    "equation": "q => p",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "If x² = 25, then x = 5",
+          "ms": "Jika x² = 25, maka x = 5"
+        },
+        "feedback": {
+          "en": "Correct! Converse switches p and q: 'If q, then p'.",
+          "ms": "Tepat! Akas menukar p dan q: 'Jika q, maka p'."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "If x ≠ 5, then x² ≠ 25",
+          "ms": "Jika x ≠ 5, maka x² ≠ 25"
+        },
+        "feedback": {
+          "en": "This is the inverse (songsangan).",
+          "ms": "Ini ialah songsangan."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "If x² ≠ 25, then x ≠ 5",
+          "ms": "Jika x² ≠ 25, maka x ≠ 5"
+        },
+        "feedback": {
+          "en": "This is the contrapositive (kontrapositif).",
+          "ms": "Ini ialah kontrapositif."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "If x = -5, then x² = 25",
+          "ms": "Jika x = -5, maka x² = 25"
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Converse of 'If p, then q' is 'If q, then p'."
+      ],
+      "ms": [
+        "Akas bagi 'Jika p, maka q' ialah 'Jika q, maka p'."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Converse exchanges antecedent and consequent: If x² = 25, then x = 5."
+      ],
+      "ms": [
+        "Akas saling menukar antejadian dan akibat: Jika x² = 25, maka x = 5."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-E10",
+    "chapter": 3,
+    "topic": "deductive_argument_form",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Identify Argument Form: Premise 1: All multiples of 6 are divisible by 3. Premise 2: 24 is a multiple of 6. Conclusion: 24 is divisible by 3.",
+      "ms": "Kenal pasti Bentuk Hujah: Premis 1: Semua gandaan 6 boleh dibahagi tepat dengan 3. Premis 2: 24 ialah gandaan 6. Kesimpulan: 24 boleh dibahagi tepat dengan 3."
+    },
+    "equation": "Form I / Bentuk I",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Form I",
+          "ms": "Bentuk I"
+        },
+        "feedback": {
+          "en": "Correct! Form I: All A are B, C is A, thus C is B.",
+          "ms": "Tepat! Bentuk I: Semua A ialah B, C ialah A, maka C ialah B."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Form II",
+          "ms": "Bentuk II"
+        },
+        "feedback": {
+          "en": "Form II is 'If p, then q; p is true; therefore q is true'.",
+          "ms": "Bentuk II ialah 'Jika p, maka q; p benar; maka q benar'."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Form III",
+          "ms": "Bentuk III"
+        },
+        "feedback": {
+          "en": "Form III is 'If p, then q; Not q; therefore Not p'.",
+          "ms": "Bentuk III ialah 'Jika p, maka q; Bukan q; maka Bukan p'."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Inductive argument",
+          "ms": "Hujah induktif"
+        },
+        "feedback": {
+          "en": "This is a deductive argument.",
+          "ms": "Ini ialah hujah deduktif."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Premise 1 starts with 'All...' -> Form I."
+      ],
+      "ms": [
+        "Premis 1 bermula dengan 'Semua...' -> Bentuk I."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Form I: All A are B. C is A. Therefore, C is B."
+      ],
+      "ms": [
+        "Bentuk I: Semua A ialah B. C ialah A. Oleh itu, C ialah B."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-M06",
+    "chapter": 3,
+    "topic": "contrapositive",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "What is the contrapositive of: 'If a polygon is a regular pentagon, then it has 5 equal sides'?",
+      "ms": "Apakah kontrapositif bagi: 'Jika suatu poligon ialah pentagon sekata, maka ia mempunyai 5 sisi sama panjang'?"
+    },
+    "equation": "~q => ~p",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "If a polygon does not have 5 equal sides, then it is not a regular pentagon",
+          "ms": "Jika suatu poligon tidak mempunyai 5 sisi sama panjang, maka ia bukan pentagon sekata"
+        },
+        "feedback": {
+          "en": "Correct! Contrapositive is 'If not q, then not p'.",
+          "ms": "Tepat! Kontrapositif ialah 'Jika bukan q, maka bukan p'."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "If a polygon is not a regular pentagon, then it does not have 5 equal sides",
+          "ms": "Jika suatu poligon bukan pentagon sekata, maka ia tidak mempunyai 5 sisi sama panjang"
+        },
+        "feedback": {
+          "en": "This is the inverse (~p => ~q).",
+          "ms": "Ini ialah songsangan (~p => ~q)."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "If a polygon has 5 equal sides, then it is a regular pentagon",
+          "ms": "Jika suatu poligon mempunyai 5 sisi sama panjang, maka ia pentagon sekata"
+        },
+        "feedback": {
+          "en": "This is the converse (q => p).",
+          "ms": "Ini ialah akas (q => p)."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "If a polygon has 5 sides, then it is a pentagon",
+          "ms": "Jika suatu poligon mempunyai 5 sisi, maka ia ialah pentagon"
+        },
+        "feedback": {
+          "en": "Incorrect wording.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Contrapositive of 'If p, then q' is 'If not q, then not p'."
+      ],
+      "ms": [
+        "Kontrapositif bagi 'Jika p, maka q' ialah 'Jika bukan q, maka bukan p'."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Contrapositive negates and reverses: If not q, then not p."
+      ],
+      "ms": [
+        "Kontrapositif menafikan dan menyongsangkan: Jika bukan q, maka bukan p."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-M07",
+    "chapter": 3,
+    "topic": "deductive_argument_form_3",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Complete the valid deductive argument (Form III):\nPremise 1: If x is a multiple of 10, then x ends with digit 0.\nPremise 2: 73 does not end with digit 0.\nConclusion: _________",
+      "ms": "Lengkapkan hujah deduktif yang sah (Bentuk III):\nPremis 1: Jika x ialah gandaan 10, maka x berakhir dengan digit 0.\nPremis 2: 73 tidak berakhir dengan digit 0.\nKesimpulan: _________"
+    },
+    "equation": "p => q, ~q |- ~p",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "73 is not a multiple of 10",
+          "ms": "73 bukan gandaan 10"
+        },
+        "feedback": {
+          "en": "Correct! Form III conclusion is '~p' (73 is not a multiple of 10).",
+          "ms": "Tepat! Kesimpulan Bentuk III ialah '~p' (73 bukan gandaan 10)."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "73 is a multiple of 10",
+          "ms": "73 ialah gandaan 10"
+        },
+        "feedback": {
+          "en": "Incorrect conclusion.",
+          "ms": "Kesimpulan salah."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "73 is an odd number",
+          "ms": "73 ialah nombor ganjil"
+        },
+        "feedback": {
+          "en": "Not derived from the given premises.",
+          "ms": "Tidak diterbitkan daripada premis yang diberi."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "x is not equal to 73",
+          "ms": "x tidak sama dengan 73"
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Form III: Premise 1: If p, then q. Premise 2: Not q. Conclusion: Not p."
+      ],
+      "ms": [
+        "Bentuk III: Premis 1: Jika p, maka q. Premis 2: Bukan q. Kesimpulan: Bukan p."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Since 73 does not end with 0 (not q), the conclusion is 73 is not a multiple of 10 (not p)."
+      ],
+      "ms": [
+        "Kerana 73 tidak berakhir dengan 0 (bukan q), kesimpulannya ialah 73 bukan gandaan 10 (bukan p)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-M08",
+    "chapter": 3,
+    "topic": "validity_and_soundness",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Evaluate the argument:\nPremise 1: All cows have 2 legs.\nPremise 2: Betsy is a cow.\nConclusion: Betsy has 2 legs.\nIs this argument valid and sound?",
+      "ms": "Nilaikan hujah berikut:\nPremis 1: Semua lembu mempunyai 2 kaki.\nPremis 2: Betsy ialah seekor lembu.\nKesimpulan: Betsy mempunyai 2 kaki.\nAdakah hujah ini sah dan munasabah?"
+    },
+    "equation": "Valid vs Sound / Sah vs Munasabah",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Valid but not sound",
+          "ms": "Sah tetapi tidak munasabah"
+        },
+        "feedback": {
+          "en": "Correct! It follows Form I valid structure, but Premise 1 is false in reality, so it is not sound.",
+          "ms": "Tepat! Struktur logiknya sah mengikut Bentuk I, tetapi Premis 1 palsu dalam realiti, maka tidak munasabah."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Valid and sound",
+          "ms": "Sah dan munasabah"
+        },
+        "feedback": {
+          "en": "A sound argument requires all premises to be true in reality (cows have 4 legs).",
+          "ms": "Hujah munasabah memerlukan semua premis benar dalam realiti (lembu ada 4 kaki)."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Not valid and not sound",
+          "ms": "Tidak sah dan tidak munasabah"
+        },
+        "feedback": {
+          "en": "The structure is valid (Form I).",
+          "ms": "Strukturnya sah (Bentuk I)."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Inductive and strong",
+          "ms": "Induktif dan kuat"
+        },
+        "feedback": {
+          "en": "This is a deductive argument.",
+          "ms": "Ini hujah deduktif."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Valid = correct logical structure. Sound = valid AND all premises are factually true."
+      ],
+      "ms": [
+        "Sah = struktur logik betul. Munasabah = sah DAN semua premis benar dari segi fakta."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The argument follows valid Form I logic, but Premise 1 is factually false. Thus, valid but not sound."
+      ],
+      "ms": [
+        "Hujah mematuhi logik Bentuk I (sah), tetapi Premis 1 adalah palsu dalam realiti. Maka, ia sah tetapi tidak munasabah."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-M09",
+    "chapter": 3,
+    "topic": "inductive_generalization",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Make an inductive conclusion for the nth term of the sequence: 4 = 3(1) + 1, 7 = 3(2) + 1, 10 = 3(3) + 1, 13 = 3(4) + 1, ...",
+      "ms": "Buat satu kesimpulan induktif bagi sebutan ke-n bagi jujukan: 4 = 3(1) + 1, 7 = 3(2) + 1, 10 = 3(3) + 1, 13 = 3(4) + 1, ..."
+    },
+    "equation": "T_n = 3n + 1",
+    "options": [
+      {
+        "value": "A",
+        "text": "3n + 1, n = 1, 2, 3, ...",
+        "feedback": {
+          "en": "Correct! The pattern is 3(n) + 1 where n = 1, 2, 3, ...",
+          "ms": "Tepat! Polanya ialah 3(n) + 1 di mana n = 1, 2, 3, ..."
+        }
+      },
+      {
+        "value": "B",
+        "text": "3n - 1, n = 1, 2, 3, ...",
+        "feedback": {
+          "en": "When n = 1, 3(1) - 1 = 2 != 4.",
+          "ms": "Apabila n = 1, 3(1) - 1 = 2 != 4."
+        }
+      },
+      {
+        "value": "C",
+        "text": "4n, n = 1, 2, 3, ...",
+        "feedback": {
+          "en": "When n = 2, 4(2) = 8 != 7.",
+          "ms": "Apabila n = 2, 4(2) = 8 != 7."
+        }
+      },
+      {
+        "value": "D",
+        "text": "3n + 2, n = 1, 2, 3, ...",
+        "feedback": {
+          "en": "When n = 1, 3(1) + 2 = 5 != 4.",
+          "ms": "Apabila n = 1, 3(1) + 2 = 5 != 4."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Replace the variable count (1, 2, 3, 4) with n."
+      ],
+      "ms": [
+        "Gantikan nombor yang berubah (1, 2, 3, 4) dengan n."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The expression 3(n) + 1 holds for all terms with n = 1, 2, 3, ..."
+      ],
+      "ms": [
+        "Ungkapan 3(n) + 1 menepati semua sebutan dengan n = 1, 2, 3, ..."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-M10",
+    "chapter": 3,
+    "topic": "necessary_sufficient_condition",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Form a statement using 'if and only if' from: Implication 1: If x = 4, then 3x + 2 = 14. Implication 2: If 3x + 2 = 14, then x = 4.",
+      "ms": "Bina satu pernyataan menggunakan 'jika dan hanya jika' daripada: Implikasi 1: Jika x = 4, maka 3x + 2 = 14. Implikasi 2: Jika 3x + 2 = 14, maka x = 4."
+    },
+    "equation": "p <=> q",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "x = 4 if and only if 3x + 2 = 14",
+          "ms": "x = 4 jika dan hanya jika 3x + 2 = 14"
+        },
+        "feedback": {
+          "en": "Correct! Two implications (p => q and q => p) combine to form 'p if and only if q'.",
+          "ms": "Tepat! Dua implikasi (p => q dan q => p) digabungkan membentuk 'p jika dan hanya jika q'."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "If x = 4 then 3x + 2 = 14",
+          "ms": "Jika x = 4 maka 3x + 2 = 14"
+        },
+        "feedback": {
+          "en": "This is only one implication.",
+          "ms": "Ini hanya satu implikasi."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "x = 4 or 3x + 2 = 14",
+          "ms": "x = 4 atau 3x + 2 = 14"
+        },
+        "feedback": {
+          "en": "'Or' is not equivalence.",
+          "ms": "'Atau' bukan kesetaraan."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "x = 4 and 3x + 2 = 14",
+          "ms": "x = 4 dan 3x + 2 = 14"
+        },
+        "feedback": {
+          "en": "Incorrect format.",
+          "ms": "Format salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "'p if and only if q' combines p => q and q => p."
+      ],
+      "ms": [
+        "'p jika dan hanya jika q' menggabungkan p => q dan q => p."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "When both p => q and q => p are true, they form the biconditional statement 'p if and only if q'."
+      ],
+      "ms": [
+        "Apabila kedua-dua p => q dan q => p benar, ia membentuk pernyataan dwisyarat 'p jika dan hanya jika q'."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-H06",
+    "chapter": 3,
+    "topic": "truth_value_complex_deduction",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "Given statement: 'If customer orders Satay, Mama prepares peanut sauce'. If Mama did NOT prepare peanut sauce, which conclusion is logically valid?",
+      "ms": "Diberi pernyataan: 'Jika pelanggan memesan Satay, Mama menyediakan kuah kacang'. Jika Mama TIDAK menyediakan kuah kacang, kesimpulan manakah yang sah secara logik?"
+    },
+    "equation": "Modus Tollens (Form III)",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Customer did not order Satay",
+          "ms": "Pelanggan tidak memesan Satay"
+        },
+        "feedback": {
+          "en": "Correct! Modus Tollens (Form III): If p then q; not q; therefore not p.",
+          "ms": "Tepat! Bentuk III: Jika p maka q; bukan q; maka bukan p."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Customer ordered Nasi Lemak",
+          "ms": "Pelanggan memesan Nasi Lemak"
+        },
+        "feedback": {
+          "en": "Cannot be deduced from given premises.",
+          "ms": "Tidak dapat dideduksikan daripada premis."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Customer ordered Satay",
+          "ms": "Pelanggan memesan Satay"
+        },
+        "feedback": {
+          "en": "Contradicts the rule.",
+          "ms": "Bercanggah dengan peraturan."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Mama has no peanuts left",
+          "ms": "Mama kehabisan kacang"
+        },
+        "feedback": {
+          "en": "External assumption.",
+          "ms": "Andaian luar."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Use Form III: If p then q, ~q is true, hence ~p."
+      ],
+      "ms": [
+        "Gunakan Bentuk III: Jika p maka q, ~q benar, maka ~p."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "p: customer orders Satay, q: Mama prepares peanut sauce. Given ~q (no peanut sauce), by Form III deduction, ~p is true (customer did not order Satay)."
+      ],
+      "ms": [
+        "p: pelanggan pesan Satay, q: Mama sedia kuah kacang. Diberi ~q, mengikut deduksi Bentuk III, ~p benar (pelanggan tidak pesan Satay)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-H07",
+    "chapter": 3,
+    "topic": "deductive_geometric_generalization",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Premise 1: The sum of interior angles of an n-sided polygon is (n - 2) × 180°.\nPremise 2: An octagon has 8 sides.\nConclusion: The sum of interior angles of an octagon is ________.",
+      "ms": "Premis 1: Hasil tambah sudut pedalaman poligon n-sisi ialah (n - 2) × 180°.\nPremis 2: Sebuah oktagon mempunyai 8 sisi.\nKesimpulan: Hasil tambah sudut pedalaman bagi sebuah oktagon ialah ________."
+    },
+    "equation": "(8 - 2) * 180°",
+    "options": [
+      {
+        "value": "A",
+        "text": "1080°",
+        "feedback": {
+          "en": "Correct! (8 - 2) * 180° = 6 * 180° = 1080°.",
+          "ms": "Tepat! (8 - 2) * 180° = 6 * 180° = 1080°."
+        }
+      },
+      {
+        "value": "B",
+        "text": "900°",
+        "feedback": {
+          "en": "900° is for a 7-sided polygon (heptagon).",
+          "ms": "900° ialah untuk poligon 7 sisi (heptagon)."
+        }
+      },
+      {
+        "value": "C",
+        "text": "1260°",
+        "feedback": {
+          "en": "1260° is for a 9-sided polygon (nonagon).",
+          "ms": "1260° ialah untuk poligon 9 sisi (nonagon)."
+        }
+      },
+      {
+        "value": "D",
+        "text": "1440°",
+        "feedback": {
+          "en": "1440° is for a 10-sided polygon (decagon).",
+          "ms": "1440° ialah untuk poligon 10 sisi (dekagon)."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Substitute n = 8 into (n - 2) * 180°."
+      ],
+      "ms": [
+        "Gantikan n = 8 ke dalam (n - 2) * 180°."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(8 - 2) × 180° = 6 × 180° = 1080°."
+      ],
+      "ms": [
+        "(8 - 2) × 180° = 6 × 180° = 1080°."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-H08",
+    "chapter": 3,
+    "topic": "inductive_pattern_quadratic",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Observe the pattern: 2 = 1² + 1, 5 = 2² + 1, 10 = 3² + 1, 17 = 4² + 1, ... Deduce inductively the value of the 12th term.",
+      "ms": "Perhatikan pola: 2 = 1² + 1, 5 = 2² + 1, 10 = 3² + 1, 17 = 4² + 1, ... Buat kesimpulan secara induktif bagi nilai sebutan ke-12."
+    },
+    "equation": "n² + 1, n = 12",
+    "options": [
+      {
+        "value": "A",
+        "text": "145",
+        "feedback": {
+          "en": "Correct! 12² + 1 = 144 + 1 = 145.",
+          "ms": "Tepat! 12² + 1 = 144 + 1 = 145."
+        }
+      },
+      {
+        "value": "B",
+        "text": "144",
+        "feedback": {
+          "en": "Don't forget to add 1: 12² + 1.",
+          "ms": "Jangan lupa tambah 1: 12² + 1."
+        }
+      },
+      {
+        "value": "C",
+        "text": "121",
+        "feedback": {
+          "en": "121 is 11².",
+          "ms": "121 ialah 11²."
+        }
+      },
+      {
+        "value": "D",
+        "text": "169",
+        "feedback": {
+          "en": "169 is 13².",
+          "ms": "169 ialah 13²."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "General formula is n² + 1. Put n = 12."
+      ],
+      "ms": [
+        "Rumus am ialah n² + 1. Masukkan n = 12."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The formula is T_n = n² + 1. For n = 12: 12² + 1 = 144 + 1 = 145."
+      ],
+      "ms": [
+        "Rumus am ialah T_n = n² + 1. Bagi n = 12: 12² + 1 = 144 + 1 = 145."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-H09",
+    "chapter": 3,
+    "topic": "counterexample",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which counterexample disproves the statement: 'All prime numbers are odd numbers'?",
+      "ms": "Contoh penyangkal manakah yang menyangkal pernyataan: 'Semua nombor perdana ialah nombor ganjil'?"
+    },
+    "equation": "Counterexample / Contoh Penyangkal",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "2 is a prime number and it is an even number",
+          "ms": "2 ialah nombor perdana dan ia nombor genap"
+        },
+        "feedback": {
+          "en": "Correct! 2 is prime but even, disproving the universal claim.",
+          "ms": "Tepat! 2 ialah nombor perdana genap, menyangkal pernyataan umum tersebut."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "9 is an odd number but not prime",
+          "ms": "9 ialah nombor ganjil tetapi bukan perdana"
+        },
+        "feedback": {
+          "en": "This does not test if all primes are odd.",
+          "ms": "Ini tidak menguji sama ada semua perdana adalah ganjil."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "1 is not a prime number",
+          "ms": "1 bukan nombor perdana"
+        },
+        "feedback": {
+          "en": "1 is neither prime nor composite.",
+          "ms": "1 bukan perdana mahupun gubahan."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "15 is divisible by 3 and 5",
+          "ms": "15 boleh dibahagi dengan 3 dan 5"
+        },
+        "feedback": {
+          "en": "Not relevant to the statement.",
+          "ms": "Tidak relevan dengan pernyataan."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Find a prime number that is NOT odd."
+      ],
+      "ms": [
+        "Cari satu nombor perdana yang BUKAN ganjil."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "2 is a prime number, but 2 is an even number. This single counterexample proves the statement is false."
+      ],
+      "ms": [
+        "2 ialah nombor perdana, tetapi 2 nombor genap. Contoh penyangkal ini membuktikan pernyataan tersebut palsu."
+      ]
+    }
+  },
+  {
+    "id": "F4-C03-H10",
+    "chapter": 3,
+    "topic": "combined_implication_truth",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "Mama sets the kitchen rule: 'If the stove is on, the kitchen exhaust must be running'. Today, the exhaust is NOT running. Which deduction MUST be true?",
+      "ms": "Mama menetapkan peraturan dapur: 'Jika dapur gas bernyala, penyedut asap mesti dihidupkan'. Hari ini, penyedut asap TIDAK dihidupkan. Deduksi manakah yang PASTI benar?"
+    },
+    "equation": "Modus Tollens: p => q, ~q |- ~p",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "The stove is not on",
+          "ms": "Dapur gas tidak bernyala"
+        },
+        "feedback": {
+          "en": "Correct! By Modus Tollens (~q => ~p), if exhaust is off, stove must not be on.",
+          "ms": "Tepat! Mengikut Modus Tollens (~q => ~p), jika penyedut asap padam, dapur gas pasti tidak bernyala."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "The stove is definitely on",
+          "ms": "Dapur gas pasti sedang bernyala"
+        },
+        "feedback": {
+          "en": "That would violate the safety rule.",
+          "ms": "Ini melanggar peraturan keselamatan."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Warung is closed",
+          "ms": "Warung ditutup"
+        },
+        "feedback": {
+          "en": "Not logically implied.",
+          "ms": "Tidak tersirat secara logik."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "The exhaust is broken",
+          "ms": "Penyedut asap rosak"
+        },
+        "feedback": {
+          "en": "Unjustified assumption.",
+          "ms": "Andaian tanpa asas logik."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "If p => q and ~q is observed, then ~p must hold."
+      ],
+      "ms": [
+        "Jika p => q dan ~q diperhatikan, maka ~p pasti benar."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Using deductive argument Form III (~q implies ~p): the stove cannot be on."
+      ],
+      "ms": [
+        "Menggunakan hujah deduktif Bentuk III (~q mengimplikasikan ~p): dapur gas tidak bernyala."
+      ]
+    }
+  }
+]

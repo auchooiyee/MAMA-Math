@@ -1,0 +1,110 @@
+[
+  {
+    "id": "first_recipe",
+    "icon": "🍳",
+    "titleKey": "badge.first_recipe_title",
+    "descKey": "badge.first_recipe_desc",
+    "chapter": null,
+    "reqType": "dishes",
+    "reqValue": 1
+  },
+  {
+    "id": "algebra_chef",
+    "icon": "🧮",
+    "titleKey": "badge.algebra_chef_title",
+    "descKey": "badge.algebra_chef_desc",
+    "chapter": 1,
+    "reqType": "chapter_mastery",
+    "reqValue": 1
+  },
+  {
+    "id": "number_base_master",
+    "icon": "🔢",
+    "titleKey": "badge.number_base_master_title",
+    "descKey": "badge.number_base_master_desc",
+    "chapter": 2,
+    "reqType": "chapter_mastery",
+    "reqValue": 2
+  },
+  {
+    "id": "logic_detective",
+    "icon": "🧠",
+    "titleKey": "badge.logic_detective_title",
+    "descKey": "badge.logic_detective_desc",
+    "chapter": 3,
+    "reqType": "chapter_mastery",
+    "reqValue": 3
+  },
+  {
+    "id": "set_specialist",
+    "icon": "⭕",
+    "titleKey": "badge.set_specialist_title",
+    "descKey": "badge.set_specialist_desc",
+    "chapter": 4,
+    "reqType": "chapter_mastery",
+    "reqValue": 4
+  },
+  {
+    "id": "network_master",
+    "icon": "🕸️",
+    "titleKey": "badge.network_master_title",
+    "descKey": "badge.network_master_desc",
+    "chapter": 5,
+    "reqType": "chapter_mastery",
+    "reqValue": 5
+  },
+  {
+    "id": "inequality_planner",
+    "icon": "📐",
+    "titleKey": "badge.inequality_planner_title",
+    "descKey": "badge.inequality_planner_desc",
+    "chapter": 6,
+    "reqType": "chapter_mastery",
+    "reqValue": 6
+  },
+  {
+    "id": "graph_expert",
+    "icon": "🛵",
+    "titleKey": "badge.graph_expert_title",
+    "descKey": "badge.graph_expert_desc",
+    "chapter": 7,
+    "reqType": "chapter_mastery",
+    "reqValue": 7
+  },
+  {
+    "id": "data_analyst",
+    "icon": "📊",
+    "titleKey": "badge.data_analyst_title",
+    "descKey": "badge.data_analyst_desc",
+    "chapter": 8,
+    "reqType": "chapter_mastery",
+    "reqValue": 8
+  },
+  {
+    "id": "probability_master",
+    "icon": "🎲",
+    "titleKey": "badge.probability_master_title",
+    "descKey": "badge.probability_master_desc",
+    "chapter": 9,
+    "reqType": "chapter_mastery",
+    "reqValue": 9
+  },
+  {
+    "id": "finance_boss",
+    "icon": "💰",
+    "titleKey": "badge.finance_boss_title",
+    "descKey": "badge.finance_boss_desc",
+    "chapter": 10,
+    "reqType": "chapter_mastery",
+    "reqValue": 10
+  },
+  {
+    "id": "form4_master",
+    "icon": "👑",
+    "titleKey": "badge.form4_master_title",
+    "descKey": "badge.form4_master_desc",
+    "chapter": null,
+    "reqType": "total_stars",
+    "reqValue": 25
+  }
+]

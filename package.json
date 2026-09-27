@@ -1,0 +1,19 @@
+{
+  "name": "math-mama-warung-matematik",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node tests/test_core.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "phaser": "^3.88.2"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

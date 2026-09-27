@@ -1,0 +1,2063 @@
+[
+  {
+    "id": "F4-C01-E01",
+    "chapter": 1,
+    "topic": "quadratic_expressions_identification",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which of the following expressions is a quadratic expression in one variable?",
+      "ms": "Antara ungkapan berikut, yang manakah merupakan ungkapan kuadratik dalam satu pemboleh ubah?"
+    },
+    "equation": "ax² + bx + c, a ≠ 0",
+    "options": [
+      {
+        "value": "A",
+        "text": "2x² + 5x - 3",
+        "feedback": {
+          "en": "Correct! Highest power of variable x is 2.",
+          "ms": "Tepat! Kuasa tertinggi bagi x ialah 2."
+        }
+      },
+      {
+        "value": "B",
+        "text": "3x³ - 2x + 1",
+        "feedback": {
+          "en": "Highest power is 3 (cubic).",
+          "ms": "Kuasa tertinggi ialah 3 (kubik)."
+        }
+      },
+      {
+        "value": "C",
+        "text": "2x + 7",
+        "feedback": {
+          "en": "This is a linear expression.",
+          "ms": "Ini ialah ungkapan linear."
+        }
+      },
+      {
+        "value": "D",
+        "text": "4x² + 2y - 5",
+        "feedback": {
+          "en": "This contains two variables (x and y).",
+          "ms": "Ini mengandungi dua pemboleh ubah (x dan y)."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "A quadratic expression in one variable has the highest power of 2 with only one variable."
+      ],
+      "ms": [
+        "Ungkapan kuadratik dalam satu pemboleh ubah mempunyai kuasa tertinggi 2 dengan satu pemboleh ubah sahaja."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "2x² + 5x - 3 has highest power of 2 and one variable x."
+      ],
+      "ms": [
+        "2x² + 5x - 3 mempunyai kuasa tertinggi 2 dan satu pemboleh ubah x."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "quadratic_identification"
+    ]
+  },
+  {
+    "id": "F4-C01-E02",
+    "chapter": 1,
+    "topic": "quadratic_graph_shape",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "For the quadratic function f(x) = -3x² + 7x - 2, what is the shape of its graph?",
+      "ms": "Bagi fungsi kuadratik f(x) = -3x² + 7x - 2, apakah bentuk grafnya?"
+    },
+    "equation": "f(x) = ax² + bx + c, a = -3",
+    "options": [
+      {
+        "value": "A",
+        "text": "Parabola with maximum point (∩ shape)",
+        "feedback": {
+          "en": "Correct! Since a = -3 < 0, it opens downwards with a maximum point.",
+          "ms": "Tepat! Oleh sebab a = -3 < 0, graf melengkung ke bawah dengan titik maksimum."
+        }
+      },
+      {
+        "value": "B",
+        "text": "Parabola with minimum point (∪ shape)",
+        "feedback": {
+          "en": "Minimum point occurs when a > 0.",
+          "ms": "Titik minimum berlaku apabila a > 0."
+        }
+      },
+      {
+        "value": "C",
+        "text": "Straight line",
+        "feedback": {
+          "en": "Quadratic functions are curves, not straight lines.",
+          "ms": "Fungsi kuadratik berbentuk lengkung, bukan garis lurus."
+        }
+      },
+      {
+        "value": "D",
+        "text": "Circle",
+        "feedback": {
+          "en": "Quadratic graphs are parabolas.",
+          "ms": "Graf kuadratik adalah parabola."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Look at coefficient a: a > 0 gives ∪ (minimum), a < 0 gives ∩ (maximum)."
+      ],
+      "ms": [
+        "Lihat pekali a: a > 0 menghasilkan ∪ (minimum), a < 0 menghasilkan ∩ (maksimum)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "a = -3 < 0, so the graph opens downwards and has a maximum point."
+      ],
+      "ms": [
+        "a = -3 < 0, maka graf membuka ke bawah dan mempunyai titik maksimum."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "graph_shape"
+    ]
+  },
+  {
+    "id": "F4-C01-E03",
+    "chapter": 1,
+    "topic": "quadratic_y_intercept",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the y-intercept of the quadratic function f(x) = 2x² - 4x + 6.",
+      "ms": "Cari pintasan-y bagi fungsi kuadratik f(x) = 2x² - 4x + 6."
+    },
+    "equation": "y = f(0) = c",
+    "options": [
+      {
+        "value": 6,
+        "text": "y = 6",
+        "feedback": {
+          "en": "Correct! When x = 0, f(0) = 6.",
+          "ms": "Tepat! Apabila x = 0, f(0) = 6."
+        }
+      },
+      {
+        "value": -4,
+        "text": "y = -4",
+        "feedback": {
+          "en": "-4 is coefficient b, not y-intercept.",
+          "ms": "-4 ialah pekali b, bukan pintasan-y."
+        }
+      },
+      {
+        "value": 2,
+        "text": "y = 2",
+        "feedback": {
+          "en": "2 is coefficient a, not y-intercept.",
+          "ms": "2 ialah pekali a, bukan pintasan-y."
+        }
+      },
+      {
+        "value": 0,
+        "text": "y = 0",
+        "feedback": {
+          "en": "Constant term c is 6, not 0.",
+          "ms": "Pemalar c ialah 6, bukan 0."
+        }
+      }
+    ],
+    "answer": 6,
+    "hints": {
+      "en": [
+        "Substitute x = 0 to find the y-intercept."
+      ],
+      "ms": [
+        "Gantikan x = 0 untuk mencari pintasan-y."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "f(0) = 2(0)² - 4(0) + 6 = 6."
+      ],
+      "ms": [
+        "f(0) = 2(0)² - 4(0) + 6 = 6."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "y_intercept"
+    ]
+  },
+  {
+    "id": "F4-C01-E04",
+    "chapter": 1,
+    "topic": "axis_of_symmetry",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Determine the equation of the axis of symmetry for f(x) = x² - 6x + 5.",
+      "ms": "Tentukan persamaan paksi simetri bagi f(x) = x² - 6x + 5."
+    },
+    "equation": "x = -b / (2a)",
+    "options": [
+      {
+        "value": 3,
+        "text": "x = 3",
+        "feedback": {
+          "en": "Correct! x = -(-6) / (2 × 1) = 3.",
+          "ms": "Tepat! x = -(-6) / (2 × 1) = 3."
+        }
+      },
+      {
+        "value": -3,
+        "text": "x = -3",
+        "feedback": {
+          "en": "Remember the negative sign in -b / (2a).",
+          "ms": "Ingat tanda negatif dalam -b / (2a)."
+        }
+      },
+      {
+        "value": 6,
+        "text": "x = 6",
+        "feedback": {
+          "en": "Divide by 2a: 6 / 2 = 3.",
+          "ms": "Bahagikan dengan 2a: 6 / 2 = 3."
+        }
+      },
+      {
+        "value": 5,
+        "text": "x = 5",
+        "feedback": {
+          "en": "5 is the constant c.",
+          "ms": "5 ialah pemalar c."
+        }
+      }
+    ],
+    "answer": 3,
+    "hints": {
+      "en": [
+        "Use x = -b / (2a) where a = 1, b = -6."
+      ],
+      "ms": [
+        "Gunakan x = -b / (2a) dengan a = 1, b = -6."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x = -(-6) / (2 × 1) = 6 / 2 = 3."
+      ],
+      "ms": [
+        "x = -(-6) / (2 × 1) = 6 / 2 = 3."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "axis_of_symmetry"
+    ]
+  },
+  {
+    "id": "F4-C01-E05",
+    "chapter": 1,
+    "topic": "roots_from_factors",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the roots of the quadratic equation (x - 4)(x + 7) = 0.",
+      "ms": "Cari punca-punca bagi persamaan kuadratik (x - 4)(x + 7) = 0."
+    },
+    "equation": "(x - p)(x - q) = 0",
+    "options": [
+      {
+        "value": "4 and -7",
+        "text": "x = 4, x = -7",
+        "feedback": {
+          "en": "Correct! x - 4 = 0 gives x = 4, x + 7 = 0 gives x = -7.",
+          "ms": "Tepat! x - 4 = 0 memberi x = 4, x + 7 = 0 memberi x = -7."
+        }
+      },
+      {
+        "value": "-4 and 7",
+        "text": "x = -4, x = 7",
+        "feedback": {
+          "en": "Check signs when equating factors to zero.",
+          "ms": "Semak tanda apabila menyamakan faktor dengan sifar."
+        }
+      },
+      {
+        "value": "4 and 7",
+        "text": "x = 4, x = 7",
+        "feedback": {
+          "en": "x + 7 = 0 gives x = -7.",
+          "ms": "x + 7 = 0 memberi x = -7."
+        }
+      },
+      {
+        "value": "-4 and -7",
+        "text": "x = -4, x = -7",
+        "feedback": {
+          "en": "x - 4 = 0 gives x = 4.",
+          "ms": "x - 4 = 0 memberi x = 4."
+        }
+      }
+    ],
+    "answer": "4 and -7",
+    "hints": {
+      "en": [
+        "Set each factor equal to zero."
+      ],
+      "ms": [
+        "Samakan setiap faktor dengan sifar."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x - 4 = 0 → x = 4; x + 7 = 0 → x = -7."
+      ],
+      "ms": [
+        "x - 4 = 0 → x = 4; x + 7 = 0 → x = -7."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "factored_roots"
+    ]
+  },
+  {
+    "id": "F4-C01-M01",
+    "chapter": 1,
+    "topic": "factorization_word_problem",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A rectangular cutting board has an area of 36 cm². Its length is (x + 5) cm and its width is x cm. Find the value of x.",
+      "ms": "Sebuah papan pemotong berbentuk segi empat tepat mempunyai luas 36 cm². Panjangnya ialah (x + 5) cm dan lebarnya ialah x cm. Cari nilai x."
+    },
+    "equation": "x(x + 5) = 36",
+    "options": [
+      {
+        "value": 4,
+        "text": "x = 4 cm",
+        "feedback": {
+          "en": "Correct! 4(4 + 5) = 4(9) = 36 cm².",
+          "ms": "Tepat! 4(4 + 5) = 4(9) = 36 cm²."
+        }
+      },
+      {
+        "value": 6,
+        "text": "x = 6 cm",
+        "feedback": {
+          "en": "6(11) = 66 cm², not 36 cm².",
+          "ms": "6(11) = 66 cm², bukan 36 cm²."
+        }
+      },
+      {
+        "value": 9,
+        "text": "x = 9 cm",
+        "feedback": {
+          "en": "9 is length, not width x.",
+          "ms": "9 ialah panjang, bukan lebar x."
+        }
+      },
+      {
+        "value": 3,
+        "text": "x = 3 cm",
+        "feedback": {
+          "en": "3(8) = 24 cm², too small.",
+          "ms": "3(8) = 24 cm², terlalu kecil."
+        }
+      }
+    ],
+    "answer": 4,
+    "hints": {
+      "en": [
+        "Form x² + 5x - 36 = 0 and factorise into (x + 9)(x - 4) = 0."
+      ],
+      "ms": [
+        "Bina x² + 5x - 36 = 0 dan faktorkan kepada (x + 9)(x - 4) = 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(x + 9)(x - 4) = 0. Since physical length > 0, x = 4 cm."
+      ],
+      "ms": [
+        "(x + 9)(x - 4) = 0. Oleh sebab panjang fizikal > 0, x = 4 cm."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "factorization",
+      "area_problem"
+    ]
+  },
+  {
+    "id": "F4-C01-M02",
+    "chapter": 1,
+    "topic": "factorization_a_greater_than_1",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Solve 2x² + 7x - 15 = 0. What is the positive root?",
+      "ms": "Selesaikan 2x² + 7x - 15 = 0. Apakah punca positif?"
+    },
+    "equation": "2x² + 7x - 15 = 0",
+    "options": [
+      {
+        "value": 1.5,
+        "text": "x = 1.5",
+        "feedback": {
+          "en": "Correct! (2x - 3)(x + 5) = 0 gives x = 3/2 = 1.5.",
+          "ms": "Tepat! (2x - 3)(x + 5) = 0 memberi x = 3/2 = 1.5."
+        }
+      },
+      {
+        "value": 3,
+        "text": "x = 3",
+        "feedback": {
+          "en": "2(9) + 7(3) - 15 = 24 ≠ 0.",
+          "ms": "2(9) + 7(3) - 15 = 24 ≠ 0."
+        }
+      },
+      {
+        "value": 5,
+        "text": "x = 5",
+        "feedback": {
+          "en": "Root is x = -5, not +5.",
+          "ms": "Punca ialah x = -5, bukan +5."
+        }
+      },
+      {
+        "value": 2.5,
+        "text": "x = 2.5",
+        "feedback": {
+          "en": "Check factors of 2x² + 7x - 15.",
+          "ms": "Semak faktor 2x² + 7x - 15."
+        }
+      }
+    ],
+    "answer": 1.5,
+    "hints": {
+      "en": [
+        "Factorise into (2x - 3)(x + 5) = 0."
+      ],
+      "ms": [
+        "Faktorkan kepada (2x - 3)(x + 5) = 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "2x - 3 = 0 → x = 1.5. x + 5 = 0 → x = -5. Positive root is 1.5."
+      ],
+      "ms": [
+        "2x - 3 = 0 → x = 1.5. x + 5 = 0 → x = -5. Punca positif ialah 1.5."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "quadratic_factorization_a"
+    ]
+  },
+  {
+    "id": "F4-C01-M03",
+    "chapter": 1,
+    "topic": "axis_of_symmetry_maximum",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "The baking temperature T (in °C) is given by T(t) = -2t² + 16t + 48, where t is time in minutes. What is the maximum temperature reached?",
+      "ms": "Suhu pembakaran T (dalam °C) diberi oleh T(t) = -2t² + 16t + 48, dengan t ialah masa dalam minit. Apakah suhu maksimum yang dicapai?"
+    },
+    "equation": "t = -b / (2a)",
+    "options": [
+      {
+        "value": 80,
+        "text": "80 °C",
+        "feedback": {
+          "en": "Correct! Axis of symmetry t = -16 / (2 × -2) = 4 min. Substitute t = 4: T(4) = -2(16) + 16(4) + 48 = 80 °C.",
+          "ms": "Tepat! Paksi simetri t = -16 / (2 × -2) = 4 minit. Gantikan t = 4: T(4) = -2(16) + 16(4) + 48 = 80 °C."
+        }
+      },
+      {
+        "value": 4,
+        "text": "4 °C",
+        "feedback": {
+          "en": "4 minutes is the time t at maximum, not the temperature T.",
+          "ms": "4 minit ialah nilai masa t pada suhu maksimum, bukan nilai suhu T."
+        }
+      },
+      {
+        "value": 48,
+        "text": "48 °C",
+        "feedback": {
+          "en": "48 °C is the initial temperature when t = 0 (y-intercept c).",
+          "ms": "48 °C ialah suhu awal semasa t = 0 (pintasan-y bagi pemalar c)."
+        }
+      },
+      {
+        "value": 64,
+        "text": "64 °C",
+        "feedback": {
+          "en": "Substitute t = 4 into T(t) = -2t² + 16t + 48 to calculate T(4) = 80 °C.",
+          "ms": "Gantikan t = 4 ke dalam T(t) = -2t² + 16t + 48 untuk mengira T(4) = 80 °C."
+        }
+      }
+    ],
+    "answer": 80,
+    "hints": {
+      "en": [
+        "Use axis of symmetry formula t = -b / (2a) where a = -2 and b = 16.",
+        "Substitute t = 4 into T(t) = -2t² + 16t + 48 to find the maximum temperature."
+      ],
+      "ms": [
+        "Gunakan rumus paksi simetri t = -b / (2a) dengan a = -2 dan b = 16.",
+        "Gantikan t = 4 ke dalam T(t) = -2t² + 16t + 48 untuk mencari suhu maksimum."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "1. Paksi simetri: t = -b / (2a) = -16 / (2 × -2) = 4 minutes.",
+        "2. Substitute t = 4 into T(t): T(4) = -2(4)² + 16(4) + 48 = -32 + 64 + 48 = 80 °C.",
+        "3. Maximum temperature reached is 80 °C."
+      ],
+      "ms": [
+        "1. Paksi simetri: t = -b / (2a) = -16 / (2 × -2) = 4 minit.",
+        "2. Gantikan t = 4 ke dalam T(t): T(4) = -2(4)² + 16(4) + 48 = -32 + 64 + 48 = 80 °C.",
+        "3. Maka suhu maksimum yang dicapai ialah 80 °C."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "axis_of_symmetry",
+      "quadratic_maximum"
+    ]
+  },
+  {
+    "id": "F4-C01-M04",
+    "chapter": 1,
+    "topic": "quadratic_factorisation",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Solve x² - 4x - 5 = 0 by factorisation. What is the positive root of x?",
+      "ms": "Selesaikan x² - 4x - 5 = 0 melalui pemfaktoran. Apakah punca positif bagi x?"
+    },
+    "equation": "(x - 5)(x + 1) = 0",
+    "options": [
+      {
+        "value": 5,
+        "text": "x = 5",
+        "feedback": {
+          "en": "Correct! (x - 5)(x + 1) = 0 gives x = 5 or x = -1. The positive root is 5.",
+          "ms": "Tepat! (x - 5)(x + 1) = 0 memberikan x = 5 atau x = -1. Punca positif ialah 5."
+        }
+      },
+      {
+        "value": 1,
+        "text": "x = 1",
+        "feedback": {
+          "en": "The negative root is x = -1, not +1.",
+          "ms": "Punca negatif ialah x = -1, bukan +1."
+        }
+      },
+      {
+        "value": 4,
+        "text": "x = 4",
+        "feedback": {
+          "en": "Check factorisation: -5 × 1 = -5 and -5 + 1 = -4.",
+          "ms": "Semak pemfaktoran: -5 × 1 = -5 dan -5 + 1 = -4."
+        }
+      },
+      {
+        "value": 6,
+        "text": "x = 6",
+        "feedback": {
+          "en": "Substitute x = 6: 36 - 24 - 5 = 7 ≠ 0.",
+          "ms": "Gantikan x = 6: 36 - 24 - 5 = 7 ≠ 0."
+        }
+      }
+    ],
+    "answer": 5,
+    "hints": {
+      "en": [
+        "Find two numbers that multiply to -5 and add to -4: -5 and +1."
+      ],
+      "ms": [
+        "Cari dua nombor yang hasil darabnya -5 dan hasil tambahnya -4: -5 dan +1."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x² - 4x - 5 = 0 factorises to (x - 5)(x + 1) = 0. Therefore x = 5 or x = -1. Positive root is 5."
+      ],
+      "ms": [
+        "x² - 4x - 5 = 0 difaktorkan kepada (x - 5)(x + 1) = 0. Maka x = 5 atau x = -1. Punca positif ialah 5."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "quadratic_factorisation"
+    ]
+  },
+  {
+    "id": "F4-C01-M05",
+    "chapter": 1,
+    "topic": "form_equation_from_roots",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Form a quadratic equation with roots 3 and -2 in standard form.",
+      "ms": "Bentukkan persamaan kuadratik yang mempunyai punca 3 dan -2 dalam bentuk am."
+    },
+    "equation": "(x - p)(x - q) = 0",
+    "options": [
+      {
+        "value": "x² - x - 6 = 0",
+        "text": "x² - x - 6 = 0",
+        "feedback": {
+          "en": "Correct! (x - 3)(x - (-2)) = (x - 3)(x + 2) = x² - x - 6 = 0.",
+          "ms": "Tepat! (x - 3)(x - (-2)) = (x - 3)(x + 2) = x² - x - 6 = 0."
+        }
+      },
+      {
+        "value": "x² + x - 6 = 0",
+        "text": "x² + x - 6 = 0",
+        "feedback": {
+          "en": "Check expansion: 2x - 3x = -x, not +x.",
+          "ms": "Semak kembangan: 2x - 3x = -x, bukan +x."
+        }
+      },
+      {
+        "value": "x² - 5x + 6 = 0",
+        "text": "x² - 5x + 6 = 0",
+        "feedback": {
+          "en": "Product of roots is 3(-2) = -6.",
+          "ms": "Hasil darab punca ialah 3(-2) = -6."
+        }
+      },
+      {
+        "value": "x² + 5x - 6 = 0",
+        "text": "x² + 5x - 6 = 0",
+        "feedback": {
+          "en": "Sum of roots is 3 + (-2) = 1.",
+          "ms": "Hasil tambah punca ialah 3 + (-2) = 1."
+        }
+      }
+    ],
+    "answer": "x² - x - 6 = 0",
+    "hints": {
+      "en": [
+        "Substitute roots: (x - 3)(x - (-2)) = (x - 3)(x + 2) = 0."
+      ],
+      "ms": [
+        "Gantikan punca: (x - 3)(x - (-2)) = (x - 3)(x + 2) = 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(x - 3)(x + 2) = x² + 2x - 3x - 6 = x² - x - 6 = 0."
+      ],
+      "ms": [
+        "(x - 3)(x + 2) = x² + 2x - 3x - 6 = x² - x - 6 = 0."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "roots_to_equation"
+    ]
+  },
+  {
+    "id": "F4-C01-H01",
+    "chapter": 1,
+    "topic": "projectile_motion_flip",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A chef flips a roti canai. Its height h (in meters) after t seconds is h(t) = -5t² + 20t. What is the maximum height reached?",
+      "ms": "Seorang penebar menebar roti canai ke udara. Ketinggiannya h (dalam meter) selepas t saat ialah h(t) = -5t² + 20t. Apakah ketinggian maksimum yang dicapai?"
+    },
+    "equation": "h(t) = -5t² + 20t",
+    "options": [
+      {
+        "value": 20,
+        "text": "20 m",
+        "feedback": {
+          "en": "Correct! Peak at t = 2 s, h(2) = -5(4) + 20(2) = 20 m.",
+          "ms": "Tepat! Puncak pada t = 2 s, h(2) = -5(4) + 20(2) = 20 m."
+        }
+      },
+      {
+        "value": 15,
+        "text": "15 m",
+        "feedback": {
+          "en": "At t = 1 s, h = 15 m, but peak is higher at t = 2 s.",
+          "ms": "Pada t = 1 s, h = 15 m, tetapi puncak lebih tinggi pada t = 2 s."
+        }
+      },
+      {
+        "value": 25,
+        "text": "25 m",
+        "feedback": {
+          "en": "Overestimated peak.",
+          "ms": "Ketinggian puncak terlebih anggaran."
+        }
+      },
+      {
+        "value": 10,
+        "text": "10 m",
+        "feedback": {
+          "en": "Check calculation at t = 2 s.",
+          "ms": "Semak pengiraan pada t = 2 s."
+        }
+      }
+    ],
+    "answer": 20,
+    "hints": {
+      "en": [
+        "t = -b / (2a) = -20 / (2 × -5) = 2 s. Find h(2)."
+      ],
+      "ms": [
+        "t = -b / (2a) = -20 / (2 × -5) = 2 s. Cari h(2)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "t = 2 s → h(2) = -5(4) + 40 = 20 m."
+      ],
+      "ms": [
+        "t = 2 s → h(2) = -5(4) + 40 = 20 m."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "projectile_motion",
+      "optimization"
+    ]
+  },
+  {
+    "id": "F4-C01-H02",
+    "chapter": 1,
+    "topic": "profit_maximization",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A stall models its daily profit P (in RM) as P(x) = -2x² + 40x - 150, where x is jars sold. How many jars maximize profit, and what is that profit?",
+      "ms": "Sebuah gerai memodelkan keuntungan P (dalam RM) sebagai P(x) = -2x² + 40x - 150, dengan x ialah balang dijual. Berapakah balang memaksimumkan keuntungan dan apakah untung itu?"
+    },
+    "equation": "P(x) = -2x² + 40x - 150",
+    "options": [
+      {
+        "value": "10 jars, RM 50",
+        "text": "10 jars, RM 50",
+        "feedback": {
+          "en": "Correct! x = 10 gives P(10) = -200 + 400 - 150 = RM 50.",
+          "ms": "Tepat! x = 10 memberi P(10) = -200 + 400 - 150 = RM 50."
+        }
+      },
+      {
+        "value": "20 jars, RM 100",
+        "text": "20 jars, RM 100",
+        "feedback": {
+          "en": "At x = 20, profit is negative.",
+          "ms": "Pada x = 20, keuntungan adalah negatif."
+        }
+      },
+      {
+        "value": "10 jars, RM 70",
+        "text": "10 jars, RM 70",
+        "feedback": {
+          "en": "Check subtraction: 200 - 150 = 50.",
+          "ms": "Semak penolakan: 200 - 150 = 50."
+        }
+      },
+      {
+        "value": "8 jars, RM 42",
+        "text": "8 jars, RM 42",
+        "feedback": {
+          "en": "Vertex x is 10, not 8.",
+          "ms": "Verteks x ialah 10, bukan 8."
+        }
+      }
+    ],
+    "answer": "10 jars, RM 50",
+    "hints": {
+      "en": [
+        "Find x = -b / (2a) = -40 / (2 × -2) = 10, then calculate P(10)."
+      ],
+      "ms": [
+        "Cari x = -b / (2a) = -40 / (2 × -2) = 10, kemudian kira P(10)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x = 10 jars, P(10) = RM 50."
+      ],
+      "ms": [
+        "x = 10 balang, P(10) = RM 50."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "profit_function",
+      "vertex_optimization"
+    ]
+  },
+  {
+    "id": "F4-C01-H03",
+    "chapter": 1,
+    "topic": "geometric_border_walkway",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "An 8 m by 6 m stall is surrounded by a uniform walkway of width x meters. Total combined area is 80 m². Find walkway width x.",
+      "ms": "Gerai berukuran 8 m kali 6 m dikelilingi laluan selebar x meter. Jumlah luas keseluruhan ialah 80 m². Cari lebar laluan x."
+    },
+    "equation": "(8 + 2x)(6 + 2x) = 80",
+    "options": [
+      {
+        "value": 1,
+        "text": "x = 1 m",
+        "feedback": {
+          "en": "Correct! (10)(8) = 80 m².",
+          "ms": "Tepat! (10)(8) = 80 m²."
+        }
+      },
+      {
+        "value": 2,
+        "text": "x = 2 m",
+        "feedback": {
+          "en": "(12)(10) = 120 m² ≠ 80 m².",
+          "ms": "(12)(10) = 120 m² ≠ 80 m²."
+        }
+      },
+      {
+        "value": 0.5,
+        "text": "x = 0.5 m",
+        "feedback": {
+          "en": "(9)(7) = 63 m², too small.",
+          "ms": "(9)(7) = 63 m², terlalu kecil."
+        }
+      },
+      {
+        "value": 1.5,
+        "text": "x = 1.5 m",
+        "feedback": {
+          "en": "(11)(9) = 99 m² ≠ 80 m².",
+          "ms": "(11)(9) = 99 m² ≠ 80 m²."
+        }
+      }
+    ],
+    "answer": 1,
+    "hints": {
+      "en": [
+        "4x² + 28x + 48 = 80 → 4x² + 28x - 32 = 0 → x² + 7x - 8 = 0."
+      ],
+      "ms": [
+        "4x² + 28x + 48 = 80 → 4x² + 28x - 32 = 0 → x² + 7x - 8 = 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(x + 8)(x - 1) = 0. Since x > 0, x = 1 m."
+      ],
+      "ms": [
+        "(x + 8)(x - 1) = 0. Oleh sebab x > 0, x = 1 m."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "quadratic_modeling",
+      "geometry_word_problem"
+    ]
+  },
+  {
+    "id": "F4-C01-H04",
+    "chapter": 1,
+    "topic": "discriminant_condition",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the value of k such that x² - 6x + k = 0 has two equal real roots.",
+      "ms": "Cari nilai k supaya x² - 6x + k = 0 mempunyai dua punca nyata yang sama."
+    },
+    "equation": "b² - 4ac = 0",
+    "options": [
+      {
+        "value": 9,
+        "text": "k = 9",
+        "feedback": {
+          "en": "Correct! (-6)² - 4(1)(k) = 36 - 4k = 0 → k = 9.",
+          "ms": "Tepat! (-6)² - 4(1)(k) = 36 - 4k = 0 → k = 9."
+        }
+      },
+      {
+        "value": 36,
+        "text": "k = 36",
+        "feedback": {
+          "en": "Divide by 4: 36 / 4 = 9.",
+          "ms": "Bahagikan dengan 4: 36 / 4 = 9."
+        }
+      },
+      {
+        "value": -9,
+        "text": "k = -9",
+        "feedback": {
+          "en": "36 - 4k = 0 gives k = +9.",
+          "ms": "36 - 4k = 0 memberi k = +9."
+        }
+      },
+      {
+        "value": 12,
+        "text": "k = 12",
+        "feedback": {
+          "en": "For k = 12, b² - 4ac = -12 < 0.",
+          "ms": "Bagi k = 12, b² - 4ac = -12 < 0."
+        }
+      }
+    ],
+    "answer": 9,
+    "hints": {
+      "en": [
+        "Equal real roots mean discriminant b² - 4ac = 0."
+      ],
+      "ms": [
+        "Punca nyata yang sama bermaksud pembezalayan b² - 4ac = 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "36 - 4k = 0 → k = 9."
+      ],
+      "ms": [
+        "36 - 4k = 0 → k = 9."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "discriminant",
+      "equal_roots"
+    ]
+  },
+  {
+    "id": "F4-C01-H05",
+    "chapter": 1,
+    "topic": "perimeter_area_system",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A rectangular table has perimeter 28 m and area 48 m². Find its dimensions.",
+      "ms": "Sebuah meja berbentuk segi empat tepat mempunyai perimeter 28 m dan luas 48 m². Cari ukurannya."
+    },
+    "equation": "2(w + l) = 28, w × l = 48",
+    "options": [
+      {
+        "value": "8 m and 6 m",
+        "text": "Length = 8 m, Width = 6 m",
+        "feedback": {
+          "en": "Correct! 2(8 + 6) = 28 m and 8 × 6 = 48 m².",
+          "ms": "Tepat! 2(8 + 6) = 28 m dan 8 × 6 = 48 m²."
+        }
+      },
+      {
+        "value": "12 m and 4 m",
+        "text": "Length = 12 m, Width = 4 m",
+        "feedback": {
+          "en": "Perimeter is 2(16) = 32 m ≠ 28 m.",
+          "ms": "Perimeter ialah 2(16) = 32 m ≠ 28 m."
+        }
+      },
+      {
+        "value": "16 m and 3 m",
+        "text": "Length = 16 m, Width = 3 m",
+        "feedback": {
+          "en": "Perimeter is 38 m.",
+          "ms": "Perimeter ialah 38 m."
+        }
+      },
+      {
+        "value": "7 m and 7 m",
+        "text": "Length = 7 m, Width = 7 m",
+        "feedback": {
+          "en": "Area is 49 m² ≠ 48 m².",
+          "ms": "Luas ialah 49 m² ≠ 48 m²."
+        }
+      }
+    ],
+    "answer": "8 m and 6 m",
+    "hints": {
+      "en": [
+        "w + l = 14 → l = 14 - w. w(14 - w) = 48 → w² - 14w + 48 = 0."
+      ],
+      "ms": [
+        "w + l = 14 → l = 14 - w. w(14 - w) = 48 → w² - 14w + 48 = 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(w - 8)(w - 6) = 0 → dimensions are 8 m and 6 m."
+      ],
+      "ms": [
+        "(w - 8)(w - 6) = 0 → ukuran ialah 8 m dan 6 m."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "perimeter_area_system"
+    ]
+  },
+  {
+    "id": "F4-C01-E06",
+    "chapter": 1,
+    "topic": "quadratic_functions_extreme_value",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Does the quadratic function f(x) = -2x² + 4x - 5 have a maximum or minimum value?",
+      "ms": "Adakah fungsi kuadratik f(x) = -2x² + 4x - 5 mempunyai nilai maksimum atau minimum?"
+    },
+    "equation": "f(x) = -2x² + 4x - 5",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Maximum value because a < 0",
+          "ms": "Nilai maksimum kerana a < 0"
+        },
+        "feedback": {
+          "en": "Correct! Since a = -2 < 0, the graph opens downwards with a maximum point.",
+          "ms": "Tepat! Kerana a = -2 < 0, graf melengkung ke bawah dengan titik maksimum."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Minimum value because a < 0",
+          "ms": "Nilai minimum kerana a < 0"
+        },
+        "feedback": {
+          "en": "When a < 0, the curve has a maximum, not minimum.",
+          "ms": "Apabila a < 0, graf mempunyai titik maksimum, bukan minimum."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Minimum value because c = -5",
+          "ms": "Nilai minimum kerana c = -5"
+        },
+        "feedback": {
+          "en": "The value of c determines the y-intercept, not maximum/minimum.",
+          "ms": "Nilai c menentukan pintasan-y, bukan nilai maksimum/minimum."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "No extreme value",
+          "ms": "Tiada nilai ekstrem"
+        },
+        "feedback": {
+          "en": "All quadratic functions have an extreme point (vertex).",
+          "ms": "Semua fungsi kuadratik mempunyai titik ekstrem (verteks)."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Look at the coefficient of x² (a). If a > 0, minimum; if a < 0, maximum."
+      ],
+      "ms": [
+        "Perhatikan pekali bagi x² (nilai a). Jika a > 0, minimum; jika a < 0, maksimum."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "For f(x) = ax² + bx + c, a = -2. Since a < 0, the parabola opens downwards, giving a maximum point."
+      ],
+      "ms": [
+        "Bagi f(x) = ax² + bx + c, a = -2. Kerana a < 0, parabola membuka ke bawah dengan titik maksimum."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-E07",
+    "chapter": 1,
+    "topic": "quadratic_y_intercept",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "State the y-intercept of the quadratic function f(x) = 3x² - 5x + 8.",
+      "ms": "Nyatakan pintasan-y bagi fungsi kuadratik f(x) = 3x² - 5x + 8."
+    },
+    "equation": "f(x) = 3x² - 5x + 8",
+    "options": [
+      {
+        "value": "A",
+        "text": "8",
+        "feedback": {
+          "en": "Correct! When x = 0, f(0) = 8.",
+          "ms": "Tepat! Apabila x = 0, f(0) = 8."
+        }
+      },
+      {
+        "value": "B",
+        "text": "-5",
+        "feedback": {
+          "en": "This is the coefficient b.",
+          "ms": "Ini adalah pekali b."
+        }
+      },
+      {
+        "value": "C",
+        "text": "3",
+        "feedback": {
+          "en": "This is the coefficient a.",
+          "ms": "Ini adalah pekali a."
+        }
+      },
+      {
+        "value": "D",
+        "text": "-8",
+        "feedback": {
+          "en": "Sign is positive 8.",
+          "ms": "Tandanya ialah positif 8."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Substitute x = 0 to find the y-intercept."
+      ],
+      "ms": [
+        "Gantikan x = 0 untuk mencari pintasan-y."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The y-intercept is the value of f(x) when x = 0: f(0) = 8."
+      ],
+      "ms": [
+        "Pintasan-y ialah nilai f(x) apabila x = 0: f(0) = 8."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-E08",
+    "chapter": 1,
+    "topic": "axis_of_symmetry_formula",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "Find the equation of the axis of symmetry for f(x) = x² - 6x + 2 using x = -b / (2a).",
+      "ms": "Cari persamaan paksi simetri bagi f(x) = x² - 6x + 2 menggunakan rumus x = -b / (2a)."
+    },
+    "equation": "x = -b / (2a)",
+    "options": [
+      {
+        "value": "A",
+        "text": "x = 3",
+        "feedback": {
+          "en": "Correct! x = -(-6) / (2 * 1) = 3.",
+          "ms": "Tepat! x = -(-6) / (2 * 1) = 3."
+        }
+      },
+      {
+        "value": "B",
+        "text": "x = -3",
+        "feedback": {
+          "en": "Watch the signs: -(-6) = +6.",
+          "ms": "Perhatikan tanda: -(-6) = +6."
+        }
+      },
+      {
+        "value": "C",
+        "text": "x = 6",
+        "feedback": {
+          "en": "Remember to divide by 2a.",
+          "ms": "Ingat untuk bahagi dengan 2a."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x = -6",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "a = 1, b = -6. Calculate -(-6) / 2."
+      ],
+      "ms": [
+        "a = 1, b = -6. Kira -(-6) / 2."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x = -(-6) / (2 * 1) = 6 / 2 = 3. Axis of symmetry is x = 3."
+      ],
+      "ms": [
+        "x = -(-6) / (2 * 1) = 6 / 2 = 3. Paksi simetri ialah x = 3."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-E09",
+    "chapter": 1,
+    "topic": "factorisation_difference_of_squares",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Factorise the quadratic expression x² - 16 completely.",
+      "ms": "Faktorkan ungkapan kuadratik x² - 16 dengan lengkap."
+    },
+    "equation": "x² - 16",
+    "options": [
+      {
+        "value": "A",
+        "text": "(x - 4)(x + 4)",
+        "feedback": {
+          "en": "Correct! x² - 4² = (x - 4)(x + 4).",
+          "ms": "Tepat! x² - 4² = (x - 4)(x + 4)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "(x - 4)²",
+        "feedback": {
+          "en": "(x - 4)² = x² - 8x + 16.",
+          "ms": "(x - 4)² = x² - 8x + 16."
+        }
+      },
+      {
+        "value": "C",
+        "text": "(x - 8)(x + 2)",
+        "feedback": {
+          "en": "Incorrect factors.",
+          "ms": "Faktor tidak tepat."
+        }
+      },
+      {
+        "value": "D",
+        "text": "(x + 4)²",
+        "feedback": {
+          "en": "(x + 4)² = x² + 8x + 16.",
+          "ms": "(x + 4)² = x² + 8x + 16."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Use difference of two squares: a² - b² = (a - b)(a + b)."
+      ],
+      "ms": [
+        "Gunakan beza dua kuasa dua: a² - b² = (a - b)(a + b)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x² - 16 = x² - 4² = (x - 4)(x + 4)."
+      ],
+      "ms": [
+        "x² - 16 = x² - 4² = (x - 4)(x + 4)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-E10",
+    "chapter": 1,
+    "topic": "quadratic_graph_shape",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "A roti canai dough bowl shape is modelled by f(x) = 4x² - 8x + 3. What is the shape of its graph?",
+      "ms": "Bentuk mangkuk adunan roti canai dimodelkan oleh f(x) = 4x² - 8x + 3. Apakah bentuk grafnya?"
+    },
+    "equation": "f(x) = 4x² - 8x + 3",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Parabola opening upwards (U-shape)",
+          "ms": "Parabola melengkung ke atas (bentuk U)"
+        },
+        "feedback": {
+          "en": "Correct! a = 4 > 0, graph has a minimum point.",
+          "ms": "Tepat! a = 4 > 0, graf melengkung ke atas."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Parabola opening downwards (Inverted U)",
+          "ms": "Parabola melengkung ke bawah (bentuk U terbalik)"
+        },
+        "feedback": {
+          "en": "This only happens when a < 0.",
+          "ms": "Ini hanya berlaku jika a < 0."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Straight line",
+          "ms": "Garis lurus"
+        },
+        "feedback": {
+          "en": "A quadratic function is curved, not straight.",
+          "ms": "Fungsi kuadratik melengkung, bukan garis lurus."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Horizontal line",
+          "ms": "Garis mengufuk"
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Check coefficient a: 4 > 0."
+      ],
+      "ms": [
+        "Semak pekali a: 4 > 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Since a = 4 > 0, the curve smiles upwards (U-shape) with a minimum point."
+      ],
+      "ms": [
+        "Kerana a = 4 > 0, graf melengkung ke atas (bentuk U) dengan titik minimum."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-M06",
+    "chapter": 1,
+    "topic": "quadratic_axis_and_minimum",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "Find the minimum value of f(x) = 2x² - 8x + 3 by first finding the axis of symmetry x = -b / (2a).",
+      "ms": "Cari nilai minimum bagi f(x) = 2x² - 8x + 3 dengan mencari paksi simetri x = -b / (2a) terlebih dahulu."
+    },
+    "equation": "x = -b / (2a), f(x) = 2x² - 8x + 3",
+    "options": [
+      {
+        "value": "A",
+        "text": "-5",
+        "feedback": {
+          "en": "Correct! x = 2, f(2) = 2(4) - 16 + 3 = -5.",
+          "ms": "Tepat! x = 2, f(2) = 2(4) - 16 + 3 = -5."
+        }
+      },
+      {
+        "value": "B",
+        "text": "2",
+        "feedback": {
+          "en": "2 is the axis of symmetry x, not minimum value.",
+          "ms": "2 ialah nilai x paksi simetri, bukan nilai minimum."
+        }
+      },
+      {
+        "value": "C",
+        "text": "3",
+        "feedback": {
+          "en": "3 is the y-intercept.",
+          "ms": "3 ialah pintasan-y."
+        }
+      },
+      {
+        "value": "D",
+        "text": "-11",
+        "feedback": {
+          "en": "Check calculation of f(2).",
+          "ms": "Semak pengiraan f(2)."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "x = -(-8)/(2*2) = 2. Then substitute x = 2 into f(x)."
+      ],
+      "ms": [
+        "x = -(-8)/(2*2) = 2. Kemudian gantikan x = 2 ke dalam f(x)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x = -(-8)/(2*2) = 2. Minimum value = f(2) = 2(2)² - 8(2) + 3 = 8 - 16 + 3 = -5."
+      ],
+      "ms": [
+        "x = -(-8)/(2*2) = 2. Nilai minimum = f(2) = 2(2)² - 8(2) + 3 = 8 - 16 + 3 = -5."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-M07",
+    "chapter": 1,
+    "topic": "quadratic_solve_by_factorisation",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Solve the quadratic equation x² + 3x - 10 = 0.",
+      "ms": "Selesaikan persamaan kuadratik x² + 3x - 10 = 0."
+    },
+    "equation": "x² + 3x - 10 = 0",
+    "options": [
+      {
+        "value": "A",
+        "text": "x = 2, x = -5",
+        "feedback": {
+          "en": "Correct! (x - 2)(x + 5) = 0.",
+          "ms": "Tepat! (x - 2)(x + 5) = 0."
+        }
+      },
+      {
+        "value": "B",
+        "text": "x = -2, x = 5",
+        "feedback": {
+          "en": "Signs are swapped.",
+          "ms": "Tanda terbalik."
+        }
+      },
+      {
+        "value": "C",
+        "text": "x = 1, x = -10",
+        "feedback": {
+          "en": "1 - 10 = -9 != 3.",
+          "ms": "1 - 10 = -9 != 3."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x = -1, x = 10",
+        "feedback": {
+          "en": "Incorrect factors.",
+          "ms": "Faktor tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Find two numbers with product -10 and sum +3: -2 and +5."
+      ],
+      "ms": [
+        "Cari dua nombor dengan hasil darab -10 dan hasil tambah +3: -2 dan +5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(x - 2)(x + 5) = 0 => x - 2 = 0 (x = 2) or x + 5 = 0 (x = -5)."
+      ],
+      "ms": [
+        "(x - 2)(x + 5) = 0 => x - 2 = 0 (x = 2) atau x + 5 = 0 (x = -5)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-M08",
+    "chapter": 1,
+    "topic": "quadratic_application_area",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "A rectangular food tray has length (x + 4) cm and width x cm. If its area is 45 cm², find the value of x.",
+      "ms": "Dulang makanan mempunyai panjang (x + 4) cm dan lebar x cm. Jika luasnya ialah 45 cm², cari nilai x."
+    },
+    "equation": "x(x + 4) = 45",
+    "options": [
+      {
+        "value": "A",
+        "text": "x = 5",
+        "feedback": {
+          "en": "Correct! 5 * 9 = 45 cm².",
+          "ms": "Tepat! 5 * 9 = 45 cm²."
+        }
+      },
+      {
+        "value": "B",
+        "text": "x = 9",
+        "feedback": {
+          "en": "9 is the length (x + 4).",
+          "ms": "9 ialah panjang (x + 4)."
+        }
+      },
+      {
+        "value": "C",
+        "text": "x = 4",
+        "feedback": {
+          "en": "4 * 8 = 32 != 45.",
+          "ms": "4 * 8 = 32 != 45."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x = 6",
+        "feedback": {
+          "en": "6 * 10 = 60 != 45.",
+          "ms": "6 * 10 = 60 != 45."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "x² + 4x - 45 = 0. Factorise into (x - 5)(x + 9) = 0."
+      ],
+      "ms": [
+        "x² + 4x - 45 = 0. Faktorkan kepada (x - 5)(x + 9) = 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x² + 4x - 45 = 0 => (x - 5)(x + 9) = 0. Since width x > 0, x = 5 cm."
+      ],
+      "ms": [
+        "x² + 4x - 45 = 0 => (x - 5)(x + 9) = 0. Kerana lebar x > 0, x = 5 cm."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-M09",
+    "chapter": 1,
+    "topic": "quadratic_factorisation_coefficient_greater_than_one",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the roots of the equation 2x² - 7x + 3 = 0.",
+      "ms": "Cari punca-punca bagi persamaan 2x² - 7x + 3 = 0."
+    },
+    "equation": "2x² - 7x + 3 = 0",
+    "options": [
+      {
+        "value": "A",
+        "text": "x = 1/2, x = 3",
+        "feedback": {
+          "en": "Correct! (2x - 1)(x - 3) = 0.",
+          "ms": "Tepat! (2x - 1)(x - 3) = 0."
+        }
+      },
+      {
+        "value": "B",
+        "text": "x = -1/2, x = -3",
+        "feedback": {
+          "en": "Signs are incorrect.",
+          "ms": "Tanda tidak tepat."
+        }
+      },
+      {
+        "value": "C",
+        "text": "x = 1, x = 3/2",
+        "feedback": {
+          "en": "Check expansion.",
+          "ms": "Semak kembangan."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x = 2, x = 3",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Product a*c = 6. Numbers -1 and -6 add to -7."
+      ],
+      "ms": [
+        "Hasil darab a*c = 6. Nombor -1 dan -6 hasil tambahnya -7."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(2x - 1)(x - 3) = 0 => x = 1/2 or x = 3."
+      ],
+      "ms": [
+        "(2x - 1)(x - 3) = 0 => x = 1/2 atau x = 3."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-M10",
+    "chapter": 1,
+    "topic": "quadratic_max_profit",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "warung",
+    "question": {
+      "en": "Math Mama models daily profit (RM) from satay as P(x) = -2x² + 20x + 50. How many batches x maximise profit?",
+      "ms": "Mama memodelkan keuntungan harian (RM) daripada satay sebagai P(x) = -2x² + 20x + 50. Berapa kumpulan x menghasilkan untung maksimum?"
+    },
+    "equation": "x = -b / (2a)",
+    "options": [
+      {
+        "value": "A",
+        "text": "5 batches",
+        "feedback": {
+          "en": "Correct! x = -20 / (2 * -2) = 5.",
+          "ms": "Tepat! x = -20 / (2 * -2) = 5 kumpulan."
+        }
+      },
+      {
+        "value": "B",
+        "text": "10 batches",
+        "feedback": {
+          "en": "Divide by 2a, so divide by -4.",
+          "ms": "Bahagi dengan 2a, jadi bahagi dengan -4."
+        }
+      },
+      {
+        "value": "C",
+        "text": "4 batches",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      },
+      {
+        "value": "D",
+        "text": "8 batches",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Use x = -b / (2a) where a = -2 and b = 20."
+      ],
+      "ms": [
+        "Gunakan x = -b / (2a) di mana a = -2 dan b = 20."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x = -20 / (2 * -2) = -20 / -4 = 5 batches."
+      ],
+      "ms": [
+        "x = -20 / (2 * -2) = -20 / -4 = 5 kumpulan."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-H06",
+    "chapter": 1,
+    "topic": "quadratic_projectile_maximum_height",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "Uncle Muthu flips a roti canai. Its height h (metres) after t seconds is h(t) = -5t² + 20t + 2. Find the maximum height reached.",
+      "ms": "Uncle Muthu melambung roti canai. Tingginya h (meter) selepas t saat ialah h(t) = -5t² + 20t + 2. Cari tinggi maksimum yang dicapai."
+    },
+    "equation": "h(t) = -5t² + 20t + 2",
+    "options": [
+      {
+        "value": "A",
+        "text": "22 m",
+        "feedback": {
+          "en": "Correct! t = 2 s, h(2) = -20 + 40 + 2 = 22 m.",
+          "ms": "Tepat! t = 2 s, h(2) = -20 + 40 + 2 = 22 m."
+        }
+      },
+      {
+        "value": "B",
+        "text": "20 m",
+        "feedback": {
+          "en": "Forgot initial height of 2 m.",
+          "ms": "Terlupa menambah tinggi awal 2 m."
+        }
+      },
+      {
+        "value": "C",
+        "text": "2 m",
+        "feedback": {
+          "en": "2 m is height at t = 0.",
+          "ms": "2 m ialah tinggi pada t = 0."
+        }
+      },
+      {
+        "value": "D",
+        "text": "25 m",
+        "feedback": {
+          "en": "Check your calculation.",
+          "ms": "Semak pengiraan."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "1) Find t = -20 / (2 * -5) = 2 s. 2) Compute h(2)."
+      ],
+      "ms": [
+        "1) Cari t = -20 / (2 * -5) = 2 s. 2) Kira h(2)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "t = -b / (2a) = 2 s. Maximum height h(2) = -5(4) + 20(2) + 2 = 22 m."
+      ],
+      "ms": [
+        "t = -b / (2a) = 2 s. Tinggi maksimum h(2) = -5(4) + 20(2) + 2 = 22 m."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-H07",
+    "chapter": 1,
+    "topic": "quadratic_general_form_expansion",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Express 3x(x - 2) = 5x + 8 in general form ax² + bx + c = 0.",
+      "ms": "Ungkapkan 3x(x - 2) = 5x + 8 dalam bentuk am ax² + bx + c = 0."
+    },
+    "equation": "ax² + bx + c = 0",
+    "options": [
+      {
+        "value": "A",
+        "text": "3x² - 11x - 8 = 0",
+        "feedback": {
+          "en": "Correct! 3x² - 6x - 5x - 8 = 0.",
+          "ms": "Tepat! 3x² - 6x - 5x - 8 = 0."
+        }
+      },
+      {
+        "value": "B",
+        "text": "3x² - x - 8 = 0",
+        "feedback": {
+          "en": "-6x - 5x = -11x, not -x.",
+          "ms": "-6x - 5x = -11x, bukan -x."
+        }
+      },
+      {
+        "value": "C",
+        "text": "3x² - 11x + 8 = 0",
+        "feedback": {
+          "en": "+8 becomes -8 on left side.",
+          "ms": "+8 menjadi -8 di sebelah kiri."
+        }
+      },
+      {
+        "value": "D",
+        "text": "3x² + x + 8 = 0",
+        "feedback": {
+          "en": "Incorrect expansion.",
+          "ms": "Kembangan tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Expand to 3x² - 6x = 5x + 8, then move all terms to the left."
+      ],
+      "ms": [
+        "Kembangkan kepada 3x² - 6x = 5x + 8, kemudian pindahkan semua ke kiri."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "3x² - 6x - 5x - 8 = 0 => 3x² - 11x - 8 = 0."
+      ],
+      "ms": [
+        "3x² - 6x - 5x - 8 = 0 => 3x² - 11x - 8 = 0."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-H08",
+    "chapter": 1,
+    "topic": "quadratic_find_unknown_from_axis",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "The axis of symmetry of f(x) = x² + kx + 12 is x = -4. Find the value of k.",
+      "ms": "Paksi simetri bagi f(x) = x² + kx + 12 ialah x = -4. Cari nilai k."
+    },
+    "equation": "x = -b / (2a)",
+    "options": [
+      {
+        "value": "A",
+        "text": "k = 8",
+        "feedback": {
+          "en": "Correct! -k / (2*1) = -4 => k = 8.",
+          "ms": "Tepat! -k / (2*1) = -4 => k = 8."
+        }
+      },
+      {
+        "value": "B",
+        "text": "k = -8",
+        "feedback": {
+          "en": "-(-8) / 2 = +4 != -4.",
+          "ms": "-(-8) / 2 = +4 != -4."
+        }
+      },
+      {
+        "value": "C",
+        "text": "k = 4",
+        "feedback": {
+          "en": "Check formula: x = -b / (2a).",
+          "ms": "Semak rumus: x = -b / (2a)."
+        }
+      },
+      {
+        "value": "D",
+        "text": "k = -4",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "-k / (2 * 1) = -4. Solve for k."
+      ],
+      "ms": [
+        "-k / (2 * 1) = -4. Selesaikan untuk k."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "-k / 2 = -4 => -k = -8 => k = 8."
+      ],
+      "ms": [
+        "-k / 2 = -4 => -k = -8 => k = 8."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-H09",
+    "chapter": 1,
+    "topic": "quadratic_triangular_area_problem",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "kitchen",
+    "question": {
+      "en": "A banana leaf mat for Nasi Lemak has base 2x cm and height (2x + 3) cm. If the area is 35 cm², find the value of x.",
+      "ms": "Alas daun pisang Nasi Lemak mempunyai tapak 2x cm dan tinggi (2x + 3) cm. Jika luasnya ialah 35 cm², cari nilai x."
+    },
+    "equation": "1/2 * base * height = 35",
+    "options": [
+      {
+        "value": "A",
+        "text": "x = 3.5",
+        "feedback": {
+          "en": "Correct! 1/2 * 7 * 10 = 35 cm².",
+          "ms": "Tepat! 1/2 * 7 * 10 = 35 cm²."
+        }
+      },
+      {
+        "value": "B",
+        "text": "x = 5",
+        "feedback": {
+          "en": "1/2 * 10 * 13 = 65 != 35.",
+          "ms": "1/2 * 10 * 13 = 65 != 35."
+        }
+      },
+      {
+        "value": "C",
+        "text": "x = 3",
+        "feedback": {
+          "en": "1/2 * 6 * 9 = 27 != 35.",
+          "ms": "1/2 * 6 * 9 = 27 != 35."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x = 4",
+        "feedback": {
+          "en": "1/2 * 8 * 11 = 44 != 35.",
+          "ms": "1/2 * 8 * 11 = 44 != 35."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "1/2 * (2x) * (2x + 3) = 35 => 2x² + 3x - 35 = 0."
+      ],
+      "ms": [
+        "1/2 * (2x) * (2x + 3) = 35 => 2x² + 3x - 35 = 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x(2x + 3) = 35 => 2x² + 3x - 35 = 0 => (2x - 7)(x + 5) = 0 => x = 3.5 (x > 0)."
+      ],
+      "ms": [
+        "x(2x + 3) = 35 => 2x² + 3x - 35 = 0 => (2x - 7)(x + 5) = 0 => x = 3.5 (x > 0)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C01-H10",
+    "chapter": 1,
+    "topic": "quadratic_vertex_coordinates",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the coordinates of the turning point of the quadratic function f(x) = -2x² + 12x - 10.",
+      "ms": "Cari koordinat titik pusingan bagi fungsi kuadratik f(x) = -2x² + 12x - 10."
+    },
+    "equation": "x = -b / (2a)",
+    "options": [
+      {
+        "value": "A",
+        "text": "(3, 8)",
+        "feedback": {
+          "en": "Correct! x = 3, f(3) = -18 + 36 - 10 = 8.",
+          "ms": "Tepat! x = 3, f(3) = -18 + 36 - 10 = 8."
+        }
+      },
+      {
+        "value": "B",
+        "text": "(-3, -64)",
+        "feedback": {
+          "en": "x = -12 / -4 = +3, not -3.",
+          "ms": "x = -12 / -4 = +3, bukan -3."
+        }
+      },
+      {
+        "value": "C",
+        "text": "(3, -10)",
+        "feedback": {
+          "en": "-10 is the y-intercept.",
+          "ms": "-10 ialah pintasan-y."
+        }
+      },
+      {
+        "value": "D",
+        "text": "(6, 8)",
+        "feedback": {
+          "en": "Incorrect x-coordinate.",
+          "ms": "Koordinat x tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "1) x = -12 / (2 * -2) = 3. 2) Calculate f(3)."
+      ],
+      "ms": [
+        "1) x = -12 / (2 * -2) = 3. 2) Kira f(3)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x = -12 / (2 * -2) = 3. f(3) = -2(9) + 12(3) - 10 = 8. Vertex is (3, 8)."
+      ],
+      "ms": [
+        "x = -12 / (2 * -2) = 3. f(3) = -2(9) + 12(3) - 10 = 8. Titik pusingan ialah (3, 8)."
+      ]
+    }
+  }
+]

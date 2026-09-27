@@ -1,0 +1,23 @@
+[
+  {
+    "id": "basic_stove",
+    "nameKey": "shop.stoveTitle",
+    "descKey": "shop.stoveDesc",
+    "price": 0,
+    "unlocked": true
+  },
+  {
+    "id": "chef_knife",
+    "nameKey": "shop.knifeTitle",
+    "descKey": "shop.knifeDesc",
+    "price": 120,
+    "unlocked": false
+  },
+  {
+    "id": "cast_iron_wok",
+    "nameKey": "shop.wokTitle",
+    "descKey": "shop.wokDesc",
+    "price": 250,
+    "unlocked": false
+  }
+]

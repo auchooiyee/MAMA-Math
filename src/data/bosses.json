@@ -1,0 +1,447 @@
+{
+  "bosses": [
+    {
+      "id": "boss-01",
+      "worldId": "world-01",
+      "chapter": 1,
+      "name": "Chef Roy: The Impossible Pancake",
+      "name_ms": "Chef Roy: Lempeng Mustahil",
+      "subtitle": "Master of Parabolic Cooking",
+      "subtitle_ms": "Pakar Masakan Parabola",
+      "avatar": "🥞",
+      "hp": 300,
+      "timeLimit": 75,
+      "recipe": "roti_canai",
+      "dialogue": {
+        "intro_en": "Your batter lacks quadratic symmetry! Let's see if you can calculate the maximum pancake height!",
+        "intro_ms": "Adunan anda tiada simetri kuadratik! Mari kita lihat jika anda boleh kira tinggi maksimum lempeng ini!",
+        "hurt_en": "Argh! You found the maximum vertex point!",
+        "hurt_ms": "Aduh! Anda berjaya menemui titik verteks maksimum!",
+        "defeat_en": "Magnificent symmetry... you are a true Quadratic Master Chef!",
+        "defeat_ms": "Simetri yang hebat... anda sememangnya Ketua Chef Kuadratik yang sebenar!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "A pancake flipped follows $h = -2t^2 + 8t$. At what time $t$ (seconds) does it reach maximum height?",
+            "prompt_ms": "Lempeng yang dilambung mengikut $h = -2t^2 + 8t$. Pada masa $t$ (saat) berapakah ia mencapai ketinggian maksimum?",
+            "options": ["$t = 1$", "$t = 2$", "$t = 4$", "$t = 8$"],
+            "correctIndex": 1,
+            "explanation_en": "$t = -b / (2a) = -8 / (2 \\times -2) = 2$ seconds.",
+            "explanation_ms": "$t = -b / (2a) = -8 / (2 \\times -2) = 2$ saat."
+          }
+        },
+        {
+          "phase": 2,
+          "question": {
+            "prompt_en": "If pancake price function is $P(x) = x^2 - 14x + 49 = 0$, what is the unique break-even price $x$?",
+            "prompt_ms": "Jika fungsi harga lempeng ialah $P(x) = x^2 - 14x + 49 = 0$, apakah harga pulang modal unik $x$?",
+            "options": ["RM 5", "RM 7", "RM 9", "RM 14"],
+            "correctIndex": 1,
+            "explanation_en": "$(x - 7)^2 = 0 \\implies x = 7$. Discriminant $b^2 - 4ac = 0$ gives one equal root.",
+            "explanation_ms": "$(x - 7)^2 = 0 \\implies x = 7$. Pembezalayan $b^2 - 4ac = 0$ memberi satu punca sama."
+          }
+        }
+      ],
+      "rewards": { "xp": 400, "coins": 250, "badge": "badge-boss-01" }
+    },
+    {
+      "id": "boss-02",
+      "worldId": "world-02",
+      "chapter": 2,
+      "name": "Uncle Lim: Binary Night Market",
+      "name_ms": "Uncle Lim: Pasar Malam Perduaan",
+      "subtitle": "The Pasar Malam Crypto Trader",
+      "subtitle_ms": "Pedagang Kripto Pasar Malam",
+      "avatar": "🔢",
+      "hp": 320,
+      "timeLimit": 75,
+      "recipe": "nasi_lemak",
+      "dialogue": {
+        "intro_en": "At my stall, all prices are in Base 2, 5, and 8! Can you convert before your santan curdles?",
+        "intro_ms": "Di gerai saya, semua harga dalam Asas 2, 5, dan 8! Boleh anda tukar sebelum santan anda basi?",
+        "hurt_en": "Ouch! Your place-value arithmetic is spot on!",
+        "hurt_ms": "Adoi! Pengiraan nilai tempat anda sangat tepat!",
+        "defeat_en": "You decoded my night market register! Respect!",
+        "defeat_ms": "Anda berjaya mentafsir mesin kira pasar malam saya! Hebat!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "Uncle Lim charges $11010_2$ sen for 1 egg. Convert $11010_2$ to base 10.",
+            "prompt_ms": "Uncle Lim mengenakan bayaran $11010_2$ sen untuk 1 biji telur. Tukar $11010_2$ ke asas 10.",
+            "options": ["24 sen", "26 sen", "28 sen", "30 sen"],
+            "correctIndex": 1,
+            "explanation_en": "$16 + 8 + 0 + 2 + 0 = 26$ sen.",
+            "explanation_ms": "$16 + 8 + 0 + 2 + 0 = 26$ sen."
+          }
+        },
+        {
+          "phase": 2,
+          "question": {
+            "prompt_en": "Convert $34_{10}$ into base 5 for Uncle Lim's special spice pack.",
+            "prompt_ms": "Tukar $34_{10}$ kepada asas 5 untuk rempah istimewa Uncle Lim.",
+            "options": ["$114_5$", "$124_5$", "$115_5$", "$214_5$"],
+            "correctIndex": 0,
+            "explanation_en": "$34 = 1 \\times 25 + 1 \\times 5 + 4 \\times 1 = 114_5$.",
+            "explanation_ms": "$34 = 1 \\times 25 + 1 \\times 5 + 4 \\times 1 = 114_5$."
+          }
+        }
+      ],
+      "rewards": { "xp": 420, "coins": 260, "badge": "badge-boss-02" }
+    },
+    {
+      "id": "boss-03",
+      "worldId": "world-03",
+      "chapter": 3,
+      "name": "Makcik Minah: Mystery Customer",
+      "name_ms": "Makcik Minah: Pelanggan Misteri",
+      "subtitle": "The Logic Grandmaster",
+      "subtitle_ms": "Pakar Logik Deduktif",
+      "avatar": "☕",
+      "hp": 340,
+      "timeLimit": 80,
+      "recipe": "teh_tarik",
+      "dialogue": {
+        "intro_en": "I only order under strict conditional logic! If your deduction is invalid, no tip for you!",
+        "intro_ms": "Makcik hanya pesan mengikut logik bersyarat ketat! Jika deduksi anda tak sah, tiada tip!",
+        "hurt_en": "Aiya! You verified the converse and contrapositive correctly!",
+        "hurt_ms": "Aiya! Kamu mengesahkan akas dan kontrapositif dengan tepat!",
+        "defeat_en": "Sound and valid! Truly a master of logical reasoning!",
+        "defeat_ms": "Munasabah dan sah! Memang pakar penaakulan logik sejati!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "Statement: 'If a drink is Teh Tarik, it contains condensed milk.' What is its contrapositive?",
+            "prompt_ms": "Pernyataan: 'Jika minuman ialah Teh Tarik, maka ia mengandungi susu pekat.' Apakah kontrapositifnya?",
+            "options": [
+              "If it contains condensed milk, it is Teh Tarik.",
+              "If it does not contain condensed milk, then it is not Teh Tarik.",
+              "If it is not Teh Tarik, it does not contain condensed milk.",
+              "All Teh Tarik contains condensed milk."
+            ],
+            "correctIndex": 1,
+            "explanation_en": "Contrapositive of $p \\implies q$ is $\\sim q \\implies \\sim p$.",
+            "explanation_ms": "Kontrapositif bagi $p \\implies q$ ialah $\\sim q \\implies \\sim p$."
+          }
+        }
+      ],
+      "rewards": { "xp": 450, "coins": 270, "badge": "badge-boss-03" }
+    },
+    {
+      "id": "boss-04",
+      "worldId": "world-04",
+      "chapter": 4,
+      "name": "Cousin Dan: Food Court Chaos",
+      "name_ms": "Sepupu Dan: Hurah-Hara Medan Selera",
+      "subtitle": "Venn Diagram Coordinator",
+      "subtitle_ms": "Penyelaras Gambar Rajah Venn",
+      "avatar": "⭕",
+      "hp": 360,
+      "timeLimit": 80,
+      "recipe": "mee_goreng",
+      "dialogue": {
+        "intro_en": "A tour bus of 60 tourists arrived with complicated dietary sets! Sort them out or the food court shuts down!",
+        "intro_ms": "Satu bas pelancong 60 orang tiba dengan set diet rumit! Asingkan mereka sebelum medan selera huru-hara!",
+        "hurt_en": "Wah, you partitioned the intersections perfectly!",
+        "hurt_ms": "Wah, kamu membahagi persilangan dengan sempurna!",
+        "defeat_en": "Every single diner got the exact right bowl! Order restored!",
+        "defeat_ms": "Semua pelanggan dapat mangkuk yang tepat! Keadaan terkawal!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "In a group of 50 diners: 32 like Sambal ($S$), 25 like Sotong ($T$), and 12 like both. How many like neither ($n(S \\cup T)'$)?",
+            "prompt_ms": "Dalam 50 pelanggan: 32 suka Sambal ($S$), 25 suka Sotong ($T$), dan 12 suka kedua-duanya. Berapakah yang tidak suka kedua-duanya ($n(S \\cup T)'$)?",
+            "options": ["3 diners", "5 diners", "8 diners", "12 diners"],
+            "correctIndex": 1,
+            "explanation_en": "$n(S \\cup T) = 32 + 25 - 12 = 45$. Neither = $50 - 45 = 5$.",
+            "explanation_ms": "$n(S \\cup T) = 32 + 25 - 12 = 45$. Tiada satu pun = $50 - 45 = 5$."
+          }
+        }
+      ],
+      "rewards": { "xp": 480, "coins": 280, "badge": "badge-boss-04" }
+    },
+    {
+      "id": "boss-05",
+      "worldId": "world-05",
+      "chapter": 5,
+      "name": "Rider Sam: Delivery Disaster",
+      "name_ms": "Rider Sam: Bencana Penghantaran",
+      "subtitle": "Graph Theory Courier",
+      "subtitle_ms": "Penghantar Teori Graf",
+      "avatar": "🕸️",
+      "hp": 380,
+      "timeLimit": 80,
+      "recipe": "nasi_lemak",
+      "dialogue": {
+        "intro_en": "Rainstorm flooded half the streets! Find the minimum spanning tree or my deliveries will be soaked!",
+        "intro_ms": "Ribut lebat membanjiri separuh jalan! Cari pokok rentang minimum sebelum pesanan basah kuyup!",
+        "hurt_en": "Smart navigation! You saved 15 kilometers of travel!",
+        "hurt_ms": "Navigasi bijak! Kamu jimat 15 kilometer perjalanan!",
+        "defeat_en": "All orders delivered on time through the optimal tree network!",
+        "defeat_ms": "Semua pesanan sampai tepat pada masanya melalui rangkaian pokok optimum!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "A road network has 6 housing taman (vertices). How many edges must a tree connecting all 6 taman have?",
+            "prompt_ms": "Satu rangkaian jalan raya menghubungkan 6 taman (bucu). Berapakah bilangan tepi bagi pokok yang menghubungkan kesemua 6 taman tersebut?",
+            "options": ["5 edges", "6 edges", "7 edges", "10 edges"],
+            "correctIndex": 0,
+            "explanation_en": "For any tree with $V$ vertices, number of edges $E = V - 1 = 6 - 1 = 5$.",
+            "explanation_ms": "Bagi sebarang pokok dengan $V$ bucu, bilangan tepi $E = V - 1 = 6 - 1 = 5$."
+          }
+        }
+      ],
+      "rewards": { "xp": 500, "coins": 300, "badge": "badge-boss-05" }
+    },
+    {
+      "id": "boss-06",
+      "worldId": "world-06",
+      "chapter": 6,
+      "name": "Supplier Wong: Budget Crisis",
+      "name_ms": "Pembekal Wong: Krisis Bajet",
+      "subtitle": "The Linear Constraint King",
+      "subtitle_ms": "Raja Kekangan Linear",
+      "avatar": "📐",
+      "hp": 400,
+      "timeLimit": 85,
+      "recipe": "mee_goreng",
+      "dialogue": {
+        "intro_en": "Ingredient costs fluctuate daily! Meet the nutritional constraints and budget or your kitchen closes!",
+        "intro_ms": "Kos bahan mentah berubah-ubah! Penuhi kekangan nutrisi dan bajet atau dapur anda ditutup!",
+        "hurt_en": "You bounded the feasible region flawlessly!",
+        "hurt_ms": "Anda mengepung rantau tersaur dengan cemerlang!",
+        "defeat_en": "You found the optimum vertex for maximum profit!",
+        "defeat_ms": "Anda menemui bucu optimum untuk keuntungan maksimum!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "Constraint: $2x + 3y \\le 60$. If $x = 15$ packets of noodles, what is maximum $y$ packets of chicken?",
+            "prompt_ms": "Kekangan: $2x + 3y \\le 60$. Jika $x = 15$ paket mi, apakah nilai maksimum bagi $y$ paket ayam?",
+            "options": ["y = 10", "y = 12", "y = 15", "y = 20"],
+            "correctIndex": 0,
+            "explanation_en": "$2(15) + 3y \\le 60 \\implies 30 + 3y \\le 60 \\implies 3y \\le 30 \\implies y \\le 10$.",
+            "explanation_ms": "$2(15) + 3y \\le 60 \\implies 30 + 3y \\le 60 \\implies 3y \\le 30 \\implies y \\le 10$."
+          }
+        }
+      ],
+      "rewards": { "xp": 520, "coins": 320, "badge": "badge-boss-06" }
+    },
+    {
+      "id": "boss-07",
+      "worldId": "world-07",
+      "chapter": 7,
+      "name": "Abang J&T: Rush Hour",
+      "name_ms": "Abang J&T: Waktu Puncak",
+      "subtitle": "Motion Graph Speed Demon",
+      "subtitle_ms": "Pakar Graf Gerakan Pantas",
+      "avatar": "🛵",
+      "hp": 420,
+      "timeLimit": 85,
+      "recipe": "roti_canai",
+      "dialogue": {
+        "intro_en": "Orders are cooling down on the motorcycle! Calculate my acceleration and displacement before they turn ice cold!",
+        "intro_ms": "Makanan makin sejuk atas motor! Kira pecutan dan sesaran sebelum makanan beku!",
+        "hurt_en": "Accurate gradient calculation! The food arrived piping hot!",
+        "hurt_ms": "Pengiraan kecerunan tepat! Makanan sampai panas berasap!",
+        "defeat_en": "Flawless kinematic calculations during rush hour!",
+        "defeat_ms": "Pengiraan kinematik sempurna ketika waktu puncak!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "A scooter accelerates from $10\\text{ m/s}$ to $25\\text{ m/s}$ in $5\\text{ s}$. Find its acceleration.",
+            "prompt_ms": "Skuter memecut dari $10\\text{ m/s}$ ke $25\\text{ m/s}$ dalam masa $5\\text{ s}$. Cari pecutannya.",
+            "options": ["$2\\text{ m/s}^2$", "$3\\text{ m/s}^2$", "$5\\text{ m/s}^2$", "$7\\text{ m/s}^2$"],
+            "correctIndex": 1,
+            "explanation_en": "$a = (25 - 10) / 5 = 15 / 5 = 3\\text{ m/s}^2$.",
+            "explanation_ms": "$a = (25 - 10) / 5 = 15 / 5 = 3\\text{ m/s}^2$."
+          }
+        }
+      ],
+      "rewards": { "xp": 550, "coins": 340, "badge": "badge-boss-07" }
+    },
+    {
+      "id": "boss-08",
+      "worldId": "world-08",
+      "chapter": 8,
+      "name": "Inspector Lee: Data Crisis",
+      "name_ms": "Inspektor Lee: Krisis Data Restoran",
+      "subtitle": "Chief Quality Control Auditor",
+      "subtitle_ms": "Ketua Juruaudit Kualiti Makanan",
+      "avatar": "📊",
+      "hp": 440,
+      "timeLimit": 90,
+      "recipe": "teh_tarik",
+      "dialogue": {
+        "intro_en": "Your food portions are inconsistent! Show me low variance and tight standard deviation or face demerit points!",
+        "intro_ms": "Saiz hidangan warung kamu tidak konsisten! Buktikan varians rendah dan sisihan piawai stabil atau kena denda!",
+        "hurt_en": "Such high consistency! Your standard deviation is minimal!",
+        "hurt_ms": "Konsistensi tinggi! Sisihan piawai kamu sangat rendah!",
+        "defeat_en": "Quality standard Grade A achieved! Exemplary statistical control!",
+        "defeat_ms": "Piawaian kualiti Gred A dicapai! Kawalan statistik teladan!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "Sample portions have variance $\\sigma^2 = 16\\text{ g}^2$. What is the standard deviation $\\sigma$?",
+            "prompt_ms": "Sampel hidangan mempunyai varians $\\sigma^2 = 16\\text{ g}^2$. Apakah sisihan piawainya $\\sigma$?",
+            "options": ["$2\\text{ g}$", "$4\\text{ g}$", "$8\\text{ g}$", "$16\\text{ g}$"],
+            "correctIndex": 1,
+            "explanation_en": "$\\sigma = \\sqrt{\\sigma^2} = \\sqrt{16} = 4\\text{ g}$.",
+            "explanation_ms": "$\\sigma = \\sqrt{\\sigma^2} = \\sqrt{16} = 4\\text{ g}$."
+          }
+        }
+      ],
+      "rewards": { "xp": 580, "coins": 360, "badge": "badge-boss-08" }
+    },
+    {
+      "id": "boss-09",
+      "worldId": "world-09",
+      "chapter": 9,
+      "name": "Master Raju: Probability Carnival",
+      "name_ms": "Tuan Raju: Karnival Kebarangkalian",
+      "subtitle": "Fortune Wheel Ringmaster",
+      "subtitle_ms": "Pengacara Roda Tuah Karnival",
+      "avatar": "🎡",
+      "hp": 460,
+      "timeLimit": 90,
+      "recipe": "nasi_lemak",
+      "dialogue": {
+        "intro_en": "Spin the carnival wheel! Calculate combined probabilities of golden sambal and crispy anchovies!",
+        "intro_ms": "Putar roda karnival! Kira kebarangkalian peristiwa bergabung sambal emas dan ikan bilis rangup!",
+        "hurt_en": "You beat the house edge with compound probability multiplication!",
+        "hurt_ms": "Anda menewaskan ramalan karnival dengan pendaraban kebarangkalian!",
+        "defeat_en": "Jackpot! You solved every combined event with pure math!",
+        "defeat_ms": "Jackpot! Anda menyelesaikan setiap peristiwa bergabung dengan matematik tulen!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "Probability of customer wanting hot sambal is $P(A) = 0.6$, and wanting teh tarik is $P(B) = 0.5$. If independent, what is $P(A \\cap B)$?",
+            "prompt_ms": "Kebarangkalian pelanggan mahu sambal pedas ialah $P(A) = 0.6$, dan mahu teh tarik ialah $P(B) = 0.5$. Jika tak bersandar, cari $P(A \\cap B)$.",
+            "options": ["$0.10$", "$0.30$", "$0.55$", "$1.10$"],
+            "correctIndex": 1,
+            "explanation_en": "For independent events, $P(A \\cap B) = P(A) \\times P(B) = 0.6 \\times 0.5 = 0.30$.",
+            "explanation_ms": "Bagi peristiwa tak bersandar, $P(A \\cap B) = P(A) \\times P(B) = 0.6 \\times 0.5 = 0.30$."
+          }
+        }
+      ],
+      "rewards": { "xp": 600, "coins": 380, "badge": "badge-boss-09" }
+    },
+    {
+      "id": "boss-10",
+      "worldId": "world-10",
+      "chapter": 10,
+      "name": "Auditor Tan: Food Empire Final Exam",
+      "name_ms": "Juruaudit Tan: Peperiksaan Akhir Empayar Makanan",
+      "subtitle": "Senior Financial Controller",
+      "subtitle_ms": "Pengawal Kewangan Kanan",
+      "avatar": "👑",
+      "hp": 500,
+      "timeLimit": 95,
+      "recipe": "mee_goreng",
+      "dialogue": {
+        "intro_en": "Your warung is expanding into an empire! Let's test your SMART financial planning, cash flow, and emergency reserves!",
+        "intro_ms": "Warung anda berkembang menjadi empayar! Mari uji pelan kewangan SMART, aliran tunai, dan dana kecemasan anda!",
+        "hurt_en": "Solid cash flow projection! Positive net income secured!",
+        "hurt_ms": "Unjuran aliran tunai mantap! Pendapatan bersih positif terjamin!",
+        "defeat_en": "Approved with distinction! Your business model is completely solvent!",
+        "defeat_ms": "Lulus dengan cemerlang! Model perniagaan anda amat mampan!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "question": {
+            "prompt_en": "Monthly income RM 5,000, fixed expenses RM 2,200, variable expenses RM 1,600. What is the net monthly cash flow?",
+            "prompt_ms": "Pendapatan bulanan RM 5,000, perbelanjaan tetap RM 2,200, perbelanjaan boleh ubah RM 1,600. Berapakah aliran tunai bersih?",
+            "options": ["RM 800", "RM 1,200", "RM 1,400", "RM 2,800"],
+            "correctIndex": 1,
+            "explanation_en": "Net cash flow = $5000 - (2200 + 1600) = 5000 - 3800 = RM 1,200$ (Surplus).",
+            "explanation_ms": "Aliran tunai bersih = $5000 - (2200 + 1600) = 5000 - 3800 = RM 1,200$ (Lebihan)."
+          }
+        }
+      ],
+      "rewards": { "xp": 700, "coins": 500, "badge": "badge-boss-10" }
+    },
+    {
+      "id": "boss-final",
+      "worldId": "final",
+      "chapter": 0,
+      "name": "Food Empire Crisis: The Grand Finale",
+      "name_ms": "Krisis Empayar Makanan: Kemuncak Teragung",
+      "subtitle": "Form 4 KSSM Grand Synthesis Boss",
+      "subtitle_ms": "Bos Sintesis Agung KSSM Tingkatan 4",
+      "avatar": "🔥",
+      "hp": 800,
+      "timeLimit": 120,
+      "recipe": "nasi_lemak",
+      "dialogue": {
+        "intro_en": "The Food Empire faces its ultimate test! RM10,000 budget, 20 VIP critics, logistics breakdown! Only a Form 4 Math Mama can save us!",
+        "intro_ms": "Empayar Makanan menghadapi ujian kemuncak! Bajet RM10,000, 20 pengkritik VIP, krisis logistik! Hanya Math Mama Tingkatan 4 boleh menyelamatkan kita!",
+        "hurt_en": "Incredible! You solved that crisis stage with multi-chapter synthesis!",
+        "hurt_ms": "Hebat! Anda menyelesaikan krisis tersebut dengan sintesis pelbagai bab!",
+        "defeat_en": "THE CRISIS IS RESOLVED! You are crowned the Supreme Math Mama of Malaysia!",
+        "defeat_ms": "KRISIS TELAH DISELESAIKAN! Anda dinobatkan sebagai Math Mama Teragung Malaysia!"
+      },
+      "phases": [
+        {
+          "phase": 1,
+          "chapter": 1,
+          "stageTitle_en": "Stage 1: Menu Price Parabola",
+          "stageTitle_ms": "Peringkat 1: Parabola Harga Menu",
+          "question": {
+            "prompt_en": "Profit function for VIP buffet is $R(x) = -5x^2 + 100x - 300$. What price $x$ maximizes profit?",
+            "prompt_ms": "Fungsi keuntungan bufet VIP ialah $R(x) = -5x^2 + 100x - 300$. Apakah harga $x$ yang memaksimumkan keuntungan?",
+            "options": ["RM 8", "RM 10", "RM 15", "RM 20"],
+            "correctIndex": 1,
+            "explanation_en": "Vertex at $x = -b / (2a) = -100 / (2 \\times -5) = 10$. Maximum profit occurs at RM 10.",
+            "explanation_ms": "Verteks pada $x = -b / (2a) = -100 / (2 \\times -5) = 10$. Keuntungan maksimum berlaku pada RM 10."
+          }
+        },
+        {
+          "phase": 2,
+          "chapter": 5,
+          "stageTitle_en": "Stage 2: Critical Supply Route",
+          "stageTitle_ms": "Peringkat 2: Laluan Bekalan Kritikal",
+          "question": {
+            "prompt_en": "Connecting 4 main supplier hubs: minimum number of delivery links needed to form a connected network without loops is:",
+            "prompt_ms": "Menghubungkan 4 hab pembekal utama: bilangan pautan minimum untuk rangkaian bersambung tanpa kitaran ialah:",
+            "options": ["2 links", "3 links", "4 links", "6 links"],
+            "correctIndex": 1,
+            "explanation_en": "Spanning tree edges $E = V - 1 = 4 - 1 = 3$.",
+            "explanation_ms": "Tepi pokok rentang $E = V - 1 = 4 - 1 = 3$."
+          }
+        },
+        {
+          "phase": 3,
+          "chapter": 10,
+          "stageTitle_en": "Stage 3: Solvency & Capital Allocation",
+          "stageTitle_ms": "Peringkat 3: Keterlarutan & Peruntukan Modal",
+          "question": {
+            "prompt_en": "Total event revenue is RM 10,000. Ingredient costs RM 4,500, logistics RM 1,800, staff RM 1,700. What is the net profit margin?",
+            "prompt_ms": "Jumlah hasil acara RM 10,000. Kos bahan RM 4,500, logistik RM 1,800, staf RM 1,700. Berapakah margin keuntungan bersih?",
+            "options": ["15%", "20%", "25%", "35%"],
+            "correctIndex": 1,
+            "explanation_en": "Net profit = $10,000 - 8,000 = 2,000$. Margin = $(2,000 / 10,000) \\times 100 = 20%$.",
+            "explanation_ms": "Untung bersih = $10,000 - 8,000 = 2,000$. Margin = $(2,000 / 10,000) \\times 100 = 20%$."
+          }
+        }
+      ],
+      "rewards": { "xp": 1500, "coins": 1000, "badge": "badge-boss-supreme" }
+    }
+  ]
+}

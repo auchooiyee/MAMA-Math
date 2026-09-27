@@ -1,0 +1,2027 @@
+[
+  {
+    "id": "F4-C02-E01",
+    "chapter": 2,
+    "topic": "place_value_base_2",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "What is the place value of the underlined digit in 1101_2 (digit at 2² position)?",
+      "ms": "Apakah nilai tempat bagi digit 1 yang bergaris dalam 1101_2 (digit pada kedudukan 2²)?"
+    },
+    "equation": "2³, 2², 2¹, 2⁰",
+    "options": [
+      {
+        "value": 4,
+        "text": "4 (or 2²)",
+        "feedback": {
+          "en": "Correct! From right: 2⁰=1, 2¹=2, 2²=4, 2³=8.",
+          "ms": "Tepat! Dari kanan: 2⁰=1, 2¹=2, 2²=4, 2³=8."
+        }
+      },
+      {
+        "value": 2,
+        "text": "2 (or 2¹)",
+        "feedback": {
+          "en": "2¹ is the second digit from right.",
+          "ms": "2¹ ialah digit kedua dari kanan."
+        }
+      },
+      {
+        "value": 8,
+        "text": "8 (or 2³)",
+        "feedback": {
+          "en": "8 is the fourth digit from right.",
+          "ms": "8 ialah digit keempat dari kanan."
+        }
+      },
+      {
+        "value": 1,
+        "text": "1 (or 2⁰)",
+        "feedback": {
+          "en": "1 is the first digit from right.",
+          "ms": "1 ialah digit pertama dari kanan."
+        }
+      }
+    ],
+    "answer": 4,
+    "hints": {
+      "en": [
+        "Place values for base 2 from right to left are 2⁰=1, 2¹=2, 2²=4, 2³=8."
+      ],
+      "ms": [
+        "Nilai tempat asas 2 dari kanan ke kiri ialah 2⁰=1, 2¹=2, 2²=4, 2³=8."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The 3rd digit from right represents 2² = 4."
+      ],
+      "ms": [
+        "Digit ke-3 dari kanan mewakili 2² = 4."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "place_value"
+    ]
+  },
+  {
+    "id": "F4-C02-E02",
+    "chapter": 2,
+    "topic": "digit_value_base_5",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "What is the value of digit 3 in the number 324_5 in base 10?",
+      "ms": "Apakah nilai digit 3 dalam nombor 324_5 dalam asas 10?"
+    },
+    "equation": "3 × 5²",
+    "options": [
+      {
+        "value": 75,
+        "text": "75",
+        "feedback": {
+          "en": "Correct! 3 × 5² = 3 × 25 = 75.",
+          "ms": "Tepat! 3 × 5² = 3 × 25 = 75."
+        }
+      },
+      {
+        "value": 25,
+        "text": "25",
+        "feedback": {
+          "en": "25 is the place value 5², multiply by 3.",
+          "ms": "25 ialah nilai tempat 5², darabkan dengan 3."
+        }
+      },
+      {
+        "value": 300,
+        "text": "300",
+        "feedback": {
+          "en": "This is base 5, not base 10.",
+          "ms": "Ini asas 5, bukan asas 10."
+        }
+      },
+      {
+        "value": 15,
+        "text": "15",
+        "feedback": {
+          "en": "5² = 25, not 5.",
+          "ms": "5² = 25, bukan 5."
+        }
+      }
+    ],
+    "answer": 75,
+    "hints": {
+      "en": [
+        "Place values in base 5: 5⁰=1, 5¹=5, 5²=25. Value = digit × place value."
+      ],
+      "ms": [
+        "Nilai tempat asas 5: 5⁰=1, 5¹=5, 5²=25. Nilai = digit × nilai tempat."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Digit 3 is at 5² position: 3 × 25 = 75."
+      ],
+      "ms": [
+        "Digit 3 berada pada kedudukan 5²: 3 × 25 = 75."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "digit_value"
+    ]
+  },
+  {
+    "id": "F4-C02-E03",
+    "chapter": 2,
+    "topic": "convert_base_2_to_10",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Convert the binary number 1101_2 to base 10.",
+      "ms": "Tukarkan nombor binari 1101_2 kepada asas 10."
+    },
+    "equation": "1(2³) + 1(2²) + 0(2¹) + 1(2⁰)",
+    "options": [
+      {
+        "value": 13,
+        "text": "13",
+        "feedback": {
+          "en": "Correct! 8 + 4 + 0 + 1 = 13.",
+          "ms": "Tepat! 8 + 4 + 0 + 1 = 13."
+        }
+      },
+      {
+        "value": 11,
+        "text": "11",
+        "feedback": {
+          "en": "8 + 2 + 1 = 11 (that would be 1011_2).",
+          "ms": "8 + 2 + 1 = 11 (itu ialah 1011_2)."
+        }
+      },
+      {
+        "value": 15,
+        "text": "15",
+        "feedback": {
+          "en": "15 in binary is 1111_2.",
+          "ms": "15 dalam binari ialah 1111_2."
+        }
+      },
+      {
+        "value": 14,
+        "text": "14",
+        "feedback": {
+          "en": "8 + 4 + 2 = 14 (that would be 1110_2).",
+          "ms": "8 + 4 + 2 = 14 (itu ialah 1110_2)."
+        }
+      }
+    ],
+    "answer": 13,
+    "hints": {
+      "en": [
+        "Multiply each binary digit by its power of 2: 1(8) + 1(4) + 0(2) + 1(1)."
+      ],
+      "ms": [
+        "Darabkan setiap digit dengan kuasa 2: 1(8) + 1(4) + 0(2) + 1(1)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "1(8) + 1(4) + 0(2) + 1(1) = 8 + 4 + 0 + 1 = 13."
+      ],
+      "ms": [
+        "1(8) + 1(4) + 0(2) + 1(1) = 8 + 4 + 0 + 1 = 13."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "base_conversion"
+    ]
+  },
+  {
+    "id": "F4-C02-E04",
+    "chapter": 2,
+    "topic": "convert_base_10_to_2",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Convert 25 in base 10 to a binary number (base 2).",
+      "ms": "Tukarkan 25 dalam asas 10 kepada nombor binari (asas 2)."
+    },
+    "equation": "25 ÷ 2 repeatedly",
+    "options": [
+      {
+        "value": "11001_2",
+        "text": "11001_2",
+        "feedback": {
+          "en": "Correct! 16 + 8 + 1 = 25.",
+          "ms": "Tepat! 16 + 8 + 1 = 25."
+        }
+      },
+      {
+        "value": "11010_2",
+        "text": "11010_2",
+        "feedback": {
+          "en": "16 + 8 + 2 = 26.",
+          "ms": "16 + 8 + 2 = 26."
+        }
+      },
+      {
+        "value": "10101_2",
+        "text": "10101_2",
+        "feedback": {
+          "en": "16 + 4 + 1 = 21.",
+          "ms": "16 + 4 + 1 = 21."
+        }
+      },
+      {
+        "value": "11101_2",
+        "text": "11101_2",
+        "feedback": {
+          "en": "16 + 8 + 4 + 1 = 29.",
+          "ms": "16 + 8 + 4 + 1 = 29."
+        }
+      }
+    ],
+    "answer": "11001_2",
+    "hints": {
+      "en": [
+        "Divide 25 by 2 repeatedly and record remainders from bottom to top."
+      ],
+      "ms": [
+        "Bahagi 25 dengan 2 berulang kali dan catat baki dari bawah ke atas."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "25 = 16 + 8 + 1 = 1(2⁴) + 1(2³) + 0(2²) + 0(2¹) + 1(2⁰) = 11001_2."
+      ],
+      "ms": [
+        "25 = 16 + 8 + 1 = 1(2⁴) + 1(2³) + 0(2²) + 0(2¹) + 1(2⁰) = 11001_2."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "base_conversion"
+    ]
+  },
+  {
+    "id": "F4-C02-E05",
+    "chapter": 2,
+    "topic": "convert_base_5_to_10",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Convert 43_5 to base 10.",
+      "ms": "Tukarkan 43_5 kepada asas 10."
+    },
+    "equation": "4(5¹) + 3(5⁰)",
+    "options": [
+      {
+        "value": 23,
+        "text": "23",
+        "feedback": {
+          "en": "Correct! 4(5) + 3(1) = 20 + 3 = 23.",
+          "ms": "Tepat! 4(5) + 3(1) = 20 + 3 = 23."
+        }
+      },
+      {
+        "value": 43,
+        "text": "43",
+        "feedback": {
+          "en": "43 is in base 5, not base 10.",
+          "ms": "43 adalah dalam asas 5, bukan asas 10."
+        }
+      },
+      {
+        "value": 35,
+        "text": "35",
+        "feedback": {
+          "en": "Check place value: 4 × 5 = 20.",
+          "ms": "Semak nilai tempat: 4 × 5 = 20."
+        }
+      },
+      {
+        "value": 19,
+        "text": "19",
+        "feedback": {
+          "en": "4 × 5 = 20, 20 + 3 = 23.",
+          "ms": "4 × 5 = 20, 20 + 3 = 23."
+        }
+      }
+    ],
+    "answer": 23,
+    "hints": {
+      "en": [
+        "Multiply digit 4 by 5 and add digit 3."
+      ],
+      "ms": [
+        "Darabkan digit 4 dengan 5 dan tambah digit 3."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "4 × 5 + 3 = 20 + 3 = 23."
+      ],
+      "ms": [
+        "4 × 5 + 3 = 20 + 3 = 23."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "base_conversion"
+    ]
+  },
+  {
+    "id": "F4-C02-M01",
+    "chapter": 2,
+    "topic": "convert_base_10_to_8",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Convert 75 in base 10 to octal (base 8).",
+      "ms": "Tukarkan 75 dalam asas 10 kepada nombor oktal (asas 8)."
+    },
+    "equation": "75 ÷ 8 repeatedly",
+    "options": [
+      {
+        "value": "113_8",
+        "text": "113_8",
+        "feedback": {
+          "en": "Correct! 75 = 1(64) + 1(8) + 3(1) = 113_8.",
+          "ms": "Tepat! 75 = 1(64) + 1(8) + 3(1) = 113_8."
+        }
+      },
+      {
+        "value": "115_8",
+        "text": "115_8",
+        "feedback": {
+          "en": "1(64) + 1(8) + 5 = 77.",
+          "ms": "1(64) + 1(8) + 5 = 77."
+        }
+      },
+      {
+        "value": "123_8",
+        "text": "123_8",
+        "feedback": {
+          "en": "1(64) + 2(8) + 3 = 83.",
+          "ms": "1(64) + 2(8) + 3 = 83."
+        }
+      },
+      {
+        "value": "75_8",
+        "text": "75_8",
+        "feedback": {
+          "en": "Digit 7 is valid in base 8, but 75_8 = 61.",
+          "ms": "75_8 bersamaan 61 dalam asas 10."
+        }
+      }
+    ],
+    "answer": "113_8",
+    "hints": {
+      "en": [
+        "75 ÷ 8 = 9 remainder 3. 9 ÷ 8 = 1 remainder 1. 1 ÷ 8 = 0 remainder 1."
+      ],
+      "ms": [
+        "75 ÷ 8 = 9 baki 3. 9 ÷ 8 = 1 baki 1. 1 ÷ 8 = 0 baki 1."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Read remainders from bottom to top: 1, 1, 3 → 113_8."
+      ],
+      "ms": [
+        "Baca baki dari bawah ke atas: 1, 1, 3 → 113_8."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "base_conversion_octal"
+    ]
+  },
+  {
+    "id": "F4-C02-M02",
+    "chapter": 2,
+    "topic": "convert_base_8_to_2",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Convert 64_8 directly into a binary number (base 2).",
+      "ms": "Tukarkan 64_8 terus kepada nombor binari (asas 2)."
+    },
+    "equation": "6_8 = 110_2, 4_8 = 100_2",
+    "options": [
+      {
+        "value": "110100_2",
+        "text": "110100_2",
+        "feedback": {
+          "en": "Correct! 6_8 = 110_2 and 4_8 = 100_2 → 110100_2.",
+          "ms": "Tepat! 6_8 = 110_2 dan 4_8 = 100_2 → 110100_2."
+        }
+      },
+      {
+        "value": "110010_2",
+        "text": "110010_2",
+        "feedback": {
+          "en": "4 in 3-bit binary is 100, not 010.",
+          "ms": "4 dalam binari 3-bit ialah 100, bukan 010."
+        }
+      },
+      {
+        "value": "100110_2",
+        "text": "100110_2",
+        "feedback": {
+          "en": "Digits are swapped.",
+          "ms": "Kedudukan digit tertukar."
+        }
+      },
+      {
+        "value": "111100_2",
+        "text": "111100_2",
+        "feedback": {
+          "en": "6 is 110, not 111.",
+          "ms": "6 ialah 110, bukan 111."
+        }
+      }
+    ],
+    "answer": "110100_2",
+    "hints": {
+      "en": [
+        "Convert each octal digit into 3 binary digits: 6 → 110, 4 → 100."
+      ],
+      "ms": [
+        "Tukarkan setiap digit oktal kepada 3 digit binari: 6 → 110, 4 → 100."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "6_8 = 110_2, 4_8 = 100_2. Combined: 110100_2."
+      ],
+      "ms": [
+        "6_8 = 110_2, 4_8 = 100_2. Gabungan: 110100_2."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "base_8_to_2"
+    ]
+  },
+  {
+    "id": "F4-C02-M03",
+    "chapter": 2,
+    "topic": "addition_base_2",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Calculate the sum of 1101_2 + 1011_2 in base 2.",
+      "ms": "Hitung hasil tambah 1101_2 + 1011_2 dalam asas 2."
+    },
+    "equation": "1101_2 + 1011_2",
+    "options": [
+      {
+        "value": "11000_2",
+        "text": "11000_2",
+        "feedback": {
+          "en": "Correct! 13 + 11 = 24, and 24 in binary is 11000_2.",
+          "ms": "Tepat! 13 + 11 = 24, dan 24 dalam binari ialah 11000_2."
+        }
+      },
+      {
+        "value": "10110_2",
+        "text": "10110_2",
+        "feedback": {
+          "en": "10110_2 is 22, not 24.",
+          "ms": "10110_2 ialah 22, bukan 24."
+        }
+      },
+      {
+        "value": "11100_2",
+        "text": "11100_2",
+        "feedback": {
+          "en": "11100_2 is 28.",
+          "ms": "11100_2 ialah 28."
+        }
+      },
+      {
+        "value": "10000_2",
+        "text": "10000_2",
+        "feedback": {
+          "en": "10000_2 is 16.",
+          "ms": "10000_2 ialah 16."
+        }
+      }
+    ],
+    "answer": "11000_2",
+    "hints": {
+      "en": [
+        "Add in binary with carry: 1 + 1 = 10_2 (0 carry 1)."
+      ],
+      "ms": [
+        "Tambah dalam binari dengan kumpul semula: 1 + 1 = 10_2 (0 bawa 1)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "1101_2 (13) + 1011_2 (11) = 24 = 16 + 8 = 11000_2."
+      ],
+      "ms": [
+        "1101_2 (13) + 1011_2 (11) = 24 = 16 + 8 = 11000_2."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "binary_addition"
+    ]
+  },
+  {
+    "id": "F4-C02-M04",
+    "chapter": 2,
+    "topic": "subtraction_base_5",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Calculate 412_5 - 134_5 in base 5.",
+      "ms": "Hitung 412_5 - 134_5 dalam asas 5."
+    },
+    "equation": "412_5 - 134_5",
+    "options": [
+      {
+        "value": "223_5",
+        "text": "223_5",
+        "feedback": {
+          "en": "Correct! 412_5 (107) - 134_5 (44) = 63 = 223_5.",
+          "ms": "Tepat! 412_5 (107) - 134_5 (44) = 63 = 223_5."
+        }
+      },
+      {
+        "value": "233_5",
+        "text": "233_5",
+        "feedback": {
+          "en": "233_5 is 68.",
+          "ms": "233_5 ialah 68."
+        }
+      },
+      {
+        "value": "323_5",
+        "text": "323_5",
+        "feedback": {
+          "en": "Check borrowing in base 5 (borrowing adds 5).",
+          "ms": "Semak pinjaman dalam asas 5 (meminjam menambah 5)."
+        }
+      },
+      {
+        "value": "213_5",
+        "text": "213_5",
+        "feedback": {
+          "en": "213_5 is 58.",
+          "ms": "213_5 ialah 58."
+        }
+      }
+    ],
+    "answer": "223_5",
+    "hints": {
+      "en": [
+        "Remember borrowing in base 5 brings over a group of 5."
+      ],
+      "ms": [
+        "Ingat meminjam dalam asas 5 membawa nilai 5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "412_5 = 107; 134_5 = 44; 107 - 44 = 63 = 2(25) + 2(5) + 3 = 223_5."
+      ],
+      "ms": [
+        "412_5 = 107; 134_5 = 44; 107 - 44 = 63 = 2(25) + 2(5) + 3 = 223_5."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "base_5_subtraction"
+    ]
+  },
+  {
+    "id": "F4-C02-M05",
+    "chapter": 2,
+    "topic": "convert_between_non_decimal_bases",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Convert 210_3 to base 5.",
+      "ms": "Tukarkan 210_3 kepada asas 5."
+    },
+    "equation": "210_3 → Base 10 → Base 5",
+    "options": [
+      {
+        "value": "41_5",
+        "text": "41_5",
+        "feedback": {
+          "en": "Correct! 2(9) + 1(3) + 0 = 21. 21 = 4(5) + 1 = 41_5.",
+          "ms": "Tepat! 2(9) + 1(3) + 0 = 21. 21 = 4(5) + 1 = 41_5."
+        }
+      },
+      {
+        "value": "31_5",
+        "text": "31_5",
+        "feedback": {
+          "en": "31_5 is 16, not 21.",
+          "ms": "31_5 ialah 16, bukan 21."
+        }
+      },
+      {
+        "value": "42_5",
+        "text": "42_5",
+        "feedback": {
+          "en": "42_5 is 22.",
+          "ms": "42_5 ialah 22."
+        }
+      },
+      {
+        "value": "21_5",
+        "text": "21_5",
+        "feedback": {
+          "en": "21_5 is 11.",
+          "ms": "21_5 ialah 11."
+        }
+      }
+    ],
+    "answer": "41_5",
+    "hints": {
+      "en": [
+        "First convert 210_3 to base 10: 2(9) + 1(3) = 21. Then convert 21 to base 5."
+      ],
+      "ms": [
+        "Tukarkan 210_3 kepada asas 10 dahulu: 2(9) + 1(3) = 21. Kemudian tukar 21 kepada asas 5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "210_3 = 21 in base 10. 21 ÷ 5 = 4 remainder 1 → 41_5."
+      ],
+      "ms": [
+        "210_3 = 21 dalam asas 10. 21 ÷ 5 = 4 baki 1 → 41_5."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "multi_base_conversion"
+    ]
+  },
+  {
+    "id": "F4-C02-H01",
+    "chapter": 2,
+    "topic": "mixed_base_equation",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Solve for x in base 5: 1101_2 + x_5 = 32_8.",
+      "ms": "Selesaikan bagi x dalam asas 5: 1101_2 + x_5 = 32_8."
+    },
+    "equation": "13 + x = 26",
+    "options": [
+      {
+        "value": "23_5",
+        "text": "x = 23_5",
+        "feedback": {
+          "en": "Correct! 1101_2 = 13, 32_8 = 26. x = 26 - 13 = 13. 13 = 2(5) + 3 = 23_5.",
+          "ms": "Tepat! 1101_2 = 13, 32_8 = 26. x = 26 - 13 = 13. 13 = 2(5) + 3 = 23_5."
+        }
+      },
+      {
+        "value": "24_5",
+        "text": "x = 24_5",
+        "feedback": {
+          "en": "24_5 is 14, not 13.",
+          "ms": "24_5 ialah 14, bukan 13."
+        }
+      },
+      {
+        "value": "13_5",
+        "text": "x = 13_5",
+        "feedback": {
+          "en": "13_5 is 8. Convert 13 to base 5.",
+          "ms": "13_5 ialah 8. Tukar 13 kepada asas 5."
+        }
+      },
+      {
+        "value": "31_5",
+        "text": "x = 31_5",
+        "feedback": {
+          "en": "31_5 is 16.",
+          "ms": "31_5 ialah 16."
+        }
+      }
+    ],
+    "answer": "23_5",
+    "hints": {
+      "en": [
+        "Convert all numbers to base 10 first: 1101_2 = 13, 32_8 = 26."
+      ],
+      "ms": [
+        "Tukarkan semua nombor kepada asas 10 dahulu: 1101_2 = 13, 32_8 = 26."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "13 + x = 26 → x = 13 in base 10 = 23_5."
+      ],
+      "ms": [
+        "13 + x = 26 → x = 13 dalam asas 10 = 23_5."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "base_algebra"
+    ]
+  },
+  {
+    "id": "F4-C02-H02",
+    "chapter": 2,
+    "topic": "cash_register_base_7",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "An item barcode encodes price in base 7 as 345_7. If a customer pays with RM 200, what is the change in base 10 (RM)?",
+      "ms": "Kod bar barang mengekod harga dalam asas 7 sebagai 345_7. Jika pelanggan membayar dengan RM 200, berapakah baki wang dalam asas 10 (RM)?"
+    },
+    "equation": "3(7²) + 4(7¹) + 5(7⁰)",
+    "options": [
+      {
+        "value": 20,
+        "text": "RM 20",
+        "feedback": {
+          "en": "Correct! 3(49) + 4(7) + 5 = 147 + 28 + 5 = 180. Change = 200 - 180 = RM 20.",
+          "ms": "Tepat! 3(49) + 4(7) + 5 = 147 + 28 + 5 = 180. Baki = 200 - 180 = RM 20."
+        }
+      },
+      {
+        "value": 25,
+        "text": "RM 25",
+        "feedback": {
+          "en": "Check base 7 calculation: 147 + 28 + 5 = 180.",
+          "ms": "Semak pengiraan asas 7: 147 + 28 + 5 = 180."
+        }
+      },
+      {
+        "value": 15,
+        "text": "RM 15",
+        "feedback": {
+          "en": "Change is 200 - 180 = 20.",
+          "ms": "Baki ialah 200 - 180 = 20."
+        }
+      },
+      {
+        "value": 30,
+        "text": "RM 30",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": 20,
+    "hints": {
+      "en": [
+        "Convert 345_7 to base 10: 3(49) + 4(7) + 5 = 180. Subtract from 200."
+      ],
+      "ms": [
+        "Tukar 345_7 kepada asas 10: 3(49) + 4(7) + 5 = 180. Tolak daripada 200."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Price = RM 180. Change = 200 - 180 = RM 20."
+      ],
+      "ms": [
+        "Harga = RM 180. Baki = 200 - 180 = RM 20."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "base_word_problem"
+    ]
+  },
+  {
+    "id": "F4-C02-H03",
+    "chapter": 2,
+    "topic": "unknown_digit_in_base",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "If 2x3_5 = 68_10, find the value of digit x.",
+      "ms": "Jika 2x3_5 = 68_10, cari nilai bagi digit x."
+    },
+    "equation": "2(5²) + x(5¹) + 3(5⁰) = 68",
+    "options": [
+      {
+        "value": 3,
+        "text": "x = 3",
+        "feedback": {
+          "en": "Correct! 50 + 5x + 3 = 68 → 5x = 15 → x = 3.",
+          "ms": "Tepat! 50 + 5x + 3 = 68 → 5x = 15 → x = 3."
+        }
+      },
+      {
+        "value": 2,
+        "text": "x = 2",
+        "feedback": {
+          "en": "For x = 2, 50 + 10 + 3 = 63 ≠ 68.",
+          "ms": "Bagi x = 2, 50 + 10 + 3 = 63 ≠ 68."
+        }
+      },
+      {
+        "value": 4,
+        "text": "x = 4",
+        "feedback": {
+          "en": "For x = 4, 50 + 20 + 3 = 73 ≠ 68.",
+          "ms": "Bagi x = 4, 50 + 20 + 3 = 73 ≠ 68."
+        }
+      },
+      {
+        "value": 1,
+        "text": "x = 1",
+        "feedback": {
+          "en": "5x = 15 gives x = 3.",
+          "ms": "5x = 15 memberi x = 3."
+        }
+      }
+    ],
+    "answer": 3,
+    "hints": {
+      "en": [
+        "Expand 2x3_5: 2(25) + 5x + 3 = 53 + 5x = 68."
+      ],
+      "ms": [
+        "Kembangkan 2x3_5: 2(25) + 5x + 3 = 53 + 5x = 68."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "53 + 5x = 68 → 5x = 15 → x = 3."
+      ],
+      "ms": [
+        "53 + 5x = 68 → 5x = 15 → x = 3."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "base_digit_solve"
+    ]
+  },
+  {
+    "id": "F4-C02-H04",
+    "chapter": 2,
+    "topic": "multi_step_binary_to_octal",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Calculate (10110_2 + 1101_2) - 10010_2 and express the result in base 8.",
+      "ms": "Hitung (10110_2 + 1101_2) - 10010_2 dan nyatakan jawapannya dalam asas 8."
+    },
+    "equation": "(22 + 13) - 18 = 17",
+    "options": [
+      {
+        "value": "21_8",
+        "text": "21_8",
+        "feedback": {
+          "en": "Correct! 22 + 13 - 18 = 17 in base 10 = 2(8) + 1 = 21_8.",
+          "ms": "Tepat! 22 + 13 - 18 = 17 dalam asas 10 = 2(8) + 1 = 21_8."
+        }
+      },
+      {
+        "value": "17_8",
+        "text": "17_8",
+        "feedback": {
+          "en": "17 is in base 10, not base 8.",
+          "ms": "17 adalah dalam asas 10, bukan asas 8."
+        }
+      },
+      {
+        "value": "23_8",
+        "text": "23_8",
+        "feedback": {
+          "en": "23_8 is 19.",
+          "ms": "23_8 ialah 19."
+        }
+      },
+      {
+        "value": "19_8",
+        "text": "19_8",
+        "feedback": {
+          "en": "Digit 9 does not exist in base 8!",
+          "ms": "Digit 9 tidak wujud dalam asas 8!"
+        }
+      }
+    ],
+    "answer": "21_8",
+    "hints": {
+      "en": [
+        "Convert binaries to base 10: 10110_2 = 22, 1101_2 = 13, 10010_2 = 18."
+      ],
+      "ms": [
+        "Tukarkan binari kepada asas 10: 10110_2 = 22, 1101_2 = 13, 10010_2 = 18."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(22 + 13) - 18 = 17. 17 ÷ 8 = 2 remainder 1 → 21_8."
+      ],
+      "ms": [
+        "(22 + 13) - 18 = 17. 17 ÷ 8 = 2 baki 1 → 21_8."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "multi_operation_bases"
+    ]
+  },
+  {
+    "id": "F4-C02-H05",
+    "chapter": 2,
+    "topic": "inventory_base_conversion",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "An inventory of 104 food boxes is recorded in base 4 as 1220_4. What is this quantity in base 9?",
+      "ms": "Inventori 104 kotak makanan direkodkan dalam asas 4 sebagai 1220_4. Apakah kuantiti ini dalam asas 9?"
+    },
+    "equation": "104 ÷ 9 repeatedly",
+    "options": [
+      {
+        "value": "125_9",
+        "text": "125_9",
+        "feedback": {
+          "en": "Correct! 104 ÷ 9 = 11 R 5, 11 ÷ 9 = 1 R 2, 1 ÷ 9 = 0 R 1 → 125_9.",
+          "ms": "Tepat! 104 ÷ 9 = 11 B 5, 11 ÷ 9 = 1 B 2, 1 ÷ 9 = 0 B 1 → 125_9."
+        }
+      },
+      {
+        "value": "135_9",
+        "text": "135_9",
+        "feedback": {
+          "en": "1(81) + 3(9) + 5 = 113 ≠ 104.",
+          "ms": "1(81) + 3(9) + 5 = 113 ≠ 104."
+        }
+      },
+      {
+        "value": "115_9",
+        "text": "115_9",
+        "feedback": {
+          "en": "1(81) + 1(9) + 5 = 95 ≠ 104.",
+          "ms": "1(81) + 1(9) + 5 = 95 ≠ 104."
+        }
+      },
+      {
+        "value": "124_9",
+        "text": "124_9",
+        "feedback": {
+          "en": "1(81) + 2(9) + 4 = 103.",
+          "ms": "1(81) + 2(9) + 4 = 103."
+        }
+      }
+    ],
+    "answer": "125_9",
+    "hints": {
+      "en": [
+        "Divide 104 by 9 repeatedly."
+      ],
+      "ms": [
+        "Bahagi 104 dengan 9 berulang kali."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "104 = 1(81) + 2(9) + 5(1) = 125_9."
+      ],
+      "ms": [
+        "104 = 1(81) + 2(9) + 5(1) = 125_9."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "base_9_conversion"
+    ]
+  },
+  {
+    "id": "F4-C02-E06",
+    "chapter": 2,
+    "topic": "value_of_digit_base_5",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "What is the value of digit 4 in the number 423_5 in base 10?",
+      "ms": "Apakah nilai bagi digit 4 dalam nombor 423_5 dalam asas 10?"
+    },
+    "equation": "4 * 5²",
+    "options": [
+      {
+        "value": "100",
+        "text": "100",
+        "feedback": {
+          "en": "Correct! 4 * 5² = 4 * 25 = 100.",
+          "ms": "Tepat! 4 * 5² = 4 * 25 = 100."
+        }
+      },
+      {
+        "value": "400",
+        "text": "400",
+        "feedback": {
+          "en": "400 is in base 10.",
+          "ms": "400 ialah nilai dalam asas 10."
+        }
+      },
+      {
+        "value": "20",
+        "text": "20",
+        "feedback": {
+          "en": "4 * 5¹ = 20.",
+          "ms": "4 * 5¹ = 20."
+        }
+      },
+      {
+        "value": "25",
+        "text": "25",
+        "feedback": {
+          "en": "25 is 5², multiply by 4.",
+          "ms": "25 ialah 5², darabkan dengan 4."
+        }
+      }
+    ],
+    "answer": "100",
+    "hints": {
+      "en": [
+        "Digit 4 is in the 5² place."
+      ],
+      "ms": [
+        "Digit 4 berada di tempat 5²."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "4 * 5² = 4 * 25 = 100."
+      ],
+      "ms": [
+        "4 * 5² = 4 * 25 = 100."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-E07",
+    "chapter": 2,
+    "topic": "convert_base_2_to_10",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Convert 1101_2 to base 10.",
+      "ms": "Tukarkan 1101_2 kepada nombor dalam asas 10."
+    },
+    "equation": "1*(2³) + 1*(2²) + 0*(2¹) + 1*(2⁰)",
+    "options": [
+      {
+        "value": "13",
+        "text": "13",
+        "feedback": {
+          "en": "Correct! 8 + 4 + 0 + 1 = 13.",
+          "ms": "Tepat! 8 + 4 + 0 + 1 = 13."
+        }
+      },
+      {
+        "value": "11",
+        "text": "11",
+        "feedback": {
+          "en": "Check the 2² place.",
+          "ms": "Semak tempat 2²."
+        }
+      },
+      {
+        "value": "15",
+        "text": "15",
+        "feedback": {
+          "en": "15 is 1111_2.",
+          "ms": "15 ialah 1111_2."
+        }
+      },
+      {
+        "value": "9",
+        "text": "9",
+        "feedback": {
+          "en": "9 is 1001_2.",
+          "ms": "9 ialah 1001_2."
+        }
+      }
+    ],
+    "answer": "13",
+    "hints": {
+      "en": [
+        "Expand: 8 + 4 + 0 + 1."
+      ],
+      "ms": [
+        "Kembangkan: 8 + 4 + 0 + 1."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "1(8) + 1(4) + 0(2) + 1(1) = 13."
+      ],
+      "ms": [
+        "1(8) + 1(4) + 0(2) + 1(1) = 13."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-E08",
+    "chapter": 2,
+    "topic": "digits_in_base_8",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "What is the highest single digit that can be used in base 8?",
+      "ms": "Apakah digit tunggal tertinggi yang boleh digunakan dalam asas 8?"
+    },
+    "equation": "0, 1, 2, 3, 4, 5, 6, 7",
+    "options": [
+      {
+        "value": "7",
+        "text": "7",
+        "feedback": {
+          "en": "Correct! Digits in base 8 are 0 through 7.",
+          "ms": "Tepat! Digit dalam asas 8 ialah 0 hingga 7."
+        }
+      },
+      {
+        "value": "8",
+        "text": "8",
+        "feedback": {
+          "en": "Digit 8 cannot exist in base 8.",
+          "ms": "Digit 8 tidak wujud dalam asas 8."
+        }
+      },
+      {
+        "value": "9",
+        "text": "9",
+        "feedback": {
+          "en": "Base 8 only uses digits 0-7.",
+          "ms": "Asas 8 hanya gunakan digit 0-7."
+        }
+      },
+      {
+        "value": "6",
+        "text": "6",
+        "feedback": {
+          "en": "7 is higher than 6.",
+          "ms": "7 lebih tinggi daripada 6."
+        }
+      }
+    ],
+    "answer": "7",
+    "hints": {
+      "en": [
+        "In base n, the largest digit is n - 1."
+      ],
+      "ms": [
+        "Dalam asas n, digit terbesar ialah n - 1."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Base 8 uses digits 0, 1, 2, 3, 4, 5, 6, 7. Highest is 7."
+      ],
+      "ms": [
+        "Asas 8 menggunakan digit 0, 1, 2, 3, 4, 5, 6, 7. Digit tertinggi ialah 7."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-E09",
+    "chapter": 2,
+    "topic": "convert_base_10_to_2",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Convert 25_10 to a number in base 2.",
+      "ms": "Tukarkan 25_10 kepada nombor dalam asas 2."
+    },
+    "equation": "25 / 2",
+    "options": [
+      {
+        "value": "11001",
+        "text": "11001_2",
+        "feedback": {
+          "en": "Correct! 16 + 8 + 1 = 25.",
+          "ms": "Tepat! 16 + 8 + 1 = 25."
+        }
+      },
+      {
+        "value": "11011",
+        "text": "11011_2",
+        "feedback": {
+          "en": "11011_2 = 27.",
+          "ms": "11011_2 = 27."
+        }
+      },
+      {
+        "value": "10001",
+        "text": "10001_2",
+        "feedback": {
+          "en": "10001_2 = 17.",
+          "ms": "10001_2 = 17."
+        }
+      },
+      {
+        "value": "11100",
+        "text": "11100_2",
+        "feedback": {
+          "en": "11100_2 = 28.",
+          "ms": "11100_2 = 28."
+        }
+      }
+    ],
+    "answer": "11001",
+    "hints": {
+      "en": [
+        "Successive division by 2 or sum of powers: 16 + 8 + 1."
+      ],
+      "ms": [
+        "Pembahagian berulang dengan 2 atau hasil tambah kuasa: 16 + 8 + 1."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "25 = 16 + 8 + 1 = 1*(2⁴) + 1*(2³) + 0*(2²) + 0*(2¹) + 1*(2⁰) = 11001_2."
+      ],
+      "ms": [
+        "25 = 16 + 8 + 1 = 11001_2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-E10",
+    "chapter": 2,
+    "topic": "place_value_base_8",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "State the place value of digit 3 in 531_8.",
+      "ms": "Nyatakan nilai tempat bagi digit 3 dalam 531_8."
+    },
+    "equation": "8¹",
+    "options": [
+      {
+        "value": "8",
+        "text": "8 (or 8¹)",
+        "feedback": {
+          "en": "Correct! From right: 8⁰, 8¹, 8².",
+          "ms": "Tepat! Dari kanan: 8⁰, 8¹, 8²."
+        }
+      },
+      {
+        "value": "1",
+        "text": "1 (or 8⁰)",
+        "feedback": {
+          "en": "1 is the units place 8⁰.",
+          "ms": "1 ialah tempat sa 8⁰."
+        }
+      },
+      {
+        "value": "64",
+        "text": "64 (or 8²)",
+        "feedback": {
+          "en": "64 is the third place 8².",
+          "ms": "64 ialah tempat ketiga 8²."
+        }
+      },
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "This is base 8, not base 10.",
+          "ms": "Ini asas 8, bukan asas 10."
+        }
+      }
+    ],
+    "answer": "8",
+    "hints": {
+      "en": [
+        "In 531_8, digit 1 is 8⁰, digit 3 is 8¹."
+      ],
+      "ms": [
+        "Dalam 531_8, digit 1 ialah 8⁰, digit 3 ialah 8¹."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The place value of digit 3 is 8¹ = 8."
+      ],
+      "ms": [
+        "Nilai tempat digit 3 ialah 8¹ = 8."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-M06",
+    "chapter": 2,
+    "topic": "convert_base_8_to_2",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Convert 35_8 directly to a number in base 2.",
+      "ms": "Tukarkan 35_8 secara terus kepada nombor dalam asas 2."
+    },
+    "equation": "3_8 = 011_2, 5_8 = 101_2",
+    "options": [
+      {
+        "value": "11101",
+        "text": "11101_2",
+        "feedback": {
+          "en": "Correct! 3_8 = 011_2 and 5_8 = 101_2 => 11101_2.",
+          "ms": "Tepat! 3_8 = 011_2 dan 5_8 = 101_2 => 11101_2."
+        }
+      },
+      {
+        "value": "11001",
+        "text": "11001_2",
+        "feedback": {
+          "en": "5_8 is 101_2, not 001_2.",
+          "ms": "5_8 ialah 101_2, bukan 001_2."
+        }
+      },
+      {
+        "value": "11111",
+        "text": "11111_2",
+        "feedback": {
+          "en": "11111_2 is 37_8.",
+          "ms": "11111_2 ialah 37_8."
+        }
+      },
+      {
+        "value": "10101",
+        "text": "10101_2",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "11101",
+    "hints": {
+      "en": [
+        "Convert each octal digit into 3 binary bits: 3 -> 011, 5 -> 101."
+      ],
+      "ms": [
+        "Tukarkan setiap digit perlapanan kepada 3 bit perduaan: 3 -> 011, 5 -> 101."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "3_8 = 011_2, 5_8 = 101_2. Combining gives 11101_2."
+      ],
+      "ms": [
+        "3_8 = 011_2, 5_8 = 101_2. Gabungkan menjadi 11101_2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-M07",
+    "chapter": 2,
+    "topic": "addition_base_2",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Calculate 1011_2 + 110_2 in base 2.",
+      "ms": "Hitung 1011_2 + 110_2 dalam asas 2."
+    },
+    "equation": "1011_2 + 110_2",
+    "options": [
+      {
+        "value": "10001",
+        "text": "10001_2",
+        "feedback": {
+          "en": "Correct! 11_10 + 6_10 = 17_10 = 10001_2.",
+          "ms": "Tepat! 11_10 + 6_10 = 17_10 = 10001_2."
+        }
+      },
+      {
+        "value": "10101",
+        "text": "10101_2",
+        "feedback": {
+          "en": "10101_2 = 21_10.",
+          "ms": "10101_2 = 21_10."
+        }
+      },
+      {
+        "value": "11001",
+        "text": "11001_2",
+        "feedback": {
+          "en": "Check carry digits.",
+          "ms": "Semak digit bawa."
+        }
+      },
+      {
+        "value": "10011",
+        "text": "10011_2",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "10001",
+    "hints": {
+      "en": [
+        "In base 2: 1 + 1 = 10 (carry 1). 11 + 6 = 17 = 10001_2."
+      ],
+      "ms": [
+        "Dalam asas 2: 1 + 1 = 10 (bawa 1). 11 + 6 = 17 = 10001_2."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "1011_2 (11) + 110_2 (6) = 17_10 = 10001_2."
+      ],
+      "ms": [
+        "1011_2 (11) + 110_2 (6) = 17_10 = 10001_2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-M08",
+    "chapter": 2,
+    "topic": "convert_base_5_to_8",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "kitchen",
+    "question": {
+      "en": "Ah Ming counts 123_5 satay sticks. Express this quantity in base 8.",
+      "ms": "Ah Ming mengira 123_5 cucuk sate. Ungkapkan kuantiti ini dalam asas 8."
+    },
+    "equation": "123_5 -> base 10 -> base 8",
+    "options": [
+      {
+        "value": "46",
+        "text": "46_8",
+        "feedback": {
+          "en": "Correct! 1(25) + 2(5) + 3 = 38_10 = 4*8 + 6 = 46_8.",
+          "ms": "Tepat! 1(25) + 2(5) + 3 = 38_10 = 4*8 + 6 = 46_8."
+        }
+      },
+      {
+        "value": "44",
+        "text": "44_8",
+        "feedback": {
+          "en": "44_8 = 36_10.",
+          "ms": "44_8 = 36_10."
+        }
+      },
+      {
+        "value": "52",
+        "text": "52_8",
+        "feedback": {
+          "en": "52_8 = 42_10.",
+          "ms": "52_8 = 42_10."
+        }
+      },
+      {
+        "value": "38",
+        "text": "38_8",
+        "feedback": {
+          "en": "Digit 8 is invalid in base 8.",
+          "ms": "Digit 8 tidak sah dalam asas 8."
+        }
+      }
+    ],
+    "answer": "46",
+    "hints": {
+      "en": [
+        "Convert 123_5 to base 10 first (38), then divide by 8."
+      ],
+      "ms": [
+        "Tukarkan 123_5 ke asas 10 dulu (38), kemudian bahagi dengan 8."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "123_5 = 25 + 10 + 3 = 38_10. 38 / 8 = 4 remainder 6 => 46_8."
+      ],
+      "ms": [
+        "123_5 = 25 + 10 + 3 = 38_10. 38 / 8 = 4 baki 6 => 46_8."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-M09",
+    "chapter": 2,
+    "topic": "subtraction_base_2",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Calculate 1100_2 - 101_2 in base 2.",
+      "ms": "Hitung 1100_2 - 101_2 dalam asas 2."
+    },
+    "equation": "1100_2 - 101_2",
+    "options": [
+      {
+        "value": "111",
+        "text": "111_2",
+        "feedback": {
+          "en": "Correct! 12_10 - 5_10 = 7_10 = 111_2.",
+          "ms": "Tepat! 12_10 - 5_10 = 7_10 = 111_2."
+        }
+      },
+      {
+        "value": "101",
+        "text": "101_2",
+        "feedback": {
+          "en": "101_2 = 5_10.",
+          "ms": "101_2 = 5_10."
+        }
+      },
+      {
+        "value": "110",
+        "text": "110_2",
+        "feedback": {
+          "en": "110_2 = 6_10.",
+          "ms": "110_2 = 6_10."
+        }
+      },
+      {
+        "value": "1001",
+        "text": "1001_2",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "111",
+    "hints": {
+      "en": [
+        "1100_2 is 12 and 101_2 is 5 in base 10."
+      ],
+      "ms": [
+        "1100_2 ialah 12 dan 101_2 ialah 5 dalam asas 10."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "12 - 5 = 7_10 = 4 + 2 + 1 = 111_2."
+      ],
+      "ms": [
+        "12 - 5 = 7_10 = 4 + 2 + 1 = 111_2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-M10",
+    "chapter": 2,
+    "topic": "unknown_digit_base_5",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "If 1p3_5 = 38_10, find the value of p.",
+      "ms": "Jika 1p3_5 = 38_10, cari nilai p."
+    },
+    "equation": "1*(5²) + p*(5¹) + 3 = 38",
+    "options": [
+      {
+        "value": "2",
+        "text": "2",
+        "feedback": {
+          "en": "Correct! 25 + 5p + 3 = 38 => 5p = 10 => p = 2.",
+          "ms": "Tepat! 25 + 5p + 3 = 38 => 5p = 10 => p = 2."
+        }
+      },
+      {
+        "value": "3",
+        "text": "3",
+        "feedback": {
+          "en": "25 + 15 + 3 = 43 != 38.",
+          "ms": "25 + 15 + 3 = 43 != 38."
+        }
+      },
+      {
+        "value": "1",
+        "text": "1",
+        "feedback": {
+          "en": "25 + 5 + 3 = 33 != 38.",
+          "ms": "25 + 5 + 3 = 33 != 38."
+        }
+      },
+      {
+        "value": "4",
+        "text": "4",
+        "feedback": {
+          "en": "25 + 20 + 3 = 48 != 38.",
+          "ms": "25 + 20 + 3 = 48 != 38."
+        }
+      }
+    ],
+    "answer": "2",
+    "hints": {
+      "en": [
+        "25 + 5p + 3 = 38. Solve 5p = 10."
+      ],
+      "ms": [
+        "25 + 5p + 3 = 38. Selesaikan 5p = 10."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "28 + 5p = 38 => 5p = 10 => p = 2."
+      ],
+      "ms": [
+        "28 + 5p = 38 => 5p = 10 => p = 2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-H06",
+    "chapter": 2,
+    "topic": "addition_base_5",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Calculate 432_5 + 341_5 in base 5.",
+      "ms": "Hitung 432_5 + 341_5 dalam asas 5."
+    },
+    "equation": "432_5 + 341_5",
+    "options": [
+      {
+        "value": "1323",
+        "text": "1323_5",
+        "feedback": {
+          "en": "Correct! 117_10 + 96_10 = 213_10 = 1323_5.",
+          "ms": "Tepat! 117_10 + 96_10 = 213_10 = 1323_5."
+        }
+      },
+      {
+        "value": "1223",
+        "text": "1223_5",
+        "feedback": {
+          "en": "Check carry digits in base 5.",
+          "ms": "Semak digit bawa dalam asas 5."
+        }
+      },
+      {
+        "value": "1423",
+        "text": "1423_5",
+        "feedback": {
+          "en": "Check the 5² position.",
+          "ms": "Semak kedudukan 5²."
+        }
+      },
+      {
+        "value": "1313",
+        "text": "1313_5",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "1323",
+    "hints": {
+      "en": [
+        "Column addition in base 5: 2+1=3, 3+4=7=12_5 (carry 1), 1+4+3=8=13_5."
+      ],
+      "ms": [
+        "Tambah mengikut lajur asas 5: 2+1=3, 3+4=7=12_5 (bawa 1), 1+4+3=8=13_5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "432_5 + 341_5: 2+1=3, 3+4=12_5 (write 2, carry 1), 1+4+3=13_5 => 1323_5."
+      ],
+      "ms": [
+        "432_5 + 341_5: 2+1=3, 3+4=12_5 (tulis 2, bawa 1), 1+4+3=13_5 => 1323_5."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-H07",
+    "chapter": 2,
+    "topic": "convert_binary_groups_to_octal",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Convert 111010_2 directly to a number in base 8.",
+      "ms": "Tukarkan 111010_2 secara terus kepada nombor dalam asas 8."
+    },
+    "equation": "111_2 | 010_2",
+    "options": [
+      {
+        "value": "72",
+        "text": "72_8",
+        "feedback": {
+          "en": "Correct! 111_2 = 7 and 010_2 = 2 => 72_8.",
+          "ms": "Tepat! 111_2 = 7 dan 010_2 = 2 => 72_8."
+        }
+      },
+      {
+        "value": "74",
+        "text": "74_8",
+        "feedback": {
+          "en": "010_2 is 2, not 4.",
+          "ms": "010_2 ialah 2, bukan 4."
+        }
+      },
+      {
+        "value": "62",
+        "text": "62_8",
+        "feedback": {
+          "en": "111_2 is 7, not 6.",
+          "ms": "111_2 ialah 7, bukan 6."
+        }
+      },
+      {
+        "value": "58",
+        "text": "58_8",
+        "feedback": {
+          "en": "Digit 8 is invalid in base 8.",
+          "ms": "Digit 8 tidak sah dalam asas 8."
+        }
+      }
+    ],
+    "answer": "72",
+    "hints": {
+      "en": [
+        "Group bits in threes from the right: (111)(010)."
+      ],
+      "ms": [
+        "Kumpulkan bit secara bertiga dari kanan: (111)(010)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Grouping: 111 | 010. 111_2 = 7, 010_2 = 2. So 72_8."
+      ],
+      "ms": [
+        "Kumpulan bertiga: 111 | 010. 111_2 = 7, 010_2 = 2. Maka 72_8."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-H08",
+    "chapter": 2,
+    "topic": "word_problem_base_5",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "kitchen",
+    "question": {
+      "en": "A food stall serves 231_5 plates of chicken satay and 104_5 plates of beef satay. What is the total in base 5?",
+      "ms": "Sebuah warung menyajikan 231_5 pinggan sate ayam dan 104_5 pinggan sate daging. Apakah jumlah pinggan sate dalam asas 5?"
+    },
+    "equation": "231_5 + 104_5",
+    "options": [
+      {
+        "value": "340",
+        "text": "340_5",
+        "feedback": {
+          "en": "Correct! 1+4=10_5 (carry 1), 1+3+0=4, 2+1=3 => 340_5.",
+          "ms": "Tepat! 1+4=10_5 (bawa 1), 1+3+0=4, 2+1=3 => 340_5."
+        }
+      },
+      {
+        "value": "335",
+        "text": "335_5",
+        "feedback": {
+          "en": "Digit 5 cannot appear in base 5.",
+          "ms": "Digit 5 tidak boleh wujud dalam asas 5."
+        }
+      },
+      {
+        "value": "341",
+        "text": "341_5",
+        "feedback": {
+          "en": "Check carry digit: 1 + 4 = 10_5.",
+          "ms": "Semak digit bawa: 1 + 4 = 10_5."
+        }
+      },
+      {
+        "value": "440",
+        "text": "440_5",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "340",
+    "hints": {
+      "en": [
+        "1 + 4 = 5 = 10_5 in base 5."
+      ],
+      "ms": [
+        "1 + 4 = 5 = 10_5 dalam asas 5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "231_5 + 104_5 = 340_5."
+      ],
+      "ms": [
+        "231_5 + 104_5 = 340_5."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-H09",
+    "chapter": 2,
+    "topic": "expanded_notation_to_base_8",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Given 2 * 8³ + 5 * 8¹ + 7 * 8⁰ = n, express n as a number in base 8.",
+      "ms": "Diberi 2 * 8³ + 5 * 8¹ + 7 * 8⁰ = n, ungkapkan n sebagai nombor dalam asas 8."
+    },
+    "equation": "2*8³ + 0*8² + 5*8¹ + 7*8⁰",
+    "options": [
+      {
+        "value": "2057",
+        "text": "2057_8",
+        "feedback": {
+          "en": "Correct! Note the 0 in 8² position.",
+          "ms": "Tepat! Perhatikan 0 pada kedudukan 8²."
+        }
+      },
+      {
+        "value": "257",
+        "text": "257_8",
+        "feedback": {
+          "en": "Forgot the 0 for the 8² term.",
+          "ms": "Terlupa 0 bagi sebutan 8²."
+        }
+      },
+      {
+        "value": "2570",
+        "text": "2570_8",
+        "feedback": {
+          "en": "Check place values.",
+          "ms": "Semak nilai tempat."
+        }
+      },
+      {
+        "value": "2750",
+        "text": "2750_8",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Tidak tepat."
+        }
+      }
+    ],
+    "answer": "2057",
+    "hints": {
+      "en": [
+        "There is no 8² term, so its coefficient is 0."
+      ],
+      "ms": [
+        "Tiada sebutan 8², maka pekalinya ialah 0."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "2*(8³) + 0*(8²) + 5*(8¹) + 7*(8⁰) = 2057_8."
+      ],
+      "ms": [
+        "2*(8³) + 0*(8²) + 5*(8¹) + 7*(8⁰) = 2057_8."
+      ]
+    }
+  },
+  {
+    "id": "F4-C02-H10",
+    "chapter": 2,
+    "topic": "solve_equation_in_base_2",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "N1",
+    "context": "general",
+    "question": {
+      "en": "Find the value of x in base 2 if 10110_2 + x_2 = 11101_2.",
+      "ms": "Cari nilai x dalam asas 2 jika 10110_2 + x_2 = 11101_2."
+    },
+    "equation": "x_2 = 11101_2 - 10110_2",
+    "options": [
+      {
+        "value": "111",
+        "text": "111_2",
+        "feedback": {
+          "en": "Correct! 29_10 - 22_10 = 7_10 = 111_2.",
+          "ms": "Tepat! 29_10 - 22_10 = 7_10 = 111_2."
+        }
+      },
+      {
+        "value": "101",
+        "text": "101_2",
+        "feedback": {
+          "en": "101_2 = 5_10 != 7.",
+          "ms": "101_2 = 5_10 != 7."
+        }
+      },
+      {
+        "value": "1001",
+        "text": "1001_2",
+        "feedback": {
+          "en": "1001_2 = 9_10.",
+          "ms": "1001_2 = 9_10."
+        }
+      },
+      {
+        "value": "11",
+        "text": "11_2",
+        "feedback": {
+          "en": "11_2 = 3_10.",
+          "ms": "11_2 = 3_10."
+        }
+      }
+    ],
+    "answer": "111",
+    "hints": {
+      "en": [
+        "11101_2 = 29, 10110_2 = 22. Subtract in base 10 then convert to base 2."
+      ],
+      "ms": [
+        "11101_2 = 29, 10110_2 = 22. Tolak dalam asas 10 kemudian tukar ke asas 2."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "29 - 22 = 7 = 4 + 2 + 1 = 111_2."
+      ],
+      "ms": [
+        "29 - 22 = 7 = 4 + 2 + 1 = 111_2."
+      ]
+    }
+  }
+]

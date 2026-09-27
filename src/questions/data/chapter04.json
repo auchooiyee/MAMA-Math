@@ -1,0 +1,2051 @@
+[
+  {
+    "id": "F4-C04-E01",
+    "chapter": 4,
+    "topic": "element_count_set",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given set A = {x : x is a factor of 12}. What is n(A)?",
+      "ms": "Diberi set A = {x : x ialah faktor bagi 12}. Apakah n(A)?"
+    },
+    "equation": "n(A)",
+    "options": [
+      {
+        "value": 6,
+        "text": "6",
+        "feedback": {
+          "en": "Correct! Factors of 12 are {1, 2, 3, 4, 6, 12}, so n(A) = 6.",
+          "ms": "Tepat! Faktor bagi 12 ialah {1, 2, 3, 4, 6, 12}, maka n(A) = 6."
+        }
+      },
+      {
+        "value": 4,
+        "text": "4",
+        "feedback": {
+          "en": "Did you miss 1 and 12?",
+          "ms": "Adakah anda terlepas 1 dan 12?"
+        }
+      },
+      {
+        "value": 5,
+        "text": "5",
+        "feedback": {
+          "en": "List all factors: 1, 2, 3, 4, 6, 12.",
+          "ms": "Senaraikan semua faktor: 1, 2, 3, 4, 6, 12."
+        }
+      },
+      {
+        "value": 12,
+        "text": "12",
+        "feedback": {
+          "en": "12 is the number itself, not the count of factors.",
+          "ms": "12 ialah nombor itu sendiri, bukan bilangan faktor."
+        }
+      }
+    ],
+    "answer": 6,
+    "hints": {
+      "en": [
+        "List the factors of 12: 1 × 12, 2 × 6, 3 × 4."
+      ],
+      "ms": [
+        "Senaraikan faktor bagi 12: 1 × 12, 2 × 6, 3 × 4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A = {1, 2, 3, 4, 6, 12} → n(A) = 6."
+      ],
+      "ms": [
+        "A = {1, 2, 3, 4, 6, 12} → n(A) = 6."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "set_elements"
+    ]
+  },
+  {
+    "id": "F4-C04-E02",
+    "chapter": 4,
+    "topic": "intersection_of_two_sets",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given P = {2, 3, 5, 7} and Q = {3, 5, 8, 9}, find P ∩ Q.",
+      "ms": "Diberi P = {2, 3, 5, 7} dan Q = {3, 5, 8, 9}, cari P ∩ Q."
+    },
+    "equation": "P ∩ Q",
+    "options": [
+      {
+        "value": "{3, 5}",
+        "text": "{3, 5}",
+        "feedback": {
+          "en": "Correct! 3 and 5 are the common elements in both sets.",
+          "ms": "Tepat! 3 dan 5 ialah unsur sepunya bagi kedua-dua set."
+        }
+      },
+      {
+        "value": "{2, 7}",
+        "text": "{2, 7}",
+        "feedback": {
+          "en": "These are elements only in P.",
+          "ms": "Ini ialah unsur dalam P sahaja."
+        }
+      },
+      {
+        "value": "{2, 3, 5, 7, 8, 9}",
+        "text": "{2, 3, 5, 7, 8, 9}",
+        "feedback": {
+          "en": "This is the union P ∪ Q, not intersection.",
+          "ms": "Ini ialah kesatuan P ∪ Q, bukan persilangan."
+        }
+      },
+      {
+        "value": "∅",
+        "text": "∅ (empty set)",
+        "feedback": {
+          "en": "There are common elements: 3 and 5.",
+          "ms": "Terdapat unsur sepunya: 3 dan 5."
+        }
+      }
+    ],
+    "answer": "{3, 5}",
+    "hints": {
+      "en": [
+        "Intersection ∩ contains elements that belong to BOTH sets."
+      ],
+      "ms": [
+        "Persilangan ∩ mengandungi unsur yang dimiliki oleh KEDUA-DUA set."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P ∩ Q = {3, 5}."
+      ],
+      "ms": [
+        "P ∩ Q = {3, 5}."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "set_intersection"
+    ]
+  },
+  {
+    "id": "F4-C04-E03",
+    "chapter": 4,
+    "topic": "union_of_two_sets",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given A = {k, a, r, i} and B = {r, o, t, i}, find A ∪ B.",
+      "ms": "Diberi A = {k, a, r, i} dan B = {r, o, t, i}, cari A ∪ B."
+    },
+    "equation": "A ∪ B",
+    "options": [
+      {
+        "value": "{a, i, k, o, r, t}",
+        "text": "{a, i, k, o, r, t}",
+        "feedback": {
+          "en": "Correct! Union combines all unique elements from both sets.",
+          "ms": "Tepat! Kesatuan menggabungkan semua unsur unik dari kedua-dua set."
+        }
+      },
+      {
+        "value": "{r, i}",
+        "text": "{r, i}",
+        "feedback": {
+          "en": "This is the intersection A ∩ B, not the union.",
+          "ms": "Ini ialah persilangan A ∩ B, bukan kesatuan."
+        }
+      },
+      {
+        "value": "{k, a}",
+        "text": "{k, a}",
+        "feedback": {
+          "en": "These are elements only in A.",
+          "ms": "Ini unsur dalam A sahaja."
+        }
+      },
+      {
+        "value": "{k, a, r, i, r, o, t, i}",
+        "text": "{k, a, r, i, r, o, t, i}",
+        "feedback": {
+          "en": "Do not repeat duplicate elements in a set.",
+          "ms": "Jangan ulang unsur yang sama dalam set."
+        }
+      }
+    ],
+    "answer": "{a, i, k, o, r, t}",
+    "hints": {
+      "en": [
+        "Union ∪ includes all elements from either set, without duplicates."
+      ],
+      "ms": [
+        "Kesatuan ∪ merangkumi semua unsur dari mana-mana set, tanpa ulangan."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A ∪ B = {a, i, k, o, r, t}."
+      ],
+      "ms": [
+        "A ∪ B = {a, i, k, o, r, t}."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "set_union"
+    ]
+  },
+  {
+    "id": "F4-C04-E04",
+    "chapter": 4,
+    "topic": "complement_of_set",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given universal set ξ = {1, 2, 3, 4, 5, 6, 7, 8} and A = {2, 4, 6, 8}, find A'.",
+      "ms": "Diberi set semesta ξ = {1, 2, 3, 4, 5, 6, 7, 8} dan A = {2, 4, 6, 8}, cari A'."
+    },
+    "equation": "A' = ξ \\ A",
+    "options": [
+      {
+        "value": "{1, 3, 5, 7}",
+        "text": "{1, 3, 5, 7}",
+        "feedback": {
+          "en": "Correct! A' contains elements in ξ that are not in A.",
+          "ms": "Tepat! A' mengandungi unsur dalam ξ yang bukan dalam A."
+        }
+      },
+      {
+        "value": "{2, 4, 6, 8}",
+        "text": "{2, 4, 6, 8}",
+        "feedback": {
+          "en": "This is set A itself.",
+          "ms": "Ini ialah set A itu sendiri."
+        }
+      },
+      {
+        "value": "ξ",
+        "text": "ξ",
+        "feedback": {
+          "en": "A' is a proper subset of ξ.",
+          "ms": "A' ialah subset wajar bagi ξ."
+        }
+      },
+      {
+        "value": "∅",
+        "text": "∅",
+        "feedback": {
+          "en": "There are elements in ξ not in A.",
+          "ms": "Terdapat unsur dalam ξ yang tiada dalam A."
+        }
+      }
+    ],
+    "answer": "{1, 3, 5, 7}",
+    "hints": {
+      "en": [
+        "Complement A' means all elements in universal set ξ that are NOT in set A."
+      ],
+      "ms": [
+        "Pelengkap A' bermaksud semua unsur dalam set semesta ξ yang BUKAN dalam set A."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A' = {1, 3, 5, 7}."
+      ],
+      "ms": [
+        "A' = {1, 3, 5, 7}."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "set_complement"
+    ]
+  },
+  {
+    "id": "F4-C04-E05",
+    "chapter": 4,
+    "topic": "subset_notation",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given P = {3, 6} and Q = {1, 2, 3, 4, 5, 6}. Which statement is true?",
+      "ms": "Diberi P = {3, 6} dan Q = {1, 2, 3, 4, 5, 6}. Pernyataan manakah yang benar?"
+    },
+    "equation": "P ⊂ Q",
+    "options": [
+      {
+        "value": "P ⊂ Q",
+        "text": "P ⊂ Q",
+        "feedback": {
+          "en": "Correct! Every element of P (3 and 6) is in Q.",
+          "ms": "Tepat! Setiap unsur dalam P (3 dan 6) ada dalam Q."
+        }
+      },
+      {
+        "value": "Q ⊂ P",
+        "text": "Q ⊂ P",
+        "feedback": {
+          "en": "Q has elements (1, 2, 4, 5) that are not in P.",
+          "ms": "Q mempunyai unsur yang tiada dalam P."
+        }
+      },
+      {
+        "value": "P = Q",
+        "text": "P = Q",
+        "feedback": {
+          "en": "P and Q do not have the same elements.",
+          "ms": "P dan Q tidak mempunyai unsur yang sama."
+        }
+      },
+      {
+        "value": "P ∩ Q = ∅",
+        "text": "P ∩ Q = ∅",
+        "feedback": {
+          "en": "P ∩ Q = {3, 6} ≠ ∅.",
+          "ms": "P ∩ Q = {3, 6} ≠ ∅."
+        }
+      }
+    ],
+    "answer": "P ⊂ Q",
+    "hints": {
+      "en": [
+        "P is a subset of Q (P ⊂ Q) if every element in P is also in Q."
+      ],
+      "ms": [
+        "P ialah subset bagi Q (P ⊂ Q) jika setiap unsur dalam P juga ada dalam Q."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Every element in P is in Q, so P ⊂ Q."
+      ],
+      "ms": [
+        "Setiap unsur dalam P ada dalam Q, maka P ⊂ Q."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "subset"
+    ]
+  },
+  {
+    "id": "F4-C04-M01",
+    "chapter": 4,
+    "topic": "de_morgans_laws",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "According to De Morgan's Laws, which expression is equivalent to (A ∩ B)'?",
+      "ms": "Berdasarkan Hukum De Morgan, ungkapan manakah yang setara dengan (A ∩ B)'?"
+    },
+    "equation": "(A ∩ B)'",
+    "options": [
+      {
+        "value": "A' ∪ B'",
+        "text": "A' ∪ B'",
+        "feedback": {
+          "en": "Correct! The complement of intersection is the union of complements.",
+          "ms": "Tepat! Pelengkap bagi persilangan ialah kesatuan bagi pelengkap."
+        }
+      },
+      {
+        "value": "A' ∩ B'",
+        "text": "A' ∩ B'",
+        "feedback": {
+          "en": "A' ∩ B' is equivalent to (A ∪ B)'.",
+          "ms": "A' ∩ B' adalah setara dengan (A ∪ B)'."
+        }
+      },
+      {
+        "value": "A ∪ B",
+        "text": "A ∪ B",
+        "feedback": {
+          "en": "Complement symbols are missing.",
+          "ms": "Simbol pelengkap tertinggal."
+        }
+      },
+      {
+        "value": "(A ∪ B)'",
+        "text": "(A ∪ B)'",
+        "feedback": {
+          "en": "(A ∪ B)' = A' ∩ B', not (A ∩ B)'.",
+          "ms": "(A ∪ B)' = A' ∩ B', bukan (A ∩ B)'."
+        }
+      }
+    ],
+    "answer": "A' ∪ B'",
+    "hints": {
+      "en": [
+        "De Morgan's Law: (A ∩ B)' = A' ∪ B' and (A ∪ B)' = A' ∩ B'."
+      ],
+      "ms": [
+        "Hukum De Morgan: (A ∩ B)' = A' ∪ B' dan (A ∪ B)' = A' ∩ B'."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "(A ∩ B)' = A' ∪ B'."
+      ],
+      "ms": [
+        "(A ∩ B)' = A' ∪ B'."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "de_morgans_law"
+    ]
+  },
+  {
+    "id": "F4-C04-M02",
+    "chapter": 4,
+    "topic": "combined_set_operations",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given A = {1, 2, 3}, B = {3, 4, 5}, and C = {2, 3, 6}. Find (A ∪ B) ∩ C.",
+      "ms": "Diberi A = {1, 2, 3}, B = {3, 4, 5}, dan C = {2, 3, 6}. Cari (A ∪ B) ∩ C."
+    },
+    "equation": "(A ∪ B) ∩ C",
+    "options": [
+      {
+        "value": "{2, 3}",
+        "text": "{2, 3}",
+        "feedback": {
+          "en": "Correct! A ∪ B = {1, 2, 3, 4, 5}. Intersecting with C gives {2, 3}.",
+          "ms": "Tepat! A ∪ B = {1, 2, 3, 4, 5}. Bersilang dengan C menghasilkan {2, 3}."
+        }
+      },
+      {
+        "value": "{3}",
+        "text": "{3}",
+        "feedback": {
+          "en": "2 is also in A ∪ B and in C.",
+          "ms": "2 juga ada dalam A ∪ B dan dalam C."
+        }
+      },
+      {
+        "value": "{1, 2, 3, 6}",
+        "text": "{1, 2, 3, 6}",
+        "feedback": {
+          "en": "1 and 6 are not in the intersection.",
+          "ms": "1 dan 6 tiada dalam persilangan."
+        }
+      },
+      {
+        "value": "{2, 3, 4}",
+        "text": "{2, 3, 4}",
+        "feedback": {
+          "en": "4 is not in set C.",
+          "ms": "4 tiada dalam set C."
+        }
+      }
+    ],
+    "answer": "{2, 3}",
+    "hints": {
+      "en": [
+        "First find A ∪ B, then find common elements with set C."
+      ],
+      "ms": [
+        "Cari A ∪ B dahulu, kemudian cari unsur sepunya dengan set C."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "1. A ∪ B = {1, 2, 3, 4, 5}\n2. (A ∪ B) ∩ C = {2, 3}."
+      ],
+      "ms": [
+        "1. A ∪ B = {1, 2, 3, 4, 5}\n2. (A ∪ B) ∩ C = {2, 3}."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "combined_set_operations"
+    ]
+  },
+  {
+    "id": "F4-C04-M03",
+    "chapter": 4,
+    "topic": "two_set_element_formula",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a survey of food stall customers, 30 like Sambal (S), 25 like Curry (C), and 12 like both. How many customers like at least one of these dishes?",
+      "ms": "Dalam kaji selidik pelanggan gerai, 30 orang menggemari Sambal (S), 25 orang menggemari Kari (C), dan 12 orang menggemari kedua-duanya. Berapakah bilangan pelanggan yang menggemari sekurang-kurangnya satu hidangan?"
+    },
+    "equation": "n(S ∪ C) = n(S) + n(C) - n(S ∩ C)",
+    "options": [
+      {
+        "value": 43,
+        "text": "43 customers",
+        "feedback": {
+          "en": "Correct! n(S ∪ C) = 30 + 25 - 12 = 43.",
+          "ms": "Tepat! n(S ∪ C) = 30 + 25 - 12 = 43."
+        }
+      },
+      {
+        "value": 55,
+        "text": "55 customers",
+        "feedback": {
+          "en": "You forgot to subtract the intersection (12).",
+          "ms": "Anda terlupa tolak persilangan (12)."
+        }
+      },
+      {
+        "value": 38,
+        "text": "38 customers",
+        "feedback": {
+          "en": "Check addition: 30 + 25 = 55.",
+          "ms": "Semak penambahan: 30 + 25 = 55."
+        }
+      },
+      {
+        "value": 47,
+        "text": "47 customers",
+        "feedback": {
+          "en": "55 - 12 = 43.",
+          "ms": "55 - 12 = 43."
+        }
+      }
+    ],
+    "answer": 43,
+    "hints": {
+      "en": [
+        "Use n(S ∪ C) = n(S) + n(C) - n(S ∩ C)."
+      ],
+      "ms": [
+        "Gunakan n(S ∪ C) = n(S) + n(C) - n(S ∩ C)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "n(S ∪ C) = 30 + 25 - 12 = 43 customers."
+      ],
+      "ms": [
+        "n(S ∪ C) = 30 + 25 - 12 = 43 orang pelanggan."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "set_union_cardinality"
+    ]
+  },
+  {
+    "id": "F4-C04-M04",
+    "chapter": 4,
+    "topic": "venn_diagram_region",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which set operation represents the region of set A that excludes set B (only A)?",
+      "ms": "Operasi set manakah yang mewakili rantau bagi set A yang tidak merangkumi set B (A sahaja)?"
+    },
+    "equation": "A ∩ B'",
+    "options": [
+      {
+        "value": "A ∩ B'",
+        "text": "A ∩ B'",
+        "feedback": {
+          "en": "Correct! A ∩ B' represents elements in A and not in B.",
+          "ms": "Tepat! A ∩ B' mewakili unsur dalam A dan bukan dalam B."
+        }
+      },
+      {
+        "value": "A ∪ B",
+        "text": "A ∪ B",
+        "feedback": {
+          "en": "This includes all of B as well.",
+          "ms": "Ini merangkumi semua unsur B juga."
+        }
+      },
+      {
+        "value": "A' ∩ B",
+        "text": "A' ∩ B",
+        "feedback": {
+          "en": "This represents elements only in B.",
+          "ms": "Ini mewakili unsur dalam B sahaja."
+        }
+      },
+      {
+        "value": "(A ∩ B)'",
+        "text": "(A ∩ B)'",
+        "feedback": {
+          "en": "This is everything except the intersection.",
+          "ms": "Ini ialah semua rantau kecuali persilangan."
+        }
+      }
+    ],
+    "answer": "A ∩ B'",
+    "hints": {
+      "en": [
+        "\"Only A\" means in A AND in B' (not in B)."
+      ],
+      "ms": [
+        "\"A sahaja\" bermaksud dalam A DAN dalam B' (bukan dalam B)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Region of A only is denoted by A ∩ B' or A \\ B."
+      ],
+      "ms": [
+        "Rantau A sahaja diwakili oleh A ∩ B' atau A \\ B."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "venn_diagram_shading"
+    ]
+  },
+  {
+    "id": "F4-C04-M05",
+    "chapter": 4,
+    "topic": "neither_preference_complement",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Out of 50 customers surveyed, 42 like at least one of tea or coffee. How many customers like NEITHER beverage?",
+      "ms": "Daripada 50 pelanggan yang dikaji selidik, 42 orang menggemari sekurang-kurangnya satu daripada teh atau kopi. Berapakah bilangan yang TIDAK menggemari mana-mana minuman tersebut?"
+    },
+    "equation": "n((T ∪ C)') = n(ξ) - n(T ∪ C)",
+    "options": [
+      {
+        "value": 8,
+        "text": "8 customers",
+        "feedback": {
+          "en": "Correct! 50 - 42 = 8.",
+          "ms": "Tepat! 50 - 42 = 8."
+        }
+      },
+      {
+        "value": 12,
+        "text": "12 customers",
+        "feedback": {
+          "en": "50 - 42 = 8, not 12.",
+          "ms": "50 - 42 = 8, bukan 12."
+        }
+      },
+      {
+        "value": 6,
+        "text": "6 customers",
+        "feedback": {
+          "en": "Calculation error in subtraction.",
+          "ms": "Ralat pengiraan dalam penolakan."
+        }
+      },
+      {
+        "value": 10,
+        "text": "10 customers",
+        "feedback": {
+          "en": "50 - 42 = 8.",
+          "ms": "50 - 42 = 8."
+        }
+      }
+    ],
+    "answer": 8,
+    "hints": {
+      "en": [
+        "Neither = Total universal set - Customers who like at least one."
+      ],
+      "ms": [
+        "Bukan kedua-duanya = Jumlah set semesta - Pelanggan yang gemar sekurang-kurangnya satu."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "n((T ∪ C)') = 50 - 42 = 8 customers."
+      ],
+      "ms": [
+        "n((T ∪ C)') = 50 - 42 = 8 orang pelanggan."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "set_complement_cardinality"
+    ]
+  },
+  {
+    "id": "F4-C04-H01",
+    "chapter": 4,
+    "topic": "three_set_survey",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A survey of 100 foodies shows: 50 like Rendang (R), 45 like Laksa (L), 40 like Satay (S). 20 like R and L, 15 like L and S, 18 like R and S. If 10 like all three, how many like NEITHER of these three dishes?",
+      "ms": "Kaji selidik 100 orang peminat makanan mendapati: 50 gemar Rendang (R), 45 gemar Laksa (L), 40 gemar Sate (S). 20 gemar R dan L, 15 gemar L dan S, 18 gemar R dan S. Jika 10 gemar ketiga-tiganya, berapakah bilangan yang TIDAK menggemari mana-mana hidangan tersebut?"
+    },
+    "equation": "n(R ∪ L ∪ S) = ∑n(A) - ∑n(A ∩ B) + n(R ∩ L ∩ S)",
+    "options": [
+      {
+        "value": 8,
+        "text": "8 customers",
+        "feedback": {
+          "en": "Correct! n(Union) = 50+45+40 - (20+15+18) + 10 = 135 - 53 + 10 = 92. Neither = 100 - 92 = 8.",
+          "ms": "Tepat! n(Kesatuan) = 135 - 53 + 10 = 92. Baki = 100 - 92 = 8."
+        }
+      },
+      {
+        "value": 12,
+        "text": "12 customers",
+        "feedback": {
+          "en": "Check 3-set union formula: add back triple intersection.",
+          "ms": "Semak rumus kesatuan 3 set: tambah semula persilangan tiga set."
+        }
+      },
+      {
+        "value": 15,
+        "text": "15 customers",
+        "feedback": {
+          "en": "n(Union) = 92, 100 - 92 = 8.",
+          "ms": "n(Kesatuan) = 92, 100 - 92 = 8."
+        }
+      },
+      {
+        "value": 5,
+        "text": "5 customers",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": 8,
+    "hints": {
+      "en": [
+        "n(R ∪ L ∪ S) = n(R) + n(L) + n(S) - n(R ∩ L) - n(L ∩ S) - n(R ∩ S) + n(R ∩ L ∩ S)."
+      ],
+      "ms": [
+        "n(R ∪ L ∪ S) = n(R) + n(L) + n(S) - n(R ∩ L) - n(L ∩ S) - n(R ∩ S) + n(R ∩ L ∩ S)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Union = 135 - 53 + 10 = 92. Neither = 100 - 92 = 8."
+      ],
+      "ms": [
+        "Kesatuan = 135 - 53 + 10 = 92. Bukan mana-mana = 100 - 92 = 8."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "three_set_inclusion_exclusion"
+    ]
+  },
+  {
+    "id": "F4-C04-H02",
+    "chapter": 4,
+    "topic": "three_set_exactly_one",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a group of 60 stall owners: 30 sell Nasi Lemak (N), 25 sell Mee Goreng (M), 20 sell Roti (R). 10 sell both N and M, 8 sell M and R, 6 sell N and R. 4 sell all three. How many owners sell EXACTLY ONE type of food?",
+      "ms": "Dalam sekumpulan 60 peniaga gerai: 30 menjual Nasi Lemak (N), 25 menjual Mee Goreng (M), 20 menjual Roti (R). 10 menjual N dan M, 8 menjual M dan R, 6 menjual N dan R. 4 menjual ketiga-tiganya. Berapakah peniaga yang menjual TEPAT SATU jenis makanan?"
+    },
+    "equation": "Only N + Only M + Only R",
+    "options": [
+      {
+        "value": 37,
+        "text": "37 stall owners",
+        "feedback": {
+          "en": "Correct! Only N = 30-(6+4+2)=18; Only M = 25-(6+4+4)=11; Only R = 20-(2+4+4)=10. Total = 18 + 11 + 10 = 37.",
+          "ms": "Tepat! N sahaja = 18; M sahaja = 11; R sahaja = 10. Jumlah = 18 + 11 + 10 = 37."
+        }
+      },
+      {
+        "value": 35,
+        "text": "35 stall owners",
+        "feedback": {
+          "en": "Check Venn diagram regions for only N, only M, only R.",
+          "ms": "Semak rantau gambar rajah Venn bagi N sahaja, M sahaja, R sahaja."
+        }
+      },
+      {
+        "value": 40,
+        "text": "40 stall owners",
+        "feedback": {
+          "en": "Double-check subtraction of double intersections.",
+          "ms": "Semak penolakan persilangan dua set."
+        }
+      },
+      {
+        "value": 32,
+        "text": "32 stall owners",
+        "feedback": {
+          "en": "18 + 11 + 10 = 37.",
+          "ms": "18 + 11 + 10 = 37."
+        }
+      }
+    ],
+    "answer": 37,
+    "hints": {
+      "en": [
+        "Find elements in only N, only M, and only R after subtracting 2-set and 3-set intersections."
+      ],
+      "ms": [
+        "Cari unsur dalam N sahaja, M sahaja, dan R sahaja selepas menolak persilangan 2 set dan 3 set."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Only N = 18, Only M = 11, Only R = 10. Sum = 37."
+      ],
+      "ms": [
+        "N sahaja = 18, M sahaja = 11, R sahaja = 10. Jumlah = 37."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "three_set_venn_partitioning"
+    ]
+  },
+  {
+    "id": "F4-C04-H03",
+    "chapter": 4,
+    "topic": "solve_unknown_intersection",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a class of 32 students: 18 study Physics, 15 study Chemistry, and 5 study neither. Find the number of students x who study BOTH Physics and Chemistry.",
+      "ms": "Dalam sebuah kelas 32 orang murid: 18 orang belajar Fizik, 15 orang belajar Kimia, dan 5 orang tidak belajar mana-mana subjek tersebut. Cari bilangan murid x yang belajar KEDUA-DUA Fizik dan Kimia."
+    },
+    "equation": "18 + 15 - x + 5 = 32",
+    "options": [
+      {
+        "value": 6,
+        "text": "x = 6 students",
+        "feedback": {
+          "en": "Correct! 33 - x + 5 = 32 → 38 - x = 32 → x = 6.",
+          "ms": "Tepat! 33 - x + 5 = 32 → 38 - x = 32 → x = 6."
+        }
+      },
+      {
+        "value": 8,
+        "text": "x = 8 students",
+        "feedback": {
+          "en": "38 - 8 = 30 ≠ 32.",
+          "ms": "38 - 8 = 30 ≠ 32."
+        }
+      },
+      {
+        "value": 4,
+        "text": "x = 4 students",
+        "feedback": {
+          "en": "38 - 4 = 34 ≠ 32.",
+          "ms": "38 - 4 = 34 ≠ 32."
+        }
+      },
+      {
+        "value": 10,
+        "text": "x = 10 students",
+        "feedback": {
+          "en": "38 - 10 = 28 ≠ 32.",
+          "ms": "38 - 10 = 28 ≠ 32."
+        }
+      }
+    ],
+    "answer": 6,
+    "hints": {
+      "en": [
+        "Total students = n(P ∪ C) + n(Neither) = (18 + 15 - x) + 5 = 32."
+      ],
+      "ms": [
+        "Jumlah murid = n(P ∪ C) + n(Tiada) = (18 + 15 - x) + 5 = 32."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "38 - x = 32 → x = 6 students."
+      ],
+      "ms": [
+        "38 - x = 32 → x = 6 orang murid."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "unknown_intersection"
+    ]
+  },
+  {
+    "id": "F4-C04-H04",
+    "chapter": 4,
+    "topic": "compound_set_cardinality",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given universal set ξ with n(ξ) = 80. n(A ∪ B) = 55 and n(C) = 30. If (A ∪ B) ∩ C = ∅, find n((A ∪ B ∪ C)').",
+      "ms": "Diberi set semesta ξ dengan n(ξ) = 80. n(A ∪ B) = 55 dan n(C) = 30. Jika (A ∪ B) ∩ C = ∅, cari n((A ∪ B ∪ C)')."
+    },
+    "equation": "n((A ∪ B ∪ C)')",
+    "options": [
+      {
+        "value": 0,
+        "text": "Impossible / 0 (Empty)",
+        "feedback": {
+          "en": "Wait, 55 + 30 = 85 > 80, which exceeds universal set count, so outside is 0 and sets overlap!",
+          "ms": "55 + 30 = 85 > 80, melebihi set semesta, maka tiada unsur di luar (0)."
+        }
+      },
+      {
+        "value": 5,
+        "text": "5",
+        "feedback": {
+          "en": "Notice 55 + 30 = 85 > 80.",
+          "ms": "Perhatikan 55 + 30 = 85 > 80."
+        }
+      },
+      {
+        "value": 25,
+        "text": "25",
+        "feedback": {
+          "en": "Check total elements.",
+          "ms": "Semak jumlah unsur."
+        }
+      },
+      {
+        "value": 10,
+        "text": "10",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": 0,
+    "hints": {
+      "en": [
+        "Check total disjoint count: 55 + 30 = 85."
+      ],
+      "ms": [
+        "Semak jumlah set berasingan: 55 + 30 = 85."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Since 55 + 30 = 85 exceeds 80, minimum overlap must exist, so outside is 0."
+      ],
+      "ms": [
+        "Oleh sebab 55 + 30 = 85 melebihi 80, tiada unsur di luar (0)."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "cardinality_constraint"
+    ]
+  },
+  {
+    "id": "F4-C04-H05",
+    "chapter": 4,
+    "topic": "disjoint_subset_deduction",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given sets A, B, and C such that A ⊂ B and B ∩ C = ∅. Which of the following must be TRUE?",
+      "ms": "Diberi set A, B, dan C dengan keadaan A ⊂ B dan B ∩ C = ∅. Antara berikut, yang manakah mesti BENAR?"
+    },
+    "equation": "A ⊂ B, B ∩ C = ∅ → A ∩ C = ∅",
+    "options": [
+      {
+        "value": "A ∩ C = ∅",
+        "text": "A ∩ C = ∅",
+        "feedback": {
+          "en": "Correct! Since A is inside B and B has no elements in C, A also cannot have elements in C.",
+          "ms": "Tepat! Oleh sebab A berada di dalam B dan B tiada unsur dalam C, A juga tiada unsur dalam C."
+        }
+      },
+      {
+        "value": "A ∪ C = B",
+        "text": "A ∪ C = B",
+        "feedback": {
+          "en": "C has no elements in B, so A ∪ C cannot equal B.",
+          "ms": "C tiada unsur dalam B, maka A ∪ C tidak boleh sama dengan B."
+        }
+      },
+      {
+        "value": "A = B",
+        "text": "A = B",
+        "feedback": {
+          "en": "A is a subset, not necessarily equal to B.",
+          "ms": "A ialah subset, tidak semestinya sama dengan B."
+        }
+      },
+      {
+        "value": "B ⊂ C",
+        "text": "B ⊂ C",
+        "feedback": {
+          "en": "B and C are disjoint (B ∩ C = ∅).",
+          "ms": "B dan C adalah set berasingan (B ∩ C = ∅)."
+        }
+      }
+    ],
+    "answer": "A ∩ C = ∅",
+    "hints": {
+      "en": [
+        "If all elements of A belong to B, and no elements of B belong to C, what about A and C?"
+      ],
+      "ms": [
+        "Jika semua unsur A milik B, dan tiada unsur B milik C, bagaimana dengan A dan C?"
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A ⊂ B and B ∩ C = ∅ implies A ∩ C = ∅."
+      ],
+      "ms": [
+        "A ⊂ B dan B ∩ C = ∅ mengimplikasikan A ∩ C = ∅."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "set_proof_deduction"
+    ]
+  },
+  {
+    "id": "F4-C04-E06",
+    "chapter": 4,
+    "topic": "set_cardinality_intersection",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "Given set A = {2, 4, 6, 8} and set B = {4, 8, 12}. Find n(A ∩ B).",
+      "ms": "Diberi set A = {2, 4, 6, 8} dan set B = {4, 8, 12}. Cari n(A ∩ B)."
+    },
+    "equation": "n(A ∩ B)",
+    "options": [
+      {
+        "value": "2",
+        "text": "2",
+        "feedback": {
+          "en": "Correct! A ∩ B = {4, 8}, so the number of elements is 2.",
+          "ms": "Tepat! A ∩ B = {4, 8}, jadi bilangan unsurnya ialah 2."
+        }
+      },
+      {
+        "value": "3",
+        "text": "3",
+        "feedback": {
+          "en": "3 is n(B).",
+          "ms": "3 ialah n(B)."
+        }
+      },
+      {
+        "value": "4",
+        "text": "4",
+        "feedback": {
+          "en": "4 is n(A).",
+          "ms": "4 ialah n(A)."
+        }
+      },
+      {
+        "value": "5",
+        "text": "5",
+        "feedback": {
+          "en": "5 is n(A ∪ B).",
+          "ms": "5 ialah n(A ∪ B)."
+        }
+      }
+    ],
+    "answer": "2",
+    "hints": {
+      "en": [
+        "Find the common elements in A and B first, then count them."
+      ],
+      "ms": [
+        "Cari unsur sepunya dalam A dan B dahulu, kemudian kirakan bilangannya."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A ∩ B = {4, 8}. Therefore n(A ∩ B) = 2."
+      ],
+      "ms": [
+        "A ∩ B = {4, 8}. Maka n(A ∩ B) = 2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-E07",
+    "chapter": 4,
+    "topic": "set_union_definition",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "kitchen",
+    "question": {
+      "en": "Set R = {Roti Canai, Teh Tarik} and Set N = {Nasi Lemak, Teh Tarik}. Find the union R ∪ N.",
+      "ms": "Set R = {Roti Canai, Teh Tarik} dan Set N = {Nasi Lemak, Teh Tarik}. Cari kesatuan R ∪ N."
+    },
+    "equation": "R ∪ N",
+    "options": [
+      {
+        "value": "A",
+        "text": "{Roti Canai, Teh Tarik, Nasi Lemak}",
+        "feedback": {
+          "en": "Correct! Union combines all elements without duplicating Teh Tarik.",
+          "ms": "Tepat! Kesatuan menggabungkan semua unsur tanpa mengulang Teh Tarik."
+        }
+      },
+      {
+        "value": "B",
+        "text": "{Teh Tarik}",
+        "feedback": {
+          "en": "This is the intersection R ∩ N.",
+          "ms": "Ini ialah persilangan R ∩ N."
+        }
+      },
+      {
+        "value": "C",
+        "text": "{Roti Canai, Nasi Lemak}",
+        "feedback": {
+          "en": "Teh Tarik must be included in the union.",
+          "ms": "Teh Tarik mesti disertakan dalam kesatuan."
+        }
+      },
+      {
+        "value": "D",
+        "text": "{Roti Canai, Teh Tarik, Teh Tarik, Nasi Lemak}",
+        "feedback": {
+          "en": "Elements in sets should not be repeated.",
+          "ms": "Unsur dalam set tidak diulang."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Union (∪) means all elements from both sets combined."
+      ],
+      "ms": [
+        "Kesatuan (∪) bermaksud gabungan semua unsur daripada kedua-dua set."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "R ∪ N = {Roti Canai, Teh Tarik, Nasi Lemak}."
+      ],
+      "ms": [
+        "R ∪ N = {Roti Canai, Teh Tarik, Nasi Lemak}."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-E08",
+    "chapter": 4,
+    "topic": "complement_of_set",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "Given universal set ξ = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and set P = {prime numbers}. Find P'.",
+      "ms": "Diberi set semesta ξ = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} dan set P = {nombor perdana}. Cari P'."
+    },
+    "equation": "P'",
+    "options": [
+      {
+        "value": "A",
+        "text": "{1, 4, 6, 8, 9, 10}",
+        "feedback": {
+          "en": "Correct! Primes are {2, 3, 5, 7}. P' contains non-primes in ξ.",
+          "ms": "Tepat! Nombor perdana ialah {2, 3, 5, 7}. P' mengandungi nombor bukan perdana dalam ξ."
+        }
+      },
+      {
+        "value": "B",
+        "text": "{2, 3, 5, 7}",
+        "feedback": {
+          "en": "This is set P itself.",
+          "ms": "Ini ialah set P."
+        }
+      },
+      {
+        "value": "C",
+        "text": "{4, 6, 8, 10}",
+        "feedback": {
+          "en": "1 and 9 are also non-prime!",
+          "ms": "1 dan 9 juga bukan nombor perdana!"
+        }
+      },
+      {
+        "value": "D",
+        "text": "{1, 9}",
+        "feedback": {
+          "en": "Incomplete.",
+          "ms": "Tidak lengkap."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Prime numbers in ξ are 2, 3, 5, 7. Note: 1 is NOT prime, so 1 belongs to P'."
+      ],
+      "ms": [
+        "Nombor perdana dalam ξ ialah 2, 3, 5, 7. Perhatian: 1 BUKAN perdana, jadi 1 dalam P'."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = {2, 3, 5, 7}. The complement P' contains all elements in ξ not in P: {1, 4, 6, 8, 9, 10}."
+      ],
+      "ms": [
+        "P = {2, 3, 5, 7}. Pelengkap P' mengandungi semua unsur dalam ξ selain P: {1, 4, 6, 8, 9, 10}."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-E09",
+    "chapter": 4,
+    "topic": "disjoint_sets",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "If set X ∩ Y = ∅, what can be deduced about sets X and Y?",
+      "ms": "Jika set X ∩ Y = ∅, apakah yang dapat dirumuskan tentang set X dan set Y?"
+    },
+    "equation": "X ∩ Y = ∅",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Sets X and Y have no elements in common (disjoint sets)",
+          "ms": "Set X dan set Y tidak mempunyai unsur sepunya (set saling eksklusif)"
+        },
+        "feedback": {
+          "en": "Correct! The intersection is an empty set.",
+          "ms": "Tepat! Persilangannya ialah set kosong."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Set X is a subset of set Y",
+          "ms": "Set X ialah subset bagi set Y"
+        },
+        "feedback": {
+          "en": "If X ⊂ Y, then X ∩ Y = X, not empty set.",
+          "ms": "Jika X ⊂ Y, maka X ∩ Y = X, bukan set kosong."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Both set X and set Y are empty sets",
+          "ms": "Kedua-dua set X dan set Y ialah set kosong"
+        },
+        "feedback": {
+          "en": "They don't have to be empty, just disjoint.",
+          "ms": "Set tersebut tidak semestinya kosong, cuma tiada unsur sepunya."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "X ∪ Y = ∅",
+          "ms": "X ∪ Y = ∅"
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "∅ means empty set. An intersection of ∅ means nothing is shared."
+      ],
+      "ms": [
+        "∅ bermaksud set kosong. Persilangan kosong bermaksud tiada unsur sepunya."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "X ∩ Y = ∅ means sets X and Y are disjoint sets."
+      ],
+      "ms": [
+        "X ∩ Y = ∅ bermaksud set X dan set Y ialah set saling eksklusif (tidak bertindih)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-E10",
+    "chapter": 4,
+    "topic": "subset_notation",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "Given A = {3, 6, 9} and B = {1, 3, 5, 6, 7, 9}. Which symbol correctly describes the relationship between A and B?",
+      "ms": "Diberi A = {3, 6, 9} dan B = {1, 3, 5, 6, 7, 9}. Simbol manakah yang mewakili hubungan antara A dan B dengan betul?"
+    },
+    "equation": "A ⊂ B",
+    "options": [
+      {
+        "value": "A",
+        "text": "A ⊂ B",
+        "feedback": {
+          "en": "Correct! Every element of A is also in B, so A is a subset of B.",
+          "ms": "Tepat! Setiap unsur dalam A terdapat dalam B, jadi A ialah subset bagi B."
+        }
+      },
+      {
+        "value": "B",
+        "text": "B ⊂ A",
+        "feedback": {
+          "en": "B has elements not in A.",
+          "ms": "B mengandungi unsur yang tiada dalam A."
+        }
+      },
+      {
+        "value": "C",
+        "text": "A ∩ B = ∅",
+        "feedback": {
+          "en": "They share elements 3, 6, 9.",
+          "ms": "Mereka berkongsi unsur 3, 6, 9."
+        }
+      },
+      {
+        "value": "D",
+        "text": "A = B",
+        "feedback": {
+          "en": "They do not have the same elements.",
+          "ms": "Unsur mereka tidak sama."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Check if all elements of A are inside B."
+      ],
+      "ms": [
+        "Semak sama ada semua unsur A berada di dalam B."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Since {3, 6, 9} are all members of B, A ⊂ B."
+      ],
+      "ms": [
+        "Kerana {3, 6, 9} semuanya unsur B, A ⊂ B."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-M06",
+    "chapter": 4,
+    "topic": "set_formula_two_sets",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "kitchen",
+    "question": {
+      "en": "In Warung Mama, 40 customers ordered breakfast. 25 ordered Nasi Lemak (N), 18 ordered Roti Canai (R), and 8 ordered both. How many customers ordered neither?",
+      "ms": "Di Warung Mama, 40 orang pelanggan memesan sarapan. 25 orang memesan Nasi Lemak (N), 18 orang memesan Roti Canai (R), dan 8 orang memesan kedua-duanya. Berapakah pelanggan yang tidak memesan kedua-dua makanan tersebut?"
+    },
+    "equation": "n(N ∪ R) = n(N) + n(R) - n(N ∩ R)",
+    "options": [
+      {
+        "value": "5",
+        "text": "5",
+        "feedback": {
+          "en": "Correct! n(N ∪ R) = 25 + 18 - 8 = 35. Neither = 40 - 35 = 5.",
+          "ms": "Tepat! n(N ∪ R) = 25 + 18 - 8 = 35. Tidak memesan = 40 - 35 = 5."
+        }
+      },
+      {
+        "value": "7",
+        "text": "7",
+        "feedback": {
+          "en": "Check your addition: 25 + 18 - 8 = 35.",
+          "ms": "Semak pengiraan: 25 + 18 - 8 = 35."
+        }
+      },
+      {
+        "value": "3",
+        "text": "3",
+        "feedback": {
+          "en": "Recalculate n(N ∪ R).",
+          "ms": "Kira semula n(N ∪ R)."
+        }
+      },
+      {
+        "value": "8",
+        "text": "8",
+        "feedback": {
+          "en": "8 is the number who ordered both.",
+          "ms": "8 ialah yang memesan kedua-duanya."
+        }
+      }
+    ],
+    "answer": "5",
+    "hints": {
+      "en": [
+        "1) Find n(N ∪ R) = 25 + 18 - 8 = 35. 2) Subtract from total 40."
+      ],
+      "ms": [
+        "1) Cari n(N ∪ R) = 25 + 18 - 8 = 35. 2) Tolak daripada jumlah 40."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Total with food = 25 + 18 - 8 = 35. Neither = 40 - 35 = 5 customers."
+      ],
+      "ms": [
+        "Jumlah memesan makanan = 25 + 18 - 8 = 35. Tidak memesan = 40 - 35 = 5 pelanggan."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-M07",
+    "chapter": 4,
+    "topic": "combined_set_operations",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "Given universal set ξ = {x : 1 ≤ x ≤ 10, x is an integer}, A = {odd numbers}, B = {multiples of 3}. Find n((A ∪ B)').",
+      "ms": "Diberi set semesta ξ = {x : 1 ≤ x ≤ 10, x ialah integer}, A = {nombor ganjil}, B = {gandaan 3}. Cari n((A ∪ B)')."
+    },
+    "equation": "n((A ∪ B)')",
+    "options": [
+      {
+        "value": "3",
+        "text": "3",
+        "feedback": {
+          "en": "Correct! (A ∪ B)' = {2, 4, 8, 10}, wait: 6 is multiple of 3. Even non-multiples of 3 are 2, 4, 8, 10 -> count is 4, wait let's check: ξ={1..10}. A={1,3,5,7,9}. B={3,6,9}. A∪B={1,3,5,6,7,9}. (A∪B)' = {2,4,8,10} has 4 elements.",
+          "ms": "Semak semula pengiraan."
+        }
+      },
+      {
+        "value": "4",
+        "text": "4",
+        "feedback": {
+          "en": "Correct! A ∪ B = {1, 3, 5, 6, 7, 9} (6 elements). (A ∪ B)' = {2, 4, 8, 10} which has 4 elements.",
+          "ms": "Tepat! A ∪ B = {1, 3, 5, 6, 7, 9} (6 unsur). (A ∪ B)' = {2, 4, 8, 10} iaitu 4 unsur."
+        }
+      },
+      {
+        "value": "5",
+        "text": "5",
+        "feedback": {
+          "en": "Check elements of A ∪ B.",
+          "ms": "Semak unsur A ∪ B."
+        }
+      },
+      {
+        "value": "2",
+        "text": "2",
+        "feedback": {
+          "en": "Too few elements.",
+          "ms": "Terlalu sedikit."
+        }
+      }
+    ],
+    "answer": "4",
+    "hints": {
+      "en": [
+        "A = {1,3,5,7,9}, B = {3,6,9}. A ∪ B = {1,3,5,6,7,9}. Count remaining in 1..10."
+      ],
+      "ms": [
+        "A = {1,3,5,7,9}, B = {3,6,9}. A ∪ B = {1,3,5,6,7,9}. Kira baki dalam 1..10."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A ∪ B = {1, 3, 5, 6, 7, 9}. The complement in {1..10} is {2, 4, 8, 10}. n((A ∪ B)') = 4."
+      ],
+      "ms": [
+        "A ∪ B = {1, 3, 5, 6, 7, 9}. Pelengkapnya dalam {1..10} ialah {2, 4, 8, 10}. n((A ∪ B)') = 4."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-M08",
+    "chapter": 4,
+    "topic": "set_intersection_complement",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "Which region in a Venn diagram represents (A ∩ B')?",
+      "ms": "Rantau manakah dalam gambar rajah Venn yang mewakili (A ∩ B')?"
+    },
+    "equation": "A ∩ B' = A - B",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Region of set A only (excluding intersection with B)",
+          "ms": "Rantau set A sahaja (tidak termasuk persilangan dengan B)"
+        },
+        "feedback": {
+          "en": "Correct! A ∩ B' represents elements that belong to A and do not belong to B.",
+          "ms": "Tepat! A ∩ B' mewakili unsur dalam A tetapi bukan dalam B (A sahaja)."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Region belonging to both A and B",
+          "ms": "Rantau kepunyaan kedua-dua A dan B"
+        },
+        "feedback": {
+          "en": "That is A ∩ B.",
+          "ms": "Itu ialah A ∩ B."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Region of set B only",
+          "ms": "Rantau set B sahaja"
+        },
+        "feedback": {
+          "en": "That is B ∩ A'.",
+          "ms": "Itu ialah B ∩ A'."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "The entire region outside both circles",
+          "ms": "Seluruh rantau di luar kedua-dua bulatan"
+        },
+        "feedback": {
+          "en": "That is (A ∪ B)'.",
+          "ms": "Itu ialah (A ∪ B)'."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "B' means outside B. Inside A and outside B is 'A only'."
+      ],
+      "ms": [
+        "B' bermaksud di luar B. Dalam A dan di luar B ialah 'A sahaja'."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A ∩ B' consists of elements inside circle A that are outside circle B, which is 'only A'."
+      ],
+      "ms": [
+        "A ∩ B' mengandungi unsur dalam bulatan A yang berada di luar bulatan B, iaitu kawasan 'A sahaja'."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-M09",
+    "chapter": 4,
+    "topic": "three_sets_intersection",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "kitchen",
+    "question": {
+      "en": "In a survey of 50 students: 30 like Roti Canai (R), 25 like Teh Tarik (T), and 15 like both. How many students like ONLY Roti Canai?",
+      "ms": "Dalam satu soal selidik 50 orang murid: 30 orang gemar Roti Canai (R), 25 orang gemar Teh Tarik (T), dan 15 orang gemar kedua-duanya. Berapakah murid yang HANYA gemar Roti Canai?"
+    },
+    "equation": "n(R only) = n(R) - n(R ∩ T)",
+    "options": [
+      {
+        "value": "15",
+        "text": "15",
+        "feedback": {
+          "en": "Correct! n(R only) = 30 - 15 = 15.",
+          "ms": "Tepat! n(R sahaja) = 30 - 15 = 15."
+        }
+      },
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "10 is those who like only Teh Tarik (25 - 15).",
+          "ms": "10 ialah yang hanya gemar Teh Tarik (25 - 15)."
+        }
+      },
+      {
+        "value": "30",
+        "text": "30",
+        "feedback": {
+          "en": "30 is total who like Roti Canai, including those who also like Teh Tarik.",
+          "ms": "30 ialah jumlah peminat Roti Canai termasuk yang gemar Teh Tarik."
+        }
+      },
+      {
+        "value": "20",
+        "text": "20",
+        "feedback": {
+          "en": "Recalculate 30 - 15.",
+          "ms": "Kira semula 30 - 15."
+        }
+      }
+    ],
+    "answer": "15",
+    "hints": {
+      "en": [
+        "Subtract the intersection (15) from the total who like Roti Canai (30)."
+      ],
+      "ms": [
+        "Tolak persilangan (15) daripada jumlah yang gemar Roti Canai (30)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "n(R only) = n(R) - n(R ∩ T) = 30 - 15 = 15."
+      ],
+      "ms": [
+        "n(R sahaja) = n(R) - n(R ∩ T) = 30 - 15 = 15."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-M10",
+    "chapter": 4,
+    "topic": "set_subset_equation",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "If P ⊂ Q, simplify the expression (P ∩ Q) ∪ P'.",
+      "ms": "Jika P ⊂ Q, permudahkan ungkapan (P ∩ Q) ∪ P'."
+    },
+    "equation": "P ⊂ Q => P ∩ Q = P",
+    "options": [
+      {
+        "value": "A",
+        "text": "ξ",
+        "feedback": {
+          "en": "Correct! Since P ⊂ Q, P ∩ Q = P. Then P ∪ P' = ξ (universal set).",
+          "ms": "Tepat! Kerana P ⊂ Q, P ∩ Q = P. Maka P ∪ P' = ξ (set semesta)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "P",
+        "feedback": {
+          "en": "P ∪ P' covers the entire universal set, not just P.",
+          "ms": "P ∪ P' merangkumi seluruh set semesta, bukan P sahaja."
+        }
+      },
+      {
+        "value": "C",
+        "text": "Q",
+        "feedback": {
+          "en": "The result is the entire universal set ξ.",
+          "ms": "Hasilnya ialah keseluruhan set semesta ξ."
+        }
+      },
+      {
+        "value": "D",
+        "text": "∅",
+        "feedback": {
+          "en": "The union of a set and its complement is universal set ξ.",
+          "ms": "Kesatuan suatu set dengan pelengkapnya ialah set semesta ξ."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "1) If P is inside Q, what is P ∩ Q? It is P! 2) What is P ∪ P'?"
+      ],
+      "ms": [
+        "1) Jika P di dalam Q, apakah P ∩ Q? Iaitu P! 2) Apakah P ∪ P'?"
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P ⊂ Q means P ∩ Q = P. Then P ∪ P' = ξ (universal set)."
+      ],
+      "ms": [
+        "P ⊂ Q bermakna P ∩ Q = P. Seterusnya P ∪ P' = ξ (set semesta)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-H06",
+    "chapter": 4,
+    "topic": "three_sets_problem_total",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "kitchen",
+    "question": {
+      "en": "A survey of 100 warung customers found:\n50 order Nasi Lemak (A)\n45 order Mee Goreng (B)\n40 order Roti Canai (C)\n20 order A and B\n15 order B and C\n18 order A and C\n8 order all three.\nHow many customers ordered NONE of these three dishes?",
+      "ms": "Soal selidik terhadap 100 orang pelanggan warung mendapati:\n50 orang memesan Nasi Lemak (A)\n45 orang memesan Mee Goreng (B)\n40 orang memesan Roti Canai (C)\n20 orang memesan A dan B\n15 orang memesan B dan C\n18 orang memesan A dan C\n8 orang memesan ketiga-tiganya.\nBerapakah pelanggan yang TIDAK memesan sebarang daripada ketiga-tiga hidangan tersebut?"
+    },
+    "equation": "n(A∪B∪C) = n(A)+n(B)+n(C) - n(A∩B)-n(B∩C)-n(A∩C) + n(A∩B∩C)",
+    "options": [
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "Correct! Total with order = 50 + 45 + 40 - 20 - 15 - 18 + 8 = 90. None = 100 - 90 = 10.",
+          "ms": "Tepat! Jumlah yang memesan = 50 + 45 + 40 - 20 - 15 - 18 + 8 = 90. Tiada = 100 - 90 = 10."
+        }
+      },
+      {
+        "value": "15",
+        "text": "15",
+        "feedback": {
+          "en": "Check your sum using the 3-set inclusion-exclusion formula.",
+          "ms": "Semak pengiraan menggunakan rumus penyertaan-penyingkiran 3 set."
+        }
+      },
+      {
+        "value": "8",
+        "text": "8",
+        "feedback": {
+          "en": "8 is n(A ∩ B ∩ C).",
+          "ms": "8 ialah n(A ∩ B ∩ C)."
+        }
+      },
+      {
+        "value": "12",
+        "text": "12",
+        "feedback": {
+          "en": "Recalculate n(A ∪ B ∪ C).",
+          "ms": "Kira semula n(A ∪ B ∪ C)."
+        }
+      }
+    ],
+    "answer": "10",
+    "hints": {
+      "en": [
+        "Use n(A∪B∪C) = 50+45+40 - (20+15+18) + 8 = 90. Then subtract from 100."
+      ],
+      "ms": [
+        "Gunakan n(A∪B∪C) = 50+45+40 - (20+15+18) + 8 = 90. Kemudian tolak daripada 100."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "n(A ∪ B ∪ C) = 50 + 45 + 40 - 20 - 15 - 18 + 8 = 90. Customers with no orders = 100 - 90 = 10."
+      ],
+      "ms": [
+        "n(A ∪ B ∪ C) = 50 + 45 + 40 - 20 - 15 - 18 + 8 = 90. Pelanggan yang tidak memesan = 100 - 90 = 10 orang."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-H07",
+    "chapter": 4,
+    "topic": "set_algebra_unknown_x",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "In a group of 60 tourists: 38 speak English (E), 32 speak Malay (M), and x speak both languages. If 4 tourists speak neither language, find the value of x.",
+      "ms": "Dalam satu kumpulan 60 orang pelancong: 38 orang bertutur Bahasa Inggeris (E), 32 orang bertutur Bahasa Melayu (M), dan x orang bertutur kedua-dua bahasa. Jika 4 pelancong tidak bertutur kedua-dua bahasa tersebut, cari nilai x."
+    },
+    "equation": "60 - 4 = 38 + 32 - x",
+    "options": [
+      {
+        "value": "14",
+        "text": "14",
+        "feedback": {
+          "en": "Correct! 56 = 70 - x => x = 14.",
+          "ms": "Tepat! 56 = 70 - x => x = 14."
+        }
+      },
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "38 + 32 - 10 = 60, but 4 speak neither, so total speakers should be 56.",
+          "ms": "38 + 32 - 10 = 60, tetapi 4 orang tidak bertutur, jadi penutur mesti berjumlah 56."
+        }
+      },
+      {
+        "value": "16",
+        "text": "16",
+        "feedback": {
+          "en": "70 - 16 = 54 != 56.",
+          "ms": "70 - 16 = 54 != 56."
+        }
+      },
+      {
+        "value": "12",
+        "text": "12",
+        "feedback": {
+          "en": "70 - 12 = 58 != 56.",
+          "ms": "70 - 12 = 58 != 56."
+        }
+      }
+    ],
+    "answer": "14",
+    "hints": {
+      "en": [
+        "n(E ∪ M) = 60 - 4 = 56. Then 38 + 32 - x = 56."
+      ],
+      "ms": [
+        "n(E ∪ M) = 60 - 4 = 56. Maka 38 + 32 - x = 56."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "n(E ∪ M) = 60 - 4 = 56. 38 + 32 - x = 56 => 70 - x = 56 => x = 14."
+      ],
+      "ms": [
+        "n(E ∪ M) = 60 - 4 = 56. 38 + 32 - x = 56 => 70 - x = 56 => x = 14 orang."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-H08",
+    "chapter": 4,
+    "topic": "venn_diagram_shading_complex",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "Which set notation corresponds to: 'Elements that belong to set P or set Q, but NOT to both sets P and Q'?",
+      "ms": "Notasi set manakah yang sepadan dengan: 'Unsur yang berada dalam set P atau set Q, tetapi BUKAN dalam kedua-dua set P dan Q'?"
+    },
+    "equation": "(P ∪ Q) ∩ (P ∩ Q)'",
+    "options": [
+      {
+        "value": "A",
+        "text": "(P ∪ Q) ∩ (P ∩ Q)'",
+        "feedback": {
+          "en": "Correct! This is symmetric difference: in union but not in intersection.",
+          "ms": "Tepat! Ini ialah beza simetri: berada dalam kesatuan tetapi bukan dalam persilangan."
+        }
+      },
+      {
+        "value": "B",
+        "text": "(P ∩ Q)'",
+        "feedback": {
+          "en": "This includes the elements outside P ∪ Q as well.",
+          "ms": "Ini termasuk juga unsur di luar P ∪ Q."
+        }
+      },
+      {
+        "value": "C",
+        "text": "P' ∪ Q'",
+        "feedback": {
+          "en": "By De Morgan's Law, P' ∪ Q' = (P ∩ Q)'.",
+          "ms": "Mengikut Hukum De Morgan, P' ∪ Q' = (P ∩ Q)'."
+        }
+      },
+      {
+        "value": "D",
+        "text": "(P ∪ Q)'",
+        "feedback": {
+          "en": "This is outside both sets entirely.",
+          "ms": "Ini kawasan di luar kedua-dua set."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "'In P or Q' is (P ∪ Q). 'Not in both' is (P ∩ Q)'. Combine with 'and' (∩)."
+      ],
+      "ms": [
+        "'Dalam P atau Q' ialah (P ∪ Q). 'Bukan dalam kedua-duanya' ialah (P ∩ Q)'. Gabungkan dengan 'dan' (∩)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The region represents the symmetric difference: (P ∪ Q) ∩ (P ∩ Q)'."
+      ],
+      "ms": [
+        "Rantau ini mewakili beza simetri: (P ∪ Q) ∩ (P ∩ Q)'."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-H09",
+    "chapter": 4,
+    "topic": "set_cardinality_ratios",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "kitchen",
+    "question": {
+      "en": "In a cooking workshop with 80 participants: all cook dish A or dish B. The ratio of participants cooking dish A only, cooking both dishes, and cooking dish B only is 3 : 2 : 5. How many participants cook dish A in total?",
+      "ms": "Dalam satu bengkel masakan dengan 80 peserta: semua memasak hidangan A atau hidangan B. Nisbah peserta yang memasak hidangan A sahaja, memasak kedua-dua hidangan, dan memasak hidangan B sahaja ialah 3 : 2 : 5. Berapakah jumlah peserta yang memasak hidangan A?"
+    },
+    "equation": "n(A) = n(A only) + n(A ∩ B)",
+    "options": [
+      {
+        "value": "40",
+        "text": "40",
+        "feedback": {
+          "en": "Correct! Total parts = 3 + 2 + 5 = 10. 1 part = 8. n(A) = (3 + 2) * 8 = 40.",
+          "ms": "Tepat! Jumlah bahagian = 3 + 2 + 5 = 10. 1 bahagian = 8. n(A) = (3 + 2) * 8 = 40 orang."
+        }
+      },
+      {
+        "value": "24",
+        "text": "24",
+        "feedback": {
+          "en": "24 is n(A only) = 3 * 8. Don't forget those who cook both dishes!",
+          "ms": "24 ialah n(A sahaja) = 3 * 8. Jangan lupa mereka yang masak kedua-duanya!"
+        }
+      },
+      {
+        "value": "16",
+        "text": "16",
+        "feedback": {
+          "en": "16 is n(A ∩ B) = 2 * 8.",
+          "ms": "16 ialah n(A ∩ B) = 2 * 8."
+        }
+      },
+      {
+        "value": "56",
+        "text": "56",
+        "feedback": {
+          "en": "56 is (2 + 5) * 8, which is dish B total.",
+          "ms": "56 ialah (2 + 5) * 8, iaitu jumlah hidangan B."
+        }
+      }
+    ],
+    "answer": "40",
+    "hints": {
+      "en": [
+        "1 part = 80 / 10 = 8. Dish A total includes 'A only' (3 parts) and 'both' (2 parts)."
+      ],
+      "ms": [
+        "1 bahagian = 80 / 10 = 8. Jumlah hidangan A merangkumi 'A sahaja' (3 bahagian) dan 'kedua-duanya' (2 bahagian)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Total parts = 10. Each part = 8 participants. Total cooking dish A = (3 + 2) × 8 = 40 participants."
+      ],
+      "ms": [
+        "Jumlah bahagian = 10. Setiap bahagian = 8 peserta. Jumlah memasak hidangan A = (3 + 2) × 8 = 40 peserta."
+      ]
+    }
+  },
+  {
+    "id": "F4-C04-H10",
+    "chapter": 4,
+    "topic": "de_morgan_application",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "S1",
+    "context": "general",
+    "question": {
+      "en": "According to De Morgan's Law, the complement of the union (A ∪ B)' is equivalent to which expression?",
+      "ms": "Mengikut Hukum De Morgan, pelengkap bagi kesatuan (A ∪ B)' adalah setara dengan ungkapan yang manakah?"
+    },
+    "equation": "(A ∪ B)' = A' ∩ B'",
+    "options": [
+      {
+        "value": "A",
+        "text": "A' ∩ B'",
+        "feedback": {
+          "en": "Correct! De Morgan's Law states (A ∪ B)' = A' ∩ B'.",
+          "ms": "Tepat! Hukum De Morgan menyatakan (A ∪ B)' = A' ∩ B'."
+        }
+      },
+      {
+        "value": "B",
+        "text": "A' ∪ B'",
+        "feedback": {
+          "en": "A' ∪ B' is equal to (A ∩ B)'.",
+          "ms": "A' ∪ B' bersamaan dengan (A ∩ B)'."
+        }
+      },
+      {
+        "value": "C",
+        "text": "A ∩ B",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      },
+      {
+        "value": "D",
+        "text": "(A' ∩ B)'",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "The complement of the union is the intersection of the complements."
+      ],
+      "ms": [
+        "Pelengkap bagi kesatuan ialah persilangan bagi pelengkap."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "By De Morgan's Law: (A ∪ B)' = A' ∩ B'."
+      ],
+      "ms": [
+        "Mengikut Hukum De Morgan: (A ∪ B)' = A' ∩ B'."
+      ]
+    }
+  }
+]

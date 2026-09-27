@@ -1,0 +1,2075 @@
+[
+  {
+    "id": "F4-C05-E01",
+    "chapter": 5,
+    "topic": "count_vertices_edges",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A network connecting 5 food stalls forms a cycle graph (pentagon). How many vertices (V) and edges (E) does it have?",
+      "ms": "Rangkaian yang menghubungkan 5 gerai makanan membentuk graf kitaran (pentagon). Berapakah bucu (V) dan tepi (E) yang dimilikinya?"
+    },
+    "equation": "V, E",
+    "options": [
+      {
+        "value": "V = 5, E = 5",
+        "text": "V = 5, E = 5",
+        "feedback": {
+          "en": "Correct! A pentagon cycle has 5 vertices and 5 edges.",
+          "ms": "Tepat! Kitaran pentagon mempunyai 5 bucu dan 5 tepi."
+        }
+      },
+      {
+        "value": "V = 5, E = 4",
+        "text": "V = 5, E = 4",
+        "feedback": {
+          "en": "5 vertices with 4 edges is a tree, not a cycle.",
+          "ms": "5 bucu dengan 4 tepi ialah pokok, bukan kitaran."
+        }
+      },
+      {
+        "value": "V = 4, E = 5",
+        "text": "V = 4, E = 5",
+        "feedback": {
+          "en": "There are 5 stalls (vertices).",
+          "ms": "Terdapat 5 gerai (bucu)."
+        }
+      },
+      {
+        "value": "V = 5, E = 10",
+        "text": "V = 5, E = 10",
+        "feedback": {
+          "en": "10 edges would be a complete graph K_5.",
+          "ms": "10 tepi ialah graf lengkap K_5."
+        }
+      }
+    ],
+    "answer": "V = 5, E = 5",
+    "hints": {
+      "en": [
+        "Count the number of stall locations (vertices) and connecting roads (edges)."
+      ],
+      "ms": [
+        "Kira bilangan lokasi gerai (bucu) dan jalan penghubung (tepi)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "5 stalls = 5 vertices. Pentagon cycle = 5 edges."
+      ],
+      "ms": [
+        "5 gerai = 5 bucu. Kitaran pentagon = 5 tepi."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "graph_components"
+    ]
+  },
+  {
+    "id": "F4-C05-E02",
+    "chapter": 5,
+    "topic": "degree_of_vertex",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a delivery network, vertex v is connected to 3 distinct edges without loops. What is the degree of vertex v, d(v)?",
+      "ms": "Dalam rangkaian penghantaran, bucu v disambungkan kepada 3 tepi tanpa gelung. Apakah darjah bagi bucu v, d(v)?"
+    },
+    "equation": "d(v)",
+    "options": [
+      {
+        "value": 3,
+        "text": "d(v) = 3",
+        "feedback": {
+          "en": "Correct! The degree is the number of edges incident to the vertex.",
+          "ms": "Tepat! Darjah ialah bilangan tepi yang mengaitkan bucu tersebut."
+        }
+      },
+      {
+        "value": 6,
+        "text": "d(v) = 6",
+        "feedback": {
+          "en": "Each simple edge contributes 1 to the degree of vertex v.",
+          "ms": "Setiap tepi mudah menyumbang 1 kepada darjah bucu v."
+        }
+      },
+      {
+        "value": 1,
+        "text": "d(v) = 1",
+        "feedback": {
+          "en": "There are 3 connecting edges.",
+          "ms": "Terdapat 3 tepi penghubung."
+        }
+      },
+      {
+        "value": 2,
+        "text": "d(v) = 2",
+        "feedback": {
+          "en": "d(v) is equal to 3.",
+          "ms": "d(v) bersamaan 3."
+        }
+      }
+    ],
+    "answer": 3,
+    "hints": {
+      "en": [
+        "The degree of a vertex is the number of edges connected to it."
+      ],
+      "ms": [
+        "Darjah sesuatu bucu ialah bilangan tepi yang bersambung dengannya."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "d(v) = 3."
+      ],
+      "ms": [
+        "d(v) = 3."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "vertex_degree"
+    ]
+  },
+  {
+    "id": "F4-C05-E03",
+    "chapter": 5,
+    "topic": "handshaking_lemma",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A network graph has 8 edges. What is the sum of degrees of all vertices in this graph?",
+      "ms": "Suatu graf rangkaian mempunyai 8 tepi. Apakah jumlah darjah bagi semua bucu dalam graf ini?"
+    },
+    "equation": "∑ d(v) = 2E",
+    "options": [
+      {
+        "value": 16,
+        "text": "16",
+        "feedback": {
+          "en": "Correct! ∑ d(v) = 2E = 2 × 8 = 16.",
+          "ms": "Tepat! ∑ d(v) = 2E = 2 × 8 = 16."
+        }
+      },
+      {
+        "value": 8,
+        "text": "8",
+        "feedback": {
+          "en": "Each edge connects two vertices and contributes 2 to the sum.",
+          "ms": "Setiap tepi menghubungkan dua bucu dan menyumbang 2 darjah."
+        }
+      },
+      {
+        "value": 24,
+        "text": "24",
+        "feedback": {
+          "en": "Multiply by 2, not 3.",
+          "ms": "Darabkan dengan 2, bukan 3."
+        }
+      },
+      {
+        "value": 64,
+        "text": "64",
+        "feedback": {
+          "en": "Formula is 2E, not E².",
+          "ms": "Rumus ialah 2E, bukan E²."
+        }
+      }
+    ],
+    "answer": 16,
+    "hints": {
+      "en": [
+        "Handshaking Lemma: Sum of degrees = 2 × Number of edges (2E)."
+      ],
+      "ms": [
+        "Gunakan Teorem Jabat Tangan: Jumlah darjah = 2 × Bilangan tepi (2E)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "∑ d(v) = 2 × 8 = 16."
+      ],
+      "ms": [
+        "∑ d(v) = 2 × 8 = 16."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "handshaking_lemma"
+    ]
+  },
+  {
+    "id": "F4-C05-E04",
+    "chapter": 5,
+    "topic": "simple_vs_multigraph",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which feature distinguishes a multigraph from a simple graph?",
+      "ms": "Ciri manakah yang membezakan graf berganda daripada graf mudah?"
+    },
+    "equation": "Loops & multiple edges",
+    "options": [
+      {
+        "value": "A",
+        "text": "A multigraph can contain loops or multiple edges between the same vertices.",
+        "feedback": {
+          "en": "Correct! Simple graphs have no loops and no multiple edges.",
+          "ms": "Tepat! Graf mudah tidak mengandungi gelung atau berbilang tepi."
+        }
+      },
+      {
+        "value": "B",
+        "text": "A multigraph has only straight lines.",
+        "feedback": {
+          "en": "Line curvature does not define a multigraph.",
+          "ms": "Kelengkungan garis tidak mentakrifkan graf berganda."
+        }
+      },
+      {
+        "value": "C",
+        "text": "A multigraph has no vertices.",
+        "feedback": {
+          "en": "All graphs must have vertices.",
+          "ms": "Semua graf mesti mempunyai bucu."
+        }
+      },
+      {
+        "value": "D",
+        "text": "A multigraph must have directed arrows.",
+        "feedback": {
+          "en": "That defines a directed graph (digraph).",
+          "ms": "Itu mentakrifkan graf terarah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "A simple graph has no loops and no multiple edges."
+      ],
+      "ms": [
+        "Graf mudah tidak mempunyai gelung dan tiada berbilang tepi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Multigraphs may contain loops and multiple edges."
+      ],
+      "ms": [
+        "Graf berganda boleh mengandungi gelung dan berbilang tepi."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "graph_types"
+    ]
+  },
+  {
+    "id": "F4-C05-E05",
+    "chapter": 5,
+    "topic": "directed_vs_undirected",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a one-way street delivery network, roads have specified travel directions with arrows. What type of graph is this?",
+      "ms": "Dalam rangkaian penghantaran jalan sehala, jalan mempunyai arah perjalanan dengan anak panah. Apakah jenis graf ini?"
+    },
+    "equation": "Directed Graph (Digraph)",
+    "options": [
+      {
+        "value": "Directed graph",
+        "text": "Directed graph (Digraph)",
+        "feedback": {
+          "en": "Correct! Edges with directional arrows are directed graphs.",
+          "ms": "Tepat! Tepi yang mempunyai anak panah arah ialah graf terarah."
+        }
+      },
+      {
+        "value": "Undirected graph",
+        "text": "Undirected graph",
+        "feedback": {
+          "en": "Undirected graphs have bidirectional edges without arrows.",
+          "ms": "Graf tak terarah tidak mempunyai anak panah."
+        }
+      },
+      {
+        "value": "Tree",
+        "text": "Tree",
+        "feedback": {
+          "en": "A tree is defined by connectivity and absence of cycles.",
+          "ms": "Pokok ditakrifkan oleh keterhubungan dan ketiadaan kitaran."
+        }
+      },
+      {
+        "value": "Complete graph",
+        "text": "Complete graph",
+        "feedback": {
+          "en": "A complete graph connects every pair of vertices.",
+          "ms": "Graf lengkap menghubungkan setiap pasangan bucu."
+        }
+      }
+    ],
+    "answer": "Directed graph",
+    "hints": {
+      "en": [
+        "Arrows on edges indicate a directed graph."
+      ],
+      "ms": [
+        "Anak panah pada tepi menandakan graf terarah."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Edges with directions form a directed graph."
+      ],
+      "ms": [
+        "Tepi yang berarah membentuk graf terarah."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "directed_graph"
+    ]
+  },
+  {
+    "id": "F4-C05-M01",
+    "chapter": 5,
+    "topic": "degree_sequence_validity",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which of the following degree sequences can form a valid simple graph?",
+      "ms": "Antara jujukan darjah berikut, yang manakah boleh membentuk suatu graf mudah yang sah?"
+    },
+    "equation": "∑ d(v) must be EVEN",
+    "options": [
+      {
+        "value": "A",
+        "text": "{2, 3, 3, 4}",
+        "feedback": {
+          "en": "Correct! Sum = 2 + 3 + 3 + 4 = 12 (even number of odd-degree vertices).",
+          "ms": "Tepat! Jumlah = 12 (bilangan bucu berdarjah ganjil adalah genap)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "{1, 2, 2, 4}",
+        "feedback": {
+          "en": "Sum = 9 (odd), which violates the Handshaking Lemma!",
+          "ms": "Jumlah = 9 (ganjil), melanggar Teorem Jabat Tangan!"
+        }
+      },
+      {
+        "value": "C",
+        "text": "{3, 3, 3, 4}",
+        "feedback": {
+          "en": "Sum = 13 (odd), impossible.",
+          "ms": "Jumlah = 13 (ganjil), mustahil."
+        }
+      },
+      {
+        "value": "D",
+        "text": "{1, 1, 1, 2}",
+        "feedback": {
+          "en": "Sum = 5 (odd), impossible.",
+          "ms": "Jumlah = 5 (ganjil), mustahil."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "The sum of degrees must always be an EVEN number."
+      ],
+      "ms": [
+        "Jumlah darjah bagi graf mesti sentiasa nombor GENAP."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "2 + 3 + 3 + 4 = 12 (even), satisfying ∑ d(v) = 2E."
+      ],
+      "ms": [
+        "2 + 3 + 3 + 4 = 12 (genap), mematuhi ∑ d(v) = 2E."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "degree_sequence"
+    ]
+  },
+  {
+    "id": "F4-C05-M02",
+    "chapter": 5,
+    "topic": "weighted_graph_path_cost",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a weighted delivery network, the distance of edges are: AB = 4 km, BC = 7 km, CD = 5 km, AD = 12 km. What is the distance of path A → B → C → D?",
+      "ms": "Dalam rangkaian penghantaran berpemberat, jarak tepi ialah: AB = 4 km, BC = 7 km, CD = 5 km, AD = 12 km. Apakah jarak laluan A → B → C → D?"
+    },
+    "equation": "AB + BC + CD",
+    "options": [
+      {
+        "value": 16,
+        "text": "16 km",
+        "feedback": {
+          "en": "Correct! 4 + 7 + 5 = 16 km.",
+          "ms": "Tepat! 4 + 7 + 5 = 16 km."
+        }
+      },
+      {
+        "value": 12,
+        "text": "12 km",
+        "feedback": {
+          "en": "12 km is the direct distance AD.",
+          "ms": "12 km ialah jarak terus AD."
+        }
+      },
+      {
+        "value": 28,
+        "text": "28 km",
+        "feedback": {
+          "en": "Do not add all edges in the graph.",
+          "ms": "Jangan tambah semua tepi dalam graf."
+        }
+      },
+      {
+        "value": 18,
+        "text": "18 km",
+        "feedback": {
+          "en": "4 + 7 + 5 = 16 km.",
+          "ms": "4 + 7 + 5 = 16 km."
+        }
+      }
+    ],
+    "answer": 16,
+    "hints": {
+      "en": [
+        "Add the weights along the path A → B → C → D: 4 + 7 + 5."
+      ],
+      "ms": [
+        "Tambah pemberat sepanjang laluan A → B → C → D: 4 + 7 + 5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Distance = 4 + 7 + 5 = 16 km."
+      ],
+      "ms": [
+        "Jarak = 4 + 7 + 5 = 16 km."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "weighted_graph"
+    ]
+  },
+  {
+    "id": "F4-C05-M03",
+    "chapter": 5,
+    "topic": "subgraph_verification",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Graph G has vertices V = {P, Q, R} and edges E = {PQ, QR}. Which of the following is a VALID subgraph of G?",
+      "ms": "Graf G mempunyai bucu V = {P, Q, R} dan tepi E = {PQ, QR}. Antara berikut, yang manakah merupakan SUBGRAF yang sah bagi G?"
+    },
+    "equation": "V' ⊆ V, E' ⊆ E",
+    "options": [
+      {
+        "value": "A",
+        "text": "V' = {P, Q}, E' = {PQ}",
+        "feedback": {
+          "en": "Correct! V' ⊆ V and E' ⊆ E.",
+          "ms": "Tepat! V' ⊆ V dan E' ⊆ E."
+        }
+      },
+      {
+        "value": "B",
+        "text": "V' = {P, R}, E' = {PR}",
+        "feedback": {
+          "en": "Edge PR does not exist in G, so this cannot be a subgraph.",
+          "ms": "Tepi PR tidak wujud dalam G, maka bukan subgraf."
+        }
+      },
+      {
+        "value": "C",
+        "text": "V' = {P, Q, S}, E' = {PQ}",
+        "feedback": {
+          "en": "Vertex S is not in G.",
+          "ms": "Bucu S tiada dalam G."
+        }
+      },
+      {
+        "value": "D",
+        "text": "V' = {Q}, E' = {QR}",
+        "feedback": {
+          "en": "Edge QR requires both vertices Q and R to be in V'.",
+          "ms": "Tepi QR memerlukan kedua-dua bucu Q dan R berada dalam V'."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "A subgraph must only contain vertices and edges present in the original graph."
+      ],
+      "ms": [
+        "Subgraf hanya boleh mengandungi bucu dan tepi yang wujud dalam graf asal."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "V' = {P, Q} ⊆ V and E' = {PQ} ⊆ E."
+      ],
+      "ms": [
+        "V' = {P, Q} ⊆ V dan E' = {PQ} ⊆ E."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "subgraph"
+    ]
+  },
+  {
+    "id": "F4-C05-M04",
+    "chapter": 5,
+    "topic": "tree_properties",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A connected network connects 7 food outlets without any closed loops or cycles. How many edges (E) does this tree have?",
+      "ms": "Rangkaian terhubung menghubungkan 7 cawangan makanan tanpa sebarang kitaran atau gelung. Berapakah bilangan tepi (E) bagi pokok ini?"
+    },
+    "equation": "E = n - 1",
+    "options": [
+      {
+        "value": 6,
+        "text": "6 edges",
+        "feedback": {
+          "en": "Correct! A tree with n vertices always has E = n - 1 = 7 - 1 = 6 edges.",
+          "ms": "Tepat! Pokok dengan n bucu sentiasa mempunyai E = n - 1 = 7 - 1 = 6 tepi."
+        }
+      },
+      {
+        "value": 7,
+        "text": "7 edges",
+        "feedback": {
+          "en": "7 edges with 7 vertices would create a cycle.",
+          "ms": "7 tepi dengan 7 bucu akan membentuk kitaran."
+        }
+      },
+      {
+        "value": 5,
+        "text": "5 edges",
+        "feedback": {
+          "en": "5 edges cannot connect 7 vertices.",
+          "ms": "5 tepi tidak mencukupi untuk menghubungkan 7 bucu."
+        }
+      },
+      {
+        "value": 8,
+        "text": "8 edges",
+        "feedback": {
+          "en": "A tree with 7 vertices has exactly 6 edges.",
+          "ms": "Pokok dengan 7 bucu mempunyai tepat 6 tepi."
+        }
+      }
+    ],
+    "answer": 6,
+    "hints": {
+      "en": [
+        "A tree with n vertices has exactly n - 1 edges."
+      ],
+      "ms": [
+        "Suatu pokok dengan n bucu mempunyai tepat n - 1 tepi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "E = 7 - 1 = 6 edges."
+      ],
+      "ms": [
+        "E = 7 - 1 = 6 tepi."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "tree_properties"
+    ]
+  },
+  {
+    "id": "F4-C05-M05",
+    "chapter": 5,
+    "topic": "in_out_degree_digraph",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a directed food hub graph, 4 delivery routes enter Hub H (in-degree) and 3 routes depart from Hub H (out-degree). What is the total degree of Hub H?",
+      "ms": "Dalam graf terarah hab makanan, 4 laluan masuk ke Hab H (darjah masuk) dan 3 laluan keluar dari Hab H (darjah keluar). Apakah jumlah darjah bagi Hab H?"
+    },
+    "equation": "d(H) = d_in(H) + d_out(H)",
+    "options": [
+      {
+        "value": 7,
+        "text": "d(H) = 7",
+        "feedback": {
+          "en": "Correct! Total degree = in-degree + out-degree = 4 + 3 = 7.",
+          "ms": "Tepat! Jumlah darjah = darjah masuk + darjah keluar = 4 + 3 = 7."
+        }
+      },
+      {
+        "value": 1,
+        "text": "d(H) = 1",
+        "feedback": {
+          "en": "4 - 3 = 1 is the difference, not the total degree.",
+          "ms": "4 - 3 = 1 ialah beza, bukan jumlah darjah."
+        }
+      },
+      {
+        "value": 12,
+        "text": "d(H) = 12",
+        "feedback": {
+          "en": "Do not multiply in-degree and out-degree.",
+          "ms": "Jangan darab darjah masuk dan keluar."
+        }
+      },
+      {
+        "value": 4,
+        "text": "d(H) = 4",
+        "feedback": {
+          "en": "4 is only the in-degree.",
+          "ms": "4 hanya darjah masuk."
+        }
+      }
+    ],
+    "answer": 7,
+    "hints": {
+      "en": [
+        "Total degree in a directed graph is d_in(v) + d_out(v)."
+      ],
+      "ms": [
+        "Jumlah darjah dalam graf terarah ialah d_masuk(v) + d_keluar(v)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "d(H) = 4 + 3 = 7."
+      ],
+      "ms": [
+        "d(H) = 4 + 3 = 7."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "in_out_degree"
+    ]
+  },
+  {
+    "id": "F4-C05-H01",
+    "chapter": 5,
+    "topic": "minimum_spanning_tree",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A vendor connects 5 stalls into a network. The edge weights are: AB=3, BC=4, CD=2, DE=5, AE=6, BD=7, CE=3. What is the minimum weight of a spanning tree connecting all 5 stalls?",
+      "ms": "Peniaga menghubungkan 5 gerai. Pemberat tepi: AB=3, BC=4, CD=2, DE=5, AE=6, BD=7, CE=3. Apakah jumlah pemberat minimum bagi pokok rentangan yang menghubungkan kelima-lima gerai?"
+    },
+    "equation": "MST = ∑ weights of (n - 1) edges",
+    "options": [
+      {
+        "value": 12,
+        "text": "12",
+        "feedback": {
+          "en": "Correct! Pick smallest non-cyclic edges: CD(2), AB(3), CE(3), BC(4) → Total = 2 + 3 + 3 + 4 = 12.",
+          "ms": "Tepat! Pilih tepi terkecil tanpa kitaran: CD(2), AB(3), CE(3), BC(4) → Jumlah = 12."
+        }
+      },
+      {
+        "value": 14,
+        "text": "14",
+        "feedback": {
+          "en": "You can achieve a lower weight of 12.",
+          "ms": "Pemberat lebih rendah 12 boleh dicapai."
+        }
+      },
+      {
+        "value": 10,
+        "text": "10",
+        "feedback": {
+          "en": "Check connectivity of all 5 vertices.",
+          "ms": "Semak keterhubungan semua 5 bucu."
+        }
+      },
+      {
+        "value": 17,
+        "text": "17",
+        "feedback": {
+          "en": "17 is too large.",
+          "ms": "17 terlalu besar."
+        }
+      }
+    ],
+    "answer": 12,
+    "hints": {
+      "en": [
+        "Use Kruskal's algorithm: select lowest weight edges without creating cycles until 4 edges are chosen."
+      ],
+      "ms": [
+        "Gunakan algoritma Kruskal: pilih tepi berpemberat terendah tanpa kitaran sehingga 4 tepi dipilih."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Selected edges: CD(2), AB(3), CE(3), BC(4). Sum = 12."
+      ],
+      "ms": [
+        "Tepi terpilih: CD(2), AB(3), CE(3), BC(4). Jumlah = 12."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "minimum_spanning_tree"
+    ]
+  },
+  {
+    "id": "F4-C05-H02",
+    "chapter": 5,
+    "topic": "shortest_path_weighted",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the shortest distance from Central Kitchen S to Stall T via intermediate nodes A, B: SA=5, SB=8, AT=9, BT=4, AB=2.",
+      "ms": "Cari jarak terpendek dari Dapur Pusat S ke Gerai T melalui nod perantaraan A, B: SA=5, SB=8, AT=9, BT=4, AB=2."
+    },
+    "equation": "Shortest Path S → T",
+    "options": [
+      {
+        "value": 11,
+        "text": "11 km (S → A → B → T)",
+        "feedback": {
+          "en": "Correct! SA(5) + AB(2) + BT(4) = 11 km.",
+          "ms": "Tepat! SA(5) + AB(2) + BT(4) = 11 km."
+        }
+      },
+      {
+        "value": 12,
+        "text": "12 km (S → B → T)",
+        "feedback": {
+          "en": "SB(8) + BT(4) = 12 km, but S → A → B → T is 11 km.",
+          "ms": "SB(8) + BT(4) = 12 km, tetapi S → A → B → T ialah 11 km."
+        }
+      },
+      {
+        "value": 14,
+        "text": "14 km (S → A → T)",
+        "feedback": {
+          "en": "SA(5) + AT(9) = 14 km.",
+          "ms": "SA(5) + AT(9) = 14 km."
+        }
+      },
+      {
+        "value": 13,
+        "text": "13 km",
+        "feedback": {
+          "en": "Shortest path is 11 km.",
+          "ms": "Laluan terpendek ialah 11 km."
+        }
+      }
+    ],
+    "answer": 11,
+    "hints": {
+      "en": [
+        "Compare all possible paths from S to T: S-A-T (14), S-B-T (12), S-A-B-T (11)."
+      ],
+      "ms": [
+        "Bandingkan semua laluan dari S ke T: S-A-T (14), S-B-T (12), S-A-B-T (11)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "S → A → B → T = 5 + 2 + 4 = 11 km."
+      ],
+      "ms": [
+        "S → A → B → T = 5 + 2 + 4 = 11 km."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "shortest_path"
+    ]
+  },
+  {
+    "id": "F4-C05-H03",
+    "chapter": 5,
+    "topic": "eulerian_circuit_condition",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A rider wants to traverse every road in a delivery network exactly once and return to the starting point (Eulerian circuit). What condition must the graph satisfy?",
+      "ms": "Penunggang ingin melalui setiap jalan dalam rangkaian tepat sekali dan kembali ke titik permulaan (litar Euler). Apakah syarat yang mesti dipenuhi?"
+    },
+    "equation": "Eulerian Circuit Condition",
+    "options": [
+      {
+        "value": "A",
+        "text": "All vertices must have even degrees.",
+        "feedback": {
+          "en": "Correct! An Eulerian circuit exists if and only if every vertex has an even degree.",
+          "ms": "Tepat! Litar Euler wujud jika dan hanya jika setiap bucu mempunyai darjah genap."
+        }
+      },
+      {
+        "value": "B",
+        "text": "Exactly two vertices have odd degrees.",
+        "feedback": {
+          "en": "That allows an Eulerian path, not a circuit returning to start.",
+          "ms": "Itu bagi laluan Euler, bukan litar yang kembali ke permulaan."
+        }
+      },
+      {
+        "value": "C",
+        "text": "The graph must be a tree.",
+        "feedback": {
+          "en": "A tree has vertices of degree 1, which cannot form an Eulerian circuit.",
+          "ms": "Pokok mempunyai bucu berdarjah 1, tidak boleh membentuk litar Euler."
+        }
+      },
+      {
+        "value": "D",
+        "text": "All vertices must have degree 2.",
+        "feedback": {
+          "en": "Degrees can be 4, 6, etc., as long as all are even.",
+          "ms": "Darjah boleh 4, 6, dsb., asalkan semuanya genap."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "To enter and leave every vertex every time, each vertex must have an even number of edges."
+      ],
+      "ms": [
+        "Untuk masuk dan keluar bucu setiap kali, setiap bucu mesti mempunyai bilangan tepi yang genap."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "An Eulerian circuit requires all vertices to be connected and have even degrees."
+      ],
+      "ms": [
+        "Litar Euler memerlukan semua bucu terhubung dan berdarjah genap."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "eulerian_circuit"
+    ]
+  },
+  {
+    "id": "F4-C05-H04",
+    "chapter": 5,
+    "topic": "critical_flow_bottleneck",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a supply network from depot to stall: route 1 capacity is 50 kg/h, route 2 capacity is 40 kg/h. If both converge into a single bridge of capacity 70 kg/h, what is the maximum delivery flow rate?",
+      "ms": "Dalam rangkaian bekalan dari depot ke gerai: kapasiti laluan 1 ialah 50 kg/j, kapasiti laluan 2 ialah 40 kg/j. Jika kedua-duanya bergabung ke sebuah jambatan berkapasiti 70 kg/j, apakah kadar aliran maksimum?"
+    },
+    "equation": "Min(∑ Inflow, Bottleneck)",
+    "options": [
+      {
+        "value": 70,
+        "text": "70 kg/h",
+        "feedback": {
+          "en": "Correct! Total potential inflow is 50 + 40 = 90, but the bottleneck bridge restricts it to 70 kg/h.",
+          "ms": "Tepat! Aliran masuk berpotensi ialah 90, tetapi jambatan menghadkan kepada 70 kg/j."
+        }
+      },
+      {
+        "value": 90,
+        "text": "90 kg/h",
+        "feedback": {
+          "en": "90 exceeds the bridge bottleneck capacity of 70 kg/h.",
+          "ms": "90 melebihi kapasiti had jambatan 70 kg/j."
+        }
+      },
+      {
+        "value": 50,
+        "text": "50 kg/h",
+        "feedback": {
+          "en": "Both routes can be utilized up to 70 kg/h total.",
+          "ms": "Kedua-dua laluan boleh digunakan sehingga jumlah 70 kg/j."
+        }
+      },
+      {
+        "value": 40,
+        "text": "40 kg/h",
+        "feedback": {
+          "en": "Underestimated flow.",
+          "ms": "Aliran terkurang anggaran."
+        }
+      }
+    ],
+    "answer": 70,
+    "hints": {
+      "en": [
+        "Maximum flow is constrained by the minimum cut / bottleneck capacity."
+      ],
+      "ms": [
+        "Aliran maksimum dihadkan oleh kapasiti kekangan / potongan minimum."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Max flow = Min(50 + 40, 70) = 70 kg/h."
+      ],
+      "ms": [
+        "Aliran maks = Min(50 + 40, 70) = 70 kg/j."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "network_flow"
+    ]
+  },
+  {
+    "id": "F4-C05-H05",
+    "chapter": 5,
+    "topic": "tree_edge_addition",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Two separate food stalls networks are trees: Tree 1 has 5 vertices, Tree 2 has 4 vertices. How many edges must be added to connect them into a single unified tree?",
+      "ms": "Dua rangkaian gerai berasingan adalah pokok: Pokok 1 mempunyai 5 bucu, Pokok 2 mempunyai 4 bucu. Berapakah bilangan tepi yang perlu ditambah untuk mencantumkannya menjadi satu pokok tunggal?"
+    },
+    "equation": "Single Tree with 9 vertices needs 8 edges",
+    "options": [
+      {
+        "value": 1,
+        "text": "1 edge",
+        "feedback": {
+          "en": "Correct! Total vertices = 9. Unified tree requires 8 edges. Currently have (5-1) + (4-1) = 7 edges. Adding 1 edge makes 8 edges.",
+          "ms": "Tepat! Jumlah bucu = 9. Pokok tunggal perlukan 8 tepi. Sedia ada 4 + 3 = 7 tepi. Tambah 1 tepi menjadikan 8 tepi."
+        }
+      },
+      {
+        "value": 2,
+        "text": "2 edges",
+        "feedback": {
+          "en": "Adding 2 edges would create a cycle between the two components.",
+          "ms": "Menambah 2 tepi akan membentuk kitaran antara kedua-dua komponen."
+        }
+      },
+      {
+        "value": 3,
+        "text": "3 edges",
+        "feedback": {
+          "en": "Only 1 edge is needed to join two disjoint trees into one.",
+          "ms": "Hanya 1 tepi diperlukan untuk mencantumkan dua pokok berasingan."
+        }
+      },
+      {
+        "value": 0,
+        "text": "0 edges",
+        "feedback": {
+          "en": "They are currently disconnected.",
+          "ms": "Kedua-duanya kini tidak terhubung."
+        }
+      }
+    ],
+    "answer": 1,
+    "hints": {
+      "en": [
+        "Total vertices = 5 + 4 = 9. A tree with 9 vertices has 8 edges. Existing edges = 4 + 3 = 7."
+      ],
+      "ms": [
+        "Jumlah bucu = 5 + 4 = 9. Pokok dengan 9 bucu mempunyai 8 tepi. Tepi sedia ada = 4 + 3 = 7."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "8 - 7 = 1 edge needed."
+      ],
+      "ms": [
+        "8 - 7 = 1 tepi diperlukan."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "tree_edge_calculation"
+    ]
+  },
+  {
+    "id": "F4-C05-E06",
+    "chapter": 5,
+    "topic": "degree_sum_formula",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "A graph has 7 edges. What is the sum of degrees of all vertices in the graph, Σ d(v)?",
+      "ms": "Suatu graf mempunyai 7 tepi. Apakah hasil tambah darjah bagi semua bucu dalam graf tersebut, Σ d(v)?"
+    },
+    "equation": "Σ d(v) = 2E",
+    "options": [
+      {
+        "value": "14",
+        "text": "14",
+        "feedback": {
+          "en": "Correct! Σ d(v) = 2 * E = 2 * 7 = 14.",
+          "ms": "Tepat! Σ d(v) = 2 * E = 2 * 7 = 14."
+        }
+      },
+      {
+        "value": "7",
+        "text": "7",
+        "feedback": {
+          "en": "Remember to multiply the number of edges by 2.",
+          "ms": "Ingat darabkan bilangan tepi dengan 2."
+        }
+      },
+      {
+        "value": "21",
+        "text": "21",
+        "feedback": {
+          "en": "Formula is 2 * E, not 3 * E.",
+          "ms": "Rumus ialah 2 * E, bukan 3 * E."
+        }
+      },
+      {
+        "value": "49",
+        "text": "49",
+        "feedback": {
+          "en": "Do not square the edges.",
+          "ms": "Jangan kuasakan dua bilangan tepi."
+        }
+      }
+    ],
+    "answer": "14",
+    "hints": {
+      "en": [
+        "Use the Handshaking Lemma: Σ d(v) = 2E."
+      ],
+      "ms": [
+        "Gunakan rumus: Σ d(v) = 2E."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The sum of degrees is always twice the number of edges: 2 × 7 = 14."
+      ],
+      "ms": [
+        "Hasil tambah darjah sentiasa dua kali ganda bilangan tepi: 2 × 7 = 14."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-E07",
+    "chapter": 5,
+    "topic": "edges_in_tree",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "A tree has 9 vertices. How many edges does this tree have?",
+      "ms": "Sebuah pokok mempunyai 9 bucu. Berapakah bilangan tepi yang dimiliki oleh pokok ini?"
+    },
+    "equation": "E = V - 1",
+    "options": [
+      {
+        "value": "8",
+        "text": "8",
+        "feedback": {
+          "en": "Correct! For any tree, E = V - 1 = 9 - 1 = 8.",
+          "ms": "Tepat! Bagi sebarang pokok, E = V - 1 = 9 - 1 = 8."
+        }
+      },
+      {
+        "value": "9",
+        "text": "9",
+        "feedback": {
+          "en": "If E = V, the graph contains a cycle and is not a tree.",
+          "ms": "Jika E = V, graf mempunyai kitaran dan bukan pokok."
+        }
+      },
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "A tree with V vertices has V - 1 edges.",
+          "ms": "Pokok dengan V bucu mempunyai V - 1 tepi."
+        }
+      },
+      {
+        "value": "7",
+        "text": "7",
+        "feedback": {
+          "en": "E = 9 - 1 = 8.",
+          "ms": "E = 9 - 1 = 8."
+        }
+      }
+    ],
+    "answer": "8",
+    "hints": {
+      "en": [
+        "For a tree: Number of edges = Number of vertices - 1."
+      ],
+      "ms": [
+        "Bagi sebuah pokok: Bilangan tepi = Bilangan bucu - 1."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A tree is an acyclic connected graph where E = V - 1. E = 9 - 1 = 8."
+      ],
+      "ms": [
+        "Pokok ialah graf bersambung tanpa kitaran di mana E = V - 1. E = 9 - 1 = 8."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-E08",
+    "chapter": 5,
+    "topic": "simple_graph_definition",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "Which of the following is true for a simple graph?",
+      "ms": "Antara berikut, yang manakah benar bagi suatu graf mudah?"
+    },
+    "equation": "Simple graph / Graf mudah",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "It has no loops and no multiple edges",
+          "ms": "Ia tidak mempunyai gelung dan tiada berbilang tepi"
+        },
+        "feedback": {
+          "en": "Correct! A simple graph has no loops and no parallel (multiple) edges.",
+          "ms": "Tepat! Graf mudah tidak mengandungi sebarang gelung atau tepi berbilang."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "It must have at least one loop",
+          "ms": "Ia mesti mempunyai sekurang-kurangnya satu gelung"
+        },
+        "feedback": {
+          "en": "A simple graph cannot have loops.",
+          "ms": "Graf mudah tidak boleh ada gelung."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "It must have directed arrows on edges",
+          "ms": "Ia mesti mempunyai anak panah berarah pada tepi"
+        },
+        "feedback": {
+          "en": "That describes a directed graph.",
+          "ms": "Itu graf berarah."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "It is disconnected into two parts",
+          "ms": "Ia terpisah kepada dua bahagian"
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Simple graph = no loops + no multiple edges."
+      ],
+      "ms": [
+        "Graf mudah = tiada gelung + tiada berbilang tepi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "By definition, a simple graph contains no loops and no multiple edges."
+      ],
+      "ms": [
+        "Mengikut definisi, graf mudah tidak mengandungi gelung mahupun berbilang tepi."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-E09",
+    "chapter": 5,
+    "topic": "degree_of_vertex_loop",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "How many degrees does a single loop contribute to a vertex?",
+      "ms": "Berapakah bilangan darjah yang disumbangkan oleh satu gelung kepada suatu bucu?"
+    },
+    "equation": "deg(loop) = 2",
+    "options": [
+      {
+        "value": "2",
+        "text": "2",
+        "feedback": {
+          "en": "Correct! A loop starts and ends at the same vertex, contributing 2 to its degree.",
+          "ms": "Tepat! Gelung bermula dan berakhir pada bucu yang sama, menyumbang 2 darjah."
+        }
+      },
+      {
+        "value": "1",
+        "text": "1",
+        "feedback": {
+          "en": "A loop connects to the vertex twice.",
+          "ms": "Gelung menyambung bucu dua kali."
+        }
+      },
+      {
+        "value": "0",
+        "text": "0",
+        "feedback": {
+          "en": "A loop adds degree to the vertex.",
+          "ms": "Gelung menambah darjah bucu."
+        }
+      },
+      {
+        "value": "4",
+        "text": "4",
+        "feedback": {
+          "en": "A single loop contributes 2.",
+          "ms": "Satu gelung menyumbang 2."
+        }
+      }
+    ],
+    "answer": "2",
+    "hints": {
+      "en": [
+        "Both ends of the loop attach to the same vertex."
+      ],
+      "ms": [
+        "Kedua-dua hujung gelung melekat pada bucu yang sama."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Each loop adds 2 to the degree of the incident vertex."
+      ],
+      "ms": [
+        "Setiap gelung menyumbang 2 kepada darjah bucu berkenaan."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-E10",
+    "chapter": 5,
+    "topic": "weighted_graph_definition",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "kitchen",
+    "question": {
+      "en": "In a food delivery graph, what do weights on the edges typically represent?",
+      "ms": "Dalam graf penghantaran makanan, apakah yang lazimnya diwakili oleh pemberat pada tepi graf?"
+    },
+    "equation": "Weight / Pemberat",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Distance, travel time, or delivery cost between locations",
+          "ms": "Jarak, masa perjalanan, atau kos penghantaran antara lokasi"
+        },
+        "feedback": {
+          "en": "Correct! Weights represent numeric values like distance or time.",
+          "ms": "Tepat! Pemberat mewakili nilai kuantitatif seperti jarak atau masa."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "The name of the delivery rider",
+          "ms": "Nama penghantar makanan"
+        },
+        "feedback": {
+          "en": "Weights are numerical values.",
+          "ms": "Pemberat ialah nilai angka."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "The number of customers at a table",
+          "ms": "Bilangan pelanggan di meja"
+        },
+        "feedback": {
+          "en": "Vertices represent locations, edges represent routes with weights.",
+          "ms": "Bucu mewakili lokasi, tepi mewakili laluan dengan pemberat."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "The recipe ingredients",
+          "ms": "Bahan ramuan resipi"
+        },
+        "feedback": {
+          "en": "Irrelevant.",
+          "ms": "Tidak relevan."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "A weighted graph assigns values (distance, time, cost) to edges."
+      ],
+      "ms": [
+        "Graf berpemberat memberikan nilai (jarak, masa, kos) kepada tepi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "In practical applications like food delivery networks, edge weights denote physical distance, time, or cost."
+      ],
+      "ms": [
+        "Dalam aplikasi seperti rangkaian penghantaran makanan, pemberat pada tepi mewakili jarak, masa, atau kos."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-M06",
+    "chapter": 5,
+    "topic": "find_number_of_edges",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "The degrees of vertices of a graph are 3, 2, 4, 3, 2, and 2. Calculate the total number of edges in this graph.",
+      "ms": "Darjah bagi bucu-bucu suatu graf ialah 3, 2, 4, 3, 2, dan 2. Hitung jumlah bilangan tepi dalam graf ini."
+    },
+    "equation": "2E = Σ d(v)",
+    "options": [
+      {
+        "value": "8",
+        "text": "8",
+        "feedback": {
+          "en": "Correct! Σ d(v) = 3 + 2 + 4 + 3 + 2 + 2 = 16. E = 16 / 2 = 8.",
+          "ms": "Tepat! Σ d(v) = 3 + 2 + 4 + 3 + 2 + 2 = 16. E = 16 / 2 = 8."
+        }
+      },
+      {
+        "value": "16",
+        "text": "16",
+        "feedback": {
+          "en": "16 is the sum of degrees, divide by 2 to get edges.",
+          "ms": "16 ialah hasil tambah darjah, bahagikan dengan 2 untuk dapat bilangan tepi."
+        }
+      },
+      {
+        "value": "6",
+        "text": "6",
+        "feedback": {
+          "en": "6 is the number of vertices.",
+          "ms": "6 ialah bilangan bucu."
+        }
+      },
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "Check your addition and division.",
+          "ms": "Semak penambahan dan pembahagian anda."
+        }
+      }
+    ],
+    "answer": "8",
+    "hints": {
+      "en": [
+        "Sum all degrees, then divide by 2."
+      ],
+      "ms": [
+        "Jumlahkan semua darjah, kemudian bahagikan dengan 2."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Σ d(v) = 3 + 2 + 4 + 3 + 2 + 2 = 16. E = 16 / 2 = 8 edges."
+      ],
+      "ms": [
+        "Σ d(v) = 3 + 2 + 4 + 3 + 2 + 2 = 16. E = 16 / 2 = 8 tepi."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-M07",
+    "chapter": 5,
+    "topic": "determine_if_tree",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "Which set of properties proves a connected graph with 6 vertices is a tree?",
+      "ms": "Ciri-ciri manakah yang membuktikan suatu graf bersambung dengan 6 bucu ialah sebuah pokok?"
+    },
+    "equation": "Tree properties / Ciri pokok",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "It has 5 edges and no cycles",
+          "ms": "Ia mempunyai 5 tepi dan tiada kitaran"
+        },
+        "feedback": {
+          "en": "Correct! E = V - 1 = 6 - 1 = 5, and it contains no cycles.",
+          "ms": "Tepat! E = V - 1 = 6 - 1 = 5, dan ia tidak mengandungi sebarang kitaran."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "It has 6 edges and 1 cycle",
+          "ms": "Ia mempunyai 6 tepi dan 1 kitaran"
+        },
+        "feedback": {
+          "en": "A tree cannot contain any cycles.",
+          "ms": "Pokok tidak boleh mengandungi sebarang kitaran."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "It has 7 edges and multiple edges",
+          "ms": "Ia mempunyai 7 tepi dan berbilang tepi"
+        },
+        "feedback": {
+          "en": "Too many edges for a tree.",
+          "ms": "Terlalu banyak tepi untuk pokok."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "It has loops on two vertices",
+          "ms": "Ia mempunyai gelung pada dua bucu"
+        },
+        "feedback": {
+          "en": "A tree has no loops.",
+          "ms": "Pokok tiada gelung."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "A tree with V vertices has V - 1 edges and no cycles."
+      ],
+      "ms": [
+        "Pokok dengan V bucu mempunyai V - 1 tepi dan tiada kitaran."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "For V = 6, a tree must have exactly E = 5 edges and contain no closed cycles."
+      ],
+      "ms": [
+        "Bagi V = 6, sebuah pokok mesti mempunyai tepat E = 5 tepi dan tidak mengandungi kitaran tertutup."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-M08",
+    "chapter": 5,
+    "topic": "degree_in_out_directed",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "kitchen",
+    "question": {
+      "en": "In a directed kitchen workflow graph, vertex 'Stove' has 3 incoming arrows (in-degree) and 2 outgoing arrows (out-degree). What is the total degree d(Stove)?",
+      "ms": "Dalam satu graf berarah aliran kerja dapur, bucu 'Dapur Gas' mempunyai 3 anak panah masuk (darjah masuk) dan 2 anak panah keluar (darjah keluar). Apakah jumlah darjah d(Dapur Gas)?"
+    },
+    "equation": "d(v) = d_in(v) + d_out(v)",
+    "options": [
+      {
+        "value": "5",
+        "text": "5",
+        "feedback": {
+          "en": "Correct! Total degree = in-degree + out-degree = 3 + 2 = 5.",
+          "ms": "Tepat! Jumlah darjah = darjah masuk + darjah keluar = 3 + 2 = 5."
+        }
+      },
+      {
+        "value": "1",
+        "text": "1",
+        "feedback": {
+          "en": "Do not subtract in-degree and out-degree.",
+          "ms": "Jangan tolak darjah masuk dan keluar."
+        }
+      },
+      {
+        "value": "6",
+        "text": "6",
+        "feedback": {
+          "en": "Do not multiply.",
+          "ms": "Jangan darab."
+        }
+      },
+      {
+        "value": "3",
+        "text": "3",
+        "feedback": {
+          "en": "3 is only the in-degree.",
+          "ms": "3 hanya darjah masuk."
+        }
+      }
+    ],
+    "answer": "5",
+    "hints": {
+      "en": [
+        "Total degree of a vertex in a directed graph is d_in + d_out."
+      ],
+      "ms": [
+        "Jumlah darjah bucu dalam graf berarah ialah d_masuk + d_keluar."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "d(v) = d_in(v) + d_out(v) = 3 + 2 = 5."
+      ],
+      "ms": [
+        "d(v) = d_masuk(v) + d_keluar(v) = 3 + 2 = 5."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-M09",
+    "chapter": 5,
+    "topic": "subgraph_identification",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "Which statement correctly defines a subgraph H of graph G?",
+      "ms": "Pernyataan manakah yang mentakrifkan subgraf H bagi graf G dengan betul?"
+    },
+    "equation": "V(H) ⊆ V(G) and E(H) ⊆ E(G)",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "V(H) ⊆ V(G) and E(H) ⊆ E(G), with edges connecting corresponding vertices in H",
+          "ms": "V(H) ⊆ V(G) dan E(H) ⊆ E(G), dengan tepi menyambungkan bucu yang sepadan dalam H"
+        },
+        "feedback": {
+          "en": "Correct! Vertices and edges of H are subsets of vertices and edges of G.",
+          "ms": "Tepat! Bucu dan tepi H ialah subset bagi bucu dan tepi G."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "H has more vertices than G",
+          "ms": "H mempunyai lebih banyak bucu daripada G"
+        },
+        "feedback": {
+          "en": "A subgraph cannot have vertices outside G.",
+          "ms": "Subgraf tidak boleh ada bucu di luar G."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "H must always be a complete graph",
+          "ms": "H mesti sentiasa graf lengkap"
+        },
+        "feedback": {
+          "en": "Subgraphs do not have to be complete.",
+          "ms": "Subgraf tidak semestinya lengkap."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "H has edges that connect to vertices outside G",
+          "ms": "H mempunyai tepi yang menyambung bucu di luar G"
+        },
+        "feedback": {
+          "en": "Edges of H must connect vertices within H.",
+          "ms": "Tepi H mesti menyambung bucu dalam H."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "A subgraph is a part of the original graph G: V(H) ⊆ V(G) and E(H) ⊆ E(G)."
+      ],
+      "ms": [
+        "Subgraf ialah sebahagian daripada graf asal G: V(H) ⊆ V(G) dan E(H) ⊆ E(G)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A subgraph H consists of a subset of vertices V(H) ⊆ V(G) and a subset of edges E(H) ⊆ E(G)."
+      ],
+      "ms": [
+        "Subgraf H terdiri daripada subset bucu V(H) ⊆ V(G) dan subset tepi E(H) ⊆ E(G)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-M10",
+    "chapter": 5,
+    "topic": "shortest_path_weighted",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "kitchen",
+    "question": {
+      "en": "A delivery route has routes from Warung (W) to Customer (C):\nRoute 1: W -> A -> C with weights 4 km + 5 km = 9 km\nRoute 2: W -> B -> C with weights 3 km + 4 km = 7 km\nRoute 3: W -> A -> B -> C with weights 4 km + 2 km + 4 km = 10 km\nWhat is the shortest delivery distance?",
+      "ms": "Laluan penghantaran dari Warung (W) ke Pelanggan (C):\nLaluan 1: W -> A -> C dengan pemberat 4 km + 5 km = 9 km\nLaluan 2: W -> B -> C dengan pemberat 3 km + 4 km = 7 km\nLaluan 3: W -> A -> B -> C dengan pemberat 4 km + 2 km + 4 km = 10 km\nApakah jarak penghantaran terpendek?"
+    },
+    "equation": "min(9, 7, 10)",
+    "options": [
+      {
+        "value": "7 km",
+        "text": "7 km",
+        "feedback": {
+          "en": "Correct! Route W -> B -> C is the shortest with 7 km.",
+          "ms": "Tepat! Laluan W -> B -> C adalah terpendek dengan 7 km."
+        }
+      },
+      {
+        "value": "9 km",
+        "text": "9 km",
+        "feedback": {
+          "en": "9 km is longer than 7 km.",
+          "ms": "9 km lebih jauh daripada 7 km."
+        }
+      },
+      {
+        "value": "10 km",
+        "text": "10 km",
+        "feedback": {
+          "en": "10 km is the longest route.",
+          "ms": "10 km ialah laluan terpanjang."
+        }
+      },
+      {
+        "value": "6 km",
+        "text": "6 km",
+        "feedback": {
+          "en": "No route has distance 6 km.",
+          "ms": "Tiada laluan berjarak 6 km."
+        }
+      }
+    ],
+    "answer": "7 km",
+    "hints": {
+      "en": [
+        "Compare the sums of edge weights for each possible path."
+      ],
+      "ms": [
+        "Bandingkan jumlah pemberat tepi bagi setiap laluan yang mungkin."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Comparing paths: W-A-C (9 km), W-B-C (7 km), W-A-B-C (10 km). Minimum is 7 km."
+      ],
+      "ms": [
+        "Membandingkan laluan: W-A-C (9 km), W-B-C (7 km), W-A-B-C (10 km). Jarak minimum ialah 7 km."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-H06",
+    "chapter": 5,
+    "topic": "degree_sequence_validity",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "Which of the following degree sequences CANNOT represent a simple graph?",
+      "ms": "Antara urutan darjah berikut, yang manakah TIDAK BOLEH mewakili suatu graf mudah?"
+    },
+    "equation": "Σ d(v) must be even, d(v) ≤ V - 1",
+    "options": [
+      {
+        "value": "A",
+        "text": "3, 3, 2, 1",
+        "feedback": {
+          "en": "Correct! Sum of degrees is 3 + 3 + 2 + 1 = 9 (odd number). The sum of degrees must always be even!",
+          "ms": "Tepat! Hasil tambah darjah ialah 3 + 3 + 2 + 1 = 9 (nombor ganjil). Hasil tambah darjah mestilah sentiasa genap!"
+        }
+      },
+      {
+        "value": "B",
+        "text": "2, 2, 2, 2",
+        "feedback": {
+          "en": "Sum is 8 (even), valid (a 4-cycle).",
+          "ms": "Jumlah ialah 8 (genap), sah (kitaran 4 sisi)."
+        }
+      },
+      {
+        "value": "C",
+        "text": "3, 2, 2, 1",
+        "feedback": {
+          "en": "Sum is 8 (even), valid simple tree/graph.",
+          "ms": "Jumlah ialah 8 (genap), sah."
+        }
+      },
+      {
+        "value": "D",
+        "text": "1, 1, 1, 1",
+        "feedback": {
+          "en": "Sum is 4 (even), two disjoint edges.",
+          "ms": "Jumlah ialah 4 (genap), dua tepi berasingan."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Remember: Σ d(v) = 2E, so the sum of degrees MUST be an even number."
+      ],
+      "ms": [
+        "Ingat: Σ d(v) = 2E, jadi hasil tambah darjah MESTILAH nombor genap."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "3 + 3 + 2 + 1 = 9, which is odd. Since Σ d(v) = 2E must be even, this graph cannot exist."
+      ],
+      "ms": [
+        "3 + 3 + 2 + 1 = 9 (ganjil). Kerana Σ d(v) = 2E mestilah nombor genap, graf ini mustahil wujud."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-H07",
+    "chapter": 5,
+    "topic": "minimum_spanning_tree_cost",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "kitchen",
+    "question": {
+      "en": "Mama wants to connect 5 cooking stations (A, B, C, D, E) with gas pipes at minimum cost. The pipe costs between stations are:\nAB=4, BC=3, CD=2, DE=5, AE=8, AC=6, BD=7, CE=4.\nWhat is the minimum cost to form a connected gas pipe network (spanning tree)?",
+      "ms": "Mama ingin menyambungkan 5 stesen memasak (A, B, C, D, E) dengan paip gas pada kos minimum. Kos paip antara stesen ialah:\nAB=4, BC=3, CD=2, DE=5, AE=8, AC=6, BD=7, CE=4.\nApakah kos minimum untuk membentuk rangkaian paip bersambung (pokok rentang)?"
+    },
+    "equation": "Minimum Spanning Tree (Kruskal's Algorithm)",
+    "options": [
+      {
+        "value": "13",
+        "text": "RM 13",
+        "feedback": {
+          "en": "Correct! Pick cheapest edges without cycles: CD(2) + BC(3) + AB(4) + CE(4) = 13.",
+          "ms": "Tepat! Pilih tepi termurah tanpa kitaran: CD(2) + BC(3) + AB(4) + CE(4) = 13."
+        }
+      },
+      {
+        "value": "14",
+        "text": "RM 14",
+        "feedback": {
+          "en": "Using DE(5) instead of CE(4) gives 14, but CE(4) is cheaper.",
+          "ms": "Guna DE(5) menghasilkan 14, tetapi CE(4) lebih murah."
+        }
+      },
+      {
+        "value": "15",
+        "text": "RM 15",
+        "feedback": {
+          "en": "Recalculate using Kruskal's algorithm.",
+          "ms": "Kira semula menggunakan algoritma Kruskal."
+        }
+      },
+      {
+        "value": "18",
+        "text": "RM 18",
+        "feedback": {
+          "en": "Too expensive.",
+          "ms": "Terlalu mahal."
+        }
+      }
+    ],
+    "answer": "13",
+    "hints": {
+      "en": [
+        "Connect 5 vertices with 4 edges: CD(2), BC(3), AB(4), CE(4)."
+      ],
+      "ms": [
+        "Sambung 5 bucu dengan 4 tepi: CD(2), BC(3), AB(4), CE(4)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Sorted edges: CD(2), BC(3), AB(4), CE(4). These 4 edges connect all 5 stations without forming cycles. Total cost = 2 + 3 + 4 + 4 = RM 13."
+      ],
+      "ms": [
+        "Tepi mengikut tertib: CD(2), BC(3), AB(4), CE(4). 4 tepi ini menyambung semua 5 stesen tanpa kitaran. Jumlah kos = 2 + 3 + 4 + 4 = RM 13."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-H08",
+    "chapter": 5,
+    "topic": "multiple_edges_and_loops_sum",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "A graph has 4 vertices. It contains 1 loop, 2 pairs of multiple edges (parallel edges), and 3 simple edges. What is the sum of degrees of all vertices, Σ d(v)?",
+      "ms": "Suatu graf mempunyai 4 bucu. Ia mengandungi 1 gelung, 2 pasang tepi berbilang (tepi selari), dan 3 tepi mudah. Apakah hasil tambah darjah semua bucu, Σ d(v)?"
+    },
+    "equation": "E = 1 (loop) + 4 (multiple) + 3 (simple) = 8 edges; Σ d(v) = 2E = 16",
+    "options": [
+      {
+        "value": "16",
+        "text": "16",
+        "feedback": {
+          "en": "Correct! 1 loop = 1 edge. 2 pairs of multiple edges = 4 edges. 3 simple edges = 3 edges. Total E = 8. Σ d(v) = 2 * 8 = 16.",
+          "ms": "Tepat! 1 gelung = 1 tepi. 2 pasang tepi berbilang = 4 tepi. 3 tepi mudah = 3 tepi. Jumlah E = 8. Σ d(v) = 2 * 8 = 16."
+        }
+      },
+      {
+        "value": "12",
+        "text": "12",
+        "feedback": {
+          "en": "Remember each pair of multiple edges has 2 edges (total 4).",
+          "ms": "Ingat setiap pasang tepi berbilang ada 2 tepi (jumlah 4)."
+        }
+      },
+      {
+        "value": "14",
+        "text": "14",
+        "feedback": {
+          "en": "Don't forget the loop counts as an edge contributing 2 degrees.",
+          "ms": "Jangan lupa gelung dikira sebagai satu tepi yang menyumbang 2 darjah."
+        }
+      },
+      {
+        "value": "8",
+        "text": "8",
+        "feedback": {
+          "en": "8 is the total number of edges, Σ d(v) is 2 * E.",
+          "ms": "8 ialah bilangan tepi, Σ d(v) ialah 2 * E."
+        }
+      }
+    ],
+    "answer": "16",
+    "hints": {
+      "en": [
+        "Find total edges E: 1 loop (1 edge) + 2 pairs (4 edges) + 3 simple (3 edges) = 8 edges. Then Σ d(v) = 2E."
+      ],
+      "ms": [
+        "Cari jumlah tepi E: 1 gelung (1 tepi) + 2 pasang (4 tepi) + 3 mudah (3 tepi) = 8 tepi. Maka Σ d(v) = 2E."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Total edges E = 1 + (2 × 2) + 3 = 8 edges. Sum of degrees = 2 × 8 = 16."
+      ],
+      "ms": [
+        "Jumlah tepi E = 1 + (2 × 2) + 3 = 8 tepi. Hasil tambah darjah = 2 × 8 = 16."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-H09",
+    "chapter": 5,
+    "topic": "maximum_edges_simple_graph",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "general",
+    "question": {
+      "en": "What is the maximum number of edges that a simple graph with n vertices can have?",
+      "ms": "Apakah bilangan tepi maksimum yang boleh dimiliki oleh suatu graf mudah dengan n bucu?"
+    },
+    "equation": "E_max = n(n - 1) / 2",
+    "options": [
+      {
+        "value": "A",
+        "text": "n(n - 1) / 2",
+        "feedback": {
+          "en": "Correct! Each of the n vertices can connect to (n - 1) other vertices without loops/multiple edges.",
+          "ms": "Tepat! Setiap daripada n bucu boleh bersambung ke (n - 1) bucu lain tanpa gelung/tepi berbilang."
+        }
+      },
+      {
+        "value": "B",
+        "text": "n(n - 1)",
+        "feedback": {
+          "en": "This is for a directed complete graph.",
+          "ms": "Ini untuk graf lengkap berarah."
+        }
+      },
+      {
+        "value": "C",
+        "text": "n - 1",
+        "feedback": {
+          "en": "n - 1 is the number of edges in a tree.",
+          "ms": "n - 1 ialah bilangan tepi dalam pokok."
+        }
+      },
+      {
+        "value": "D",
+        "text": "n² / 2",
+        "feedback": {
+          "en": "Incorrect formula.",
+          "ms": "Rumus salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Formula for combinations of 2 from n: nC2 = n(n - 1) / 2."
+      ],
+      "ms": [
+        "Rumus gabungan 2 daripada n: nC2 = n(n - 1) / 2."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "In a complete simple graph, each pair of vertices has exactly 1 edge: E_max = n(n - 1) / 2."
+      ],
+      "ms": [
+        "Dalam graf mudah lengkap, setiap pasangan bucu ada tepat 1 tepi: E_max = n(n - 1) / 2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C05-H10",
+    "chapter": 5,
+    "topic": "optimizing_delivery_circuit",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "G1",
+    "context": "kitchen",
+    "question": {
+      "en": "Delivery rider starts at Warung (O), visits customers A and B, and returns to O. Route distances: OA = 5 km, OB = 4 km, AB = 3 km. What is the total distance of this round trip?",
+      "ms": "Penghantar makanan bertolak dari Warung (O), menghantar ke pelanggan A dan B, kemudian kembali ke O. Jarak laluan: OA = 5 km, OB = 4 km, AB = 3 km. Apakah jumlah jarak perjalanan pergi balik ini?"
+    },
+    "equation": "OA + AB + BO = 5 + 3 + 4 = 12 km",
+    "options": [
+      {
+        "value": "12 km",
+        "text": "12 km",
+        "feedback": {
+          "en": "Correct! Round trip distance: OA + AB + BO = 5 + 3 + 4 = 12 km.",
+          "ms": "Tepat! Jarak pergi balik: OA + AB + BO = 5 + 3 + 4 = 12 km."
+        }
+      },
+      {
+        "value": "10 km",
+        "text": "10 km",
+        "feedback": {
+          "en": "5 + 4 + 3 = 12.",
+          "ms": "5 + 4 + 3 = 12."
+        }
+      },
+      {
+        "value": "14 km",
+        "text": "14 km",
+        "feedback": {
+          "en": "Check your sum.",
+          "ms": "Semak hasil tambah anda."
+        }
+      },
+      {
+        "value": "9 km",
+        "text": "9 km",
+        "feedback": {
+          "en": "Don't forget the return leg to Warung (BO).",
+          "ms": "Jangan lupa laluan pulang ke Warung (BO)."
+        }
+      }
+    ],
+    "answer": "12 km",
+    "hints": {
+      "en": [
+        "Sum the perimeter of the triangle formed: OA + AB + BO."
+      ],
+      "ms": [
+        "Jumlahkan perimeter segi tiga yang terbentuk: OA + AB + BO."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Circuit distance = OA + AB + BO = 5 + 3 + 4 = 12 km."
+      ],
+      "ms": [
+        "Jarak litar perjalanan = OA + AB + BO = 5 + 3 + 4 = 12 km."
+      ]
+    }
+  }
+]

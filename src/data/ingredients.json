@@ -1,0 +1,17 @@
+[
+  { "id": "rice", "name": "Beras Wangi", "costPerKg": 4.00, "unit": "g" },
+  { "id": "coconut_milk", "name": "Santan Segar", "costPerL": 6.00, "unit": "ml" },
+  { "id": "cucumber", "name": "Timun", "costPerPiece": 1.20, "unit": "slices" },
+  { "id": "sambal", "name": "Sambal Tumis", "costPerKg": 12.00, "unit": "g" },
+  { "id": "anchovies", "name": "Ikan Bilis", "costPerKg": 18.00, "unit": "g" },
+  { "id": "egg", "name": "Telur Gred A", "costPerPiece": 0.45, "unit": "piece" },
+  { "id": "flour", "name": "Tepung Gandum", "costPerKg": 3.00, "unit": "g" },
+  { "id": "water", "name": "Air Tapis", "costPerL": 0.10, "unit": "ml" },
+  { "id": "noodles", "name": "Mee Kuning", "costPerKg": 5.00, "unit": "g" },
+  { "id": "tofu", "name": "Tauhu Keras", "costPerPiece": 0.80, "unit": "piece" },
+  { "id": "tea", "name": "Serbuk Teh Wangi", "costPerKg": 25.00, "unit": "g" },
+  { "id": "condensed_milk", "name": "Susu Pekat Manis", "costPerL": 8.00, "unit": "ml" },
+  { "id": "chicken", "name": "Daging Ayam Segar", "costPerKg": 14.00, "unit": "g" },
+  { "id": "spices", "name": "Rempah Perap Satay", "costPerKg": 20.00, "unit": "g" },
+  { "id": "peanut_sauce", "name": "Kuah Kacang Tradisional", "costPerL": 10.00, "unit": "ml" }
+]

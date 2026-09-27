@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "titleKey": "worlds.w1",
+    "subtitleKey": "worlds.w1_sub",
+    "requiredStars": 0,
+    "color": 16096779,
+    "mapX": 220,
+    "mapY": 240,
+    "icon": "🥞"
+  },
+  {
+    "id": 2,
+    "chapter": 2,
+    "titleKey": "worlds.w2",
+    "subtitleKey": "worlds.w2_sub",
+    "requiredStars": 2,
+    "color": 3900150,
+    "mapX": 380,
+    "mapY": 180,
+    "icon": "🔢"
+  },
+  {
+    "id": 3,
+    "chapter": 3,
+    "titleKey": "worlds.w3",
+    "subtitleKey": "worlds.w3_sub",
+    "requiredStars": 4,
+    "color": 9133302,
+    "mapX": 540,
+    "mapY": 260,
+    "icon": "☕"
+  },
+  {
+    "id": 4,
+    "chapter": 4,
+    "titleKey": "worlds.w4",
+    "subtitleKey": "worlds.w4_sub",
+    "requiredStars": 6,
+    "color": 15485081,
+    "mapX": 420,
+    "mapY": 390,
+    "icon": "⭕"
+  },
+  {
+    "id": 5,
+    "chapter": 5,
+    "titleKey": "worlds.w5",
+    "subtitleKey": "worlds.w5_sub",
+    "requiredStars": 8,
+    "color": 1096065,
+    "mapX": 600,
+    "mapY": 460,
+    "icon": "🕸️"
+  },
+  {
+    "id": 6,
+    "chapter": 6,
+    "titleKey": "worlds.w6",
+    "subtitleKey": "worlds.w6_sub",
+    "requiredStars": 10,
+    "color": 16347926,
+    "mapX": 760,
+    "mapY": 320,
+    "icon": "📐"
+  },
+  {
+    "id": 7,
+    "chapter": 7,
+    "titleKey": "worlds.w7",
+    "subtitleKey": "worlds.w7_sub",
+    "requiredStars": 12,
+    "color": 440020,
+    "mapX": 900,
+    "mapY": 210,
+    "icon": "🛵"
+  },
+  {
+    "id": 8,
+    "chapter": 8,
+    "titleKey": "worlds.w8",
+    "subtitleKey": "worlds.w8_sub",
+    "requiredStars": 14,
+    "color": 11032055,
+    "mapX": 1060,
+    "mapY": 260,
+    "icon": "📊"
+  },
+  {
+    "id": 9,
+    "chapter": 9,
+    "titleKey": "worlds.w9",
+    "subtitleKey": "worlds.w9_sub",
+    "requiredStars": 16,
+    "color": 15381256,
+    "mapX": 940,
+    "mapY": 420,
+    "icon": "🎡"
+  },
+  {
+    "id": 10,
+    "chapter": 10,
+    "titleKey": "worlds.w10",
+    "subtitleKey": "worlds.w10_sub",
+    "requiredStars": 18,
+    "color": 2278750,
+    "mapX": 1100,
+    "mapY": 500,
+    "icon": "👑"
+  }
+]

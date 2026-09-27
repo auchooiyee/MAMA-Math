@@ -1,0 +1,2027 @@
+[
+  {
+    "id": "F4-C09-E01",
+    "chapter": 9,
+    "topic": "sample_space_size",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A customer tosses a fair coin and rolls a 4-sided die. What is the total number of outcomes in the sample space, n(S)?",
+      "ms": "Pelanggan melambung sekeping syiling adil dan membaling dadu 4 muka. Apakah jumlah bilangan kesudahan dalam ruang sampel, n(S)?"
+    },
+    "equation": "n(S) = n(A) × n(B)",
+    "options": [
+      {
+        "value": 8,
+        "text": "8",
+        "feedback": {
+          "en": "Correct! 2 (coin outcomes) × 4 (die outcomes) = 8 outcomes.",
+          "ms": "Tepat! 2 (kesudahan syiling) × 4 (kesudahan dadu) = 8 kesudahan."
+        }
+      },
+      {
+        "value": 6,
+        "text": "6",
+        "feedback": {
+          "en": "2 + 4 = 6 is addition; combined outcomes multiply: 2 × 4 = 8.",
+          "ms": "2 + 4 = 6 ialah penambahan; kesudahan bergabung didarab: 2 × 4 = 8."
+        }
+      },
+      {
+        "value": 16,
+        "text": "16",
+        "feedback": {
+          "en": "4² = 16 would be rolling two 4-sided dice.",
+          "ms": "16 ialah balingan dua dadu 4 muka."
+        }
+      },
+      {
+        "value": 4,
+        "text": "4",
+        "feedback": {
+          "en": "4 is only the die outcomes.",
+          "ms": "4 hanya kesudahan dadu."
+        }
+      }
+    ],
+    "answer": 8,
+    "hints": {
+      "en": [
+        "Multiply the number of possibilities for each event: 2 × 4."
+      ],
+      "ms": [
+        "Darabkan bilangan kemungkinan bagi setiap peristiwa: 2 × 4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "n(S) = 2 × 4 = 8 outcomes."
+      ],
+      "ms": [
+        "n(S) = 2 × 4 = 8 kesudahan."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "sample_space"
+    ]
+  },
+  {
+    "id": "F4-C09-E02",
+    "chapter": 9,
+    "topic": "mutually_exclusive_identification",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "When rolling a standard 6-sided die, which pair of events is MUTUALLY EXCLUSIVE?",
+      "ms": "Apabila membaling dadu 6 muka adil, pasangan peristiwa manakah yang SALING EKSKLUSIF?"
+    },
+    "equation": "A ∩ B = ∅",
+    "options": [
+      {
+        "value": "A",
+        "text": "Getting an even number AND getting an odd number",
+        "feedback": {
+          "en": "Correct! A number cannot be both even and odd simultaneously (A ∩ B = ∅).",
+          "ms": "Tepat! Nombor tidak boleh genap dan ganjil serentak (A ∩ B = ∅)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "Getting an even number AND getting a prime number",
+        "feedback": {
+          "en": "2 is both even and prime, so they are not mutually exclusive.",
+          "ms": "2 ialah nombor genap dan perdana, maka bukan saling eksklusif."
+        }
+      },
+      {
+        "value": "C",
+        "text": "Getting a number > 3 AND getting a number < 5",
+        "feedback": {
+          "en": "4 is both > 3 and < 5.",
+          "ms": "4 memenuhi kedua-duanya (> 3 dan < 5)."
+        }
+      },
+      {
+        "value": "D",
+        "text": "Getting a multiple of 2 AND getting a multiple of 3",
+        "feedback": {
+          "en": "6 is a multiple of both 2 and 3.",
+          "ms": "6 ialah gandaan bagi kedua-duanya (2 dan 3)."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Mutually exclusive events cannot occur at the same time."
+      ],
+      "ms": [
+        "Peristiwa saling eksklusif tidak boleh berlaku pada masa yang sama."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Even {2, 4, 6} and Odd {1, 3, 5} have no common elements (A ∩ B = ∅)."
+      ],
+      "ms": [
+        "Genap {2, 4, 6} dan Ganjil {1, 3, 5} tiada unsur sepunya (A ∩ B = ∅)."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "mutually_exclusive"
+    ]
+  },
+  {
+    "id": "F4-C09-E03",
+    "chapter": 9,
+    "topic": "complement_probability",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "The probability that it rains on the night market tonight is 0.35. What is the probability that it DOES NOT rain?",
+      "ms": "Kebarangkalian hujan turun di pasar malam malam ini ialah 0.35. Apakah kebarangkalian hujan TIDAK turun?"
+    },
+    "equation": "P(A') = 1 - P(A)",
+    "options": [
+      {
+        "value": 0.65,
+        "text": "0.65",
+        "feedback": {
+          "en": "Correct! P(A') = 1 - 0.35 = 0.65.",
+          "ms": "Tepat! P(A') = 1 - 0.35 = 0.65."
+        }
+      },
+      {
+        "value": 0.35,
+        "text": "0.35",
+        "feedback": {
+          "en": "0.35 is the probability of rain.",
+          "ms": "0.35 ialah kebarangkalian hujan."
+        }
+      },
+      {
+        "value": 0.75,
+        "text": "0.75",
+        "feedback": {
+          "en": "Check subtraction: 1 - 0.35 = 0.65.",
+          "ms": "Semak penolakan: 1 - 0.35 = 0.65."
+        }
+      },
+      {
+        "value": 0.5,
+        "text": "0.50",
+        "feedback": {
+          "en": "1 - 0.35 = 0.65.",
+          "ms": "1 - 0.35 = 0.65."
+        }
+      }
+    ],
+    "answer": 0.65,
+    "hints": {
+      "en": [
+        "P(A') = 1 - P(A). Subtract 0.35 from 1."
+      ],
+      "ms": [
+        "P(A') = 1 - P(A). Tolak 0.35 daripada 1."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(No rain) = 1 - 0.35 = 0.65."
+      ],
+      "ms": [
+        "P(Tidak hujan) = 1 - 0.35 = 0.65."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "complement_probability"
+    ]
+  },
+  {
+    "id": "F4-C09-E04",
+    "chapter": 9,
+    "topic": "independent_events_simple_product",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A coin is flipped (P(Head) = 1/2) and a 6-sided die is rolled (P(6) = 1/6). What is the probability of getting a Head and a 6?",
+      "ms": "Sekeping syiling dilambung (P(Kepala) = 1/2) dan dadu 6 muka dibaling (P(6) = 1/6). Apakah kebarangkalian mendapat Kepala dan angka 6?"
+    },
+    "equation": "P(A ∩ B) = P(A) × P(B)",
+    "options": [
+      {
+        "value": "1/12",
+        "text": "1/12",
+        "feedback": {
+          "en": "Correct! (1/2) × (1/6) = 1/12.",
+          "ms": "Tepat! (1/2) × (1/6) = 1/12."
+        }
+      },
+      {
+        "value": "2/8",
+        "text": "2/8 (or 1/4)",
+        "feedback": {
+          "en": "Do not add numerators and denominators.",
+          "ms": "Jangan tambah pengangka dan penyebut."
+        }
+      },
+      {
+        "value": "1/8",
+        "text": "1/8",
+        "feedback": {
+          "en": "Multiply denominators: 2 × 6 = 12.",
+          "ms": "Darabkan penyebut: 2 × 6 = 12."
+        }
+      },
+      {
+        "value": "4/6",
+        "text": "4/6",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": "1/12",
+    "hints": {
+      "en": [
+        "For independent events, multiply their probabilities: (1/2) × (1/6)."
+      ],
+      "ms": [
+        "Bagi peristiwa tak bersandar, darabkan kebarangkaliannya: (1/2) × (1/6)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = (1/2) × (1/6) = 1/12."
+      ],
+      "ms": [
+        "P = (1/2) × (1/6) = 1/12."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "independent_events"
+    ]
+  },
+  {
+    "id": "F4-C09-E05",
+    "chapter": 9,
+    "topic": "contingency_table_probability",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Out of 40 customers: 15 order Teh Tarik, 25 order Kopi. Among the Teh Tarik orders, 6 are sweet and 9 are less sweet. What is the probability that a randomly chosen customer ordered sweet Teh Tarik?",
+      "ms": "Daripada 40 pelanggan: 15 memesan Teh Tarik, 25 memesan Kopi. Antara pesanan Teh Tarik, 6 manis dan 9 kurang manis. Apakah kebarangkalian pelanggan yang dipilih secara rawak memesan Teh Tarik manis?"
+    },
+    "equation": "P = Favorable / Total",
+    "options": [
+      {
+        "value": "3/20",
+        "text": "6/40 (or 3/20)",
+        "feedback": {
+          "en": "Correct! 6 favorable out of 40 total = 6/40 = 3/20.",
+          "ms": "Tepat! 6 yang memuaskan daripada 40 jumlah = 6/40 = 3/20."
+        }
+      },
+      {
+        "value": "6/15",
+        "text": "6/15",
+        "feedback": {
+          "en": "6/15 is conditional on Teh Tarik orders only, not total customers.",
+          "ms": "6/15 hanya berdasarkan pesanan Teh Tarik, bukan jumlah pelanggan."
+        }
+      },
+      {
+        "value": "15/40",
+        "text": "15/40",
+        "feedback": {
+          "en": "15/40 is the probability of any Teh Tarik order.",
+          "ms": "15/40 ialah kebarangkalian sebarang pesanan Teh Tarik."
+        }
+      },
+      {
+        "value": "9/40",
+        "text": "9/40",
+        "feedback": {
+          "en": "9/40 is less sweet Teh Tarik.",
+          "ms": "9/40 ialah Teh Tarik kurang manis."
+        }
+      }
+    ],
+    "answer": "3/20",
+    "hints": {
+      "en": [
+        "Divide favorable outcomes (6) by total sample size (40)."
+      ],
+      "ms": [
+        "Bahagi bilangan yang memuaskan (6) dengan jumlah saiz sampel (40)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = 6 / 40 = 3 / 20 = 0.15."
+      ],
+      "ms": [
+        "P = 6 / 40 = 3 / 20 = 0.15."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "table_probability"
+    ]
+  },
+  {
+    "id": "F4-C09-M01",
+    "chapter": 9,
+    "topic": "independent_events_with_replacement",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A box has 3 red curry puffs and 5 yellow curry puffs. One curry puff is chosen at random, its color recorded, and returned to the box. A second curry puff is then chosen. What is the probability that BOTH are red?",
+      "ms": "Sebuah kotak mempunyai 3 karipap merah dan 5 karipap kuning. Satu karipap dipilih secara rawak, dicatat warnanya, dan dikembalikan ke dalam kotak. Karipap kedua kemudian dipilih. Apakah kebarangkalian KEDUA-DUANYA merah?"
+    },
+    "equation": "P(R₁) × P(R₂)",
+    "options": [
+      {
+        "value": "9/64",
+        "text": "9/64",
+        "feedback": {
+          "en": "Correct! With replacement: (3/8) × (3/8) = 9/64.",
+          "ms": "Tepat! Dengan pengembalian: (3/8) × (3/8) = 9/64."
+        }
+      },
+      {
+        "value": "6/56",
+        "text": "6/56 (or 3/28)",
+        "feedback": {
+          "en": "6/56 is without replacement; with replacement total remains 8.",
+          "ms": "6/56 adalah tanpa pengembalian; dengan pengembalian jumlah kekal 8."
+        }
+      },
+      {
+        "value": "3/64",
+        "text": "3/64",
+        "feedback": {
+          "en": "3 × 3 = 9 in the numerator.",
+          "ms": "3 × 3 = 9 pada pengangka."
+        }
+      },
+      {
+        "value": "6/64",
+        "text": "6/64",
+        "feedback": {
+          "en": "Multiply 3 × 3 = 9, not 3 + 3.",
+          "ms": "Darabkan 3 × 3 = 9, bukan 3 + 3."
+        }
+      }
+    ],
+    "answer": "9/64",
+    "hints": {
+      "en": [
+        "Total items = 3 + 5 = 8. With replacement, P(Red) = 3/8 each time."
+      ],
+      "ms": [
+        "Jumlah item = 3 + 5 = 8. Dengan pengembalian, P(Merah) = 3/8 setiap kali."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = (3/8) × (3/8) = 9/64."
+      ],
+      "ms": [
+        "P = (3/8) × (3/8) = 9/64."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "with_replacement_probability"
+    ]
+  },
+  {
+    "id": "F4-C09-M02",
+    "chapter": 9,
+    "topic": "dependent_events_without_replacement",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A basket contains 4 green apples and 6 red apples. Two apples are chosen randomly one by one WITHOUT REPLACEMENT. What is the probability that both are green?",
+      "ms": "Sebuah bakul mengandungi 4 epal hijau dan 6 epal merah. Dua epal dipilih secara rawak satu demi satu TANPA PENGEMBALIAN. Apakah kebarangkalian kedua-duanya hijau?"
+    },
+    "equation": "P(G₁) × P(G₂|G₁)",
+    "options": [
+      {
+        "value": "2/15",
+        "text": "2/15 (or 12/90)",
+        "feedback": {
+          "en": "Correct! (4/10) × (3/9) = 12/90 = 2/15.",
+          "ms": "Tepat! (4/10) × (3/9) = 12/90 = 2/15."
+        }
+      },
+      {
+        "value": "16/100",
+        "text": "16/100 (or 4/25)",
+        "feedback": {
+          "en": "16/100 is with replacement (4/10 × 4/10).",
+          "ms": "16/100 adalah dengan pengembalian."
+        }
+      },
+      {
+        "value": "7/19",
+        "text": "7/19",
+        "feedback": {
+          "en": "Do not add the fractions.",
+          "ms": "Jangan tambah pecahan."
+        }
+      },
+      {
+        "value": "3/10",
+        "text": "3/10",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": "2/15",
+    "hints": {
+      "en": [
+        "First green: 4/10. Second green without replacement: 3/9. Multiply them."
+      ],
+      "ms": [
+        "Hijau pertama: 4/10. Hijau kedua tanpa pengembalian: 3/9. Darabkan keduanya."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = (4/10) × (3/9) = 12/90 = 2/15."
+      ],
+      "ms": [
+        "P = (4/10) × (3/9) = 12/90 = 2/15."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "without_replacement"
+    ]
+  },
+  {
+    "id": "F4-C09-M03",
+    "chapter": 9,
+    "topic": "addition_rule_mutually_exclusive",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a dessert buffet: P(Pudding) = 0.25, P(Cendol) = 0.30. A guest chooses only one dessert. What is the probability of choosing Pudding OR Cendol?",
+      "ms": "Dalam bufet pencuci mulut: P(Puding) = 0.25, P(Cendol) = 0.30. Seorang tetamu hanya memilih satu pencuci mulut. Apakah kebarangkalian memilih Puding ATAU Cendol?"
+    },
+    "equation": "P(A ∪ B) = P(A) + P(B)",
+    "options": [
+      {
+        "value": 0.55,
+        "text": "0.55",
+        "feedback": {
+          "en": "Correct! Mutually exclusive: 0.25 + 0.30 = 0.55.",
+          "ms": "Tepat! Saling eksklusif: 0.25 + 0.30 = 0.55."
+        }
+      },
+      {
+        "value": 0.075,
+        "text": "0.075",
+        "feedback": {
+          "en": "0.075 is the product (0.25 × 0.30), which applies to \"AND\", not \"OR\".",
+          "ms": "0.075 ialah hasil darab (DAN), bukan \"ATAU\"."
+        }
+      },
+      {
+        "value": 0.05,
+        "text": "0.05",
+        "feedback": {
+          "en": "0.30 - 0.25 = 0.05 is difference.",
+          "ms": "0.30 - 0.25 = 0.05 ialah beza."
+        }
+      },
+      {
+        "value": 0.5,
+        "text": "0.50",
+        "feedback": {
+          "en": "0.25 + 0.30 = 0.55.",
+          "ms": "0.25 + 0.30 = 0.55."
+        }
+      }
+    ],
+    "answer": 0.55,
+    "hints": {
+      "en": [
+        "For mutually exclusive events: P(A OR B) = P(A) + P(B)."
+      ],
+      "ms": [
+        "Bagi peristiwa saling eksklusif: P(A ATAU B) = P(A) + P(B)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(Pudding OR Cendol) = 0.25 + 0.30 = 0.55."
+      ],
+      "ms": [
+        "P(Puding ATAU Cendol) = 0.25 + 0.30 = 0.55."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "addition_rule_mutually_exclusive"
+    ]
+  },
+  {
+    "id": "F4-C09-M04",
+    "chapter": 9,
+    "topic": "addition_rule_non_mutually_exclusive",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given P(A) = 0.6, P(B) = 0.5, and P(A ∩ B) = 0.3. Find P(A ∪ B).",
+      "ms": "Diberi P(A) = 0.6, P(B) = 0.5, dan P(A ∩ B) = 0.3. Cari P(A ∪ B)."
+    },
+    "equation": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+    "options": [
+      {
+        "value": 0.8,
+        "text": "0.8",
+        "feedback": {
+          "en": "Correct! P(A ∪ B) = 0.6 + 0.5 - 0.3 = 0.8.",
+          "ms": "Tepat! P(A ∪ B) = 0.6 + 0.5 - 0.3 = 0.8."
+        }
+      },
+      {
+        "value": 1.1,
+        "text": "1.1",
+        "feedback": {
+          "en": "Probabilities cannot exceed 1.0! You forgot to subtract P(A ∩ B).",
+          "ms": "Kebarangkalian tidak boleh melebihi 1.0! Anda terlupa menolak P(A ∩ B)."
+        }
+      },
+      {
+        "value": 0.4,
+        "text": "0.4",
+        "feedback": {
+          "en": "Check calculation: 1.1 - 0.3 = 0.8.",
+          "ms": "Semak pengiraan: 1.1 - 0.3 = 0.8."
+        }
+      },
+      {
+        "value": 0.9,
+        "text": "0.9",
+        "feedback": {
+          "en": "0.6 + 0.5 - 0.3 = 0.8.",
+          "ms": "0.6 + 0.5 - 0.3 = 0.8."
+        }
+      }
+    ],
+    "answer": 0.8,
+    "hints": {
+      "en": [
+        "Use P(A ∪ B) = P(A) + P(B) - P(A ∩ B)."
+      ],
+      "ms": [
+        "Gunakan P(A ∪ B) = P(A) + P(B) - P(A ∩ B)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(A ∪ B) = 0.6 + 0.5 - 0.3 = 0.8."
+      ],
+      "ms": [
+        "P(A ∪ B) = 0.6 + 0.5 - 0.3 = 0.8."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "addition_rule_non_exclusive"
+    ]
+  },
+  {
+    "id": "F4-C09-M05",
+    "chapter": 9,
+    "topic": "tree_diagram_at_least_one",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A fair coin is tossed twice. What is the probability of getting AT LEAST ONE Head?",
+      "ms": "Sekeping syiling adil dilambung dua kali. Apakah kebarangkalian mendapat SEKURANG-KURANGNYA SATU Kepala?"
+    },
+    "equation": "1 - P(No Heads)",
+    "options": [
+      {
+        "value": "3/4",
+        "text": "3/4",
+        "feedback": {
+          "en": "Correct! Outcomes: HH, HT, TH, TT. 3 out of 4 have at least one Head (or 1 - 1/4 = 3/4).",
+          "ms": "Tepat! Kesudahan: HH, HT, TH, TT. 3 daripada 4 mempunyai sekurang-kurangnya satu Kepala."
+        }
+      },
+      {
+        "value": "1/2",
+        "text": "1/2",
+        "feedback": {
+          "en": "1/2 is getting exactly one Head (HT, TH). At least one also includes HH.",
+          "ms": "1/2 ialah tepat satu Kepala. Sekurang-kurangnya satu turut merangkumi HH."
+        }
+      },
+      {
+        "value": "1/4",
+        "text": "1/4",
+        "feedback": {
+          "en": "1/4 is the probability of getting no Heads (TT).",
+          "ms": "1/4 ialah kebarangkalian tiada Kepala (TT)."
+        }
+      },
+      {
+        "value": "1",
+        "text": "1",
+        "feedback": {
+          "en": "It is possible to get two Tails (TT), so probability is not 1.",
+          "ms": "Boleh mendapat dua Ekor (TT), maka kebarangkalian bukan 1."
+        }
+      }
+    ],
+    "answer": "3/4",
+    "hints": {
+      "en": [
+        "Complement method: 1 - P(TT) = 1 - (1/2 × 1/2) = 1 - 1/4 = 3/4."
+      ],
+      "ms": [
+        "Kaedah pelengkap: 1 - P(TT) = 1 - (1/4) = 3/4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(At least one Head) = 1 - P(TT) = 1 - 1/4 = 3/4."
+      ],
+      "ms": [
+        "P(Sekurang-kurangnya satu Kepala) = 1 - 1/4 = 3/4."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "tree_diagram_probability"
+    ]
+  },
+  {
+    "id": "F4-C09-H01",
+    "chapter": 9,
+    "topic": "three_stage_dependent_probability",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A tray has 5 hot curry puffs and 3 cold curry puffs. 3 curry puffs are picked one by one WITHOUT replacement. What is the probability that all 3 are hot?",
+      "ms": "Sebuah talam mempunyai 5 karipap panas dan 3 karipap sejuk. 3 karipap diambil satu demi satu TANPA pengembalian. Apakah kebarangkalian ketiga-tiganya panas?"
+    },
+    "equation": "(5/8) × (4/7) × (3/6)",
+    "options": [
+      {
+        "value": "5/28",
+        "text": "5/28",
+        "feedback": {
+          "en": "Correct! (5/8) × (4/7) × (3/6) = 60 / 336 = 5/28.",
+          "ms": "Tepat! (5/8) × (4/7) × (3/6) = 60 / 336 = 5/28."
+        }
+      },
+      {
+        "value": "125/512",
+        "text": "125/512",
+        "feedback": {
+          "en": "125/512 is with replacement (5/8)³.",
+          "ms": "125/512 adalah dengan pengembalian (5/8)³."
+        }
+      },
+      {
+        "value": "15/56",
+        "text": "15/56",
+        "feedback": {
+          "en": "Calculation error in third draw (3/6 = 1/2).",
+          "ms": "Ralat pengiraan pada cabutan ketiga."
+        }
+      },
+      {
+        "value": "1/8",
+        "text": "1/8",
+        "feedback": {
+          "en": "60 / 336 simplifies to 5/28.",
+          "ms": "60 / 336 dipermudah kepada 5/28."
+        }
+      }
+    ],
+    "answer": "5/28",
+    "hints": {
+      "en": [
+        "Multiply probabilities: (5/8) × (4/7) × (3/6)."
+      ],
+      "ms": [
+        "Darabkan kebarangkalian: (5/8) × (4/7) × (3/6)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = (5/8) × (4/7) × (3/6) = 60 / 336 = 5/28."
+      ],
+      "ms": [
+        "P = (5/8) × (4/7) × (3/6) = 60 / 336 = 5/28."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "multi_stage_without_replacement"
+    ]
+  },
+  {
+    "id": "F4-C09-H02",
+    "chapter": 9,
+    "topic": "complement_strategy_at_least_one",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "The probability of a delivery rider arriving on time is 0.8. If 3 independent deliveries are made, what is the probability that AT LEAST ONE delivery is delayed (late)?",
+      "ms": "Kebarangkalian seorang penghantar sampai tepat pada masanya ialah 0.8. Jika 3 penghantaran berasingan dibuat, apakah kebarangkalian SEKURANG-KURANGNYA SATU penghantaran lewat?"
+    },
+    "equation": "1 - (0.8)³",
+    "options": [
+      {
+        "value": 0.488,
+        "text": "0.488",
+        "feedback": {
+          "en": "Correct! P(All on time) = (0.8)³ = 0.512. P(At least one late) = 1 - 0.512 = 0.488.",
+          "ms": "Tepat! P(Semua tepat masa) = (0.8)³ = 0.512. P(Sekurang-kurangnya satu lewat) = 1 - 0.512 = 0.488."
+        }
+      },
+      {
+        "value": 0.512,
+        "text": "0.512",
+        "feedback": {
+          "en": "0.512 is the probability that ALL are on time.",
+          "ms": "0.512 ialah kebarangkalian SEMUA tepat pada masanya."
+        }
+      },
+      {
+        "value": 0.2,
+        "text": "0.200",
+        "feedback": {
+          "en": "0.2 is the probability of a single trip being late.",
+          "ms": "0.2 ialah kebarangkalian satu perjalanan lewat."
+        }
+      },
+      {
+        "value": 0.6,
+        "text": "0.600",
+        "feedback": {
+          "en": "1 - (0.8)³ = 0.488.",
+          "ms": "1 - (0.8)³ = 0.488."
+        }
+      }
+    ],
+    "answer": 0.488,
+    "hints": {
+      "en": [
+        "Use P(At least one late) = 1 - P(None late) = 1 - (0.8)³."
+      ],
+      "ms": [
+        "Gunakan P(Sekurang-kurangnya satu lewat) = 1 - P(Tiada lewat) = 1 - (0.8)³."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = 1 - (0.8)³ = 1 - 0.512 = 0.488."
+      ],
+      "ms": [
+        "P = 1 - (0.8)³ = 1 - 0.512 = 0.488."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "complement_strategy"
+    ]
+  },
+  {
+    "id": "F4-C09-H03",
+    "chapter": 9,
+    "topic": "venn_diagram_probability",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given P(A) = 0.5, P(B) = 0.4, and P(A ∪ B) = 0.7. What is P(A ∩ B') (probability of A only)?",
+      "ms": "Diberi P(A) = 0.5, P(B) = 0.4, dan P(A ∪ B) = 0.7. Apakah P(A ∩ B') (kebarangkalian A sahaja)?"
+    },
+    "equation": "P(A) - P(A ∩ B)",
+    "options": [
+      {
+        "value": 0.3,
+        "text": "0.3",
+        "feedback": {
+          "en": "Correct! P(A ∩ B) = 0.5 + 0.4 - 0.7 = 0.2. P(A ∩ B') = P(A) - P(A ∩ B) = 0.5 - 0.2 = 0.3.",
+          "ms": "Tepat! P(A ∩ B) = 0.2. P(A ∩ B') = 0.5 - 0.2 = 0.3."
+        }
+      },
+      {
+        "value": 0.2,
+        "text": "0.2",
+        "feedback": {
+          "en": "0.2 is the intersection P(A ∩ B).",
+          "ms": "0.2 ialah persilangan P(A ∩ B)."
+        }
+      },
+      {
+        "value": 0.1,
+        "text": "0.1",
+        "feedback": {
+          "en": "0.1 is P(B ∩ A') (B only).",
+          "ms": "0.1 ialah P(B ∩ A') (B sahaja)."
+        }
+      },
+      {
+        "value": 0.5,
+        "text": "0.5",
+        "feedback": {
+          "en": "0.5 is total P(A).",
+          "ms": "0.5 ialah jumlah P(A)."
+        }
+      }
+    ],
+    "answer": 0.3,
+    "hints": {
+      "en": [
+        "First find P(A ∩ B) = P(A) + P(B) - P(A ∪ B) = 0.2. Then subtract from P(A)."
+      ],
+      "ms": [
+        "Cari P(A ∩ B) = P(A) + P(B) - P(A ∪ B) = 0.2 dahulu. Kemudian tolak daripada P(A)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(A ∩ B) = 0.2. P(A ∩ B') = 0.5 - 0.2 = 0.3."
+      ],
+      "ms": [
+        "P(A ∩ B) = 0.2. P(A ∩ B') = 0.5 - 0.2 = 0.3."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "venn_probability"
+    ]
+  },
+  {
+    "id": "F4-C09-H04",
+    "chapter": 9,
+    "topic": "biased_multi_stage_game",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A wheel of fortune has 3 sections: Win (1/4), Retry (1/2), Lose (1/4). If a player lands on Retry, they spin once more. What is the probability that the player ultimately WINS?",
+      "ms": "Roda impian mempunyai 3 bahagian: Menang (1/4), Cuba Lagi (1/2), Kalah (1/4). Jika pemain mendapat Cuba Lagi, mereka memutar sekali lagi. Apakah kebarangkalian pemain akhirnya MENANG?"
+    },
+    "equation": "P(Win 1st) + P(Retry 1st) × P(Win 2nd)",
+    "options": [
+      {
+        "value": 0.375,
+        "text": "3/8 (or 0.375)",
+        "feedback": {
+          "en": "Correct! (1/4) + (1/2 × 1/4) = 1/4 + 1/8 = 3/8.",
+          "ms": "Tepat! (1/4) + (1/2 × 1/4) = 1/4 + 1/8 = 3/8."
+        }
+      },
+      {
+        "value": 0.25,
+        "text": "1/4 (or 0.25)",
+        "feedback": {
+          "en": "1/4 only accounts for winning on the first spin.",
+          "ms": "1/4 hanya mengambil kira menang pada putaran pertama."
+        }
+      },
+      {
+        "value": 0.5,
+        "text": "1/2 (or 0.50)",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      },
+      {
+        "value": 0.125,
+        "text": "1/8 (or 0.125)",
+        "feedback": {
+          "en": "1/8 is only winning on the second spin.",
+          "ms": "1/8 hanya menang pada putaran kedua."
+        }
+      }
+    ],
+    "answer": 0.375,
+    "hints": {
+      "en": [
+        "Win on 1st spin: 1/4. Retry then win: (1/2) × (1/4) = 1/8. Add them."
+      ],
+      "ms": [
+        "Menang pada putaran 1: 1/4. Cuba lagi kemudian menang: (1/2) × (1/4) = 1/8. Tambahkan."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = 1/4 + 1/8 = 3/8 = 0.375."
+      ],
+      "ms": [
+        "P = 1/4 + 1/8 = 3/8 = 0.375."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "multi_stage_conditional"
+    ]
+  },
+  {
+    "id": "F4-C09-H05",
+    "chapter": 9,
+    "topic": "quality_control_shifts",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Chef A prepares 60% of orders with an error rate of 5%. Chef B prepares 40% of orders with an error rate of 10%. What is the probability that a randomly chosen order has an error?",
+      "ms": "Tukang Masak A menyediakan 60% pesanan dengan kadar ralat 5%. Tukang Masak B menyediakan 40% pesanan dengan kadar ralat 10%. Apakah kebarangkalian pesanan yang dipilih secara rawak mengandungi ralat?"
+    },
+    "equation": "P(Error) = P(A)P(E|A) + P(B)P(E|B)",
+    "options": [
+      {
+        "value": 0.07,
+        "text": "0.07 (or 7%)",
+        "feedback": {
+          "en": "Correct! (0.60 × 0.05) + (0.40 × 0.10) = 0.03 + 0.04 = 0.07.",
+          "ms": "Tepat! (0.60 × 0.05) + (0.40 × 0.10) = 0.03 + 0.04 = 0.07."
+        }
+      },
+      {
+        "value": 0.075,
+        "text": "0.075 (or 7.5%)",
+        "feedback": {
+          "en": "Average of 5% and 10% is 7.5%, but weighted probabilities are 60% and 40%.",
+          "ms": "Purata biasa ialah 7.5%, tetapi wajaran ialah 60% dan 40%."
+        }
+      },
+      {
+        "value": 0.05,
+        "text": "0.05 (or 5%)",
+        "feedback": {
+          "en": "Includes Chef B's errors as well.",
+          "ms": "Merangkumi ralat Tukang Masak B juga."
+        }
+      },
+      {
+        "value": 0.15,
+        "text": "0.15 (or 15%)",
+        "feedback": {
+          "en": "Do not add the percentages directly.",
+          "ms": "Jangan tambah peratusan secara terus."
+        }
+      }
+    ],
+    "answer": 0.07,
+    "hints": {
+      "en": [
+        "P(Error) = 0.60(0.05) + 0.40(0.10)."
+      ],
+      "ms": [
+        "P(Ralat) = 0.60(0.05) + 0.40(0.10)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(Error) = 0.03 + 0.04 = 0.07 (7%)."
+      ],
+      "ms": [
+        "P(Ralat) = 0.03 + 0.04 = 0.07 (7%)."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "total_probability_theorem"
+    ]
+  },
+  {
+    "id": "F4-C09-E06",
+    "chapter": 9,
+    "topic": "independent_events_coins",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "A fair coin is tossed twice. What is the probability of obtaining two Heads (H, H)?",
+      "ms": "Sekeping syiling adil dilambung dua kali. Apakah kebarangkalian mendapat dua kali Gambar (G, G)?"
+    },
+    "equation": "P(H, H) = 1/2 * 1/2",
+    "options": [
+      {
+        "value": "1/4",
+        "text": "1/4",
+        "feedback": {
+          "en": "Correct! P(H) = 1/2. P(H and H) = 1/2 * 1/2 = 1/4.",
+          "ms": "Tepat! P(G) = 1/2. P(G dan G) = 1/2 * 1/2 = 1/4."
+        }
+      },
+      {
+        "value": "1/2",
+        "text": "1/2",
+        "feedback": {
+          "en": "1/2 is the probability of a single toss.",
+          "ms": "1/2 ialah kebarangkalian bagi satu lambungan sahaja."
+        }
+      },
+      {
+        "value": "3/4",
+        "text": "3/4",
+        "feedback": {
+          "en": "3/4 is the probability of getting at least one head.",
+          "ms": "3/4 ialah kebarangkalian sekurang-kurangnya satu gambar."
+        }
+      },
+      {
+        "value": "1/8",
+        "text": "1/8",
+        "feedback": {
+          "en": "1/8 is for three tosses.",
+          "ms": "1/8 ialah untuk tiga lambungan."
+        }
+      }
+    ],
+    "answer": "1/4",
+    "hints": {
+      "en": [
+        "Sample space: {(H,H), (H,T), (T,H), (T,T)}. 1 outcome out of 4."
+      ],
+      "ms": [
+        "Ruang sampel: {(G,G), (G,A), (A,G), (A,A)}. 1 kesudahan daripada 4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Tosses are independent: P(H, H) = 1/2 × 1/2 = 1/4."
+      ],
+      "ms": [
+        "Lambungan adalah tak bersandar: P(G, G) = 1/2 × 1/2 = 1/4."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-E07",
+    "chapter": 9,
+    "topic": "mutually_exclusive_definition",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "If events A and B cannot occur at the same time, what is P(A ∩ B)?",
+      "ms": "Jika peristiwa A dan peristiwa B tidak boleh berlaku pada masa yang sama, apakah nilai P(A ∩ B)?"
+    },
+    "equation": "Mutually exclusive => P(A ∩ B) = 0",
+    "options": [
+      {
+        "value": "0",
+        "text": "0",
+        "feedback": {
+          "en": "Correct! Mutually exclusive events cannot occur simultaneously, so P(A ∩ B) = 0.",
+          "ms": "Tepat! Peristiwa saling eksklusif tidak boleh berlaku serentak, maka P(A ∩ B) = 0."
+        }
+      },
+      {
+        "value": "1",
+        "text": "1",
+        "feedback": {
+          "en": "1 means certainty.",
+          "ms": "1 bermaksud peristiwa pasti."
+        }
+      },
+      {
+        "value": "0.5",
+        "text": "0.5",
+        "feedback": {
+          "en": "They cannot co-occur.",
+          "ms": "Peristiwa tidak boleh berlaku bersama."
+        }
+      },
+      {
+        "value": "P(A) * P(B)",
+        "text": "P(A) * P(B)",
+        "feedback": {
+          "en": "P(A)*P(B) is for independent events, not mutually exclusive.",
+          "ms": "P(A)*P(B) adalah untuk peristiwa tak bersandar, bukan saling eksklusif."
+        }
+      }
+    ],
+    "answer": "0",
+    "hints": {
+      "en": [
+        "Mutually exclusive events have an empty intersection: A ∩ B = ∅."
+      ],
+      "ms": [
+        "Peristiwa saling eksklusif mempunyai persilangan kosong: A ∩ B = ∅."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "By definition, mutually exclusive events cannot happen together, so P(A ∩ B) = 0."
+      ],
+      "ms": [
+        "Mengikut definisi, peristiwa saling eksklusif tidak boleh berlaku bersama, maka P(A ∩ B) = 0."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-E08",
+    "chapter": 9,
+    "topic": "complementary_event_probability",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "kitchen",
+    "question": {
+      "en": "The probability of a customer ordering Teh Tarik is 0.65. What is the probability that a customer does NOT order Teh Tarik?",
+      "ms": "Kebarangkalian seorang pelanggan memesan Teh Tarik ialah 0.65. Apakah kebarangkalian pelanggan itu TIDAK memesan Teh Tarik?"
+    },
+    "equation": "P(A') = 1 - P(A)",
+    "options": [
+      {
+        "value": "0.35",
+        "text": "0.35",
+        "feedback": {
+          "en": "Correct! P(A') = 1 - 0.65 = 0.35.",
+          "ms": "Tepat! P(A') = 1 - 0.65 = 0.35."
+        }
+      },
+      {
+        "value": "0.65",
+        "text": "0.65",
+        "feedback": {
+          "en": "0.65 is the probability of ordering Teh Tarik.",
+          "ms": "0.65 ialah kebarangkalian memesan Teh Tarik."
+        }
+      },
+      {
+        "value": "0.45",
+        "text": "0.45",
+        "feedback": {
+          "en": "1 - 0.65 = 0.35.",
+          "ms": "1 - 0.65 = 0.35."
+        }
+      },
+      {
+        "value": "0.25",
+        "text": "0.25",
+        "feedback": {
+          "en": "Check subtraction from 1.",
+          "ms": "Semak penolakan daripada 1."
+        }
+      }
+    ],
+    "answer": "0.35",
+    "hints": {
+      "en": [
+        "P(not A) = 1 - P(A) = 1 - 0.65."
+      ],
+      "ms": [
+        "P(bukan A) = 1 - P(A) = 1 - 0.65."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(not ordering Teh Tarik) = 1 - 0.65 = 0.35."
+      ],
+      "ms": [
+        "P(tidak memesan Teh Tarik) = 1 - 0.65 = 0.35."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-E09",
+    "chapter": 9,
+    "topic": "single_die_odd_or_even",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "A fair six-sided die is rolled. What is the probability of rolling a number greater than 4?",
+      "ms": "Sebiji dadu adil enam muka digolekkan. Apakah kebarangkalian mendapat nombor lebih besar daripada 4?"
+    },
+    "equation": "{5, 6} out of {1, 2, 3, 4, 5, 6}",
+    "options": [
+      {
+        "value": "1/3",
+        "text": "1/3",
+        "feedback": {
+          "en": "Correct! Numbers greater than 4 are {5, 6}. Probability = 2/6 = 1/3.",
+          "ms": "Tepat! Nombor lebih besar daripada 4 ialah {5, 6}. Kebarangkalian = 2/6 = 1/3."
+        }
+      },
+      {
+        "value": "1/2",
+        "text": "1/2",
+        "feedback": {
+          "en": "1/2 corresponds to 3 numbers (e.g. > 3).",
+          "ms": "1/2 sepadan dengan 3 nombor (cth. > 3)."
+        }
+      },
+      {
+        "value": "2/3",
+        "text": "2/3",
+        "feedback": {
+          "en": "2/3 is for ≤ 4.",
+          "ms": "2/3 ialah untuk ≤ 4."
+        }
+      },
+      {
+        "value": "1/6",
+        "text": "1/6",
+        "feedback": {
+          "en": "There are two favorable outcomes: 5 and 6.",
+          "ms": "Terdapat dua kesudahan memuaskan: 5 dan 6."
+        }
+      }
+    ],
+    "answer": "1/3",
+    "hints": {
+      "en": [
+        "Numbers strictly greater than 4 on a die are 5 and 6. 2 outcomes out of 6."
+      ],
+      "ms": [
+        "Nombor lebih besar daripada 4 pada dadu ialah 5 dan 6. 2 kesudahan daripada 6."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Event = {5, 6}. P(>4) = 2/6 = 1/3."
+      ],
+      "ms": [
+        "Peristiwa = {5, 6}. P(>4) = 2/6 = 1/3."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-E10",
+    "chapter": 9,
+    "topic": "addition_rule_mutually_exclusive",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "Events A and B are mutually exclusive. If P(A) = 0.3 and P(B) = 0.45, find P(A ∪ B).",
+      "ms": "Peristiwa A dan B ialah peristiwa saling eksklusif. Jika P(A) = 0.3 dan P(B) = 0.45, cari P(A ∪ B)."
+    },
+    "equation": "P(A ∪ B) = P(A) + P(B)",
+    "options": [
+      {
+        "value": "0.75",
+        "text": "0.75",
+        "feedback": {
+          "en": "Correct! For mutually exclusive events, P(A ∪ B) = P(A) + P(B) = 0.3 + 0.45 = 0.75.",
+          "ms": "Tepat! Bagi peristiwa saling eksklusif, P(A ∪ B) = P(A) + P(B) = 0.3 + 0.45 = 0.75."
+        }
+      },
+      {
+        "value": "0.135",
+        "text": "0.135",
+        "feedback": {
+          "en": "0.135 is the product 0.3 * 0.45.",
+          "ms": "0.135 ialah hasil darab 0.3 * 0.45."
+        }
+      },
+      {
+        "value": "0.15",
+        "text": "0.15",
+        "feedback": {
+          "en": "Do not subtract.",
+          "ms": "Jangan tolak."
+        }
+      },
+      {
+        "value": "1.0",
+        "text": "1.0",
+        "feedback": {
+          "en": "0.3 + 0.45 = 0.75.",
+          "ms": "0.3 + 0.45 = 0.75."
+        }
+      }
+    ],
+    "answer": "0.75",
+    "hints": {
+      "en": [
+        "When events are mutually exclusive: P(A or B) = P(A) + P(B)."
+      ],
+      "ms": [
+        "Bila peristiwa saling eksklusif: P(A atau B) = P(A) + P(B)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(A ∪ B) = P(A) + P(B) = 0.3 + 0.45 = 0.75."
+      ],
+      "ms": [
+        "P(A ∪ B) = P(A) + P(B) = 0.3 + 0.45 = 0.75."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-M06",
+    "chapter": 9,
+    "topic": "dependent_events_without_replacement",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "kitchen",
+    "question": {
+      "en": "A basket contains 5 curry puffs and 3 sardine puffs. Pak Ali takes one puff and eats it, then takes a second puff. What is the probability that both puffs taken are curry puffs?",
+      "ms": "Sebuah bakul mengandungi 5 biji karipap dan 3 biji karipap sardin. Pak Ali mengambil sebiji kuih dan memakannya, kemudian mengambil kuih kedua. Apakah kebarangkalian kedua-dua kuih yang diambil ialah karipap?"
+    },
+    "equation": "P(C1 and C2) = (5/8) * (4/7)",
+    "options": [
+      {
+        "value": "5/14",
+        "text": "5/14",
+        "feedback": {
+          "en": "Correct! P(1st Curry) = 5/8. P(2nd Curry) = 4/7. P = (5/8) * (4/7) = 20/56 = 5/14.",
+          "ms": "Tepat! P(Karipap 1) = 5/8. P(Karipap 2) = 4/7. P = (5/8) * (4/7) = 20/56 = 5/14."
+        }
+      },
+      {
+        "value": "25/64",
+        "text": "25/64",
+        "feedback": {
+          "en": "25/64 is with replacement (5/8 * 5/8). But the puff was eaten (without replacement)!",
+          "ms": "25/64 adalah jika diganti semula (5/8 * 5/8). Tetapi kuih itu dimakan (tanpa pengembalian)!"
+        }
+      },
+      {
+        "value": "5/8",
+        "text": "5/8",
+        "feedback": {
+          "en": "5/8 is the probability of the first puff only.",
+          "ms": "5/8 hanya kebarangkalian kuih pertama."
+        }
+      },
+      {
+        "value": "15/56",
+        "text": "15/56",
+        "feedback": {
+          "en": "(5/8) * (3/7) = 15/56 is 1 curry and 1 sardine.",
+          "ms": "(5/8) * (3/7) = 15/56 ialah 1 karipap dan 1 sardin."
+        }
+      }
+    ],
+    "answer": "5/14",
+    "hints": {
+      "en": [
+        "Without replacement: 1st draw is 5/8, 2nd draw has 4 curry puffs left out of 7 total."
+      ],
+      "ms": [
+        "Tanpa pengembalian: cabutan pertama 5/8, cabutan kedua tinggal 4 karipap daripada 7 jumlah kuih."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(C1 ∩ C2) = (5/8) × (4/7) = 20/56 = 5/14."
+      ],
+      "ms": [
+        "P(K1 ∩ K2) = (5/8) × (4/7) = 20/56 = 5/14."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-M07",
+    "chapter": 9,
+    "topic": "non_mutually_exclusive_addition_rule",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "A card is drawn from cards numbered 1 to 20. Find the probability of drawing a multiple of 3 OR a multiple of 5.",
+      "ms": "Sekeping kad dicabut daripada kad-kad bernombor 1 hingga 20. Cari kebarangkalian mencabut nombor gandaan 3 ATAU nombor gandaan 5."
+    },
+    "equation": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+    "options": [
+      {
+        "value": "9/20",
+        "text": "9/20",
+        "feedback": {
+          "en": "Correct! Multiples of 3: {3,6,9,12,15,18} (6 cards). Multiples of 5: {5,10,15,20} (4 cards). Multiple of 15 (both): {15} (1 card). P = (6 + 4 - 1)/20 = 9/20.",
+          "ms": "Tepat! Gandaan 3: 6 kad. Gandaan 5: 4 kad. Gandaan kedua-duanya (15): 1 kad. P = (6 + 4 - 1)/20 = 9/20."
+        }
+      },
+      {
+        "value": "1/2",
+        "text": "1/2",
+        "feedback": {
+          "en": "10/20 double-counts 15. You must subtract the common multiple 15!",
+          "ms": "10/20 mengira dua kali nombor 15. Anda mesti menolak gandaan sepunya 15!"
+        }
+      },
+      {
+        "value": "2/5",
+        "text": "2/5",
+        "feedback": {
+          "en": "8/20 is too small.",
+          "ms": "8/20 terlalu kecil."
+        }
+      },
+      {
+        "value": "7/20",
+        "text": "7/20",
+        "feedback": {
+          "en": "Check your count of multiples.",
+          "ms": "Semak pengiraan bilangan gandaan."
+        }
+      }
+    ],
+    "answer": "9/20",
+    "hints": {
+      "en": [
+        "Multiples of 3 = 6. Multiples of 5 = 4. Number 15 is in both! Use 6 + 4 - 1 = 9."
+      ],
+      "ms": [
+        "Gandaan 3 = 6. Gandaan 5 = 4. Nombor 15 ada dalam kedua-duanya! Gunakan 6 + 4 - 1 = 9."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 6/20 + 4/20 - 1/20 = 9/20."
+      ],
+      "ms": [
+        "P(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 6/20 + 4/20 - 1/20 = 9/20."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-M08",
+    "chapter": 9,
+    "topic": "at_least_one_independent",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "The probability that Ali passes Math is 0.8, and the probability that Siti passes Math is 0.9. If their performances are independent, find the probability that AT LEAST ONE of them passes.",
+      "ms": "Kebarangkalian Ali lulus Matematik ialah 0.8, dan kebarangkalian Siti lulus Matematik ialah 0.9. Jika prestasi mereka adalah tak bersandar, cari kebarangkalian bahawa SEKURANG-KURANGNYA SEORANG daripada mereka lulus."
+    },
+    "equation": "P(At least 1) = 1 - P(Both fail)",
+    "options": [
+      {
+        "value": "0.98",
+        "text": "0.98",
+        "feedback": {
+          "en": "Correct! P(Ali fails) = 0.2. P(Siti fails) = 0.1. P(Both fail) = 0.2 * 0.1 = 0.02. P(At least one passes) = 1 - 0.02 = 0.98.",
+          "ms": "Tepat! P(Ali gagal) = 0.2. P(Siti gagal) = 0.1. P(Kedua-duanya gagal) = 0.02. P(Sekurang-kurangnya seorang lulus) = 1 - 0.02 = 0.98."
+        }
+      },
+      {
+        "value": "0.72",
+        "text": "0.72",
+        "feedback": {
+          "en": "0.72 is P(Both pass) = 0.8 * 0.9.",
+          "ms": "0.72 ialah P(Kedua-duanya lulus) = 0.8 * 0.9."
+        }
+      },
+      {
+        "value": "0.85",
+        "text": "0.85",
+        "feedback": {
+          "en": "Do not take the simple average.",
+          "ms": "Jangan ambil purata mudah."
+        }
+      },
+      {
+        "value": "0.95",
+        "text": "0.95",
+        "feedback": {
+          "en": "Recalculate 1 - (0.2 * 0.1).",
+          "ms": "Kira semula 1 - (0.2 * 0.1)."
+        }
+      }
+    ],
+    "answer": "0.98",
+    "hints": {
+      "en": [
+        "Use the complement: 1 - P(both fail) = 1 - (0.2 × 0.1)."
+      ],
+      "ms": [
+        "Gunakan pelengkap: 1 - P(kedua-dua gagal) = 1 - (0.2 × 0.1)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(Both fail) = (1 - 0.8) × (1 - 0.9) = 0.2 × 0.1 = 0.02. P(At least one passes) = 1 - 0.02 = 0.98."
+      ],
+      "ms": [
+        "P(Kedua-dua gagal) = 0.2 × 0.1 = 0.02. P(Sekurang-kurangnya seorang lulus) = 1 - 0.02 = 0.98."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-M09",
+    "chapter": 9,
+    "topic": "tree_diagram_two_stages",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Box A has 3 red apples and 2 green apples. Box B has 4 red apples and 1 green apple. One apple is chosen at random from Box A and placed into Box B. Then an apple is chosen from Box B. What is the probability of picking a green apple from Box B?",
+      "ms": "Kotak A ada 3 epal merah dan 2 epal hijau. Kotak B ada 4 epal merah dan 1 epal hijau. Sebiji epal dipilih secara rawak dari Kotak A dan dimasukkan ke dalam Kotak B. Kemudian sebiji epal dipilih dari Kotak B. Apakah kebarangkalian memilih epal hijau dari Kotak B?"
+    },
+    "equation": "P(G from B) = P(R_A)*P(G_B|R_A) + P(G_A)*P(G_B|G_A)",
+    "options": [
+      {
+        "value": "7/30",
+        "text": "7/30",
+        "feedback": {
+          "en": "Correct! P(Red from A) = 3/5 => B has 5 red, 1 green (total 6), P(G|R) = 1/6. P(Green from A) = 2/5 => B has 4 red, 2 green (total 6), P(G|G) = 2/6. Total P = (3/5)*(1/6) + (2/5)*(2/6) = (3 + 4)/30 = 7/30.",
+          "ms": "Tepat! P = (3/5)*(1/6) + (2/5)*(2/6) = 7/30."
+        }
+      },
+      {
+        "value": "1/5",
+        "text": "1/5",
+        "feedback": {
+          "en": "1/5 = 6/30, but total is 7/30.",
+          "ms": "1/5 = 6/30, tetapi jumlah ialah 7/30."
+        }
+      },
+      {
+        "value": "1/3",
+        "text": "1/3",
+        "feedback": {
+          "en": "1/3 = 10/30 is too high.",
+          "ms": "1/3 = 10/30 terlalu tinggi."
+        }
+      },
+      {
+        "value": "2/15",
+        "text": "2/15",
+        "feedback": {
+          "en": "2/15 = 4/30.",
+          "ms": "2/15 = 4/30."
+        }
+      }
+    ],
+    "answer": "7/30",
+    "hints": {
+      "en": [
+        "Case 1: Red moved (3/5) then Green picked (1/6). Case 2: Green moved (2/5) then Green picked (2/6). Sum them."
+      ],
+      "ms": [
+        "Kes 1: Merah dipindah (3/5) kemudian Hijau dipilih (1/6). Kes 2: Hijau dipindah (2/5) kemudian Hijau dipilih (2/6). Jumlahkan."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(Green) = (3/5 × 1/6) + (2/5 × 2/6) = 3/30 + 4/30 = 7/30."
+      ],
+      "ms": [
+        "P(Hijau) = (3/5 × 1/6) + (2/5 × 2/6) = 3/30 + 4/30 = 7/30."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-M10",
+    "chapter": 9,
+    "topic": "probability_sum_of_two_dice",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "Two fair six-sided dice are rolled simultaneously. What is the probability that the sum of the numbers is 9?",
+      "ms": "Dua biji dadu adil enam muka dilambung serentak. Apakah kebarangkalian bahawa hasil tambah nombor-nombor itu ialah 9?"
+    },
+    "equation": "Pairs summing to 9: (3,6), (4,5), (5,4), (6,3)",
+    "options": [
+      {
+        "value": "1/9",
+        "text": "1/9",
+        "feedback": {
+          "en": "Correct! Pairs summing to 9 are (3,6), (4,5), (5,4), (6,3) = 4 outcomes. Probability = 4/36 = 1/9.",
+          "ms": "Tepat! Pasangan yang menghasilkan 9 ialah (3,6), (4,5), (5,4), (6,3) = 4 kesudahan. Kebarangkalian = 4/36 = 1/9."
+        }
+      },
+      {
+        "value": "1/6",
+        "text": "1/6",
+        "feedback": {
+          "en": "1/6 = 6/36, which is for sum of 7.",
+          "ms": "1/6 = 6/36, iaitu untuk hasil tambah 7."
+        }
+      },
+      {
+        "value": "1/12",
+        "text": "1/12",
+        "feedback": {
+          "en": "1/12 = 3/36.",
+          "ms": "1/12 = 3/36."
+        }
+      },
+      {
+        "value": "5/36",
+        "text": "5/36",
+        "feedback": {
+          "en": "5/36 is for sum of 8 or 6.",
+          "ms": "5/36 ialah untuk hasil tambah 8 atau 6."
+        }
+      }
+    ],
+    "answer": "1/9",
+    "hints": {
+      "en": [
+        "List the pairs that add to 9: (3,6), (4,5), (5,4), (6,3). Total outcomes = 36."
+      ],
+      "ms": [
+        "Senaraikan pasangan berjumlah 9: (3,6), (4,5), (5,4), (6,3). Jumlah kesudahan = 36."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "There are 4 pairs out of 36: (3,6), (4,5), (5,4), (6,3). P(sum = 9) = 4/36 = 1/9."
+      ],
+      "ms": [
+        "Terdapat 4 pasangan daripada 36: (3,6), (4,5), (5,4), (6,3). P(jumlah = 9) = 4/36 = 1/9."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-H06",
+    "chapter": 9,
+    "topic": "three_stage_probability_defects",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "kitchen",
+    "question": {
+      "en": "In a food packaging line, the probability of a packet leaking is 0.05. If 3 packets are inspected independently, what is the probability that EXACTLY ONE packet is leaking?",
+      "ms": "Dalam satu barisan pembungkusan makanan, kebarangkalian bungkusan bocor ialah 0.05. Jika 3 bungkusan diperiksa secara tak bersandar, apakah kebarangkalian bahawa TEPAT SATU bungkusan bocor?"
+    },
+    "equation": "3 * (0.05)^1 * (0.95)^2",
+    "options": [
+      {
+        "value": "0.1354",
+        "text": "0.1354",
+        "feedback": {
+          "en": "Correct! 3C1 * (0.05) * (0.95)² = 3 * 0.05 * 0.9025 = 0.135375 ≈ 0.1354.",
+          "ms": "Tepat! 3 * (0.05) * (0.95)² = 0.135375 ≈ 0.1354."
+        }
+      },
+      {
+        "value": "0.0451",
+        "text": "0.0451",
+        "feedback": {
+          "en": "You forgot to multiply by 3 for the 3 different arrangements (LNN, NLN, NNL).",
+          "ms": "Anda lupa darab dengan 3 untuk 3 susunan berbeza (BNN, NBN, NNB)."
+        }
+      },
+      {
+        "value": "0.1500",
+        "text": "0.1500",
+        "feedback": {
+          "en": "3 * 0.05 = 0.15 does not account for the other two packets not leaking.",
+          "ms": "3 * 0.05 = 0.15 tidak mengambil kira dua bungkusan lagi yang elok."
+        }
+      },
+      {
+        "value": "0.0500",
+        "text": "0.0500",
+        "feedback": {
+          "en": "0.05 is the probability for just one packet.",
+          "ms": "0.05 hanya kebarangkalian untuk satu bungkusan."
+        }
+      }
+    ],
+    "answer": "0.1354",
+    "hints": {
+      "en": [
+        "3 combinations: (Leak, No, No), (No, Leak, No), (No, No, Leak). 3 × (0.05) × (0.95)²."
+      ],
+      "ms": [
+        "3 gabungan: (Bocor, Tidak, Tidak), (Tidak, Bocor, Tidak), (Tidak, Tidak, Bocor). 3 × (0.05) × (0.95)²."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(exactly 1) = 3 × 0.05 × (0.95)² = 3 × 0.05 × 0.9025 = 0.135375 ≈ 0.1354."
+      ],
+      "ms": [
+        "P(tepat 1) = 3 × 0.05 × (0.95)² = 3 × 0.05 × 0.9025 = 0.135375 ≈ 0.1354."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-H07",
+    "chapter": 9,
+    "topic": "conditional_probability_table",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "kitchen",
+    "question": {
+      "en": "A survey of 100 warung customers records preferred drink by gender:\nMen: 30 Teh Tarik, 20 Kopi O (Total 50)\nWomen: 15 Teh Tarik, 35 Kopi O (Total 50)\nA customer is chosen at random. Given that the chosen customer is a woman, what is the probability that she prefers Teh Tarik?",
+      "ms": "Satu soal selidik terhadap 100 pelanggan warung merekodkan minuman pilihan mengikut jantina:\nLelaki: 30 Teh Tarik, 20 Kopi O (Jumlah 50)\nWanita: 15 Teh Tarik, 35 Kopi O (Jumlah 50)\nSeorang pelanggan dipilih secara rawak. Diberi bahawa pelanggan yang dipilih ialah seorang wanita, apakah kebarangkalian dia menggemari Teh Tarik?"
+    },
+    "equation": "P(Teh Tarik | Woman) = 15 / 50",
+    "options": [
+      {
+        "value": "3/10",
+        "text": "3/10",
+        "feedback": {
+          "en": "Correct! Restricted sample space: 50 women. 15 drink Teh Tarik. Probability = 15/50 = 3/10 (or 0.3).",
+          "ms": "Tepat! Ruang sampel terhad: 50 wanita. 15 gemar Teh Tarik. Kebarangkalian = 15/50 = 3/10 (0.3)."
+        }
+      },
+      {
+        "value": "3/20",
+        "text": "3/20",
+        "feedback": {
+          "en": "15/100 = 3/20 is P(Woman AND Teh Tarik) from all 100 customers, but condition was 'given that she is a woman'.",
+          "ms": "15/100 = 3/20 ialah kebarangkalian daripada semua 100 pelanggan, tetapi syarat adalah 'diberi pelanggan wanita'."
+        }
+      },
+      {
+        "value": "1/3",
+        "text": "1/3",
+        "feedback": {
+          "en": "15/45 = 1/3 is the probability among Teh Tarik drinkers, not women.",
+          "ms": "15/45 = 1/3 ialah kebarangkalian dalam kalangan peminum Teh Tarik."
+        }
+      },
+      {
+        "value": "7/10",
+        "text": "7/10",
+        "feedback": {
+          "en": "35/50 = 7/10 is for Kopi O.",
+          "ms": "35/50 = 7/10 ialah untuk Kopi O."
+        }
+      }
+    ],
+    "answer": "3/10",
+    "hints": {
+      "en": [
+        "Condition 'given that woman' narrows the total denominator to 50."
+      ],
+      "ms": [
+        "Syarat 'diberi wanita' mengecilkan penyebut kepada 50 orang wanita."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(Teh Tarik | Woman) = 15 / 50 = 3/10 = 0.30."
+      ],
+      "ms": [
+        "P(Teh Tarik | Wanita) = 15 / 50 = 3/10 = 0.30."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-H08",
+    "chapter": 9,
+    "topic": "at_least_one_different_colour",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "A bag has 4 red marbles, 3 blue marbles, and 2 yellow marbles. Two marbles are drawn at random without replacement. What is the probability that BOTH marbles are of the SAME colour?",
+      "ms": "Sebuah beg mengandungi 4 guli merah, 3 guli biru, dan 2 guli kuning. Dua biji guli dicabut secara rawak tanpa pengembalian. Apakah kebarangkalian bahawa KEDUA-DUA guli mempunyai WARNA YANG SAMA?"
+    },
+    "equation": "P(Same) = P(RR) + P(BB) + P(YY)",
+    "options": [
+      {
+        "value": "5/18",
+        "text": "5/18",
+        "feedback": {
+          "en": "Correct! Total = 9. P(RR) = (4/9)*(3/8) = 12/72. P(BB) = (3/9)*(2/8) = 6/72. P(YY) = (2/9)*(1/8) = 2/72. Sum = (12 + 6 + 2)/72 = 20/72 = 5/18.",
+          "ms": "Tepat! P(MM) = 12/72, P(BB) = 6/72, P(KK) = 2/72. Jumlah = 20/72 = 5/18."
+        }
+      },
+      {
+        "value": "13/18",
+        "text": "13/18",
+        "feedback": {
+          "en": "13/18 is the probability of different colours (1 - 5/18).",
+          "ms": "13/18 ialah kebarangkalian warna berbeza (1 - 5/18)."
+        }
+      },
+      {
+        "value": "1/4",
+        "text": "1/4",
+        "feedback": {
+          "en": "18/72 = 1/4, but sum is 20/72.",
+          "ms": "18/72 = 1/4, tetapi jumlah ialah 20/72."
+        }
+      },
+      {
+        "value": "1/3",
+        "text": "1/3",
+        "feedback": {
+          "en": "24/72 = 1/3 is too high.",
+          "ms": "24/72 = 1/3 terlalu tinggi."
+        }
+      }
+    ],
+    "answer": "5/18",
+    "hints": {
+      "en": [
+        "Calculate P(RR) + P(BB) + P(YY) where each pair is chosen without replacement from 9 marbles."
+      ],
+      "ms": [
+        "Hitung P(MM) + P(BB) + P(KK) di mana setiap pasang dipilih tanpa pengembalian daripada 9 guli."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(RR) = 12/72, P(BB) = 6/72, P(YY) = 2/72. P(Same colour) = (12 + 6 + 2)/72 = 20/72 = 5/18."
+      ],
+      "ms": [
+        "P(MM) = 12/72, P(BB) = 6/72, P(KK) = 2/72. P(Sama warna) = (12 + 6 + 2)/72 = 20/72 = 5/18."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-H09",
+    "chapter": 9,
+    "topic": "probability_inequality_range",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "Given P(A) = 0.7 and P(B) = 0.5. What is the MINIMUM possible value of P(A ∩ B)?",
+      "ms": "Diberi P(A) = 0.7 dan P(B) = 0.5. Apakah nilai MINIMUM yang mungkin bagi P(A ∩ B)?"
+    },
+    "equation": "P(A ∩ B) ≥ P(A) + P(B) - 1",
+    "options": [
+      {
+        "value": "0.2",
+        "text": "0.2",
+        "feedback": {
+          "en": "Correct! Since P(A ∪ B) ≤ 1: P(A ∩ B) = P(A) + P(B) - P(A ∪ B) ≥ 0.7 + 0.5 - 1 = 0.2.",
+          "ms": "Tepat! Kerana P(A ∪ B) ≤ 1: P(A ∩ B) = 0.7 + 0.5 - P(A ∪ B) ≥ 1.2 - 1 = 0.2."
+        }
+      },
+      {
+        "value": "0",
+        "text": "0",
+        "feedback": {
+          "en": "0.7 + 0.5 = 1.2 > 1, so they MUST overlap by at least 0.2!",
+          "ms": "0.7 + 0.5 = 1.2 > 1, maka kedua-duanya MESTI bertindih sekurang-kurangnya 0.2!"
+        }
+      },
+      {
+        "value": "0.35",
+        "text": "0.35",
+        "feedback": {
+          "en": "0.35 is P(A)*P(B), which holds only if they are independent.",
+          "ms": "0.35 ialah P(A)*P(B) jika tak bersandar, bukan nilai minimum."
+        }
+      },
+      {
+        "value": "0.5",
+        "text": "0.5",
+        "feedback": {
+          "en": "0.5 is the maximum possible value of P(A ∩ B).",
+          "ms": "0.5 ialah nilai maksimum yang mungkin bagi P(A ∩ B)."
+        }
+      }
+    ],
+    "answer": "0.2",
+    "hints": {
+      "en": [
+        "P(A ∪ B) cannot exceed 1. Thus P(A ∩ B) = P(A) + P(B) - P(A ∪ B) ≥ 1.2 - 1 = 0.2."
+      ],
+      "ms": [
+        "P(A ∪ B) tidak boleh melebihi 1. Maka P(A ∩ B) = P(A) + P(B) - P(A ∪ B) ≥ 1.2 - 1 = 0.2."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "By Bonferroni's inequality: P(A ∩ B) ≥ P(A) + P(B) - 1 = 0.7 + 0.5 - 1 = 0.2."
+      ],
+      "ms": [
+        "Mengikut ketaksamaan Bonferroni: P(A ∩ B) ≥ P(A) + P(B) - 1 = 0.7 + 0.5 - 1 = 0.2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C09-H10",
+    "chapter": 9,
+    "topic": "target_shooting_independent_events",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M09-01",
+    "context": "general",
+    "question": {
+      "en": "Three archers A, B, and C hit the target with probabilities 1/2, 2/3, and 3/4 respectively. If all three shoot once independently, find the probability that the target is hit by EXACTLY TWO archers.",
+      "ms": "Tiga pemanah A, B, dan C mengenai sasaran dengan kebarangkalian 1/2, 2/3, dan 3/4 masing-masing. Jika ketiga-tiga memanah sekali secara tak bersandar, cari kebarangkalian sasaran itu terkena TEPAT DUA pemanah."
+    },
+    "equation": "P(AB C') + P(A C B') + P(B C A')",
+    "options": [
+      {
+        "value": "11/24",
+        "text": "11/24",
+        "feedback": {
+          "en": "Correct! P(AB~C) = 1/2*2/3*1/4 = 2/24. P(A~BC) = 1/2*1/3*3/4 = 3/24. P(~ABC) = 1/2*2/3*3/4 = 6/24. Total = (2 + 3 + 6)/24 = 11/24.",
+          "ms": "Tepat! P(AB~C) = 2/24, P(A~BC) = 3/24, P(~ABC) = 6/24. Jumlah = 11/24."
+        }
+      },
+      {
+        "value": "1/2",
+        "text": "1/2",
+        "feedback": {
+          "en": "12/24 = 1/2, but sum is 11/24.",
+          "ms": "12/24 = 1/2, tetapi hasil tambah ialah 11/24."
+        }
+      },
+      {
+        "value": "3/8",
+        "text": "3/8",
+        "feedback": {
+          "en": "9/24 = 3/8.",
+          "ms": "9/24 = 3/8."
+        }
+      },
+      {
+        "value": "7/24",
+        "text": "7/24",
+        "feedback": {
+          "en": "Recalculate sum of three terms.",
+          "ms": "Kira semula hasil tambah tiga sebutan."
+        }
+      }
+    ],
+    "answer": "11/24",
+    "hints": {
+      "en": [
+        "Three mutually exclusive cases: (Hit, Hit, Miss), (Hit, Miss, Hit), (Miss, Hit, Hit)."
+      ],
+      "ms": [
+        "Tiga kes saling eksklusif: (Kena, Kena, Tersasar), (Kena, Tersasar, Kena), (Tersasar, Kena, Kena)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P = (1/2 × 2/3 × 1/4) + (1/2 × 1/3 × 3/4) + (1/2 × 2/3 × 3/4) = 2/24 + 3/24 + 6/24 = 11/24."
+      ],
+      "ms": [
+        "P = (1/2 × 2/3 × 1/4) + (1/2 × 1/3 × 3/4) + (1/2 × 2/3 × 3/4) = 2/24 + 3/24 + 6/24 = 11/24."
+      ]
+    }
+  }
+]

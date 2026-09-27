@@ -1,0 +1,121 @@
+[
+  {
+    "id": "M01-01",
+    "world": 1,
+    "chapter": 1,
+    "code": "Q1",
+    "titleKey": "math.chapter1Title",
+    "recipeId": "nasi_lemak",
+    "difficulty": "easy",
+    "estimatedTime": 90,
+    "xpReward": 100,
+    "coinReward": 60,
+    "customer": {
+      "name": "Pak Ali",
+      "patienceSeconds": 120,
+      "dialogueKey": "restaurant.customerDialogue1"
+    }
+  },
+  {
+    "id": "M01-02",
+    "world": 1,
+    "chapter": 1,
+    "code": "Q2",
+    "titleKey": "math.chapter1Title",
+    "recipeId": "roti_canai",
+    "difficulty": "easy",
+    "estimatedTime": 80,
+    "xpReward": 100,
+    "coinReward": 60,
+    "customer": {
+      "name": "Uncle Muthu",
+      "patienceSeconds": 100,
+      "dialogueKey": "restaurant.customerDialogueRoti"
+    }
+  },
+  {
+    "id": "M02-01",
+    "world": 2,
+    "chapter": 2,
+    "code": "N1",
+    "titleKey": "worlds.w2_sub",
+    "recipeId": "nasi_lemak",
+    "difficulty": "easy",
+    "estimatedTime": 90,
+    "xpReward": 120,
+    "coinReward": 70,
+    "customer": {
+      "name": "Ah Ming",
+      "patienceSeconds": 110,
+      "dialogueKey": "restaurant.customerDialogue1"
+    }
+  },
+  {
+    "id": "M04-01",
+    "world": 4,
+    "chapter": 4,
+    "code": "S1",
+    "titleKey": "worlds.w4_sub",
+    "recipeId": "mee_goreng",
+    "difficulty": "medium",
+    "estimatedTime": 90,
+    "xpReward": 140,
+    "coinReward": 80,
+    "customer": {
+      "name": "Siti",
+      "patienceSeconds": 100,
+      "dialogueKey": "restaurant.customerDialogueMee"
+    }
+  },
+  {
+    "id": "M05-01",
+    "world": 5,
+    "chapter": 5,
+    "code": "G1",
+    "titleKey": "worlds.w5_sub",
+    "recipeId": "satay_ayam",
+    "difficulty": "medium",
+    "estimatedTime": 90,
+    "xpReward": 150,
+    "coinReward": 85,
+    "customer": {
+      "name": "Pak Samad",
+      "patienceSeconds": 100,
+      "dialogueKey": "restaurant.customerDialogueSatay"
+    }
+  },
+  {
+    "id": "M07-01",
+    "world": 7,
+    "chapter": 7,
+    "code": "M1",
+    "titleKey": "worlds.w7_sub",
+    "recipeId": "mee_goreng",
+    "difficulty": "medium",
+    "estimatedTime": 90,
+    "xpReward": 160,
+    "coinReward": 90,
+    "customer": {
+      "name": "Encik Razak",
+      "patienceSeconds": 90,
+      "dialogueKey": "restaurant.customerDialogueMee"
+    }
+  },
+  {
+    "id": "M10-01",
+    "world": 10,
+    "chapter": 10,
+    "code": "F1",
+    "titleKey": "worlds.w10_sub",
+    "recipeId": "teh_tarik",
+    "difficulty": "easy",
+    "estimatedTime": 75,
+    "xpReward": 120,
+    "coinReward": 70,
+    "customer": {
+      "name": "Kak Ros",
+      "patienceSeconds": 90,
+      "dialogueKey": "restaurant.customerDialogueTeh"
+    }
+  }
+]

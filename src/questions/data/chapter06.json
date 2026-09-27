@@ -1,0 +1,2063 @@
+[
+  {
+    "id": "F4-C06-E01",
+    "chapter": 6,
+    "topic": "boundary_line_type",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "When sketching the inequality y > 2x + 1 on a Cartesian plane, what type of boundary line is drawn?",
+      "ms": "Apabila melakar ketaksamaan y > 2x + 1 pada satah Cartes, apakah jenis garis sempadan yang dilukis?"
+    },
+    "equation": "y > 2x + 1",
+    "options": [
+      {
+        "value": "Dashed line",
+        "text": "Dashed line (garis putus-putus)",
+        "feedback": {
+          "en": "Correct! Strict inequalities (> or <) use dashed lines because points on the line are excluded.",
+          "ms": "Tepat! Ketaksamaan ketat (> atau <) menggunakan garis putus-putus kerana titik pada garis tidak termasuk."
+        }
+      },
+      {
+        "value": "Solid line",
+        "text": "Solid line (garis padu)",
+        "feedback": {
+          "en": "Solid lines are used for non-strict inequalities (≥ or ≤).",
+          "ms": "Garis padu digunakan untuk ketaksamaan ≥ atau ≤."
+        }
+      },
+      {
+        "value": "Curved line",
+        "text": "Curved line",
+        "feedback": {
+          "en": "y = 2x + 1 is a linear equation, so the boundary is a straight line.",
+          "ms": "y = 2x + 1 ialah persamaan linear, garis sempadan adalah lurus."
+        }
+      },
+      {
+        "value": "Double line",
+        "text": "Double line",
+        "feedback": {
+          "en": "Inequality boundaries are single solid or dashed lines.",
+          "ms": "Garis sempadan adalah garis padu atau putus-putus tunggal."
+        }
+      }
+    ],
+    "answer": "Dashed line",
+    "hints": {
+      "en": [
+        "Strict inequalities (> or <) use dashed lines; non-strict (≥ or ≤) use solid lines."
+      ],
+      "ms": [
+        "Ketaksamaan ketat (> atau <) guna garis putus-putus; tidak ketat (≥ atau ≤) guna garis padu."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "y > 2x + 1 is strict (>), so a dashed boundary line is used."
+      ],
+      "ms": [
+        "y > 2x + 1 adalah ketat (>), maka garis putus-putus digunakan."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "inequality_boundary"
+    ]
+  },
+  {
+    "id": "F4-C06-E02",
+    "chapter": 6,
+    "topic": "test_coordinate_satisfaction",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Does the point (2, 3) satisfy the linear inequality 2x + y ≤ 8?",
+      "ms": "Adakah titik (2, 3) memuaskan ketaksamaan linear 2x + y ≤ 8?"
+    },
+    "equation": "2(2) + 3 ≤ 8",
+    "options": [
+      {
+        "value": "Yes",
+        "text": "Yes, because 7 ≤ 8 is true.",
+        "feedback": {
+          "en": "Correct! 2(2) + 3 = 4 + 3 = 7, and 7 ≤ 8 is true.",
+          "ms": "Tepat! 2(2) + 3 = 4 + 3 = 7, dan 7 ≤ 8 adalah benar."
+        }
+      },
+      {
+        "value": "No",
+        "text": "No, because 7 > 8.",
+        "feedback": {
+          "en": "7 is less than 8, not greater.",
+          "ms": "7 adalah kurang daripada 8, bukan lebih besar."
+        }
+      },
+      {
+        "value": "On the line",
+        "text": "It lies exactly on the line 2x + y = 8.",
+        "feedback": {
+          "en": "2(2) + 3 = 7 ≠ 8, so it is strictly below the line.",
+          "ms": "2(2) + 3 = 7 ≠ 8, jadi ia berada di bawah garis."
+        }
+      },
+      {
+        "value": "Invalid",
+        "text": "Cannot be determined",
+        "feedback": {
+          "en": "Direct substitution yields a definite true/false answer.",
+          "ms": "Penggantian terus memberi jawapan benar/palsu yang pasti."
+        }
+      }
+    ],
+    "answer": "Yes",
+    "hints": {
+      "en": [
+        "Substitute x = 2 and y = 3 into 2x + y and check if it is ≤ 8."
+      ],
+      "ms": [
+        "Gantikan x = 2 dan y = 3 ke dalam 2x + y dan semak sama ada ≤ 8."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "2(2) + 3 = 7 ≤ 8 is True."
+      ],
+      "ms": [
+        "2(2) + 3 = 7 ≤ 8 adalah Benar."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "point_testing"
+    ]
+  },
+  {
+    "id": "F4-C06-E03",
+    "chapter": 6,
+    "topic": "shaded_region_orientation",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "For the inequality y < -x + 4, which region of the Cartesian plane is shaded?",
+      "ms": "Bagi ketaksamaan y < -x + 4, rantau manakah pada satah Cartes yang dilorek?"
+    },
+    "equation": "y < -x + 4",
+    "options": [
+      {
+        "value": "Below the line",
+        "text": "The region below the line y = -x + 4",
+        "feedback": {
+          "en": "Correct! \"y <\" represents points below the line.",
+          "ms": "Tepat! \"y <\" mewakili titik-titik di bawah garis."
+        }
+      },
+      {
+        "value": "Above the line",
+        "text": "The region above the line y = -x + 4",
+        "feedback": {
+          "en": "Above the line represents y > -x + 4.",
+          "ms": "Di atas garis mewakili y > -x + 4."
+        }
+      },
+      {
+        "value": "Only on the line",
+        "text": "Only the points on the line",
+        "feedback": {
+          "en": "Strict inequality excludes points on the line.",
+          "ms": "Ketaksamaan ketat tidak merangkumi titik pada garis."
+        }
+      },
+      {
+        "value": "First quadrant only",
+        "text": "Only in the first quadrant",
+        "feedback": {
+          "en": "The region extends across all quadrants unless restricted by x ≥ 0, y ≥ 0.",
+          "ms": "Rantau merentasi semua sukuan kecuali dihadkan oleh x ≥ 0, y ≥ 0."
+        }
+      }
+    ],
+    "answer": "Below the line",
+    "hints": {
+      "en": [
+        "For y < mx + c, shade below the line. For y > mx + c, shade above."
+      ],
+      "ms": [
+        "Bagi y < mx + c, lorek di bawah garis. Bagi y > mx + c, lorek di atas."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "y < -x + 4 means the shaded region is strictly below the line."
+      ],
+      "ms": [
+        "y < -x + 4 bermaksud rantau berlorek adalah di bawah garis."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "shaded_region"
+    ]
+  },
+  {
+    "id": "F4-C06-E04",
+    "chapter": 6,
+    "topic": "vertical_line_inequality",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which linear inequality represents the shaded region to the left of and including the vertical line x = 5?",
+      "ms": "Ketaksamaan linear manakah yang mewakili rantau berlorek di sebelah kiri dan termasuk garis mencancang x = 5?"
+    },
+    "equation": "x ≤ 5",
+    "options": [
+      {
+        "value": "x ≤ 5",
+        "text": "x ≤ 5",
+        "feedback": {
+          "en": "Correct! To the left of x = 5 means x ≤ 5.",
+          "ms": "Tepat! Di sebelah kiri x = 5 bermaksud x ≤ 5."
+        }
+      },
+      {
+        "value": "x ≥ 5",
+        "text": "x ≥ 5",
+        "feedback": {
+          "en": "x ≥ 5 represents the region to the right.",
+          "ms": "x ≥ 5 mewakili rantau di sebelah kanan."
+        }
+      },
+      {
+        "value": "y ≤ 5",
+        "text": "y ≤ 5",
+        "feedback": {
+          "en": "y ≤ 5 is bounded by a horizontal line, not vertical.",
+          "ms": "y ≤ 5 disempadani garis mengufuk, bukan mencancang."
+        }
+      },
+      {
+        "value": "x < 5",
+        "text": "x < 5",
+        "feedback": {
+          "en": "\"Including\" means non-strict (≤), not strict (<).",
+          "ms": "\"Termasuk\" bermaksud tanda tidak ketat (≤)."
+        }
+      }
+    ],
+    "answer": "x ≤ 5",
+    "hints": {
+      "en": [
+        "Vertical line at 5: left means values smaller than or equal to 5 (x ≤ 5)."
+      ],
+      "ms": [
+        "Garis mencancang pada 5: kiri bermaksud nilai lebih kecil atau sama dengan 5 (x ≤ 5)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x ≤ 5 is bounded by vertical solid line at x = 5, shaded to the left."
+      ],
+      "ms": [
+        "x ≤ 5 disempadani garis padu mencancang pada x = 5, dilorek ke kiri."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "vertical_inequality"
+    ]
+  },
+  {
+    "id": "F4-C06-E05",
+    "chapter": 6,
+    "topic": "verbal_constraint_translation",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Translate the verbal statement into a mathematical inequality: \"The number of curry puffs sold (x) is at least 30\".",
+      "ms": "Terjemahkan pernyataan lisan kepada ketaksamaan matematik: \"Bilangan karipap yang dijual (x) adalah sekurang-kurangnya 30\"."
+    },
+    "equation": "x ≥ 30",
+    "options": [
+      {
+        "value": "x ≥ 30",
+        "text": "x ≥ 30",
+        "feedback": {
+          "en": "Correct! \"At least\" translates to greater than or equal to (≥).",
+          "ms": "Tepat! \"Sekurang-kurangnya\" diterjemahkan kepada lebih besar atau sama dengan (≥)."
+        }
+      },
+      {
+        "value": "x ≤ 30",
+        "text": "x ≤ 30",
+        "feedback": {
+          "en": "\"At most\" is ≤, but \"at least\" is ≥.",
+          "ms": "\"Paling banyak\" ialah ≤, tetapi \"sekurang-kurangnya\" ialah ≥."
+        }
+      },
+      {
+        "value": "x > 30",
+        "text": "x > 30",
+        "feedback": {
+          "en": "\"At least 30\" includes 30, so it is ≥, not >.",
+          "ms": "\"Sekurang-kurangnya 30\" merangkumi 30, maka ia ≥."
+        }
+      },
+      {
+        "value": "x = 30",
+        "text": "x = 30",
+        "feedback": {
+          "en": "This is an equation, not an inequality.",
+          "ms": "Ini ialah persamaan, bukan ketaksamaan."
+        }
+      }
+    ],
+    "answer": "x ≥ 30",
+    "hints": {
+      "en": [
+        "\"At least\" means the minimum value is 30 (x ≥ 30)."
+      ],
+      "ms": [
+        "\"Sekurang-kurangnya\" bermaksud nilai minimum ialah 30 (x ≥ 30)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "\"At least 30\" → x ≥ 30."
+      ],
+      "ms": [
+        "\"Sekurang-kurangnya 30\" → x ≥ 30."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "verbal_to_inequality"
+    ]
+  },
+  {
+    "id": "F4-C06-M01",
+    "chapter": 6,
+    "topic": "procurement_budget_formulation",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A stall purchases x kg of squid (RM 5/kg) and y kg of prawns (RM 8/kg). The total procurement budget cannot exceed RM 120. Which linear inequality represents this situation?",
+      "ms": "Sebuah gerai membeli x kg sotong (RM 5/kg) dan y kg udang (RM 8/kg). Jumlah bajet perbelanjaan tidak boleh melebihi RM 120. Ketaksamaan linear manakah yang mewakili situasi ini?"
+    },
+    "equation": "5x + 8y ≤ 120",
+    "options": [
+      {
+        "value": "5x + 8y ≤ 120",
+        "text": "5x + 8y ≤ 120",
+        "feedback": {
+          "en": "Correct! \"Cannot exceed\" means ≤.",
+          "ms": "Tepat! \"Tidak boleh melebihi\" bermaksud ≤."
+        }
+      },
+      {
+        "value": "5x + 8y ≥ 120",
+        "text": "5x + 8y ≥ 120",
+        "feedback": {
+          "en": "≥ means at least, which contradicts \"cannot exceed\".",
+          "ms": "≥ bermaksud sekurang-kurangnya, bercanggah dengan tidak melebihi."
+        }
+      },
+      {
+        "value": "8x + 5y ≤ 120",
+        "text": "8x + 5y ≤ 120",
+        "feedback": {
+          "en": "Prices for squid (5) and prawns (8) are swapped.",
+          "ms": "Harga sotong (5) dan udang (8) tertukar."
+        }
+      },
+      {
+        "value": "5x + 8y < 120",
+        "text": "5x + 8y < 120",
+        "feedback": {
+          "en": "\"Cannot exceed\" includes spending exactly RM 120 (≤).",
+          "ms": "\"Tidak melebihi\" merangkumi tepat RM 120 (≤)."
+        }
+      }
+    ],
+    "answer": "5x + 8y ≤ 120",
+    "hints": {
+      "en": [
+        "Cost of squid = 5x, cost of prawns = 8y. Total cost ≤ 120."
+      ],
+      "ms": [
+        "Kos sotong = 5x, kos udang = 8y. Jumlah kos ≤ 120."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Total expenditure = 5x + 8y ≤ 120."
+      ],
+      "ms": [
+        "Jumlah perbelanjaan = 5x + 8y ≤ 120."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "budget_inequality"
+    ]
+  },
+  {
+    "id": "F4-C06-M02",
+    "chapter": 6,
+    "topic": "ratio_inequality_constraint",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "The number of curry puffs baked (y) is at least twice the number of donuts baked (x). Which inequality represents this condition?",
+      "ms": "Bilangan karipap yang dibakar (y) adalah sekurang-kurangnya dua kali ganda bilangan donat yang dibakar (x). Ketaksamaan manakah yang mewakili syarat ini?"
+    },
+    "equation": "y ≥ 2x",
+    "options": [
+      {
+        "value": "y ≥ 2x",
+        "text": "y ≥ 2x",
+        "feedback": {
+          "en": "Correct! y is at least (≥) 2 times x.",
+          "ms": "Tepat! y adalah sekurang-kurangnya (≥) 2 kali x."
+        }
+      },
+      {
+        "value": "y ≤ 2x",
+        "text": "y ≤ 2x",
+        "feedback": {
+          "en": "≤ means at most, not at least.",
+          "ms": "≤ bermaksud paling banyak, bukan sekurang-kurangnya."
+        }
+      },
+      {
+        "value": "x ≥ 2y",
+        "text": "x ≥ 2y",
+        "feedback": {
+          "en": "This states donuts are twice curry puffs, which is reversed.",
+          "ms": "Ini menyatakan donat dua kali karipap (terbalik)."
+        }
+      },
+      {
+        "value": "y > 2x",
+        "text": "y > 2x",
+        "feedback": {
+          "en": "\"At least\" includes equality (≥).",
+          "ms": "\"Sekurang-kurangnya\" merangkumi tanda sama dengan (≥)."
+        }
+      }
+    ],
+    "answer": "y ≥ 2x",
+    "hints": {
+      "en": [
+        "\"y is at least 2x\" means y ≥ 2x."
+      ],
+      "ms": [
+        "\"y sekurang-kurangnya 2x\" bermaksud y ≥ 2x."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Condition: y ≥ 2x."
+      ],
+      "ms": [
+        "Syarat: y ≥ 2x."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "ratio_inequality"
+    ]
+  },
+  {
+    "id": "F4-C06-M03",
+    "chapter": 6,
+    "topic": "system_of_inequalities_region",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which region satisfies the system of two inequalities: y ≤ x + 3 and x + y ≥ 5?",
+      "ms": "Rantau manakah yang memuaskan sistem dua ketaksamaan: y ≤ x + 3 dan x + y ≥ 5?"
+    },
+    "equation": "y ≤ x + 3 and y ≥ 5 - x",
+    "options": [
+      {
+        "value": "A",
+        "text": "Below y = x + 3 and above y = -x + 5",
+        "feedback": {
+          "en": "Correct! y ≤ x + 3 is below the line, and x + y ≥ 5 (y ≥ 5 - x) is above the line.",
+          "ms": "Tepat! y ≤ x + 3 adalah di bawah garis, dan y ≥ 5 - x adalah di atas garis."
+        }
+      },
+      {
+        "value": "B",
+        "text": "Above y = x + 3 and above y = -x + 5",
+        "feedback": {
+          "en": "y ≤ x + 3 requires shading below.",
+          "ms": "y ≤ x + 3 memerlukan lorekan di bawah."
+        }
+      },
+      {
+        "value": "C",
+        "text": "Below both lines",
+        "feedback": {
+          "en": "x + y ≥ 5 requires shading above y = 5 - x.",
+          "ms": "x + y ≥ 5 memerlukan lorekan di atas y = 5 - x."
+        }
+      },
+      {
+        "value": "D",
+        "text": "Above y = x + 3 and below y = -x + 5",
+        "feedback": {
+          "en": "Both region boundaries are inverted.",
+          "ms": "Kedua-dua sempadan rantau terbalik."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Rearrange x + y ≥ 5 to y ≥ -x + 5 (above line). y ≤ x + 3 is below line."
+      ],
+      "ms": [
+        "Susun semula x + y ≥ 5 kepada y ≥ -x + 5 (atas garis). y ≤ x + 3 di bawah garis."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Intersection is below y = x + 3 and above y = 5 - x."
+      ],
+      "ms": [
+        "Persilangan adalah di bawah y = x + 3 dan di atas y = 5 - x."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "system_inequalities"
+    ]
+  },
+  {
+    "id": "F4-C06-M04",
+    "chapter": 6,
+    "topic": "coordinate_in_intersection",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Which of the following points lies in the region satisfying BOTH y < 2x and x + y ≤ 10?",
+      "ms": "Antara titik berikut, yang manakah berada dalam rantau yang memuaskan KEDUA-DUA y < 2x dan x + y ≤ 10?"
+    },
+    "equation": "y < 2x and x + y ≤ 10",
+    "options": [
+      {
+        "value": "(4, 3)",
+        "text": "(4, 3)",
+        "feedback": {
+          "en": "Correct! 3 < 2(4)=8 is true, and 4 + 3 = 7 ≤ 10 is true.",
+          "ms": "Tepat! 3 < 8 adalah benar, dan 4 + 3 = 7 ≤ 10 adalah benar."
+        }
+      },
+      {
+        "value": "(2, 6)",
+        "text": "(2, 6)",
+        "feedback": {
+          "en": "6 < 2(2)=4 is false (6 is not less than 4).",
+          "ms": "6 < 4 adalah palsu (6 tidak kurang daripada 4)."
+        }
+      },
+      {
+        "value": "(6, 5)",
+        "text": "(6, 5)",
+        "feedback": {
+          "en": "6 + 5 = 11 > 10 (violates second inequality).",
+          "ms": "6 + 5 = 11 > 10 (melanggar ketaksamaan kedua)."
+        }
+      },
+      {
+        "value": "(1, 8)",
+        "text": "(1, 8)",
+        "feedback": {
+          "en": "8 < 2(1)=2 is false.",
+          "ms": "8 < 2 adalah palsu."
+        }
+      }
+    ],
+    "answer": "(4, 3)",
+    "hints": {
+      "en": [
+        "Test each point: check if y < 2x AND x + y ≤ 10."
+      ],
+      "ms": [
+        "Uji setiap titik: semak sama ada y < 2x DAN x + y ≤ 10."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "For (4, 3): 3 < 8 (True) and 4 + 3 = 7 ≤ 10 (True)."
+      ],
+      "ms": [
+        "Bagi (4, 3): 3 < 8 (Benar) dan 4 + 3 = 7 ≤ 10 (Benar)."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "coordinate_verification"
+    ]
+  },
+  {
+    "id": "F4-C06-M05",
+    "chapter": 6,
+    "topic": "weight_capacity_constraint",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A delivery motorcycle carries x large boxes (25 kg each) and y small boxes (10 kg each). The maximum load is 200 kg. Which inequality represents this capacity?",
+      "ms": "Sebuah motosikal penghantaran membawa x kotak besar (25 kg setiap satu) dan y kotak kecil (10 kg setiap satu). Muatan maksimum ialah 200 kg. Ketaksamaan manakah yang mewakili kapasiti ini?"
+    },
+    "equation": "25x + 10y ≤ 200",
+    "options": [
+      {
+        "value": "25x + 10y ≤ 200",
+        "text": "25x + 10y ≤ 200 (or 5x + 2y ≤ 40)",
+        "feedback": {
+          "en": "Correct! Total weight cannot exceed 200 kg (≤).",
+          "ms": "Tepat! Jumlah berat tidak boleh melebihi 200 kg (≤)."
+        }
+      },
+      {
+        "value": "25x + 10y ≥ 200",
+        "text": "25x + 10y ≥ 200",
+        "feedback": {
+          "en": "Exceeding 200 kg overloads the motorcycle.",
+          "ms": "Melebihi 200 kg membebankan motosikal."
+        }
+      },
+      {
+        "value": "10x + 25y ≤ 200",
+        "text": "10x + 25y ≤ 200",
+        "feedback": {
+          "en": "Weights of large (25) and small (10) boxes are swapped.",
+          "ms": "Berat kotak besar (25) dan kecil (10) tertukar."
+        }
+      },
+      {
+        "value": "x + y ≤ 200",
+        "text": "x + y ≤ 200",
+        "feedback": {
+          "en": "This ignores the weight per box.",
+          "ms": "Ini mengabaikan berat setiap kotak."
+        }
+      }
+    ],
+    "answer": "25x + 10y ≤ 200",
+    "hints": {
+      "en": [
+        "Total weight = 25x + 10y. Maximum load = 200 kg."
+      ],
+      "ms": [
+        "Jumlah berat = 25x + 10y. Muatan maksimum = 200 kg."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "25x + 10y ≤ 200."
+      ],
+      "ms": [
+        "25x + 10y ≤ 200."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "capacity_inequality"
+    ]
+  },
+  {
+    "id": "F4-C06-H01",
+    "chapter": 6,
+    "topic": "feasible_region_vertices",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A feasible region is bounded by: x ≥ 0, y ≥ 0, x + y ≤ 6, and y ≤ 2x. Which of the following is an intersection vertex of this region?",
+      "ms": "Rantau sepunya disempadani oleh: x ≥ 0, y ≥ 0, x + y ≤ 6, dan y ≤ 2x. Antara berikut, yang manakah merupakan titik bucu persilangan bagi rantau ini?"
+    },
+    "equation": "Intersection of y = 2x and x + y = 6",
+    "options": [
+      {
+        "value": "(2, 4)",
+        "text": "(2, 4)",
+        "feedback": {
+          "en": "Correct! Substitute y = 2x into x + y = 6: x + 2x = 6 → 3x = 6 → x = 2, y = 4.",
+          "ms": "Tepat! Gantikan y = 2x ke dalam x + y = 6: x + 2x = 6 → 3x = 6 → x = 2, y = 4."
+        }
+      },
+      {
+        "value": "(4, 2)",
+        "text": "(4, 2)",
+        "feedback": {
+          "en": "At (4, 2), y = 2 ≠ 2(4).",
+          "ms": "Pada (4, 2), y = 2 ≠ 2(4)."
+        }
+      },
+      {
+        "value": "(3, 3)",
+        "text": "(3, 3)",
+        "feedback": {
+          "en": "At (3, 3), y = 3 ≠ 2(3).",
+          "ms": "Pada (3, 3), y = 3 ≠ 2(3)."
+        }
+      },
+      {
+        "value": "(1, 5)",
+        "text": "(1, 5)",
+        "feedback": {
+          "en": "5 ≠ 2(1).",
+          "ms": "5 ≠ 2(1)."
+        }
+      }
+    ],
+    "answer": "(2, 4)",
+    "hints": {
+      "en": [
+        "Solve the simultaneous equations y = 2x and x + y = 6."
+      ],
+      "ms": [
+        "Selesaikan persamaan serentak y = 2x dan x + y = 6."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x + 2x = 6 → 3x = 6 → x = 2, y = 4. Vertex is (2, 4)."
+      ],
+      "ms": [
+        "x + 2x = 6 → 3x = 6 → x = 2, y = 4. Titik bucu ialah (2, 4)."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "feasible_region_vertex"
+    ]
+  },
+  {
+    "id": "F4-C06-H02",
+    "chapter": 6,
+    "topic": "profit_maximization_integer",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A bakery maximizes profit P = 3x + 5y, where x is cakes and y is tarts. The vertices of the feasible region are (0, 0), (4, 0), (2, 4), and (0, 5). What is the maximum profit?",
+      "ms": "Sebuah bakeri memaksimumkan keuntungan P = 3x + 5y, dengan x ialah kek dan y ialah tat. Titik-titik bucu rantau sepunya ialah (0, 0), (4, 0), (2, 4), dan (0, 5). Apakah keuntungan maksimum?"
+    },
+    "equation": "P = 3x + 5y at vertices",
+    "options": [
+      {
+        "value": 26,
+        "text": "RM 26 at (2, 4)",
+        "feedback": {
+          "en": "Correct! P(0,0)=0, P(4,0)=12, P(2,4)=3(2)+5(4)=26, P(0,5)=25. Maximum is RM 26.",
+          "ms": "Tepat! P(0,0)=0, P(4,0)=12, P(2,4)=6+20=26, P(0,5)=25. Maksimum ialah RM 26."
+        }
+      },
+      {
+        "value": 25,
+        "text": "RM 25 at (0, 5)",
+        "feedback": {
+          "en": "26 at (2, 4) is greater than 25.",
+          "ms": "26 pada (2, 4) adalah lebih tinggi daripada 25."
+        }
+      },
+      {
+        "value": 28,
+        "text": "RM 28",
+        "feedback": {
+          "en": "Maximum value is 26.",
+          "ms": "Nilai maksimum ialah 26."
+        }
+      },
+      {
+        "value": 24,
+        "text": "RM 24",
+        "feedback": {
+          "en": "P(2, 4) = 6 + 20 = 26.",
+          "ms": "P(2, 4) = 6 + 20 = 26."
+        }
+      }
+    ],
+    "answer": 26,
+    "hints": {
+      "en": [
+        "Evaluate P = 3x + 5y at each vertex: (4,0)→12, (2,4)→26, (0,5)→25."
+      ],
+      "ms": [
+        "Nilaikan P = 3x + 5y pada setiap bucu: (4,0)→12, (2,4)→26, (0,5)→25."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(2, 4) = 3(2) + 5(4) = 6 + 20 = 26. Maximum profit is RM 26."
+      ],
+      "ms": [
+        "P(2, 4) = 3(2) + 5(4) = 6 + 20 = 26. Keuntungan maksimum ialah RM 26."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "linear_programming_optimization"
+    ]
+  },
+  {
+    "id": "F4-C06-H03",
+    "chapter": 6,
+    "topic": "cost_minimization",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Minimize cost C = 2x + 3y subject to x + y ≥ 10, x ≥ 2, y ≥ 3. What is the minimum cost?",
+      "ms": "Minimumkan kos C = 2x + 3y tertakluk kepada x + y ≥ 10, x ≥ 2, y ≥ 3. Apakah kos minimum?"
+    },
+    "equation": "C = 2x + 3y",
+    "options": [
+      {
+        "value": 23,
+        "text": "RM 23 at (7, 3)",
+        "feedback": {
+          "en": "Correct! When y = 3, x = 10 - 3 = 7. C(7, 3) = 2(7) + 3(3) = 14 + 9 = 23.",
+          "ms": "Tepat! Apabila y = 3, x = 7. C(7, 3) = 2(7) + 3(3) = 14 + 9 = 23."
+        }
+      },
+      {
+        "value": 28,
+        "text": "RM 28 at (2, 8)",
+        "feedback": {
+          "en": "C(2, 8) = 2(2) + 3(8) = 28, which is greater than 23.",
+          "ms": "C(2, 8) = 4 + 24 = 28, lebih besar daripada 23."
+        }
+      },
+      {
+        "value": 25,
+        "text": "RM 25",
+        "feedback": {
+          "en": "Minimum cost is 23.",
+          "ms": "Kos minimum ialah 23."
+        }
+      },
+      {
+        "value": 20,
+        "text": "RM 20",
+        "feedback": {
+          "en": "Check constraint x + y ≥ 10.",
+          "ms": "Semak kekangan x + y ≥ 10."
+        }
+      }
+    ],
+    "answer": 23,
+    "hints": {
+      "en": [
+        "Since the coefficient of x (2) is less than y (3), maximize x and minimize y (y = 3)."
+      ],
+      "ms": [
+        "Oleh sebab pekali x (2) lebih kecil daripada y (3), maksimumkan x dan minimumkan y (y = 3)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Vertices: (2, 8) → C = 28; (7, 3) → C = 23. Minimum is RM 23."
+      ],
+      "ms": [
+        "Titik bucu: (2, 8) → C = 28; (7, 3) → C = 23. Minimum ialah RM 23."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "cost_minimization"
+    ]
+  },
+  {
+    "id": "F4-C06-H04",
+    "chapter": 6,
+    "topic": "maximum_x_boundary",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given the constraints x + y ≤ 50, y ≥ 20, and x ≥ 0. What is the MAXIMUM possible value of x?",
+      "ms": "Diberi kekangan x + y ≤ 50, y ≥ 20, dan x ≥ 0. Apakah nilai MAKSIMUM yang mungkin bagi x?"
+    },
+    "equation": "x ≤ 50 - y, with y ≥ 20",
+    "options": [
+      {
+        "value": 30,
+        "text": "x = 30",
+        "feedback": {
+          "en": "Correct! Since y ≥ 20, x ≤ 50 - 20 = 30.",
+          "ms": "Tepat! Oleh sebab y ≥ 20, x ≤ 50 - 20 = 30."
+        }
+      },
+      {
+        "value": 50,
+        "text": "x = 50",
+        "feedback": {
+          "en": "If x = 50, y = 0, which violates y ≥ 20.",
+          "ms": "Jika x = 50, y = 0, melanggar syarat y ≥ 20."
+        }
+      },
+      {
+        "value": 20,
+        "text": "x = 20",
+        "feedback": {
+          "en": "x can be as large as 30 when y = 20.",
+          "ms": "x boleh mencapai 30 apabila y = 20."
+        }
+      },
+      {
+        "value": 35,
+        "text": "x = 35",
+        "feedback": {
+          "en": "If x = 35, y ≤ 15, violating y ≥ 20.",
+          "ms": "Jika x = 35, y ≤ 15, melanggar y ≥ 20."
+        }
+      }
+    ],
+    "answer": 30,
+    "hints": {
+      "en": [
+        "To maximize x, minimize y: set y = 20 in x + y ≤ 50."
+      ],
+      "ms": [
+        "Untuk memaksimumkan x, minimumkan y: tetapkan y = 20 dalam x + y ≤ 50."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x ≤ 50 - 20 = 30."
+      ],
+      "ms": [
+        "x ≤ 50 - 20 = 30."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "boundary_maximization"
+    ]
+  },
+  {
+    "id": "F4-C06-H05",
+    "chapter": 6,
+    "topic": "restaurant_seating_optimization",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A food hall has small tables x (seats 2) and large tables y (seats 4). Total tables cannot exceed 20, and total seating must be at least 60. Which system of inequalities represents this?",
+      "ms": "Medan selera mempunyai meja kecil x (2 kerusi) dan meja besar y (4 kerusi). Jumlah meja tidak boleh melebihi 20, dan jumlah kerusi sekurang-kurangnya 60. Sistem ketaksamaan manakah yang mewakili situasi ini?"
+    },
+    "equation": "x + y ≤ 20 and 2x + 4y ≥ 60",
+    "options": [
+      {
+        "value": "A",
+        "text": "x + y ≤ 20 and 2x + 4y ≥ 60",
+        "feedback": {
+          "en": "Correct! Tables ≤ 20, and seats (2x + 4y) ≥ 60.",
+          "ms": "Tepat! Meja ≤ 20, dan kerusi (2x + 4y) ≥ 60."
+        }
+      },
+      {
+        "value": "B",
+        "text": "x + y ≥ 20 and 2x + 4y ≤ 60",
+        "feedback": {
+          "en": "Inequality signs are inverted.",
+          "ms": "Tanda ketaksamaan terbalik."
+        }
+      },
+      {
+        "value": "C",
+        "text": "2x + 4y ≤ 20 and x + y ≥ 60",
+        "feedback": {
+          "en": "Seats and tables expressions are swapped.",
+          "ms": "Ungkapan kerusi dan meja tertukar."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x + y ≤ 20 and x + 2y ≥ 60",
+        "feedback": {
+          "en": "4 seats per large table was divided incorrectly.",
+          "ms": "Pekali bagi meja besar tidak tepat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Table constraint: x + y ≤ 20. Seating constraint: 2x + 4y ≥ 60."
+      ],
+      "ms": [
+        "Kekangan meja: x + y ≤ 20. Kekangan kerusi: 2x + 4y ≥ 60."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "x + y ≤ 20 and 2x + 4y ≥ 60."
+      ],
+      "ms": [
+        "x + y ≤ 20 dan 2x + 4y ≥ 60."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "system_modeling"
+    ]
+  },
+  {
+    "id": "F4-C06-E06",
+    "chapter": 6,
+    "topic": "solid_vs_dashed_line",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "Which inequality uses a dashed (broken) line when graphed on the Cartesian plane?",
+      "ms": "Ketaksamaan manakah yang menggunakan garis putus-putus apabila dilukis pada satah Cartes?"
+    },
+    "equation": "> or < vs >= or <=",
+    "options": [
+      {
+        "value": "A",
+        "text": "y > 2x + 1",
+        "feedback": {
+          "en": "Correct! Strict inequalities (> or <) use dashed lines.",
+          "ms": "Tepat! Ketaksamaan tegas (> atau <) menggunakan garis putus-putus."
+        }
+      },
+      {
+        "value": "B",
+        "text": "y ≤ 2x + 1",
+        "feedback": {
+          "en": "≤ uses a solid line.",
+          "ms": "≤ menggunakan garis padu."
+        }
+      },
+      {
+        "value": "C",
+        "text": "y ≥ 2x + 1",
+        "feedback": {
+          "en": "≥ uses a solid line.",
+          "ms": "≥ menggunakan garis padu."
+        }
+      },
+      {
+        "value": "D",
+        "text": "2x + y = 1",
+        "feedback": {
+          "en": "An equation (=) is a solid line.",
+          "ms": "Persamaan (=) ialah garis padu."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Strict inequalities without the '=' bar (> or <) are represented by dashed lines."
+      ],
+      "ms": [
+        "Ketaksamaan tegas tanpa tanda '=' (> atau <) diwakili oleh garis putus-putus."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Inequalities with '>' or '<' do not include the boundary line itself, so the line is dashed."
+      ],
+      "ms": [
+        "Ketaksamaan dengan '>' atau '<' tidak merangkumi garis sempadan itu sendiri, maka garisnya putus-putus."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-E07",
+    "chapter": 6,
+    "topic": "test_point_in_inequality",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "Determine whether the point (2, 5) satisfies the linear inequality y < 3x - 1.",
+      "ms": "Tentukan sama ada titik (2, 5) memuaskan ketaksamaan linear y < 3x - 1."
+    },
+    "equation": "5 < 3(2) - 1",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "No, because 5 is not less than 5",
+          "ms": "Tidak, kerana 5 tidak kurang daripada 5"
+        },
+        "feedback": {
+          "en": "Correct! 3(2) - 1 = 5. Since 5 < 5 is false, the point does not satisfy it.",
+          "ms": "Tepat! 3(2) - 1 = 5. Oleh kerana 5 < 5 adalah palsu, titik tersebut tidak memuaskannya."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Yes, because 5 = 5",
+          "ms": "Ya, kerana 5 = 5"
+        },
+        "feedback": {
+          "en": "The inequality is strict (<), not ≤.",
+          "ms": "Ketaksamaan ialah kurang daripada (<), bukan ≤."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Yes, because 5 < 6",
+          "ms": "Ya, kerana 5 < 6"
+        },
+        "feedback": {
+          "en": "3(2) - 1 = 5, not 6.",
+          "ms": "3(2) - 1 = 5, bukan 6."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Cannot be determined",
+          "ms": "Tidak dapat ditentukan"
+        },
+        "feedback": {
+          "en": "It can be evaluated directly.",
+          "ms": "Boleh dinilai secara langsung."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Substitute x = 2 and y = 5 into y < 3x - 1."
+      ],
+      "ms": [
+        "Gantikan x = 2 dan y = 5 ke dalam y < 3x - 1."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Left side = 5. Right side = 3(2) - 1 = 5. 5 < 5 is False. Thus (2, 5) does not satisfy the inequality."
+      ],
+      "ms": [
+        "Sebelah kiri = 5. Sebelah kanan = 3(2) - 1 = 5. 5 < 5 adalah Palsu. Maka (2, 5) tidak memuaskan ketaksamaan."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-E08",
+    "chapter": 6,
+    "topic": "shading_region_above_below",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "For the inequality y ≥ -x + 4, which region should be shaded?",
+      "ms": "Bagi ketaksamaan y ≥ -x + 4, rantau manakah yang perlu dilorek?"
+    },
+    "equation": "y ≥ mx + c",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "The region above or on the line",
+          "ms": "Rantau di atas atau pada garis"
+        },
+        "feedback": {
+          "en": "Correct! 'y ≥' represents the upper region including the line.",
+          "ms": "Tepat! 'y ≥' mewakili rantau sebelah atas termasuk garis tersebut."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "The region strictly below the line",
+          "ms": "Rantau di bawah garis sahaja"
+        },
+        "feedback": {
+          "en": "Below the line corresponds to y < -x + 4.",
+          "ms": "Di bawah garis ialah untuk y < -x + 4."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Only the line itself",
+          "ms": "Hanya garis itu sendiri"
+        },
+        "feedback": {
+          "en": "Only the line is y = -x + 4.",
+          "ms": "Garis sahaja ialah y = -x + 4."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "The origin only",
+          "ms": "Titik asalan sahaja"
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "When y ≥, shade above the boundary line."
+      ],
+      "ms": [
+        "Apabila y ≥, lorek bahagian atas garis sempadan."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The inequality y ≥ -x + 4 includes values where y is greater than or equal to the line, which is the region above and on the line."
+      ],
+      "ms": [
+        "Ketaksamaan y ≥ -x + 4 merangkumi nilai y lebih besar atau sama, iaitu rantau di atas dan pada garis."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-E09",
+    "chapter": 6,
+    "topic": "vertical_line_inequality",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "Which inequality describes the region strictly to the left of the vertical line x = 3?",
+      "ms": "Ketaksamaan manakah yang memerihalkan rantau di sebelah kiri garis menegak x = 3 sahaja?"
+    },
+    "equation": "x < 3",
+    "options": [
+      {
+        "value": "A",
+        "text": "x < 3",
+        "feedback": {
+          "en": "Correct! Left of x = 3 means x-values smaller than 3.",
+          "ms": "Tepat! Di sebelah kiri x = 3 bermakna nilai x kurang daripada 3."
+        }
+      },
+      {
+        "value": "B",
+        "text": "x > 3",
+        "feedback": {
+          "en": "x > 3 is to the right.",
+          "ms": "x > 3 adalah di sebelah kanan."
+        }
+      },
+      {
+        "value": "C",
+        "text": "y < 3",
+        "feedback": {
+          "en": "y < 3 is below the horizontal line y = 3.",
+          "ms": "y < 3 adalah di bawah garis mengufuk y = 3."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x ≤ 3",
+        "feedback": {
+          "en": "'Strictly to the left' excludes the boundary line, so x < 3.",
+          "ms": "'Di sebelah kiri sahaja' tidak termasuk garis sempadan, jadi x < 3."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Vertical lines have equation x = c. Left means smaller x."
+      ],
+      "ms": [
+        "Garis menegak mempunyai persamaan x = c. Kiri bermaksud nilai x lebih kecil."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Values to the left of x = 3 satisfy x < 3."
+      ],
+      "ms": [
+        "Nilai-nilai di sebelah kiri x = 3 memuaskan ketaksamaan x < 3."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-E10",
+    "chapter": 6,
+    "topic": "horizontal_line_inequality",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Mama sets the stove temperature y to not exceed 100°C. Write this condition as an inequality.",
+      "ms": "Mama menetapkan suhu dapur y tidak melebihi 100°C. Tulis syarat ini sebagai suatu ketaksamaan."
+    },
+    "equation": "y ≤ 100",
+    "options": [
+      {
+        "value": "A",
+        "text": "y ≤ 100",
+        "feedback": {
+          "en": "Correct! 'Not exceed' means less than or equal to (≤).",
+          "ms": "Tepat! 'Tidak melebihi' bermaksud kurang daripada atau sama dengan (≤)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "y ≥ 100",
+        "feedback": {
+          "en": "This means at least 100.",
+          "ms": "Ini bermaksud sekurang-kurangnya 100."
+        }
+      },
+      {
+        "value": "C",
+        "text": "y < 100",
+        "feedback": {
+          "en": "'Not exceed' allows exactly 100, so use ≤.",
+          "ms": "'Tidak melebihi' membenarkan tepat 100, jadi gunakan ≤."
+        }
+      },
+      {
+        "value": "D",
+        "text": "y > 100",
+        "feedback": {
+          "en": "This means more than 100.",
+          "ms": "Ini bermaksud lebih daripada 100."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "'Does not exceed' = at most = ≤."
+      ],
+      "ms": [
+        "'Tidak melebihi' = selebih-lebihnya = ≤."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "'Not exceed 100' translates directly to y ≤ 100."
+      ],
+      "ms": [
+        "'Tidak melebihi 100' diterjemahkan kepada y ≤ 100."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-M06",
+    "chapter": 6,
+    "topic": "inequality_from_word_problem",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Warung Mama prepares x packs of Nasi Lemak (RM 3 each) and y packs of Mee Goreng (RM 4 each). If the total budget for ingredients cannot exceed RM 240, write the linear inequality.",
+      "ms": "Warung Mama menyediakan x bungkus Nasi Lemak (RM 3 sebungkus) dan y bungkus Mee Goreng (RM 4 sebungkus). Jika jumlah bajet bahan tidak boleh melebihi RM 240, tulis ketaksamaan linear tersebut."
+    },
+    "equation": "3x + 4y ≤ 240",
+    "options": [
+      {
+        "value": "A",
+        "text": "3x + 4y ≤ 240",
+        "feedback": {
+          "en": "Correct! Total cost 3x + 4y must be at most RM 240.",
+          "ms": "Tepat! Jumlah kos 3x + 4y mestilah selebih-lebihnya RM 240."
+        }
+      },
+      {
+        "value": "B",
+        "text": "3x + 4y ≥ 240",
+        "feedback": {
+          "en": "≥ means at least, but the budget cannot exceed 240.",
+          "ms": "≥ bermaksud sekurang-kurangnya, tetapi bajet tidak boleh melebihi 240."
+        }
+      },
+      {
+        "value": "C",
+        "text": "4x + 3y ≤ 240",
+        "feedback": {
+          "en": "x is Nasi Lemak (RM 3), so coefficient of x is 3.",
+          "ms": "x ialah Nasi Lemak (RM 3), jadi pekali bagi x ialah 3."
+        }
+      },
+      {
+        "value": "D",
+        "text": "3x + 4y < 240",
+        "feedback": {
+          "en": "It can be exactly 240, so ≤ is required.",
+          "ms": "Ia boleh mencecah tepat 240, jadi ≤ diperlukan."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Cost of Nasi Lemak = 3x, cost of Mee Goreng = 4y. Total ≤ 240."
+      ],
+      "ms": [
+        "Kos Nasi Lemak = 3x, kos Mee Goreng = 4y. Jumlah ≤ 240."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The total expenditure is 3x + 4y. 'Cannot exceed 240' is written as 3x + 4y ≤ 240."
+      ],
+      "ms": [
+        "Jumlah perbelanjaan ialah 3x + 4y. 'Tidak boleh melebihi 240' ditulis sebagai 3x + 4y ≤ 240."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-M07",
+    "chapter": 6,
+    "topic": "common_region_three_inequalities",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "Which of the following points lies in the common region defined by: y ≥ x, y ≤ 4, and x ≥ 0?",
+      "ms": "Antara titik berikut, yang manakah terletak dalam rantau sepunya yang ditakrifkan oleh: y ≥ x, y ≤ 4, dan x ≥ 0?"
+    },
+    "equation": "y ≥ x, y ≤ 4, x ≥ 0",
+    "options": [
+      {
+        "value": "A",
+        "text": "(2, 3)",
+        "feedback": {
+          "en": "Correct! (2,3) satisfies: 3 ≥ 2 (True), 3 ≤ 4 (True), 2 ≥ 0 (True).",
+          "ms": "Tepat! (2,3) memuaskan: 3 ≥ 2 (Benar), 3 ≤ 4 (Benar), 2 ≥ 0 (Benar)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "(3, 2)",
+        "feedback": {
+          "en": "For (3,2), y = 2 and x = 3, so 2 ≥ 3 is False.",
+          "ms": "Bagi (3,2), y = 2 dan x = 3, maka 2 ≥ 3 adalah Palsu."
+        }
+      },
+      {
+        "value": "C",
+        "text": "(1, 5)",
+        "feedback": {
+          "en": "For (1,5), y = 5, which violates y ≤ 4.",
+          "ms": "Bagi (1,5), y = 5 melanggar y ≤ 4."
+        }
+      },
+      {
+        "value": "D",
+        "text": "(-1, 3)",
+        "feedback": {
+          "en": "For (-1,3), x = -1, which violates x ≥ 0.",
+          "ms": "Bagi (-1,3), x = -1 melanggar x ≥ 0."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Test each point against all three conditions: x ≥ 0, y ≥ x, and y ≤ 4."
+      ],
+      "ms": [
+        "Uji setiap titik terhadap ketiga-tiga syarat: x ≥ 0, y ≥ x, dan y ≤ 4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "For (2, 3): x = 2 ≥ 0 (valid), y = 3 ≤ 4 (valid), and y ≥ x (3 ≥ 2, valid). All conditions met."
+      ],
+      "ms": [
+        "Bagi (2, 3): x = 2 ≥ 0 (benar), y = 3 ≤ 4 (benar), dan y ≥ x (3 ≥ 2, benar). Semua syarat dipenuhi."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-M08",
+    "chapter": 6,
+    "topic": "inequality_from_graph_line",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "A line passes through (0, 6) and (3, 0). The region below and including this solid line is shaded. What is the inequality representing this region?",
+      "ms": "Satu garis lurus melalui (0, 6) dan (3, 0). Rantau di bawah dan termasuk garis padu ini dilorek. Apakah ketaksamaan yang mewakili rantau ini?"
+    },
+    "equation": "Gradient m = (0 - 6)/(3 - 0) = -2, c = 6",
+    "options": [
+      {
+        "value": "A",
+        "text": "y ≤ -2x + 6",
+        "feedback": {
+          "en": "Correct! Gradient m = -2, c = 6, and shaded below solid line (≤).",
+          "ms": "Tepat! Kecerunan m = -2, c = 6, dan dilorek di bawah garis padu (≤)."
+        }
+      },
+      {
+        "value": "B",
+        "text": "y ≥ -2x + 6",
+        "feedback": {
+          "en": "≥ is for the region above the line.",
+          "ms": "≥ adalah untuk rantau di atas garis."
+        }
+      },
+      {
+        "value": "C",
+        "text": "y < -2x + 6",
+        "feedback": {
+          "en": "The line is solid, so it must include the '=' symbol (≤).",
+          "ms": "Garis adalah padu, jadi ia mesti merangkumi tanda '=' (≤)."
+        }
+      },
+      {
+        "value": "D",
+        "text": "y ≤ 2x + 6",
+        "feedback": {
+          "en": "The gradient is negative: (0 - 6) / (3 - 0) = -2.",
+          "ms": "Kecerunan adalah negatif: (0 - 6) / (3 - 0) = -2."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "1) Find m = (0 - 6)/(3 - 0) = -2. 2) c = 6. 3) Below solid line means ≤."
+      ],
+      "ms": [
+        "1) Cari m = (0 - 6)/(3 - 0) = -2. 2) c = 6. 3) Di bawah garis padu bermaksud ≤."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Equation of boundary line is y = -2x + 6. The region below the solid line is represented by y ≤ -2x + 6."
+      ],
+      "ms": [
+        "Persamaan sempadan ialah y = -2x + 6. Rantau di bawah garis padu diwakili oleh y ≤ -2x + 6."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-M09",
+    "chapter": 6,
+    "topic": "word_problem_two_inequalities",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Kak Ros bakes curry puffs (x) and sardine puffs (y). She must make at least 50 puffs in total, and the number of sardine puffs cannot exceed twice the number of curry puffs. Write the two inequalities.",
+      "ms": "Kak Ros membuat karipap (x) dan karipap sardin (y). Beliau mesti membuat sekurang-kurangnya 50 biji kuih kesemuanya, dan bilangan karipap sardin tidak boleh melebihi dua kali bilangan karipap. Tulis dua ketaksamaan tersebut."
+    },
+    "equation": "x + y ≥ 50, y ≤ 2x",
+    "options": [
+      {
+        "value": "A",
+        "text": "x + y ≥ 50 and y ≤ 2x",
+        "feedback": {
+          "en": "Correct! 'At least 50' is x + y ≥ 50; 'cannot exceed 2x' is y ≤ 2x.",
+          "ms": "Tepat! 'Sekurang-kurangnya 50' ialah x + y ≥ 50; 'tidak melebihi 2x' ialah y ≤ 2x."
+        }
+      },
+      {
+        "value": "B",
+        "text": "x + y ≤ 50 and y ≥ 2x",
+        "feedback": {
+          "en": "Both inequality signs are reversed.",
+          "ms": "Kedua-dua tanda ketaksamaan terbalik."
+        }
+      },
+      {
+        "value": "C",
+        "text": "x + y > 50 and y < 2x",
+        "feedback": {
+          "en": "Terms allow equality ('at least', 'not exceed').",
+          "ms": "Kedua-duanya merangkumi tanda sama dengan."
+        }
+      },
+      {
+        "value": "D",
+        "text": "x + y ≥ 50 and x ≤ 2y",
+        "feedback": {
+          "en": "Sardine puffs are y, so y ≤ 2x.",
+          "ms": "Karipap sardin ialah y, jadi y ≤ 2x."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "At least 50: x + y ≥ 50. Sardine (y) at most twice curry (x): y ≤ 2x."
+      ],
+      "ms": [
+        "Sekurang-kurangnya 50: x + y ≥ 50. Sardin (y) paling banyak dua kali karipap (x): y ≤ 2x."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Condition 1: Total ≥ 50 => x + y ≥ 50. Condition 2: y ≤ 2x."
+      ],
+      "ms": [
+        "Syarat 1: Jumlah ≥ 50 => x + y ≥ 50. Syarat 2: y ≤ 2x."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-M10",
+    "chapter": 6,
+    "topic": "identifying_defining_inequalities",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "A shaded region in the first quadrant is bounded by x = 0, y = 0, y = 2x, and x + y = 6. If the shaded triangle has vertices (0,0), (2,4), and (6,0), which system defines it?",
+      "ms": "Suatu rantau berlorek pada sukuan pertama dibatasi oleh x = 0, y = 0, y = 2x, dan x + y = 6. Jika segi tiga berlorek mempunyai bucu (0,0), (2,4), dan (6,0), sistem manakah yang mentakrifkannya?"
+    },
+    "equation": "y ≤ 2x, x + y ≤ 6, y ≥ 0",
+    "options": [
+      {
+        "value": "A",
+        "text": "y ≤ 2x, x + y ≤ 6, y ≥ 0",
+        "feedback": {
+          "en": "Correct! It lies below y = 2x, below x + y = 6, and above y = 0.",
+          "ms": "Tepat! Ia berada di bawah y = 2x, di bawah x + y = 6, dan di atas y = 0."
+        }
+      },
+      {
+        "value": "B",
+        "text": "y ≥ 2x, x + y ≤ 6, x ≥ 0",
+        "feedback": {
+          "en": "y ≥ 2x would include points with large y, not (6,0).",
+          "ms": "y ≥ 2x tidak merangkumi titik (6,0)."
+        }
+      },
+      {
+        "value": "C",
+        "text": "y ≤ 2x, x + y ≥ 6, y ≥ 0",
+        "feedback": {
+          "en": "x + y ≥ 6 is above the line, not containing (0,0).",
+          "ms": "x + y ≥ 6 berada di atas garis, tidak mengandungi (0,0)."
+        }
+      },
+      {
+        "value": "D",
+        "text": "y ≥ 2x, x + y ≥ 6, x ≥ 0",
+        "feedback": {
+          "en": "Incorrect region.",
+          "ms": "Rantau salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Test the point (1, 1): 1 ≤ 2(1) (True), 1 + 1 ≤ 6 (True), 1 ≥ 0 (True)."
+      ],
+      "ms": [
+        "Uji titik (1, 1): 1 ≤ 2(1) (Benar), 1 + 1 ≤ 6 (Benar), 1 ≥ 0 (Benar)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The region containing (1, 1) and bounded by these lines satisfies y ≤ 2x, x + y ≤ 6, and y ≥ 0."
+      ],
+      "ms": [
+        "Rantau yang mengandungi (1, 1) dan dibatasi oleh garis-garis ini memuaskan y ≤ 2x, x + y ≤ 6, dan y ≥ 0."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-H06",
+    "chapter": 6,
+    "topic": "linear_programming_maximum_profit",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Mama makes x bowls of Mee Goreng (profit RM 3) and y plates of Nasi Lemak (profit RM 4). The vertices of the feasible region for production are (0, 0), (20, 0), (10, 30), and (0, 40). What is the maximum profit Mama can achieve?",
+      "ms": "Mama membuat x mangkuk Mee Goreng (untung RM 3) dan y pinggan Nasi Lemak (untung RM 4). Bucu-bucu bagi rantau tersaur pengeluaran ialah (0, 0), (20, 0), (10, 30), dan (0, 40). Apakah keuntungan maksimum yang boleh dicapai oleh Mama?"
+    },
+    "equation": "P = 3x + 4y",
+    "options": [
+      {
+        "value": "RM 160",
+        "text": "RM 160",
+        "feedback": {
+          "en": "Wait, let's check: (0,40) => 3(0)+4(40) = 160. (10,30) => 3(10)+4(30) = 30 + 120 = 150. Max is RM 160!",
+          "ms": "Tepat! Pada (0, 40): P = 3(0) + 4(40) = RM 160."
+        }
+      },
+      {
+        "value": "RM 150",
+        "text": "RM 150",
+        "feedback": {
+          "en": "(10, 30) yields 3(10) + 4(30) = RM 150, but (0, 40) yields RM 160.",
+          "ms": "(10, 30) menghasilkan RM 150, tetapi (0, 40) menghasilkan RM 160."
+        }
+      },
+      {
+        "value": "RM 60",
+        "text": "RM 60",
+        "feedback": {
+          "en": "3(20) + 4(0) = RM 60, not the maximum.",
+          "ms": "3(20) + 4(0) = RM 60, bukan maksimum."
+        }
+      },
+      {
+        "value": "RM 180",
+        "text": "RM 180",
+        "feedback": {
+          "en": "RM 180 is outside the feasible region.",
+          "ms": "RM 180 berada di luar rantau tersaur."
+        }
+      }
+    ],
+    "answer": "RM 160",
+    "hints": {
+      "en": [
+        "Substitute all 4 vertices into Profit = 3x + 4y and choose the highest."
+      ],
+      "ms": [
+        "Gantikan keempat-empat bucu ke dalam Untung = 3x + 4y dan pilih nilai tertinggi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "P(0,0)=0; P(20,0)=60; P(10,30)=3(10)+4(30)=150; P(0,40)=3(0)+4(40)=160. Maximum profit is RM 160 at (0, 40)."
+      ],
+      "ms": [
+        "P(0,0)=0; P(20,0)=60; P(10,30)=150; P(0,40)=160. Untung maksimum ialah RM 160 pada titik (0, 40)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-H07",
+    "chapter": 6,
+    "topic": "integer_solution_inequality_system",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Uncle Muthu buys x cups of Teh Tarik and y cups of Kopi O. The conditions are: x + y ≤ 6, y ≥ x, and x ≥ 1. What is the maximum number of cups of Kopi O (y) he can buy?",
+      "ms": "Uncle Muthu membeli x cawan Teh Tarik dan y cawan Kopi O. Syarat-syaratnya ialah: x + y ≤ 6, y ≥ x, dan x ≥ 1. Apakah bilangan cawan Kopi O (y) maksimum yang boleh dibelinya?"
+    },
+    "equation": "y_max when x is minimum",
+    "options": [
+      {
+        "value": "5",
+        "text": "5",
+        "feedback": {
+          "en": "Correct! When x = 1 (minimum allowed), y ≤ 6 - 1 = 5. Point (1, 5) satisfies 5 ≥ 1 and 1 + 5 ≤ 6.",
+          "ms": "Tepat! Apabila x = 1 (minimum), y ≤ 6 - 1 = 5. Titik (1, 5) memuaskan 5 ≥ 1 dan 1 + 5 ≤ 6."
+        }
+      },
+      {
+        "value": "6",
+        "text": "6",
+        "feedback": {
+          "en": "If y = 6, then x must be 0, but condition requires x ≥ 1.",
+          "ms": "Jika y = 6, maka x = 0, tetapi syarat memerlukan x ≥ 1."
+        }
+      },
+      {
+        "value": "4",
+        "text": "4",
+        "feedback": {
+          "en": "y can reach 5 when x = 1.",
+          "ms": "y boleh mencapai 5 apabila x = 1."
+        }
+      },
+      {
+        "value": "3",
+        "text": "3",
+        "feedback": {
+          "en": "5 is greater than 3.",
+          "ms": "5 lebih besar daripada 3."
+        }
+      }
+    ],
+    "answer": "5",
+    "hints": {
+      "en": [
+        "To maximize y with x + y ≤ 6, choose the smallest valid x (x = 1)."
+      ],
+      "ms": [
+        "Untuk memaksimumkan y dengan x + y ≤ 6, pilih x sah terkecil (x = 1)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Since x ≥ 1 and x + y ≤ 6, the maximum value of y is 6 - 1 = 5, where (1, 5) satisfies y ≥ x (5 ≥ 1)."
+      ],
+      "ms": [
+        "Kerana x ≥ 1 dan x + y ≤ 6, nilai maksimum y ialah 6 - 1 = 5, di mana (1, 5) memuaskan y ≥ x (5 ≥ 1)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-H08",
+    "chapter": 6,
+    "topic": "slope_inequality_reversal",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "Express the inequality -3y ≤ 6 - 9x in gradient-intercept form (y in terms of x).",
+      "ms": "Ungkapkan ketaksamaan -3y ≤ 6 - 9x dalam bentuk kecerunan-pintasan (y dalam sebutan x)."
+    },
+    "equation": "Divide by -3 (reverse inequality)",
+    "options": [
+      {
+        "value": "A",
+        "text": "y ≥ 3x - 2",
+        "feedback": {
+          "en": "Correct! Dividing by negative number (-3) reverses '≤' to '≥'. 6/-3 = -2, -9x/-3 = 3x.",
+          "ms": "Tepat! Membahagi dengan nombor negatif (-3) menyongsangkan '≤' kepada '≥'. 6/-3 = -2, -9x/-3 = 3x."
+        }
+      },
+      {
+        "value": "B",
+        "text": "y ≤ 3x - 2",
+        "feedback": {
+          "en": "Remember to reverse the inequality sign when dividing by -3!",
+          "ms": "Ingat untuk menyongsangkan tanda ketaksamaan apabila membahagi dengan -3!"
+        }
+      },
+      {
+        "value": "C",
+        "text": "y ≥ -3x + 2",
+        "feedback": {
+          "en": "Sign of terms is incorrect.",
+          "ms": "Tanda bagi sebutan adalah salah."
+        }
+      },
+      {
+        "value": "D",
+        "text": "y ≤ -3x + 2",
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "When dividing or multiplying an inequality by a negative number, invert the inequality sign."
+      ],
+      "ms": [
+        "Apabila membahagi atau mendarab ketaksamaan dengan nombor negatif, songsangkan tanda ketaksamaan."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "-3y ≤ -9x + 6 => Divide both sides by -3 and flip '≤' to '≥': y ≥ 3x - 2."
+      ],
+      "ms": [
+        "-3y ≤ -9x + 6 => Bahagi kedua-dua belah dengan -3 dan terbalikkan '≤' menjadi '≥': y ≥ 3x - 2."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-H09",
+    "chapter": 6,
+    "topic": "non_linear_boundary_identification",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "general",
+    "question": {
+      "en": "Which region satisfies the system: y + x < 4, y - x < 4, and y ≥ 0?",
+      "ms": "Rantau manakah yang memuaskan sistem: y + x < 4, y - x < 4, dan y ≥ 0?"
+    },
+    "equation": "Triangular region",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "An open triangular region with vertices at (-4, 0), (4, 0), and (0, 4)",
+          "ms": "Rantau segi tiga terbuka dengan bucu di (-4, 0), (4, 0), dan (0, 4)"
+        },
+        "feedback": {
+          "en": "Correct! Lines intersect the x-axis at x = -4 and x = 4, and intersect each other at (0, 4).",
+          "ms": "Tepat! Garis-garis memintas paksi-x pada x = -4 dan x = 4, dan bersilang sesama sendiri pada (0, 4)."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "A square of area 16",
+          "ms": "Sebuah segi empat sama berkeluasan 16"
+        },
+        "feedback": {
+          "en": "The region is bounded by three lines, forming a triangle.",
+          "ms": "Rantau dibatasi oleh tiga garis, membentuk segi tiga."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "An infinite unbounded strip",
+          "ms": "Jalur tak terhingga tanpa batasan"
+        },
+        "feedback": {
+          "en": "The three inequalities enclose a finite area.",
+          "ms": "Tiga ketaksamaan ini mengepung satu luas terhingga."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "A circle of radius 4",
+          "ms": "Sebuah bulatan berjejari 4"
+        },
+        "feedback": {
+          "en": "Boundaries are straight lines.",
+          "ms": "Sempadan adalah garis lurus."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Find intersection of y = 4 - x and y = 4 + x (vertex at 0,4) and with y = 0 (vertices at ±4, 0)."
+      ],
+      "ms": [
+        "Cari persilangan y = 4 - x dan y = 4 + x (bucu di 0,4) serta dengan y = 0 (bucu di ±4, 0)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "The boundaries form a triangle with vertices at (-4, 0), (4, 0), and (0, 4) on and above y = 0."
+      ],
+      "ms": [
+        "Sempadannya membentuk segi tiga dengan bucu pada (-4, 0), (4, 0), dan (0, 4) di atas paksi-x."
+      ]
+    }
+  },
+  {
+    "id": "F4-C06-H10",
+    "chapter": 6,
+    "topic": "real_life_constraint_ratio",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M06-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Mama packs meal boxes: x vegetarian boxes and y chicken boxes. The number of chicken boxes must be at least twice the vegetarian boxes, but no more than 60 chicken boxes can be made. If total boxes cannot exceed 80, find the maximum possible number of vegetarian boxes (x).",
+      "ms": "Mama membungkus set makanan: x set vegetarian dan y set ayam. Bilangan set ayam mestilah sekurang-kurangnya dua kali set vegetarian, tetapi tidak melebihi 60 set ayam. Jika jumlah set tidak boleh melebihi 80, cari bilangan maksimum set vegetarian (x) yang mungkin."
+    },
+    "equation": "y ≥ 2x, y ≤ 60, x + y ≤ 80",
+    "options": [
+      {
+        "value": "26",
+        "text": "26",
+        "feedback": {
+          "en": "Correct! x + y ≤ 80 with y ≥ 2x gives x + 2x ≤ 80 => 3x ≤ 80 => x ≤ 26.67. Also 2(26) = 52 ≤ 60. Max integer x is 26.",
+          "ms": "Tepat! x + y ≤ 80 dengan y ≥ 2x memberi x + 2x ≤ 80 => 3x ≤ 80 => x ≤ 26.67. Dan 2(26) = 52 ≤ 60. Integer maksimum x ialah 26."
+        }
+      },
+      {
+        "value": "30",
+        "text": "30",
+        "feedback": {
+          "en": "If x = 30, y ≥ 2(30) = 60. Then x + y = 30 + 60 = 90 > 80, violating total ≤ 80.",
+          "ms": "Jika x = 30, y ≥ 60. Jumlah = 30 + 60 = 90 > 80, melanggar syarat jumlah ≤ 80."
+        }
+      },
+      {
+        "value": "20",
+        "text": "20",
+        "feedback": {
+          "en": "x can be larger than 20.",
+          "ms": "x boleh lebih besar daripada 20."
+        }
+      },
+      {
+        "value": "27",
+        "text": "27",
+        "feedback": {
+          "en": "If x = 27, y ≥ 54 => total = 27 + 54 = 81 > 80.",
+          "ms": "Jika x = 27, y ≥ 54 => jumlah = 27 + 54 = 81 > 80."
+        }
+      }
+    ],
+    "answer": "26",
+    "hints": {
+      "en": [
+        "Substitute y = 2x into x + y ≤ 80: 3x ≤ 80 => x ≤ 26.67."
+      ],
+      "ms": [
+        "Gantikan y = 2x ke dalam x + y ≤ 80: 3x ≤ 80 => x ≤ 26.67."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "From x + 2x ≤ 80, 3x ≤ 80 => x ≤ 26.67. With y = 2(26) = 52 ≤ 60, the maximum whole number of vegetarian boxes is 26."
+      ],
+      "ms": [
+        "Daripada x + 2x ≤ 80, 3x ≤ 80 => x ≤ 26.67. Dengan y = 2(26) = 52 ≤ 60, bilangan maksimum set vegetarian ialah 26 set."
+      ]
+    }
+  }
+]

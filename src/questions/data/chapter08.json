@@ -1,0 +1,2087 @@
+[
+  {
+    "id": "F4-C08-E01",
+    "chapter": 8,
+    "topic": "range_ungrouped_data",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the range of the dataset: 4, 7, 9, 12, 18.",
+      "ms": "Cari julat bagi set data: 4, 7, 9, 12, 18."
+    },
+    "equation": "Range = Max - Min",
+    "options": [
+      {
+        "value": 14,
+        "text": "14",
+        "feedback": {
+          "en": "Correct! Range = 18 - 4 = 14.",
+          "ms": "Tepat! Julat = 18 - 4 = 14."
+        }
+      },
+      {
+        "value": 18,
+        "text": "18",
+        "feedback": {
+          "en": "18 is the maximum value, not the range.",
+          "ms": "18 ialah nilai maksimum, bukan julat."
+        }
+      },
+      {
+        "value": 10,
+        "text": "10",
+        "feedback": {
+          "en": "Check subtraction: 18 - 4 = 14.",
+          "ms": "Semak penolakan: 18 - 4 = 14."
+        }
+      },
+      {
+        "value": 9,
+        "text": "9",
+        "feedback": {
+          "en": "9 is the median, not the range.",
+          "ms": "9 ialah median, bukan julat."
+        }
+      }
+    ],
+    "answer": 14,
+    "hints": {
+      "en": [
+        "Range = Largest value - Smallest value = 18 - 4."
+      ],
+      "ms": [
+        "Julat = Nilai terbesar - Nilai terkecil = 18 - 4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Range = 18 - 4 = 14."
+      ],
+      "ms": [
+        "Julat = 18 - 4 = 14."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "range"
+    ]
+  },
+  {
+    "id": "F4-C08-E02",
+    "chapter": 8,
+    "topic": "median_odd_dataset",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the median of the customer rating scores: 3, 5, 8, 10, 14.",
+      "ms": "Cari median bagi skor penilaian pelanggan: 3, 5, 8, 10, 14."
+    },
+    "equation": "Median = Middle value",
+    "options": [
+      {
+        "value": 8,
+        "text": "8",
+        "feedback": {
+          "en": "Correct! 8 is the middle value of the 5 sorted scores.",
+          "ms": "Tepat! 8 ialah nilai tengah bagi 5 skor yang telah disusun."
+        }
+      },
+      {
+        "value": 5,
+        "text": "5",
+        "feedback": {
+          "en": "5 is the second score.",
+          "ms": "5 ialah skor kedua."
+        }
+      },
+      {
+        "value": 10,
+        "text": "10",
+        "feedback": {
+          "en": "10 is the fourth score.",
+          "ms": "10 ialah skor keempat."
+        }
+      },
+      {
+        "value": 7,
+        "text": "7",
+        "feedback": {
+          "en": "Mean is 8, median is also 8.",
+          "ms": "Min ialah 8, median juga 8."
+        }
+      }
+    ],
+    "answer": 8,
+    "hints": {
+      "en": [
+        "The median is the middle number in an ordered dataset."
+      ],
+      "ms": [
+        "Median ialah nombor di tengah-tengah dalam set data yang tersusun."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Middle value at position (5+1)/2 = 3rd is 8."
+      ],
+      "ms": [
+        "Nilai tengah pada kedudukan ke-3 ialah 8."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "median"
+    ]
+  },
+  {
+    "id": "F4-C08-E03",
+    "chapter": 8,
+    "topic": "mode_ungrouped_data",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Find the mode of the daily orders: 2, 4, 4, 5, 7, 4, 9.",
+      "ms": "Cari mod bagi pesanan harian: 2, 4, 4, 5, 7, 4, 9."
+    },
+    "equation": "Mode = Most frequent value",
+    "options": [
+      {
+        "value": 4,
+        "text": "4 (frequency = 3)",
+        "feedback": {
+          "en": "Correct! 4 appears 3 times, more than any other number.",
+          "ms": "Tepat! 4 muncul 3 kali, paling kerap berbanding nombor lain."
+        }
+      },
+      {
+        "value": 5,
+        "text": "5",
+        "feedback": {
+          "en": "5 appears only once.",
+          "ms": "5 hanya muncul sekali."
+        }
+      },
+      {
+        "value": 7,
+        "text": "7",
+        "feedback": {
+          "en": "7 appears only once.",
+          "ms": "7 hanya muncul sekali."
+        }
+      },
+      {
+        "value": 9,
+        "text": "9",
+        "feedback": {
+          "en": "9 is the maximum value, not the mode.",
+          "ms": "9 ialah nilai maksimum, bukan mod."
+        }
+      }
+    ],
+    "answer": 4,
+    "hints": {
+      "en": [
+        "The mode is the value with the highest frequency."
+      ],
+      "ms": [
+        "Mod ialah nilai dengan kekerapan tertinggi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "4 appears 3 times → Mode = 4."
+      ],
+      "ms": [
+        "4 muncul 3 kali → Mod = 4."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "mode"
+    ]
+  },
+  {
+    "id": "F4-C08-E04",
+    "chapter": 8,
+    "topic": "dot_plot_interpretation",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "On a dot plot showing the number of curry puffs eaten per person, value 3 has 5 dots, value 2 has 3 dots, and value 4 has 2 dots. What is the modal number of curry puffs?",
+      "ms": "Pada plot titik yang menunjukkan bilangan karipap dimakan seorang, nilai 3 mempunyai 5 titik, nilai 2 mempunyai 3 titik, dan nilai 4 mempunyai 2 titik. Apakah bilangan mod karipap?"
+    },
+    "equation": "Highest stack of dots",
+    "options": [
+      {
+        "value": 3,
+        "text": "3 curry puffs",
+        "feedback": {
+          "en": "Correct! Value 3 has the highest column of dots (5 dots).",
+          "ms": "Tepat! Nilai 3 mempunyai turus titik tertinggi (5 titik)."
+        }
+      },
+      {
+        "value": 5,
+        "text": "5 curry puffs",
+        "feedback": {
+          "en": "5 is the frequency of dots, not the value.",
+          "ms": "5 ialah kekerapan titik, bukan nilai data."
+        }
+      },
+      {
+        "value": 2,
+        "text": "2 curry puffs",
+        "feedback": {
+          "en": "Value 2 has 3 dots.",
+          "ms": "Nilai 2 mempunyai 3 titik."
+        }
+      },
+      {
+        "value": 4,
+        "text": "4 curry puffs",
+        "feedback": {
+          "en": "Value 4 has 2 dots.",
+          "ms": "Nilai 4 mempunyai 2 titik."
+        }
+      }
+    ],
+    "answer": 3,
+    "hints": {
+      "en": [
+        "The mode corresponds to the value with the highest column of dots."
+      ],
+      "ms": [
+        "Mod sepadan dengan nilai yang mempunyai turus titik tertinggi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Value 3 has the highest frequency (5 dots)."
+      ],
+      "ms": [
+        "Nilai 3 mempunyai kekerapan tertinggi (5 titik)."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "dot_plot"
+    ]
+  },
+  {
+    "id": "F4-C08-E05",
+    "chapter": 8,
+    "topic": "stem_and_leaf_reading",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a stem-and-leaf plot where Key: 2 | 5 means 25, the minimum entry is 1 | 4 and the maximum is 4 | 8. What is the range?",
+      "ms": "Dalam plot batang-dan-daun dengan Kekunci: 2 | 5 bermaksud 25, nilai minimum ialah 1 | 4 dan nilai maksimum ialah 4 | 8. Apakah julatnya?"
+    },
+    "equation": "48 - 14",
+    "options": [
+      {
+        "value": 34,
+        "text": "34",
+        "feedback": {
+          "en": "Correct! Max = 48, Min = 14. Range = 48 - 14 = 34.",
+          "ms": "Tepat! Maks = 48, Min = 14. Julat = 48 - 14 = 34."
+        }
+      },
+      {
+        "value": 38,
+        "text": "38",
+        "feedback": {
+          "en": "48 - 14 = 34.",
+          "ms": "48 - 14 = 34."
+        }
+      },
+      {
+        "value": 30,
+        "text": "30",
+        "feedback": {
+          "en": "Check subtraction: 48 - 14 = 34.",
+          "ms": "Semak penolakan: 48 - 14 = 34."
+        }
+      },
+      {
+        "value": 44,
+        "text": "44",
+        "feedback": {
+          "en": "Calculation error.",
+          "ms": "Ralat pengiraan."
+        }
+      }
+    ],
+    "answer": 34,
+    "hints": {
+      "en": [
+        "Read 1 | 4 as 14, and 4 | 8 as 48. Range = 48 - 14."
+      ],
+      "ms": [
+        "Baca 1 | 4 sebagai 14, dan 4 | 8 sebagai 48. Julat = 48 - 14."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Range = 48 - 14 = 34."
+      ],
+      "ms": [
+        "Julat = 48 - 14 = 34."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "stem_and_leaf"
+    ]
+  },
+  {
+    "id": "F4-C08-M01",
+    "chapter": 8,
+    "topic": "interquartile_range_iqr",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a survey of customer waiting times, the first quartile Q₁ is 12 minutes and the third quartile Q₃ is 28 minutes. What is the interquartile range (IQR)?",
+      "ms": "Dalam kaji selidik masa menunggu pelanggan, kuartil pertama Q₁ ialah 12 minit dan kuartil ketiga Q₃ ialah 28 minit. Apakah julat antara kuartil (JAK)?"
+    },
+    "equation": "IQR = Q₃ - Q₁",
+    "options": [
+      {
+        "value": 16,
+        "text": "16 minutes",
+        "feedback": {
+          "en": "Correct! IQR = Q₃ - Q₁ = 28 - 12 = 16 minutes.",
+          "ms": "Tepat! JAK = Q₃ - Q₁ = 28 - 12 = 16 minit."
+        }
+      },
+      {
+        "value": 20,
+        "text": "20 minutes",
+        "feedback": {
+          "en": "Check subtraction: 28 - 12 = 16.",
+          "ms": "Semak penolakan: 28 - 12 = 16."
+        }
+      },
+      {
+        "value": 40,
+        "text": "40 minutes",
+        "feedback": {
+          "en": "Do not add the quartiles.",
+          "ms": "Jangan tambah kuartil."
+        }
+      },
+      {
+        "value": 14,
+        "text": "14 minutes",
+        "feedback": {
+          "en": "28 - 12 = 16.",
+          "ms": "28 - 12 = 16."
+        }
+      }
+    ],
+    "answer": 16,
+    "hints": {
+      "en": [
+        "Interquartile Range = Q₃ - Q₁."
+      ],
+      "ms": [
+        "Julat Antara Kuartil = Q₃ - Q₁."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "IQR = 28 - 12 = 16 minutes."
+      ],
+      "ms": [
+        "JAK = 28 - 12 = 16 minit."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "interquartile_range"
+    ]
+  },
+  {
+    "id": "F4-C08-M02",
+    "chapter": 8,
+    "topic": "outlier_effect_on_measures",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "If an extreme outlier of 150 is accidentally added to a dataset with values between 10 and 20, which measure of central tendency is LEAST affected?",
+      "ms": "Jika nilai pencilan ekstrem 150 ditambah ke dalam set data yang bernilai antara 10 dan 20, sukatan kecenderungan memusat manakah yang PALING KURANG terjejas?"
+    },
+    "equation": "Robustness of Median",
+    "options": [
+      {
+        "value": "Median",
+        "text": "Median",
+        "feedback": {
+          "en": "Correct! The median is robust against extreme outliers.",
+          "ms": "Tepat! Median adalah teguh dan tidak mudah dipengaruhi oleh pencilan ekstrem."
+        }
+      },
+      {
+        "value": "Mean",
+        "text": "Mean",
+        "feedback": {
+          "en": "The mean is heavily pulled upwards by an extreme value.",
+          "ms": "Min sangat dipengaruhi dan ditarik ke atas oleh nilai ekstrem."
+        }
+      },
+      {
+        "value": "Range",
+        "text": "Range",
+        "feedback": {
+          "en": "The range increases drastically because 150 becomes the new maximum.",
+          "ms": "Julat meningkat mendadak kerana 150 menjadi nilai maksimum baru."
+        }
+      },
+      {
+        "value": "Standard deviation",
+        "text": "Standard deviation",
+        "feedback": {
+          "en": "Standard deviation increases significantly with outliers.",
+          "ms": "Sisihan piawai meningkat dengan ketara akibat pencilan."
+        }
+      }
+    ],
+    "answer": "Median",
+    "hints": {
+      "en": [
+        "The median depends only on the rank/position of the middle value, not extreme magnitudes."
+      ],
+      "ms": [
+        "Median hanya bergantung pada kedudukan nilai tengah, bukan magnitud ekstrem."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Median is resistant to outliers, unlike mean, range, and standard deviation."
+      ],
+      "ms": [
+        "Median tidak mudah dipengaruhi oleh pencilan, berbeza dengan min, julat, dan sisihan piawai."
+      ]
+    },
+    "xp": 50,
+    "coins": 30,
+    "skills": [
+      "outlier_effects"
+    ]
+  },
+  {
+    "id": "F4-C08-M03",
+    "chapter": 8,
+    "topic": "effect_of_adding_constant",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "If a constant of RM 5 is added to every dish price in a dataset with mean RM 15 and standard deviation RM 3, what are the new mean and standard deviation?",
+      "ms": "Jika pemalar RM 5 ditambah kepada setiap harga hidangan dalam set data dengan min RM 15 dan sisihan piawai RM 3, apakah min dan sisihan piawai yang baru?"
+    },
+    "equation": "Mean + k, σ unchanged",
+    "options": [
+      {
+        "value": "A",
+        "text": "Mean = RM 20, Standard deviation = RM 3",
+        "feedback": {
+          "en": "Correct! Adding a constant increases the mean by k, but standard deviation remains unchanged.",
+          "ms": "Tepat! Menambah pemalar meningkatkan min sebanyak k, tetapi sisihan piawai tidak berubah."
+        }
+      },
+      {
+        "value": "B",
+        "text": "Mean = RM 20, Standard deviation = RM 8",
+        "feedback": {
+          "en": "Adding a constant shifts the data without changing the spread/dispersion.",
+          "ms": "Menambah pemalar menganjakkan data tanpa mengubah serakan."
+        }
+      },
+      {
+        "value": "C",
+        "text": "Mean = RM 15, Standard deviation = RM 3",
+        "feedback": {
+          "en": "The mean must increase by RM 5.",
+          "ms": "Min mesti bertambah sebanyak RM 5."
+        }
+      },
+      {
+        "value": "D",
+        "text": "Mean = RM 20, Standard deviation = RM 15",
+        "feedback": {
+          "en": "Standard deviation does not multiply by 5.",
+          "ms": "Sisihan piawai tidak didarab dengan 5."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Adding a constant k increases the mean by k, but leaves standard deviation unchanged."
+      ],
+      "ms": [
+        "Menambah pemalar k meningkatkan min sebanyak k, tetapi tidak mengubah sisihan piawai."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "New mean = 15 + 5 = 20. New standard deviation = 3 (unchanged)."
+      ],
+      "ms": [
+        "Min baru = 15 + 5 = 20. Sisihan piawai baru = 3 (tidak berubah)."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "linear_data_transformation"
+    ]
+  },
+  {
+    "id": "F4-C08-M04",
+    "chapter": 8,
+    "topic": "effect_of_multiplying_factor",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "If every value in a dataset with standard deviation σ = 4 is multiplied by 3, what is the new standard deviation and variance?",
+      "ms": "Jika setiap nilai dalam set data dengan sisihan piawai σ = 4 didarab dengan 3, apakah sisihan piawai dan varians yang baru?"
+    },
+    "equation": "New σ = kσ, New σ² = k²σ²",
+    "options": [
+      {
+        "value": "A",
+        "text": "Standard deviation = 12, Variance = 144",
+        "feedback": {
+          "en": "Correct! New σ = 3 × 4 = 12, and new variance = 12² = 144.",
+          "ms": "Tepat! Sisihan piawai baru = 3 × 4 = 12, dan varians baru = 12² = 144."
+        }
+      },
+      {
+        "value": "B",
+        "text": "Standard deviation = 12, Variance = 48",
+        "feedback": {
+          "en": "Variance is multiplied by k² (9), so 16 × 9 = 144.",
+          "ms": "Varians didarab dengan k² (9), maka 16 × 9 = 144."
+        }
+      },
+      {
+        "value": "C",
+        "text": "Standard deviation = 4, Variance = 16",
+        "feedback": {
+          "en": "Multiplying by 3 changes the spread.",
+          "ms": "Mendarab dengan 3 mengubah serakan."
+        }
+      },
+      {
+        "value": "D",
+        "text": "Standard deviation = 7, Variance = 49",
+        "feedback": {
+          "en": "Multiply, do not add 3.",
+          "ms": "Darabkan, jangan tambah 3."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "When multiplying by k: new σ = k × σ, and new variance = k² × variance."
+      ],
+      "ms": [
+        "Apabila mendarab dengan k: σ baru = k × σ, dan varians baru = k² × varians."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "New σ = 3(4) = 12. New variance = 12² = 144."
+      ],
+      "ms": [
+        "σ baru = 3(4) = 12. Varians baru = 12² = 144."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "multiplication_transformation"
+    ]
+  },
+  {
+    "id": "F4-C08-M05",
+    "chapter": 8,
+    "topic": "box_plot_skewness",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "In a box-and-whisker plot, the right whisker is much longer than the left whisker, and the median line is closer to Q₁ than Q₃. What is the skewness of this distribution?",
+      "ms": "Dalam plot kotak, sesungut kanan adalah jauh lebih panjang daripada sesungut kiri, dan garis median lebih dekat kepada Q₁ berbanding Q₃. Apakah kepencongan taburan ini?"
+    },
+    "equation": "Skewed right (positive skew)",
+    "options": [
+      {
+        "value": "Skewed to the right",
+        "text": "Skewed to the right (pencong ke kanan)",
+        "feedback": {
+          "en": "Correct! A longer right tail/whisker indicates a positive skew (skewed to the right).",
+          "ms": "Tepat! Ekor/sesungut kanan yang lebih panjang menunjukkan pencong ke kanan (positif)."
+        }
+      },
+      {
+        "value": "Skewed to the left",
+        "text": "Skewed to the left (pencong ke kiri)",
+        "feedback": {
+          "en": "Skewed to the left has a longer left whisker.",
+          "ms": "Pencong ke kiri mempunyai sesungut kiri yang lebih panjang."
+        }
+      },
+      {
+        "value": "Symmetric",
+        "text": "Symmetric (simetri)",
+        "feedback": {
+          "en": "Symmetric box plots have equal whiskers and centered median.",
+          "ms": "Plot simetri mempunyai sesungut sama panjang dan median di tengah."
+        }
+      },
+      {
+        "value": "Uniform",
+        "text": "Uniform",
+        "feedback": {
+          "en": "The data exhibits right skewness.",
+          "ms": "Data menunjukkan kepencongan ke kanan."
+        }
+      }
+    ],
+    "answer": "Skewed to the right",
+    "hints": {
+      "en": [
+        "Longer whisker on the right side indicates skewness to the right."
+      ],
+      "ms": [
+        "Sesungut yang lebih panjang di sebelah kanan menunjukkan pencong ke kanan."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Longer right whisker = Skewed to the right."
+      ],
+      "ms": [
+        "Sesungut kanan lebih panjang = Pencong ke kanan."
+      ]
+    },
+    "xp": 75,
+    "coins": 45,
+    "skills": [
+      "box_plot_interpretation"
+    ]
+  },
+  {
+    "id": "F4-C08-H01",
+    "chapter": 8,
+    "topic": "variance_ungrouped_data",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Calculate the variance of the customer ratings: 2, 4, 6, 8. (Mean = 5).",
+      "ms": "Hitung varians bagi skor penilaian pelanggan: 2, 4, 6, 8. (Min = 5)."
+    },
+    "equation": "σ² = [∑(x - x̄)²] / N",
+    "options": [
+      {
+        "value": 5,
+        "text": "5",
+        "feedback": {
+          "en": "Correct! [(2-5)² + (4-5)² + (6-5)² + (8-5)²] / 4 = [9 + 1 + 1 + 9] / 4 = 20 / 4 = 5.",
+          "ms": "Tepat! [9 + 1 + 1 + 9] / 4 = 20 / 4 = 5."
+        }
+      },
+      {
+        "value": 2.24,
+        "text": "2.24",
+        "feedback": {
+          "en": "2.24 is the standard deviation (√5), not the variance.",
+          "ms": "2.24 ialah sisihan piawai (√5), bukan varians."
+        }
+      },
+      {
+        "value": 20,
+        "text": "20",
+        "feedback": {
+          "en": "Remember to divide by N = 4.",
+          "ms": "Ingat untuk membahagi dengan N = 4."
+        }
+      },
+      {
+        "value": 4,
+        "text": "4",
+        "feedback": {
+          "en": "Sum of squared deviations is 20, 20 / 4 = 5.",
+          "ms": "Hasil tambah kuasa dua sisihan ialah 20, 20 / 4 = 5."
+        }
+      }
+    ],
+    "answer": 5,
+    "hints": {
+      "en": [
+        "Find squared deviations from mean 5: (-3)²=9, (-1)²=1, (1)²=1, (3)²=9. Divide sum by 4."
+      ],
+      "ms": [
+        "Cari kuasa dua sisihan dari min 5: 9, 1, 1, 9. Bahagi jumlah dengan 4."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Variance = (9 + 1 + 1 + 9) / 4 = 20 / 4 = 5."
+      ],
+      "ms": [
+        "Varians = (9 + 1 + 1 + 9) / 4 = 20 / 4 = 5."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "variance_calculation"
+    ]
+  },
+  {
+    "id": "F4-C08-H02",
+    "chapter": 8,
+    "topic": "standard_deviation_calculation",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A dataset has variance σ² = 16. What is its standard deviation σ?",
+      "ms": "Satu set data mempunyai varians σ² = 16. Apakah sisihan piawainya σ?"
+    },
+    "equation": "σ = √(Variance)",
+    "options": [
+      {
+        "value": 4,
+        "text": "4",
+        "feedback": {
+          "en": "Correct! σ = √16 = 4.",
+          "ms": "Tepat! σ = √16 = 4."
+        }
+      },
+      {
+        "value": 8,
+        "text": "8",
+        "feedback": {
+          "en": "16 / 2 = 8, but standard deviation is the square root √16.",
+          "ms": "16 / 2 = 8, tetapi sisihan piawai ialah punca kuasa dua √16."
+        }
+      },
+      {
+        "value": 256,
+        "text": "256",
+        "feedback": {
+          "en": "Do not square the variance.",
+          "ms": "Jangan kuasakan dua varians."
+        }
+      },
+      {
+        "value": 2,
+        "text": "2",
+        "feedback": {
+          "en": "√16 = 4, not 2.",
+          "ms": "√16 = 4, bukan 2."
+        }
+      }
+    ],
+    "answer": 4,
+    "hints": {
+      "en": [
+        "Standard deviation is the square root of the variance."
+      ],
+      "ms": [
+        "Sisihan piawai ialah punca kuasa dua bagi varians."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "σ = √16 = 4."
+      ],
+      "ms": [
+        "σ = √16 = 4."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "standard_deviation"
+    ]
+  },
+  {
+    "id": "F4-C08-H03",
+    "chapter": 8,
+    "topic": "compare_consistency_stalls",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Stall A has a mean daily score of 80 with standard deviation 4. Stall B has a mean daily score of 80 with standard deviation 10. Which stall has MORE CONSISTENT performance?",
+      "ms": "Gerai A mempunyai min skor harian 80 dengan sisihan piawai 4. Gerai B mempunyai min skor harian 80 dengan sisihan piawai 10. Gerai manakah yang mempunyai prestasi LEBIH KONSISTEN?"
+    },
+    "equation": "Lower σ → Greater consistency",
+    "options": [
+      {
+        "value": "Stall A",
+        "text": "Stall A (lower standard deviation)",
+        "feedback": {
+          "en": "Correct! A smaller standard deviation indicates data values are clustered closer to the mean (more consistent).",
+          "ms": "Tepat! Sisihan piawai yang lebih kecil menunjukkan data lebih rapat dengan min (lebih konsisten)."
+        }
+      },
+      {
+        "value": "Stall B",
+        "text": "Stall B",
+        "feedback": {
+          "en": "Higher standard deviation means wider variation/fluctuation (less consistent).",
+          "ms": "Sisihan piawai lebih tinggi bermaksud variasi lebih besar (kurang konsisten)."
+        }
+      },
+      {
+        "value": "Both are equally consistent",
+        "text": "Both are equally consistent",
+        "feedback": {
+          "en": "Although means are identical, standard deviations are different.",
+          "ms": "Walaupun min sama, sisihan piawai adalah berbeza."
+        }
+      },
+      {
+        "value": "Cannot determine",
+        "text": "Cannot be determined",
+        "feedback": {
+          "en": "Standard deviation directly measures consistency.",
+          "ms": "Sisihan piawai mengukur ketekalan secara langsung."
+        }
+      }
+    ],
+    "answer": "Stall A",
+    "hints": {
+      "en": [
+        "A smaller standard deviation indicates greater consistency."
+      ],
+      "ms": [
+        "Sisihan piawai yang lebih kecil menunjukkan ketekalan yang lebih tinggi."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "σ_A = 4 < σ_B = 10, so Stall A is more consistent."
+      ],
+      "ms": [
+        "σ_A = 4 < σ_B = 10, maka Gerai A lebih konsisten."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "consistency_comparison"
+    ]
+  },
+  {
+    "id": "F4-C08-H04",
+    "chapter": 8,
+    "topic": "outlier_boundary_test",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "Given Q₁ = 20, Q₃ = 35, and IQR = 15. According to the 1.5 × IQR rule, what is the upper boundary above which a value is considered an outlier?",
+      "ms": "Diberi Q₁ = 20, Q₃ = 35, dan JAK = 15. Berdasarkan petua 1.5 × JAK, apakah had atas yang mana nilai melebihi had ini dianggap sebagai pencilan?"
+    },
+    "equation": "Upper Boundary = Q₃ + 1.5(IQR)",
+    "options": [
+      {
+        "value": 57.5,
+        "text": "57.5",
+        "feedback": {
+          "en": "Correct! Upper boundary = 35 + 1.5(15) = 35 + 22.5 = 57.5.",
+          "ms": "Tepat! Had atas = 35 + 1.5(15) = 35 + 22.5 = 57.5."
+        }
+      },
+      {
+        "value": 50,
+        "text": "50",
+        "feedback": {
+          "en": "35 + 15 = 50, but remember the 1.5 multiplier.",
+          "ms": "35 + 15 = 50, tetapi ingat pengganda 1.5."
+        }
+      },
+      {
+        "value": 65,
+        "text": "65",
+        "feedback": {
+          "en": "Check calculation: 35 + 22.5 = 57.5.",
+          "ms": "Semak pengiraan: 35 + 22.5 = 57.5."
+        }
+      },
+      {
+        "value": 42.5,
+        "text": "42.5",
+        "feedback": {
+          "en": "Upper boundary adds to Q₃, not Q₁.",
+          "ms": "Had atas ditambah kepada Q₃, bukan Q₁."
+        }
+      }
+    ],
+    "answer": 57.5,
+    "hints": {
+      "en": [
+        "Upper boundary = Q₃ + 1.5 × IQR."
+      ],
+      "ms": [
+        "Had atas = Q₃ + 1.5 × JAK."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "35 + 1.5(15) = 35 + 22.5 = 57.5."
+      ],
+      "ms": [
+        "35 + 1.5(15) = 35 + 22.5 = 57.5."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "outlier_detection"
+    ]
+  },
+  {
+    "id": "F4-C08-H05",
+    "chapter": 8,
+    "topic": "updating_mean_new_data",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "Q1",
+    "context": "general",
+    "question": {
+      "en": "A stall recorded an average of 40 customers over 4 days. On the 5th day, 60 customers visited. What is the new mean number of customers over the 5 days?",
+      "ms": "Sebuah gerai merekodkan purata 40 pelanggan dalam tempoh 4 hari. Pada hari ke-5, 60 pelanggan telah berkunjung. Apakah min baru bilangan pelanggan dalam tempoh 5 hari tersebut?"
+    },
+    "equation": "New Mean = (Old Sum + New Value) / (N + 1)",
+    "options": [
+      {
+        "value": 44,
+        "text": "44 customers",
+        "feedback": {
+          "en": "Correct! Old sum = 4 × 40 = 160. New sum = 160 + 60 = 220. New mean = 220 / 5 = 44.",
+          "ms": "Tepat! Jumlah lama = 160. Jumlah baru = 220. Min baru = 220 / 5 = 44."
+        }
+      },
+      {
+        "value": 50,
+        "text": "50 customers",
+        "feedback": {
+          "en": "(40 + 60) / 2 = 50 is the average of two numbers, not weighted by 5 days.",
+          "ms": "(40 + 60) / 2 = 50 bukan purata wajaran 5 hari."
+        }
+      },
+      {
+        "value": 45,
+        "text": "45 customers",
+        "feedback": {
+          "en": "220 / 5 = 44, not 45.",
+          "ms": "220 / 5 = 44, bukan 45."
+        }
+      },
+      {
+        "value": 42,
+        "text": "42 customers",
+        "feedback": {
+          "en": "Check calculation: 220 / 5 = 44.",
+          "ms": "Semak pengiraan: 220 / 5 = 44."
+        }
+      }
+    ],
+    "answer": 44,
+    "hints": {
+      "en": [
+        "Total customers for first 4 days = 4 × 40 = 160. Add 60 and divide by 5."
+      ],
+      "ms": [
+        "Jumlah pelanggan 4 hari pertama = 4 × 40 = 160. Tambah 60 dan bahagi 5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "New mean = (160 + 60) / 5 = 220 / 5 = 44."
+      ],
+      "ms": [
+        "Min baru = (160 + 60) / 5 = 220 / 5 = 44."
+      ]
+    },
+    "xp": 100,
+    "coins": 60,
+    "skills": [
+      "mean_update"
+    ]
+  },
+  {
+    "id": "F4-C08-E06",
+    "chapter": 8,
+    "topic": "range_calculation",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "kitchen",
+    "question": {
+      "en": "The daily numbers of customers at Warung Mama this week are: 42, 58, 35, 70, 48, 65, 52. Calculate the range.",
+      "ms": "Bilangan pelanggan harian di Warung Mama minggu ini ialah: 42, 58, 35, 70, 48, 65, 52. Hitung julatnya."
+    },
+    "equation": "Range = Maximum - Minimum",
+    "options": [
+      {
+        "value": "35",
+        "text": "35",
+        "feedback": {
+          "en": "Correct! Maximum = 70, Minimum = 35. Range = 70 - 35 = 35.",
+          "ms": "Tepat! Nilai maksimum = 70, Nilai minimum = 35. Julat = 70 - 35 = 35."
+        }
+      },
+      {
+        "value": "70",
+        "text": "70",
+        "feedback": {
+          "en": "70 is the maximum value.",
+          "ms": "70 ialah nilai maksimum."
+        }
+      },
+      {
+        "value": "30",
+        "text": "30",
+        "feedback": {
+          "en": "70 - 35 = 35, not 30.",
+          "ms": "70 - 35 = 35, bukan 30."
+        }
+      },
+      {
+        "value": "52",
+        "text": "52",
+        "feedback": {
+          "en": "52 is the median value.",
+          "ms": "52 ialah nilai median."
+        }
+      }
+    ],
+    "answer": "35",
+    "hints": {
+      "en": [
+        "Range = Largest value - Smallest value."
+      ],
+      "ms": [
+        "Julat = Nilai terbesar - Nilai terkecil."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Range = 70 - 35 = 35."
+      ],
+      "ms": [
+        "Julat = 70 - 35 = 35."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-E07",
+    "chapter": 8,
+    "topic": "interquartile_range_definition",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "What is the formula for the interquartile range (IQR)?",
+      "ms": "Apakah rumus bagi julat antara kuartil (JAK)?"
+    },
+    "equation": "IQR = Q3 - Q1",
+    "options": [
+      {
+        "value": "A",
+        "text": "Q3 - Q1",
+        "feedback": {
+          "en": "Correct! Interquartile range = Third quartile - First quartile.",
+          "ms": "Tepat! Julat antara kuartil = Kuartil ketiga - Kuartil pertama."
+        }
+      },
+      {
+        "value": "B",
+        "text": "Q3 - Q2",
+        "feedback": {
+          "en": "Q2 is the median.",
+          "ms": "Q2 ialah median."
+        }
+      },
+      {
+        "value": "C",
+        "text": "Q2 - Q1",
+        "feedback": {
+          "en": "Formula is Q3 - Q1.",
+          "ms": "Rumus ialah Q3 - Q1."
+        }
+      },
+      {
+        "value": "D",
+        "text": "(Q1 + Q3) / 2",
+        "feedback": {
+          "en": "This is the mid-quartile, not range.",
+          "ms": "Ini ialah min kuartil, bukan julat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "IQR is the difference between upper quartile (Q3) and lower quartile (Q1)."
+      ],
+      "ms": [
+        "JAK ialah perbezaan antara kuartil atas (Q3) dan kuartil bawah (Q1)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Interquartile Range = Q3 - Q1."
+      ],
+      "ms": [
+        "Julat Antara Kuartil = Q3 - Q1."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-E08",
+    "chapter": 8,
+    "topic": "standard_deviation_from_variance",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "If the variance of a set of exam marks is 49, what is the standard deviation?",
+      "ms": "Jika varians bagi suatu set markah peperiksaan ialah 49, apakah sisihan piawainya?"
+    },
+    "equation": "σ = √σ²",
+    "options": [
+      {
+        "value": "7",
+        "text": "7",
+        "feedback": {
+          "en": "Correct! Standard deviation σ = √49 = 7.",
+          "ms": "Tepat! Sisihan piawai σ = √49 = 7."
+        }
+      },
+      {
+        "value": "49",
+        "text": "49",
+        "feedback": {
+          "en": "49 is the variance.",
+          "ms": "49 ialah varians."
+        }
+      },
+      {
+        "value": "2401",
+        "text": "2401",
+        "feedback": {
+          "en": "Do not square the variance.",
+          "ms": "Jangan kuasakan dua varians."
+        }
+      },
+      {
+        "value": "14",
+        "text": "14",
+        "feedback": {
+          "en": "Square root of 49 is 7, not 14.",
+          "ms": "Punca kuasa dua 49 ialah 7, bukan 14."
+        }
+      }
+    ],
+    "answer": "7",
+    "hints": {
+      "en": [
+        "Standard deviation = Square root of variance."
+      ],
+      "ms": [
+        "Sisihan piawai = Punca kuasa dua varians."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Standard deviation σ = √Variance = √49 = 7."
+      ],
+      "ms": [
+        "Sisihan piawai σ = √Varians = √49 = 7."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-E09",
+    "chapter": 8,
+    "topic": "effect_of_constant_addition",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "kitchen",
+    "question": {
+      "en": "If RM 2 is added to the price of every dish in Warung Mama, what happens to the standard deviation of dish prices?",
+      "ms": "Jika RM 2 ditambah kepada harga setiap hidangan di Warung Mama, apakah yang berlaku kepada sisihan piawai harga hidangan?"
+    },
+    "equation": "x_new = x + k => σ_new = σ",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Remains unchanged",
+          "ms": "Kekal tidak berubah"
+        },
+        "feedback": {
+          "en": "Correct! Adding a constant to each data value shifts data but does not change dispersion.",
+          "ms": "Tepat! Menambah pemalar kepada setiap nilai data mengalihkan data tetapi tidak mengubah serakan."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Increases by RM 2",
+          "ms": "Meningkat sebanyak RM 2"
+        },
+        "feedback": {
+          "en": "Mean increases by RM 2, but measures of dispersion do not change.",
+          "ms": "Min meningkat sebanyak RM 2, tetapi sukatan serakan tidak berubah."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Multiplied by 2",
+          "ms": "Didarab dengan 2"
+        },
+        "feedback": {
+          "en": "Addition does not multiply standard deviation.",
+          "ms": "Penambahan tidak mendarabkan sisihan piawai."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Decreases by RM 2",
+          "ms": "Berkurang sebanyak RM 2"
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Adding a constant k shifts all points equally, so the spread (dispersion) remains identical."
+      ],
+      "ms": [
+        "Menambah pemalar k mengalihkan semua titik secara seragam, jadi sebaran (serakan) kekal sama."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Adding or subtracting a constant k does not change the range, IQR, variance, or standard deviation."
+      ],
+      "ms": [
+        "Menambah atau menolak pemalar k tidak mengubah julat, julat antara kuartil, varians, mahupun sisihan piawai."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-E10",
+    "chapter": 8,
+    "topic": "box_plot_median",
+    "difficulty": "easy",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "In a box-and-whisker plot, which feature represents the median (Q2) of the data?",
+      "ms": "Dalam plot kotak, ciri manakah yang mewakili median (Q2) bagi data tersebut?"
+    },
+    "equation": "Box plot Q2",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "The line inside the box",
+          "ms": "Garis di dalam kotak"
+        },
+        "feedback": {
+          "en": "Correct! The line drawn inside the rectangular box marks the median Q2.",
+          "ms": "Tepat! Garis di dalam kotak segi empat tepat menandakan median Q2."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "The left end of the left whisker",
+          "ms": "Hujung kiri misai sebelah kiri"
+        },
+        "feedback": {
+          "en": "This represents the minimum value.",
+          "ms": "Ini mewakili nilai minimum."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "The right edge of the box",
+          "ms": "Tepi kanan kotak"
+        },
+        "feedback": {
+          "en": "This represents the third quartile Q3.",
+          "ms": "Ini mewakili kuartil ketiga Q3."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "The total length of the plot",
+          "ms": "Panjang keseluruhan plot"
+        },
+        "feedback": {
+          "en": "Total length represents the range.",
+          "ms": "Panjang keseluruhan mewakili julat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "The box is bounded by Q1 and Q3, with a line inside indicating Q2 (median)."
+      ],
+      "ms": [
+        "Kotak disempadani oleh Q1 dan Q3, dengan satu garis di dalam menandakan Q2 (median)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "In a box plot: left edge = Q1, right edge = Q3, internal dividing line = Q2 (median)."
+      ],
+      "ms": [
+        "Dalam plot kotak: sisi kiri = Q1, sisi kanan = Q3, garis pembahagi dalam kotak = Q2 (median)."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-M06",
+    "chapter": 8,
+    "topic": "iqr_ordered_data",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "Find the interquartile range (IQR) for the ordered dataset: 3, 5, 7, 8, 12, 14, 17, 19, 21.",
+      "ms": "Cari julat antara kuartil (JAK) bagi set data tersusun: 3, 5, 7, 8, 12, 14, 17, 19, 21."
+    },
+    "equation": "IQR = Q3 - Q1",
+    "options": [
+      {
+        "value": "12",
+        "text": "12",
+        "feedback": {
+          "en": "Correct! 9 data points. Median Q2 = 12. Lower half: 3, 5, 7, 8 => Q1 = (5+7)/2 = 6. Upper half: 14, 17, 19, 21 => Q3 = (17+19)/2 = 18. IQR = 18 - 6 = 12.",
+          "ms": "Tepat! Median Q2 = 12. Q1 = 6. Q3 = 18. JAK = 18 - 6 = 12."
+        }
+      },
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "Check Q1 and Q3 values.",
+          "ms": "Semak nilai Q1 dan Q3."
+        }
+      },
+      {
+        "value": "18",
+        "text": "18",
+        "feedback": {
+          "en": "18 is Q3.",
+          "ms": "18 ialah Q3."
+        }
+      },
+      {
+        "value": "6",
+        "text": "6",
+        "feedback": {
+          "en": "6 is Q1.",
+          "ms": "6 ialah Q1."
+        }
+      }
+    ],
+    "answer": "12",
+    "hints": {
+      "en": [
+        "Median is 12. Lower half is {3, 5, 7, 8} (Q1 = 6). Upper half is {14, 17, 19, 21} (Q3 = 18)."
+      ],
+      "ms": [
+        "Median ialah 12. Separuh bawah ialah {3, 5, 7, 8} (Q1 = 6). Separuh atas ialah {14, 17, 19, 21} (Q3 = 18)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Q1 = (5 + 7)/2 = 6. Q3 = (17 + 19)/2 = 18. IQR = 18 - 6 = 12."
+      ],
+      "ms": [
+        "Q1 = (5 + 7)/2 = 6. Q3 = (17 + 19)/2 = 18. JAK = 18 - 6 = 12."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-M07",
+    "chapter": 8,
+    "topic": "variance_ungrouped_small",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "Calculate the variance of the data: 2, 4, 6, 8, 10.",
+      "ms": "Hitung varians bagi set data: 2, 4, 6, 8, 10."
+    },
+    "equation": "Mean = 6, σ² = Σ(x - x̄)² / N",
+    "options": [
+      {
+        "value": "8",
+        "text": "8",
+        "feedback": {
+          "en": "Correct! Mean = 30/5 = 6. Deviations: (-4)² + (-2)² + 0² + 2² + 4² = 16 + 4 + 0 + 4 + 16 = 40. Variance = 40 / 5 = 8.",
+          "ms": "Tepat! Min = 6. Varians = (16 + 4 + 0 + 4 + 16) / 5 = 40 / 5 = 8."
+        }
+      },
+      {
+        "value": "4",
+        "text": "4",
+        "feedback": {
+          "en": "Recalculate Σ(x - 6)² / 5.",
+          "ms": "Kira semula Σ(x - 6)² / 5."
+        }
+      },
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "Check your sum of squares.",
+          "ms": "Semak hasil tambah kuasa dua."
+        }
+      },
+      {
+        "value": "2.83",
+        "text": "2.83",
+        "feedback": {
+          "en": "2.83 is the standard deviation (√8).",
+          "ms": "2.83 ialah sisihan piawai (√8)."
+        }
+      }
+    ],
+    "answer": "8",
+    "hints": {
+      "en": [
+        "1) Mean = 6. 2) Squared differences: 16, 4, 0, 4, 16. 3) Sum = 40. 4) Divide by 5."
+      ],
+      "ms": [
+        "1) Min = 6. 2) Kuasa dua beza: 16, 4, 0, 4, 16. 3) Jumlah = 40. 4) Bahagi dengan 5."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Mean = 6. Sum of squared deviations = (-4)² + (-2)² + 0² + 2² + 4² = 40. Variance = 40 / 5 = 8."
+      ],
+      "ms": [
+        "Min = 6. Hasil tambah kuasa dua sisihan = 40. Varians = 40 / 5 = 8."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-M08",
+    "chapter": 8,
+    "topic": "effect_of_multiplication_on_variance",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "A set of data has a standard deviation of 3. If every value in the dataset is multiplied by 4, what is the new variance?",
+      "ms": "Satu set data mempunyai sisihan piawai 3. Jika setiap nilai dalam set data itu didarab dengan 4, apakah varians yang baharu?"
+    },
+    "equation": "σ_new = k*σ => σ²_new = k² * σ²",
+    "options": [
+      {
+        "value": "144",
+        "text": "144",
+        "feedback": {
+          "en": "Correct! New standard deviation = 4 * 3 = 12. New variance = 12² = 144 (or 4² * 3² = 16 * 9 = 144).",
+          "ms": "Tepat! Sisihan piawai baharu = 4 * 3 = 12. Varians baharu = 12² = 144."
+        }
+      },
+      {
+        "value": "12",
+        "text": "12",
+        "feedback": {
+          "en": "12 is the new standard deviation, square it for variance.",
+          "ms": "12 ialah sisihan piawai baharu, kuasakan dua untuk dapat varians."
+        }
+      },
+      {
+        "value": "36",
+        "text": "36",
+        "feedback": {
+          "en": "Variance is multiplied by k² = 4² = 16, not 4.",
+          "ms": "Varians didarab dengan k² = 4² = 16, bukan 4."
+        }
+      },
+      {
+        "value": "48",
+        "text": "48",
+        "feedback": {
+          "en": "16 * 9 = 144.",
+          "ms": "16 * 9 = 144."
+        }
+      }
+    ],
+    "answer": "144",
+    "hints": {
+      "en": [
+        "When data is multiplied by k, variance is multiplied by k²: 4² × 3² = 16 × 9 = 144."
+      ],
+      "ms": [
+        "Apabila data didarab dengan k, varians didarab dengan k²: 4² × 3² = 16 × 9 = 144."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Original variance = 3² = 9. When multiplied by 4, new variance = 4² × 9 = 16 × 9 = 144."
+      ],
+      "ms": [
+        "Varians asal = 3² = 9. Apabila didarab dengan 4, varians baharu = 4² × 9 = 16 × 9 = 144."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-M09",
+    "chapter": 8,
+    "topic": "identifying_outliers",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "For a dataset, Q1 = 15 and Q3 = 25. An outlier is defined as any value smaller than Q1 - 1.5(IQR) or greater than Q3 + 1.5(IQR). Which value is an outlier?",
+      "ms": "Bagi suatu set data, Q1 = 15 dan Q3 = 25. Suatu pencilan ditakrifkan sebagai sebarang nilai kurang daripada Q1 - 1.5(JAK) atau lebih besar daripada Q3 + 1.5(JAK). Nilai manakah yang merupakan pencilan?"
+    },
+    "equation": "IQR = 10, Lower fence = 15 - 15 = 0, Upper fence = 25 + 15 = 40",
+    "options": [
+      {
+        "value": "43",
+        "text": "43",
+        "feedback": {
+          "en": "Correct! IQR = 25 - 15 = 10. Upper boundary = 25 + 1.5(10) = 40. Since 43 > 40, it is an outlier.",
+          "ms": "Tepat! JAK = 10. Sempadan atas = 25 + 15 = 40. Kerana 43 > 40, ia ialah pencilan."
+        }
+      },
+      {
+        "value": "38",
+        "text": "38",
+        "feedback": {
+          "en": "38 is within the boundary (≤ 40).",
+          "ms": "38 berada dalam sempadan (≤ 40)."
+        }
+      },
+      {
+        "value": "2",
+        "text": "2",
+        "feedback": {
+          "en": "Lower boundary is 15 - 1.5(10) = 0. 2 > 0, so not an outlier.",
+          "ms": "Sempadan bawah = 15 - 15 = 0. 2 > 0, jadi bukan pencilan."
+        }
+      },
+      {
+        "value": "35",
+        "text": "35",
+        "feedback": {
+          "en": "35 is inside the boundary.",
+          "ms": "35 berada di dalam sempadan."
+        }
+      }
+    ],
+    "answer": "43",
+    "hints": {
+      "en": [
+        "IQR = 25 - 15 = 10. Upper cutoff = 25 + 1.5(10) = 40. Check which option exceeds 40."
+      ],
+      "ms": [
+        "JAK = 25 - 15 = 10. Had atas = 25 + 1.5(10) = 40. Semak pilihan yang melebihi 40."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "IQR = 10. Upper fence = 25 + 1.5(10) = 40. Since 43 > 40, 43 is an outlier."
+      ],
+      "ms": [
+        "JAK = 10. Sempadan atas = 25 + 1.5(10) = 40. Oleh kerana 43 > 40, 43 ialah pencilan."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-M10",
+    "chapter": 8,
+    "topic": "comparing_dispersion_consistency",
+    "difficulty": "medium",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "kitchen",
+    "question": {
+      "en": "Mama evaluates two cooks. Cook A has mean cooking time 12 minutes with standard deviation 1.2 minutes. Cook B has mean cooking time 12 minutes with standard deviation 3.5 minutes. Which cook is more consistent?",
+      "ms": "Mama menilai dua orang tukang masak. Tukang masak A mempunyai min masa memasak 12 minit dengan sisihan piawai 1.2 minit. Tukang masak B mempunyai min masa memasak 12 minit dengan sisihan piawai 3.5 minit. Tukang masak manakah yang lebih konsisten?"
+    },
+    "equation": "Lower standard deviation = More consistent",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Cook A, because a smaller standard deviation indicates higher consistency",
+          "ms": "Tukang masak A, kerana sisihan piawai yang lebih kecil menunjukkan konsistensi yang lebih tinggi"
+        },
+        "feedback": {
+          "en": "Correct! Smaller standard deviation means data values are closer to the mean.",
+          "ms": "Tepat! Sisihan piawai yang lebih kecil bermakna nilai-nilai data lebih dekat dengan min."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Cook B, because a larger standard deviation indicates better skill",
+          "ms": "Tukang masak B, kerana sisihan piawai lebih besar menunjukkan kemahiran lebih baik"
+        },
+        "feedback": {
+          "en": "Larger standard deviation means more varied (less consistent) performance.",
+          "ms": "Sisihan piawai lebih besar bermakna prestasi lebih berbeza-beza (kurang konsisten)."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Both are equally consistent because their means are the same",
+          "ms": "Kedua-duanya sama konsisten kerana min mereka sama"
+        },
+        "feedback": {
+          "en": "Consistency is judged by dispersion (standard deviation), not mean.",
+          "ms": "Konsistensi dinilai berdasarkan sukatan serakan, bukan min."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Cannot be determined",
+          "ms": "Tidak dapat ditentukan"
+        },
+        "feedback": {
+          "en": "It can be deduced directly.",
+          "ms": "Boleh disimpulkan secara langsung."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Smaller standard deviation = less spread out = more consistent."
+      ],
+      "ms": [
+        "Sisihan piawai lebih kecil = kurang berserak = lebih konsisten."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Cook A has σ = 1.2 min, which is lower than Cook B (σ = 3.5 min). Lower standard deviation means greater consistency."
+      ],
+      "ms": [
+        "Tukang masak A mempunyai σ = 1.2 min, lebih rendah daripada B (3.5 min). Sisihan piawai lebih kecil bermaksud prestasi lebih konsisten."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-H06",
+    "chapter": 8,
+    "topic": "standard_deviation_from_sums",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "For a set of 10 data points, Σx = 120 and Σx² = 1540. Calculate the standard deviation.",
+      "ms": "Bagi satu set 10 data, Σx = 120 dan Σx² = 1540. Hitung sisihan piawainya."
+    },
+    "equation": "σ = √[ (Σx²/N) - (x̄)² ]",
+    "options": [
+      {
+        "value": "3.16",
+        "text": "3.16",
+        "feedback": {
+          "en": "Correct! x̄ = 120 / 10 = 12. Variance = 1540/10 - 12² = 154 - 144 = 10. σ = √10 ≈ 3.16.",
+          "ms": "Tepat! Min = 12. Varians = 154 - 144 = 10. σ = √10 ≈ 3.16."
+        }
+      },
+      {
+        "value": "10",
+        "text": "10",
+        "feedback": {
+          "en": "10 is the variance (σ²), take square root for standard deviation.",
+          "ms": "10 ialah varians (σ²), punca kuasa duakan untuk sisihan piawai."
+        }
+      },
+      {
+        "value": "4.24",
+        "text": "4.24",
+        "feedback": {
+          "en": "√18 ≈ 4.24.",
+          "ms": "√18 ≈ 4.24."
+        }
+      },
+      {
+        "value": "2.50",
+        "text": "2.50",
+        "feedback": {
+          "en": "Check your calculations: 154 - 144 = 10.",
+          "ms": "Semak pengiraan: 154 - 144 = 10."
+        }
+      }
+    ],
+    "answer": "3.16",
+    "hints": {
+      "en": [
+        "Variance = (Σx²/N) - (x̄)². σ = √Variance. 1540/10 - 12² = 10."
+      ],
+      "ms": [
+        "Varians = (Σx²/N) - (x̄)². σ = √Varians. 1540/10 - 12² = 10."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Mean x̄ = 12. Variance = 154 - 12² = 154 - 144 = 10. Standard deviation = √10 ≈ 3.16."
+      ],
+      "ms": [
+        "Min x̄ = 12. Varians = 154 - 144 = 10. Sisihan piawai = √10 ≈ 3.16."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-H07",
+    "chapter": 8,
+    "topic": "effect_of_removing_outlier",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "A dataset contains 9 typical numbers and 1 extreme outlier (much larger than the rest). If this outlier is removed, what is the effect on the mean and standard deviation?",
+      "ms": "Satu set data mengandungi 9 nombor biasa dan 1 pencilan melampau (jauh lebih besar daripada yang lain). Jika pencilan ini dikeluarkan, apakah kesan terhadap min dan sisihan piawai?"
+    },
+    "equation": "Removing high outlier",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Both the mean and standard deviation decrease significantly",
+          "ms": "Kedua-dua min dan sisihan piawai berkurang dengan ketara"
+        },
+        "feedback": {
+          "en": "Correct! A high outlier pulls both mean and standard deviation upward. Removing it decreases both.",
+          "ms": "Tepat! Pencilan tinggi menarik kedua-dua min dan sisihan piawai ke atas. Mengeluarkannya mengurangkan kedua-duanya."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "The mean decreases but standard deviation increases",
+          "ms": "Min berkurang tetapi sisihan piawai bertambah"
+        },
+        "feedback": {
+          "en": "Dispersion decreases because data becomes more clustered without the outlier.",
+          "ms": "Serakan berkurang kerana data lebih berkelompok tanpa pencilan."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "The mean increases and standard deviation decreases",
+          "ms": "Min bertambah dan sisihan piawai berkurang"
+        },
+        "feedback": {
+          "en": "Removing a large number cannot increase the mean.",
+          "ms": "Mengeluarkan nombor besar tidak boleh meningkatkan min."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Neither the mean nor standard deviation changes",
+          "ms": "Kedua-dua min dan sisihan piawai tidak berubah"
+        },
+        "feedback": {
+          "en": "Outliers strongly affect both measures.",
+          "ms": "Pencilan mempengaruhi kedua-dua sukatan ini dengan kuat."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "A high outlier inflates both average and spread. Removing it shrinks both."
+      ],
+      "ms": [
+        "Pencilan tinggi melambungkan kedua-dua purata dan sebaran. Mengeluarkannya mengecilkan kedua-duanya."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Removing a large outlier decreases the average (mean) and brings all remaining points closer together, reducing the standard deviation."
+      ],
+      "ms": [
+        "Mengeluarkan pencilan besar mengurangkan nilai purata (min) dan merapatkan data yang tinggal, mengurangkan sisihan piawai."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-H08",
+    "chapter": 8,
+    "topic": "combining_two_identical_distributions",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "Two identical datasets X and Y each have 20 values, with mean 50 and variance 16. If all 40 values are combined into a single dataset, what is the variance of the combined dataset?",
+      "ms": "Dua set data yang serupa X dan Y masing-masing mempunyai 20 nilai, dengan min 50 dan varians 16. Jika kesemua 40 nilai digabungkan menjadi satu set data tunggal, apakah varians bagi set data gabungan itu?"
+    },
+    "equation": "Same mean and same variance",
+    "options": [
+      {
+        "value": "16",
+        "text": "16",
+        "feedback": {
+          "en": "Correct! Since both subsets have identical mean (50) and identical variance (16), the combined distribution has unchanged variance 16.",
+          "ms": "Tepat! Kerana kedua-dua subset mempunyai min yang sama (50) dan varians yang sama (16), varians data gabungan kekal 16."
+        }
+      },
+      {
+        "value": "32",
+        "text": "32",
+        "feedback": {
+          "en": "Variances are not added together.",
+          "ms": "Varians tidak ditambah secara terus."
+        }
+      },
+      {
+        "value": "8",
+        "text": "8",
+        "feedback": {
+          "en": "Do not divide variance by 2.",
+          "ms": "Jangan bahagikan varians dengan 2."
+        }
+      },
+      {
+        "value": "4",
+        "text": "4",
+        "feedback": {
+          "en": "4 is the standard deviation (√16).",
+          "ms": "4 ialah sisihan piawai (√16)."
+        }
+      }
+    ],
+    "answer": "16",
+    "hints": {
+      "en": [
+        "When two datasets with the same mean and same variance are merged, the overall spread does not change."
+      ],
+      "ms": [
+        "Apabila dua set data dengan min dan varians yang sama digabungkan, sebaran keseluruhan tidak berubah."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Because the means are identical, there is no shift between groups. The pooled variance equals 16."
+      ],
+      "ms": [
+        "Kerana nilai min adalah serupa, tiada anjakan antara kumpulan. Varians terkumpul kekal 16."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-H09",
+    "chapter": 8,
+    "topic": "linear_transformation_dispersion",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "A set of data has standard deviation σ = 5. If each data value x is transformed by y = 3x - 7, calculate the new standard deviation and variance.",
+      "ms": "Suatu set data mempunyai sisihan piawai σ = 5. Jika setiap nilai data x dijelmakan oleh y = 3x - 7, hitung sisihan piawai dan varians yang baharu."
+    },
+    "equation": "σ_y = |a| * σ_x, σ²_y = a² * σ²_x",
+    "options": [
+      {
+        "value": "A",
+        "text": "σ = 15, Variance = 225",
+        "feedback": {
+          "en": "Correct! New σ = 3 * 5 = 15. New variance = 15² = 225. The constant -7 has no effect on dispersion.",
+          "ms": "Tepat! σ baharu = 3 * 5 = 15. Varians baharu = 15² = 225. Pemalar -7 tidak mempengaruhi serakan."
+        }
+      },
+      {
+        "value": "B",
+        "text": "σ = 8, Variance = 64",
+        "feedback": {
+          "en": "Do not subtract 7 from standard deviation!",
+          "ms": "Jangan tolak 7 daripada sisihan piawai!"
+        }
+      },
+      {
+        "value": "C",
+        "text": "σ = 15, Variance = 15",
+        "feedback": {
+          "en": "Variance is σ² = 15² = 225.",
+          "ms": "Varians ialah σ² = 15² = 225."
+        }
+      },
+      {
+        "value": "D",
+        "text": "σ = 5, Variance = 25",
+        "feedback": {
+          "en": "Multiplication by 3 changes standard deviation.",
+          "ms": "Pendaraban dengan 3 mengubah sisihan piawai."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Multiplication factor is 3. New σ = 3 × 5 = 15. New variance = 15² = 225."
+      ],
+      "ms": [
+        "Faktor pendaraban ialah 3. σ baharu = 3 × 5 = 15. Varians baharu = 15² = 225."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "Standard deviation scales by |3|: 3 × 5 = 15. Variance scales by 3²: 9 × 25 = 225. Subtracting 7 does not affect dispersion."
+      ],
+      "ms": [
+        "Sisihan piawai berskala mengikut |3|: 3 × 5 = 15. Varians berskala mengikut 3²: 9 × 25 = 225. Penolakan 7 tidak memberi sebarang kesan kepada serakan."
+      ]
+    }
+  },
+  {
+    "id": "F4-C08-H10",
+    "chapter": 8,
+    "topic": "box_plot_shape_skewness",
+    "difficulty": "hard",
+    "type": "multiple_choice",
+    "mission": "M08-01",
+    "context": "general",
+    "question": {
+      "en": "In a box plot, the median line is very close to Q1 (the left edge of the box), and the right whisker is much longer than the left whisker. What is the skewness of this distribution?",
+      "ms": "Dalam suatu plot kotak, garis median sangat dekat dengan Q1 (sisi kiri kotak), dan misai kanan jauh lebih panjang daripada misai kiri. Apakah bentuk kepencongan taburan ini?"
+    },
+    "equation": "Right-skewed / Skewed to the right",
+    "options": [
+      {
+        "value": "A",
+        "text": {
+          "en": "Positively skewed (skewed to the right)",
+          "ms": "Pencong ke kanan (pencong positif)"
+        },
+        "feedback": {
+          "en": "Correct! When the median is close to Q1 and the right whisker is elongated, the distribution is skewed to the right.",
+          "ms": "Tepat! Apabila median dekat dengan Q1 dan misai kanan memanjang, taburan adalah pencong ke kanan."
+        }
+      },
+      {
+        "value": "B",
+        "text": {
+          "en": "Negatively skewed (skewed to the left)",
+          "ms": "Pencong ke kiri (pencong negatif)"
+        },
+        "feedback": {
+          "en": "Left-skewed has a longer left whisker and median near Q3.",
+          "ms": "Pencong ke kiri mempunyai misai kiri yang panjang dan median berhampiran Q3."
+        }
+      },
+      {
+        "value": "C",
+        "text": {
+          "en": "Symmetrical (normal distribution)",
+          "ms": "Simetri (taburan normal)"
+        },
+        "feedback": {
+          "en": "Symmetric plot has equal whiskers and median centered in the box.",
+          "ms": "Plot simetri mempunyai misai sama panjang dan median di tengah kotak."
+        }
+      },
+      {
+        "value": "D",
+        "text": {
+          "en": "Uniform distribution",
+          "ms": "Taburan seragam"
+        },
+        "feedback": {
+          "en": "Incorrect.",
+          "ms": "Salah."
+        }
+      }
+    ],
+    "answer": "A",
+    "hints": {
+      "en": [
+        "Long right tail/whisker = skewed right (positive skew)."
+      ],
+      "ms": [
+        "Ekor/misai kanan yang panjang = pencong ke kanan (pencong positif)."
+      ]
+    },
+    "explanation": {
+      "en": [
+        "A longer right whisker and median positioned near Q1 indicate data values extend further to higher values: positively skewed (skewed right)."
+      ],
+      "ms": [
+        "Misai kanan yang lebih panjang dan median terletak berhampiran Q1 menunjukkan data melanjut ke arah nilai tinggi: pencong ke kanan (positif)."
+      ]
+    }
+  }
+]

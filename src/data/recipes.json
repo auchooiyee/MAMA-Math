@@ -1,0 +1,106 @@
+[
+  {
+    "id": "nasi_lemak",
+    "nameKey": "recipe.nasiLemak",
+    "descKey": "recipe.descNasiLemak",
+    "category": "main",
+    "unlockLevel": 1,
+    "baseCost": 4.50,
+    "sellingPrice": 8.00,
+    "prepTimeSeconds": 60,
+    "ingredients": [
+      { "id": "rice", "amount": 250, "unit": "g" },
+      { "id": "coconut_milk", "amount": 150, "unit": "ml" },
+      { "id": "cucumber", "amount": 4, "unit": "slices" }
+    ],
+    "steps": [
+      { "id": "math_tray", "type": "math", "chapter": 1 },
+      { "id": "chop_cucumber", "type": "minigame", "game": "chop", "target": 4 },
+      { "id": "measure_santan", "type": "minigame", "game": "measure", "target": 150 },
+      { "id": "stirfry_sambal", "type": "minigame", "game": "stirfry" },
+      { "id": "math_pricing", "type": "math", "chapter": 1 }
+    ]
+  },
+  {
+    "id": "roti_canai",
+    "nameKey": "recipe.rotiCanai",
+    "descKey": "recipe.descRotiCanai",
+    "category": "breakfast",
+    "unlockLevel": 1,
+    "baseCost": 1.50,
+    "sellingPrice": 3.50,
+    "prepTimeSeconds": 45,
+    "ingredients": [
+      { "id": "flour", "amount": 300, "unit": "g" },
+      { "id": "water", "amount": 150, "unit": "ml" }
+    ],
+    "steps": [
+      { "id": "math_ratio", "type": "math", "chapter": 1 },
+      { "id": "mix_dough", "type": "minigame", "game": "mix", "ratio1": 3, "ratio2": 2 },
+      { "id": "flip_roti", "type": "minigame", "game": "timing", "targetCycles": 3 },
+      { "id": "cook_temp", "type": "minigame", "game": "temperature", "targetTemp": 180 }
+    ]
+  },
+  {
+    "id": "mee_goreng",
+    "nameKey": "recipe.meeGoreng",
+    "descKey": "recipe.descMeeGoreng",
+    "category": "noodles",
+    "unlockLevel": 1,
+    "baseCost": 3.80,
+    "sellingPrice": 7.50,
+    "prepTimeSeconds": 50,
+    "ingredients": [
+      { "id": "noodles", "amount": 200, "unit": "g" },
+      { "id": "tofu", "amount": 1, "unit": "piece" }
+    ],
+    "steps": [
+      { "id": "math_ineq", "type": "math", "chapter": 6 },
+      { "id": "chop_tofu", "type": "minigame", "game": "chop", "target": 5 },
+      { "id": "stirfry_wok", "type": "minigame", "game": "stirfry" },
+      { "id": "serve_order", "type": "minigame", "game": "serve_order" },
+      { "id": "charge_bill", "type": "minigame", "game": "cashier", "total": 15, "paid": 20 }
+    ]
+  },
+  {
+    "id": "teh_tarik",
+    "nameKey": "recipe.tehTarik",
+    "descKey": "recipe.descTehTarik",
+    "category": "drink",
+    "unlockLevel": 1,
+    "baseCost": 1.20,
+    "sellingPrice": 3.00,
+    "prepTimeSeconds": 35,
+    "ingredients": [
+      { "id": "tea", "amount": 10, "unit": "g" },
+      { "id": "condensed_milk", "amount": 50, "unit": "ml" }
+    ],
+    "steps": [
+      { "id": "math_fin", "type": "math", "chapter": 10 },
+      { "id": "measure_milk", "type": "minigame", "game": "measure", "target": 50 },
+      { "id": "pull_foam", "type": "minigame", "game": "tehtarik" },
+      { "id": "charge_bill", "type": "minigame", "game": "cashier", "total": 12, "paid": 20 }
+    ]
+  },
+  {
+    "id": "satay_ayam",
+    "nameKey": "recipe.satayAyam",
+    "descKey": "recipe.descSatayAyam",
+    "category": "grill",
+    "unlockLevel": 1,
+    "baseCost": 4.80,
+    "sellingPrice": 9.50,
+    "prepTimeSeconds": 50,
+    "ingredients": [
+      { "id": "chicken", "amount": 250, "unit": "g" },
+      { "id": "spices", "amount": 50, "unit": "g" },
+      { "id": "peanut_sauce", "amount": 100, "unit": "ml" }
+    ],
+    "steps": [
+      { "id": "math_network", "type": "math", "chapter": 5 },
+      { "id": "mix_marinade", "type": "minigame", "game": "mix", "ratio1": 3, "ratio2": 2 },
+      { "id": "grill_satay", "type": "minigame", "game": "satay" },
+      { "id": "charge_bill", "type": "minigame", "game": "cashier", "total": 19, "paid": 50 }
+    ]
+  }
+]

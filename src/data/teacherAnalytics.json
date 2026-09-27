@@ -1,0 +1,47 @@
+{
+  "classInfo": {
+    "code": "AMC-F4-2026",
+    "name": "Tingkatan 4 Sains 1 (4S1)",
+    "school": "SMK Sri Aman",
+    "studentsEnrolled": 32,
+    "studentsActive": 28,
+    "averageAccuracy": 76,
+    "totalQuestionsAnswered": 480,
+    "avgTimePerQuestionSeconds": 42
+  },
+  "chapterMastery": [
+    { "chapter": 1, "code": "F4-C01", "nameKey": "worlds.w1", "mastery": 82, "attempts": 64, "correct": 52 },
+    { "chapter": 2, "code": "F4-C02", "nameKey": "worlds.w2", "mastery": 71, "attempts": 58, "correct": 41 },
+    { "chapter": 3, "code": "F4-C03", "nameKey": "worlds.w3", "mastery": 91, "attempts": 48, "correct": 44 },
+    { "chapter": 4, "code": "F4-C04", "nameKey": "worlds.w4", "mastery": 63, "attempts": 52, "correct": 33 },
+    { "chapter": 5, "code": "F4-C05", "nameKey": "worlds.w5", "mastery": 74, "attempts": 50, "correct": 37 },
+    { "chapter": 6, "code": "F4-C06", "nameKey": "worlds.w6", "mastery": 58, "attempts": 60, "correct": 35 },
+    { "chapter": 7, "code": "F4-C07", "nameKey": "worlds.w7", "mastery": 79, "attempts": 46, "correct": 36 },
+    { "chapter": 8, "code": "F4-C08", "nameKey": "worlds.w8", "mastery": 68, "attempts": 42, "correct": 29 },
+    { "chapter": 9, "code": "F4-C09", "nameKey": "worlds.w9", "mastery": 84, "attempts": 38, "correct": 32 },
+    { "chapter": 10, "code": "F4-C10", "nameKey": "worlds.w10", "mastery": 88, "attempts": 40, "correct": 35 }
+  ],
+  "commonMisconceptions": [
+    {
+      "chapter": 6,
+      "topic": "Linear Inequalities (Shading & Boundary)",
+      "errorRate": "42%",
+      "alertKey": "teacher.alertIneq",
+      "recommendationKey": "teacher.recIneq"
+    },
+    {
+      "chapter": 4,
+      "topic": "Set Operations (Complement of Union)",
+      "errorRate": "37%",
+      "alertKey": "teacher.alertSet",
+      "recommendationKey": "teacher.recSet"
+    },
+    {
+      "chapter": 2,
+      "topic": "Number Bases (Base 8 Addition Carrying)",
+      "errorRate": "29%",
+      "alertKey": "teacher.alertBase",
+      "recommendationKey": "teacher.recBase"
+    }
+  ]
+}
