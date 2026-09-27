@@ -5,6 +5,7 @@ import audioManager from '../managers/AudioManager.js';
 import analyticsManager from '../managers/AnalyticsManager.js';
 import playerManager from '../managers/PlayerManager.js';
 import gameManager from '../managers/GameManager.js';
+import multiplayerManager from '../managers/MultiplayerManager.js';
 import { createButton } from '../ui/buttons.js';
 import { createPanel } from '../ui/panels.js';
 import { THEME } from '../config/constants.js';
@@ -117,6 +118,7 @@ export class MathChallengeScene extends Phaser.Scene {
     this.difficulty = data.difficulty || 'medium';
     this.onComplete = data.onComplete;
     this.onBankExhausted = data.onBankExhausted;
+    this.isCoopChallenge = !!data.isCoopChallenge;
     this.attempts = 0;
     this.selectedOption = null;
   }
@@ -211,6 +213,23 @@ export class MathChallengeScene extends Phaser.Scene {
       color: '#0284c7',
       fontStyle: 'bold'
     }).setOrigin(0.5);
+
+    if (this.isCoopChallenge) {
+      const scoreX = cx + (isPort ? 235 : 360);
+      const scoreY = isPort ? 205 : titleY;
+      const scoreBg = this.add.graphics();
+      scoreBg.fillStyle(0xfff4c2, 0.98);
+      scoreBg.fillRoundedRect(scoreX - (isPort ? 90 : 105), scoreY - 17, isPort ? 180 : 210, 34, 12);
+      scoreBg.lineStyle(2, THEME.outlineDark, 1);
+      scoreBg.strokeRoundedRect(scoreX - (isPort ? 90 : 105), scoreY - 17, isPort ? 180 : 210, 34, 12);
+      this.coopScoreText = this.add.text(scoreX, scoreY,
+        localizationManager.t('math.coopScoreHud', { points: multiplayerManager.room?.challengeScore || 0 }), {
+          fontFamily: 'Nunito, sans-serif',
+          fontSize: isPort ? '14px' : '15px',
+          color: THEME.textDark,
+          fontStyle: 'bold'
+        }).setOrigin(0.5);
+    }
 
     // Otak Pantas Combo Streak Indicator
     const streak = gameManager.comboStreak || 0;
@@ -440,6 +459,12 @@ export class MathChallengeScene extends Phaser.Scene {
     this.attempts += 1;
     const result = questionManager.checkAnswer(value);
     const currQ = questionManager.getCurrentQuestion();
+    const challengeScore = this.isCoopChallenge
+      ? multiplayerManager.recordChallengeAnswer(result.isCorrect, this.attempts)
+      : null;
+    if (this.coopScoreText && challengeScore) {
+      this.coopScoreText.setText(localizationManager.t('math.coopScoreHud', { points: challengeScore.total }));
+    }
 
     analyticsManager.recordQuestionAttempt({
       questionId: currQ?.id || this.questionId,
@@ -455,7 +480,10 @@ export class MathChallengeScene extends Phaser.Scene {
     if (result.isCorrect) {
       audioManager.playCorrect();
       this.burstAnswerFeedback(true, buttonObj.container.x, buttonObj.container.y);
-      this.feedbackText.setText(`✓ ${result.feedback || localizationManager.t('math.correct')}`);
+      const coopFeedback = challengeScore
+        ? ` • ${localizationManager.t('math.coopScoreEarned', { points: challengeScore.points, total: challengeScore.total })}`
+        : '';
+      this.feedbackText.setText(`✓ ${result.feedback || localizationManager.t('math.correct')}${coopFeedback}`);
       this.feedbackText.setColor('#4ade80');
       if (this.btnSolution) this.btnSolution.container.setVisible(false);
 
@@ -493,7 +521,8 @@ export class MathChallengeScene extends Phaser.Scene {
         this.streakBadge = null;
       }
 
-      this.feedbackText.setText(`✗ ${result.feedback || localizationManager.t('math.tryAgain')}`);
+      const coopFeedback = challengeScore ? ` • ${localizationManager.t('math.coopScoreMiss')}` : '';
+      this.feedbackText.setText(`✗ ${result.feedback || localizationManager.t('math.tryAgain')}${coopFeedback}`);
       this.feedbackText.setColor('#f87171');
 
       if (this.btnSolution) {

@@ -159,7 +159,10 @@
     "accuracy": "Math Accuracy",
     "timeTaken": "Time Taken",
     "step": "Step {num}",
-    "enterValue": "Select or enter your answer:"
+    "enterValue": "Select or enter your answer:",
+    "coopScoreHud": "TEAM POINTS: {points}",
+    "coopScoreEarned": "+{points} PTS • TEAM {total}",
+    "coopScoreMiss": "0 PTS • TRY AGAIN"
   },
   "result": {
     "title": "ORDER COMPLETE!",
@@ -258,7 +261,8 @@
     "networkError": "CONNECTION ERROR",
     "networkOffline": "OFFLINE",
     "networkReady": "REALTIME READY",
-    "networkLocal": "LOCAL DEVICE"
+    "networkLocal": "LOCAL DEVICE",
+    "challengePoints": "Math Challenge Points:"
   },
   "achievements": {
     "title": "MY ACHIEVEMENTS",

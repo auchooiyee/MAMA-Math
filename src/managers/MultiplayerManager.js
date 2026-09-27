@@ -287,8 +287,26 @@ class MultiplayerManager {
         this.room.missionId = msg.missionId || this.room.missionId;
         if (msg.targetChapter !== undefined) this.room.targetChapter = msg.targetChapter;
         if (msg.difficulty) this.room.difficulty = msg.difficulty;
+        this.room.challengeScore = 0;
+        this.room.players.forEach(player => {
+          player.challengePoints = 0;
+          player.challengeCorrect = 0;
+          player.challengeMisses = 0;
+        });
         this.notifyStateListeners();
         break;
+
+      case 'CHALLENGE_SCORE': {
+        const scorer = this.room.players.find(player => player.id === msg.playerId);
+        if (scorer) {
+          scorer.challengePoints = Math.max(0, Number(msg.points) || 0);
+          scorer.challengeCorrect = Math.max(0, Number(msg.correct) || 0);
+          scorer.challengeMisses = Math.max(0, Number(msg.misses) || 0);
+          this.room.challengeScore = this.room.players.reduce((sum, player) => sum + (player.challengePoints || 0), 0);
+          this.notifyStateListeners();
+        }
+        break;
+      }
 
       case 'STEP_UNLOCKED':
       case 'CHEF_STEP_DONE':
@@ -386,11 +404,15 @@ class MultiplayerManager {
           role: initialRole,
           isObservant: hostRoleMode === 'observant',
           isReady: true,
-          isHost: true
+          isHost: true,
+          challengePoints: 0,
+          challengeCorrect: 0,
+          challengeMisses: 0
         }
       ],
       currentStep: 0,
       unlockedSteps: [0], // Step 0 unlocked by default
+      challengeScore: 0,
       mathAccuracy: 1.0,
       cookingAccuracy: 1.0
     };
@@ -402,7 +424,10 @@ class MultiplayerManager {
         name: 'Partner (Math Specialist)',
         role: ROLES.MATH.id,
         isReady: true,
-        isHost: false
+        isHost: false,
+        challengePoints: 0,
+        challengeCorrect: 0,
+        challengeMisses: 0
       });
     }
 
@@ -433,11 +458,15 @@ class MultiplayerManager {
           name: nickname || this.localPlayerName,
           role: ROLES.MATH.id, // default second role
           isReady: true,
-          isHost: false
+          isHost: false,
+          challengePoints: 0,
+          challengeCorrect: 0,
+          challengeMisses: 0
         }
       ],
       currentStep: 0,
       unlockedSteps: [0],
+      challengeScore: 0,
       mathAccuracy: 1.0,
       cookingAccuracy: 1.0
     };
@@ -490,6 +519,12 @@ class MultiplayerManager {
     this.room.status = ROOM_STATUS.PLAYING;
     this.room.currentStep = 0;
     this.room.unlockedSteps = [0];
+    this.room.challengeScore = 0;
+    this.room.players.forEach(player => {
+      player.challengePoints = 0;
+      player.challengeCorrect = 0;
+      player.challengeMisses = 0;
+    });
 
     this.broadcast({
       type: 'START_GAME',
@@ -499,6 +534,27 @@ class MultiplayerManager {
     });
 
     this.notifyStateListeners();
+  }
+
+  recordChallengeAnswer(isCorrect, attempts = 1) {
+    if (!this.room) return { points: 0, total: 0 };
+    const player = this.getLocalPlayer();
+    if (!player) return { points: 0, total: this.room.challengeScore || 0 };
+    const safeAttempts = Math.max(1, Number(attempts) || 1);
+    const points = isCorrect ? Math.max(25, 100 - (safeAttempts - 1) * 25) : 0;
+    player.challengePoints = (player.challengePoints || 0) + points;
+    player.challengeCorrect = (player.challengeCorrect || 0) + (isCorrect ? 1 : 0);
+    player.challengeMisses = (player.challengeMisses || 0) + (isCorrect ? 0 : 1);
+    this.room.challengeScore = this.room.players.reduce((sum, participant) => sum + (participant.challengePoints || 0), 0);
+    this.broadcast({
+      type: 'CHALLENGE_SCORE',
+      playerId: player.id,
+      points: player.challengePoints,
+      correct: player.challengeCorrect,
+      misses: player.challengeMisses
+    });
+    this.notifyStateListeners();
+    return { points, total: this.room.challengeScore };
   }
 
   unlockStepByMath(stepIndex, accuracy = 1.0) {

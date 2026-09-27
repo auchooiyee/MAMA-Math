@@ -126,7 +126,7 @@ class QuestionManager {
   getOptions() {
     if (!this.currentQuestion || !this.currentQuestion.options) return [];
     const lang = localizationManager.getLanguage();
-    return this.currentQuestion.options.map(opt => {
+    const options = this.currentQuestion.options.map(opt => {
       if (typeof opt === 'object') {
         const feedback = opt.feedback ? (opt.feedback[lang] || opt.feedback.en) : '';
         const text = typeof opt.text === 'object' && opt.text !== null
@@ -136,6 +136,13 @@ class QuestionManager {
       }
       return { value: opt, text: String(opt), feedback: '' };
     });
+    // Shuffle a copy for each question display. Correctness stays tied to the
+    // answer value, never the rendered position.
+    for (let index = options.length - 1; index > 0; index--) {
+      const swapIndex = Math.floor(Math.random() * (index + 1));
+      [options[index], options[swapIndex]] = [options[swapIndex], options[index]];
+    }
+    return options;
   }
 
   getNextHint() {

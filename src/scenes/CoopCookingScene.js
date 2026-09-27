@@ -452,6 +452,7 @@ export class CoopCookingScene extends Phaser.Scene {
     this.scene.launch('MathChallengeScene', {
       chapter: targetChapter,
       difficulty: difficulty,
+      isCoopChallenge: true,
       onBankExhausted: () => {
         this.scene.stop('MathChallengeScene');
         this.handleBankExhausted();
@@ -607,6 +608,7 @@ export class CoopCookingScene extends Phaser.Scene {
     const statsData = [
       { label: 'Chef Cooking Precision:', val: `${Math.round(metrics.cookingAccuracy * 100)}%` },
       { label: 'Math Specialist Accuracy:', val: `${Math.round(metrics.mathAccuracy * 100)}%` },
+      { label: localizationManager.t('mp.challengePoints'), val: `${multiplayerManager.room?.challengeScore || 0} PTS` },
       { label: 'Team Synergy Bonus:', val: '+100 XP  |  +RM 15.00' }
     ];
 

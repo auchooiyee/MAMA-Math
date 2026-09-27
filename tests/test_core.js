@@ -139,6 +139,30 @@ if (!questionManager.hasMoreQuestions({ chapter: 1, difficulty: 'easy' })) {
   console.error('FAILED: resetSession should restore available questions in bank');
   process.exit(1);
 }
+const shuffledQuestion = questionManager.getNextBankQuestion({ chapter: 1, difficulty: 'easy' });
+const originalRandom = Math.random;
+let optionsLow;
+let optionsHigh;
+try {
+  Math.random = () => 0;
+  optionsLow = questionManager.getOptions();
+  Math.random = () => 0.999999;
+  optionsHigh = questionManager.getOptions();
+} finally {
+  Math.random = originalRandom;
+}
+if (optionsLow.length < 2 || optionsLow.map(option => option.value).join('|') === optionsHigh.map(option => option.value).join('|')) {
+  console.error('FAILED: Correct answer options did not shuffle across display orders');
+  process.exit(1);
+}
+if (!optionsLow.some(option => option.value === shuffledQuestion.answer) || !optionsHigh.some(option => option.value === shuffledQuestion.answer)) {
+  console.error('FAILED: Shuffling removed or changed the correct answer value');
+  process.exit(1);
+}
+if (!questionManager.checkAnswer(shuffledQuestion.answer).isCorrect) {
+  console.error('FAILED: Answer validation changed after option shuffling');
+  process.exit(1);
+}
 console.log('  ✓ QuestionManager non-repeating draws and bank exhaustion logic verified.');
 console.log('');
 
@@ -370,12 +394,27 @@ if (multiplayerManager.isStepUnlocked(1)) {
   console.error('FAILED: Step 1 should be locked before math unlock');
   process.exit(1);
 }
+const wrongChallengeScore = multiplayerManager.recordChallengeAnswer(false, 1);
+if (wrongChallengeScore.points !== 0 || wrongChallengeScore.total !== 0) {
+  console.error('FAILED: Wrong co-op challenge answer should award zero points', wrongChallengeScore);
+  process.exit(1);
+}
+const retriedChallengeScore = multiplayerManager.recordChallengeAnswer(true, 2);
+if (retriedChallengeScore.points !== 75 || retriedChallengeScore.total !== 75) {
+  console.error('FAILED: Correct retry should award reduced challenge points', retriedChallengeScore);
+  process.exit(1);
+}
+const earnedChallengeScore = multiplayerManager.recordChallengeAnswer(true, 1);
+if (earnedChallengeScore.points !== 100 || earnedChallengeScore.total !== 175) {
+  console.error('FAILED: First-try correct co-op answer should award full points', earnedChallengeScore);
+  process.exit(1);
+}
 multiplayerManager.unlockStepByMath(1, 1.0);
 if (!multiplayerManager.isStepUnlocked(1)) {
   console.error('FAILED: Step 1 should be unlocked after math solving');
   process.exit(1);
 }
-console.log('  ✓ Co-op math station lock & real-time unlock mechanic verified.');
+console.log('  ✓ Co-op wrong-answer zero score, retry scoring, team total & math station unlock verified.');
 
 // 8.5 Achievements remain local and progression-backed; no mock global leaderboard.
 const achievementList = badgeManager.getAllBadges();

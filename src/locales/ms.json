@@ -159,7 +159,10 @@
     "accuracy": "Ketepatan Matematik",
     "timeTaken": "Masa Diambil",
     "step": "Langkah {num}",
-    "enterValue": "Pilih atau masukkan jawapan anda:"
+    "enterValue": "Pilih atau masukkan jawapan anda:",
+    "coopScoreHud": "MATA PASUKAN: {points}",
+    "coopScoreEarned": "+{points} MATA • JUMLAH {total}",
+    "coopScoreMiss": "0 MATA • CUBA LAGI"
   },
   "result": {
     "title": "PESANAN SELESAI!",
@@ -258,7 +261,8 @@
     "networkError": "RALAT SAMBUNGAN",
     "networkOffline": "LUAR TALIAN",
     "networkReady": "MASA NYATA SEDIA",
-    "networkLocal": "PERANTI TEMPATAN"
+    "networkLocal": "PERANTI TEMPATAN",
+    "challengePoints": "Mata Cabaran Matematik:"
   },
   "achievements": {
     "title": "PENCAPAIAN SAYA",
