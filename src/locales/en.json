@@ -166,7 +166,9 @@
     "individualScoreHud": "YOUR POINTS: {points} • {time}",
     "individualScoreEarned": "+{points} PTS • YOUR TOTAL {total}",
     "individualCompleteTitle": "CHALLENGE COMPLETE!",
-    "individualFinalScore": "Your score: {points} points\nCorrect answers: {correct} / {total}",
+    "individualFinalScore": "Your score: {points} points\nCorrect answers: {correct} • Questions assigned: {assigned}",
+    "classroomWaitingQuestion": "Getting your next unique question…",
+    "classroomThirdMiss": "THREE ATTEMPTS USED • 0 POINTS • REVIEW THE SOLUTION",
     "returnToClassRoom": "RETURN TO CLASS ROOM"
   },
   "result": {
@@ -272,7 +274,9 @@
     "classWaitingStudents": "Waiting for students to join…",
     "classComplete": "COMPLETE",
     "classYourComplete": "✓ YOUR CHALLENGE IS COMPLETE • {points} PTS",
-    "classReadyHere": "Your individual challenge is ready on this device."
+    "classReadyHere": "Your individual challenge is ready on this device.",
+    "classEndChallenge": "END CHALLENGE",
+    "classEnded": "CHALLENGE ENDED • FINAL STANDINGS"
   },
   "achievements": {
     "title": "MY ACHIEVEMENTS",

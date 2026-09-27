@@ -166,7 +166,9 @@
     "individualScoreHud": "MATA ANDA: {points} • {time}",
     "individualScoreEarned": "+{points} MATA • JUMLAH ANDA {total}",
     "individualCompleteTitle": "CABARAN SELESAI!",
-    "individualFinalScore": "Skor anda: {points} mata\nJawapan betul: {correct} / {total}",
+    "individualFinalScore": "Skor anda: {points} mata\nJawapan betul: {correct} • Soalan diberi: {assigned}",
+    "classroomWaitingQuestion": "Sedang mendapatkan soalan unik anda…",
+    "classroomThirdMiss": "TIGA CUBAAN DIGUNAKAN • 0 MATA • SEMAK PENYELESAIAN",
     "returnToClassRoom": "KEMBALI KE BILIK KELAS"
   },
   "result": {
@@ -272,7 +274,9 @@
     "classWaitingStudents": "Menunggu murid menyertai…",
     "classComplete": "SELESAI",
     "classYourComplete": "✓ CABARAN ANDA SELESAI • {points} MATA",
-    "classReadyHere": "Cabaran individu anda sedia pada peranti ini."
+    "classReadyHere": "Cabaran individu anda sedia pada peranti ini.",
+    "classEndChallenge": "TAMATKAN CABARAN",
+    "classEnded": "CABARAN TAMAT • KEDUDUKAN AKHIR"
   },
   "achievements": {
     "title": "PENCAPAIAN SAYA",

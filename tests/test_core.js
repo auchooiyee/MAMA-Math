@@ -401,22 +401,49 @@ if (classroomWrong.points !== 0 || classroomWrong.total !== 0) {
   console.error('FAILED: Wrong individual classroom answer should award zero personal points', classroomWrong);
   process.exit(1);
 }
-const classroomCorrect = multiplayerManager.recordClassroomChallengeAnswer(true, 2);
-if (classroomCorrect.points !== 75 || classroomCorrect.total !== 75) {
-  console.error('FAILED: Individual classroom score should belong to the answering student', classroomCorrect);
+const classroomFirstTry = multiplayerManager.recordClassroomChallengeAnswer(true, 1);
+if (classroomFirstTry.points !== 100 || classroomFirstTry.total !== 100) {
+  console.error('FAILED: First-try classroom answer should award 100 points', classroomFirstTry);
   process.exit(1);
 }
-multiplayerManager.room.players.push({ id: 'student_peer', name: 'Student Peer', challengePoints: 0, challengeCorrect: 0, challengeMisses: 0 });
+const classroomCorrect = multiplayerManager.recordClassroomChallengeAnswer(true, 2);
+if (classroomCorrect.points !== 50 || classroomCorrect.total !== 150) {
+  console.error('FAILED: Second-try classroom answer should award 50 personal points', classroomCorrect);
+  process.exit(1);
+}
+const classroomThirdTry = multiplayerManager.recordClassroomChallengeAnswer(true, 3);
+if (classroomThirdTry.points !== 0 || classroomThirdTry.total !== 150) {
+  console.error('FAILED: Third-try classroom answer should award zero points', classroomThirdTry);
+  process.exit(1);
+}
+multiplayerManager.room.players.push(
+  { id: 'student_peer', name: 'Student Peer', challengePoints: 0, challengeCorrect: 0, challengeMisses: 0, challengeAssignedCount: 0 },
+  { id: 'student_peer_2', name: 'Student Peer 2', challengePoints: 0, challengeCorrect: 0, challengeMisses: 0, challengeAssignedCount: 0 }
+);
+multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_QUESTION_REQUEST', playerId: 'student_peer', requestId: 'student_peer:question:0' });
+multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_QUESTION_REQUEST', playerId: 'student_peer_2', requestId: 'student_peer_2:question:0' });
+multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_QUESTION_REQUEST', playerId: 'student_peer', requestId: 'student_peer:question:0' });
+if (multiplayerManager.classroomQuestionCursor !== 2 ||
+    multiplayerManager.classroomQuestionRequests.get('student_peer:question:0') === multiplayerManager.classroomQuestionRequests.get('student_peer_2:question:0')) {
+  console.error('FAILED: Classroom question queue should assign unique questions and deduplicate repeat requests');
+  process.exit(1);
+}
 multiplayerManager.handleBroadcastMessage({
-  type: 'CLASSROOM_PLAYER_SCORE', playerId: 'student_peer', points: 100, correct: 1, misses: 0, completed: false
+  type: 'CLASSROOM_PLAYER_SCORE', playerId: 'student_peer', points: 100, correct: 1, misses: 0, assignedCount: 1, completed: false
 });
-if (multiplayerManager.getLocalPlayer().challengePoints !== 75 || multiplayerManager.room.players.find(player => player.id === 'student_peer').challengePoints !== 100 || multiplayerManager.room.challengeScore !== 0) {
+if (multiplayerManager.getLocalPlayer().challengePoints !== 150 || multiplayerManager.room.players.find(player => player.id === 'student_peer').challengePoints !== 100 || multiplayerManager.room.challengeScore !== 0) {
   console.error('FAILED: Classroom scores should be stored independently per student');
   process.exit(1);
 }
 multiplayerManager.completeClassroomChallenge();
 if (!multiplayerManager.getLocalPlayer().challengeCompleted) {
   console.error('FAILED: Individual challenge completion should sync to the teacher room');
+  process.exit(1);
+}
+multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_PLAYER_SCORE', playerId: 'student_peer', points: 100, correct: 1, misses: 0, assignedCount: 1, completed: true });
+multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_PLAYER_SCORE', playerId: 'student_peer_2', points: 50, correct: 1, misses: 0, assignedCount: 1, completed: true });
+if (multiplayerManager.room.status !== ROOM_STATUS.RESULT || multiplayerManager.room.challengeEndReason !== 'question-bank-exhausted') {
+  console.error('FAILED: Classroom challenge should end after the question bank is exhausted and all students finish');
   process.exit(1);
 }
 multiplayerManager.startCoopGame('M01-01');

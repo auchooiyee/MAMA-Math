@@ -58,6 +58,14 @@ export class MultiplayerRoomScene extends Phaser.Scene {
         this.scene.start('CoopCookingScene');
         return;
       }
+      if (room.status === ROOM_STATUS.RESULT && room.gameMode === MULTIPLAYER_MODES.CLASSROOM) {
+        this.createNetworkBadge();
+        this.createRoomHeader();
+        this.renderPlayerSlots();
+        this.renderExtraPlayersRoster();
+        this.createActionButtons();
+        return;
+      }
       if (room.status === ROOM_STATUS.CLOSED) {
         alert(localizationManager.t('mp.roomClosedAlert'));
         multiplayerManager.leaveRoom();
@@ -617,10 +625,12 @@ export class MultiplayerRoomScene extends Phaser.Scene {
 
     this.actionContainer = this.add.container(cx, actionY);
 
-    if (room.gameMode === MULTIPLAYER_MODES.CLASSROOM && room.status === ROOM_STATUS.PLAYING) {
+    if (room.gameMode === MULTIPLAYER_MODES.CLASSROOM &&
+        (room.status === ROOM_STATUS.PLAYING || room.status === ROOM_STATUS.RESULT)) {
       const localPlayer = multiplayerManager.getLocalPlayer();
       if (multiplayerManager.isObservant()) {
-        const title = this.add.text(0, -135, localizationManager.t('mp.classLiveStandings'), {
+        const ended = room.status === ROOM_STATUS.RESULT;
+        const title = this.add.text(0, -135, ended ? localizationManager.t('mp.classEnded') : localizationManager.t('mp.classLiveStandings'), {
           fontFamily: 'Fredoka, sans-serif', fontSize: isPort ? '19px' : '17px',
           color: '#facc15', fontStyle: 'bold'
         }).setOrigin(0.5);
@@ -642,9 +652,19 @@ export class MultiplayerRoomScene extends Phaser.Scene {
             }).setOrigin(0.5);
           this.actionContainer.add(row);
         });
+        if (!ended) {
+          const endButton = createButton(this, isPort ? 0 : 400, isPort ? 215 : -135, localizationManager.t('mp.classEndChallenge'), {
+            width: isPort ? 420 : 250, height: isPort ? 58 : 48,
+            fontSize: isPort ? '18px' : '16px', bgColor: 0xdc2626, bgDarkColor: 0xb91c1c,
+            onClick: () => multiplayerManager.endClassroomChallenge('host-ended')
+          });
+          this.actionContainer.add(endButton.container);
+        }
       } else if (localPlayer?.challengeCompleted) {
         const done = this.add.text(0, 0,
-          localizationManager.t('mp.classYourComplete', { points: localPlayer.challengePoints || 0 }), {
+          ended
+            ? `${localizationManager.t('mp.classEnded')}\n${localizationManager.t('mp.classYourComplete', { points: localPlayer.challengePoints || 0 })}`
+            : localizationManager.t('mp.classYourComplete', { points: localPlayer.challengePoints || 0 }), {
             fontFamily: 'Fredoka, sans-serif', fontSize: isPort ? '18px' : '16px',
             color: '#6ee7b7', fontStyle: 'bold'
           }).setOrigin(0.5);
@@ -754,7 +774,6 @@ export class MultiplayerRoomScene extends Phaser.Scene {
       difficulty: room.difficulty || 'medium',
       questionCount: room.questionCount || 10,
       timeLimitMinutes: room.timeLimitMinutes || 10,
-      questionIds: room.questionIds || [],
       challengeDeadline: room.challengeDeadline
     });
   }

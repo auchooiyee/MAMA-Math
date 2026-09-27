@@ -331,7 +331,9 @@ export class TeacherChallengeScene extends Phaser.Scene {
       const swapIndex = Math.floor(seededRandom() * (index + 1));
       [orderedQuestions[index], orderedQuestions[swapIndex]] = [orderedQuestions[swapIndex], orderedQuestions[index]];
     }
-    challenge.questionIds = orderedQuestions.slice(0, challenge.questionCount).map(question => question.id);
+    // Give the host the full selected bank; it assigns each question once across the room.
+    challenge.questionIds = orderedQuestions.map(question => question.id);
+    challenge.questionCount = challenge.questionIds.length;
 
     // Determine suitable mission recipe matching chapter or default to M01-01
     let missionId = 'M01-01';
@@ -356,7 +358,7 @@ export class TeacherChallengeScene extends Phaser.Scene {
       missionId: missionId,
       targetChapter: this.selectedChapter,
       difficulty: this.selectedDifficulty,
-      questionCount: challenge.questionIds.length || challenge.questionCount,
+      questionCount: challenge.questionIds.length,
       questionIds: challenge.questionIds,
       timeLimitMinutes: challenge.timeLimitMinutes
     });
@@ -379,7 +381,7 @@ export class TeacherChallengeScene extends Phaser.Scene {
     }).setOrigin(0.5);
     modal.add(title);
 
-    const desc = this.add.text(0, -45, `Students can now join using 4-Digit PIN:\n\n${this.classCode}\n\nEach student competes individually on the same question set. Scores are shown live to the teacher.`, {
+    const desc = this.add.text(0, -45, `Students can now join using 4-Digit PIN:\n\n${this.classCode}\n\nStudents answer independently. Each question is assigned once across the room; the challenge ends when the bank is finished or the host ends it. Scores are shown live to the teacher.`, {
       fontFamily: 'Nunito, sans-serif',
       fontSize: '17px',
       color: '#ffffff',

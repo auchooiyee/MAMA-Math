@@ -43,6 +43,9 @@ class MultiplayerManager {
     this.hostDiscoveryTimer = null;
     this.stateListeners = new Set();
     this.kickedListeners = new Set();
+    this.classroomQuestionCursor = 0;
+    this.classroomQuestionRequests = new Map();
+    this.classroomDeadlineTimer = null;
     this.networkStatus = realtimeRoomService.isConfigured() ? 'idle' : 'local';
     this.initChannel();
   }
@@ -259,6 +262,7 @@ class MultiplayerManager {
         }
         this.room.players = this.room.players.filter(p => p.id !== msg.playerId);
         this.notifyStateListeners();
+        this.maybeEndClassroomChallenge();
         break;
 
       case 'ROOM_CLOSED':
@@ -293,11 +297,23 @@ class MultiplayerManager {
         if (msg.challengeDeadline) this.room.challengeDeadline = msg.challengeDeadline;
         if (msg.isIndividualCompetition !== undefined) this.room.isIndividualCompetition = msg.isIndividualCompetition;
         this.room.challengeScore = 0;
+        if (this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM && this.isHost()) {
+          this.classroomQuestionCursor = 0;
+          this.classroomQuestionRequests.clear();
+          if (this.classroomDeadlineTimer) clearTimeout(this.classroomDeadlineTimer);
+          const delay = Math.max(0, (this.room.challengeDeadline || Date.now()) - Date.now());
+          this.classroomDeadlineTimer = setTimeout(() => this.endClassroomChallenge('time-limit'), delay);
+          this.classroomDeadlineTimer.unref?.();
+        }
         this.room.players.forEach(player => {
           player.challengePoints = 0;
           player.challengeCorrect = 0;
           player.challengeMisses = 0;
           player.challengeCompleted = false;
+          player.challengeAssignedCount = 0;
+          player.challengeQuestionId = null;
+          player.challengeQuestionExhausted = false;
+          player.challengeAssignmentRequestId = null;
         });
         this.notifyStateListeners();
         break;
@@ -320,11 +336,55 @@ class MultiplayerManager {
           scorer.challengePoints = Math.max(0, Number(msg.points) || 0);
           scorer.challengeCorrect = Math.max(0, Number(msg.correct) || 0);
           scorer.challengeMisses = Math.max(0, Number(msg.misses) || 0);
+          scorer.challengeAssignedCount = Math.max(0, Number(msg.assignedCount) || scorer.challengeAssignedCount || 0);
           scorer.challengeCompleted = Boolean(msg.completed);
+          this.notifyStateListeners();
+          this.maybeEndClassroomChallenge();
+        }
+        break;
+      }
+
+      case 'CLASSROOM_QUESTION_REQUEST': {
+        if (!this.isHost() || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM) break;
+        const requestId = String(msg.requestId || '');
+        const player = this.room.players.find(item => item.id === msg.playerId);
+        if (!requestId || !player || player.isObservant) break;
+        let questionId;
+        if (this.classroomQuestionRequests.has(requestId)) {
+          questionId = this.classroomQuestionRequests.get(requestId);
+        } else {
+          const queue = this.room.questionIds || [];
+          questionId = queue[this.classroomQuestionCursor] || null;
+          if (questionId) this.classroomQuestionCursor += 1;
+          this.classroomQuestionRequests.set(requestId, questionId);
+        }
+        this.broadcast({ type: 'CLASSROOM_QUESTION_ASSIGNED', requestId, playerId: player.id, questionId });
+        this.maybeEndClassroomChallenge();
+        break;
+      }
+
+      case 'CLASSROOM_QUESTION_ASSIGNED': {
+        if (msg.playerId !== this.localPlayerId) break;
+        const player = this.getLocalPlayer();
+        if (player) {
+          if (player.challengeAssignmentRequestId !== msg.requestId && msg.questionId) {
+            player.challengeAssignedCount = (player.challengeAssignedCount || 0) + 1;
+          }
+          player.challengeAssignmentRequestId = msg.requestId;
+          player.challengeQuestionId = msg.questionId || null;
+          player.challengeQuestionExhausted = !msg.questionId;
           this.notifyStateListeners();
         }
         break;
       }
+
+      case 'CLASSROOM_CHALLENGE_END':
+        if (this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM) {
+          this.room.status = ROOM_STATUS.RESULT;
+          this.room.challengeEndReason = msg.reason || 'host-ended';
+          this.notifyStateListeners();
+        }
+        break;
 
       case 'STEP_UNLOCKED':
       case 'CHEF_STEP_DONE':
@@ -544,13 +604,22 @@ class MultiplayerManager {
     this.room.unlockedSteps = [0];
     this.room.challengeScore = 0;
     if (this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM) {
+      this.classroomQuestionCursor = 0;
+      this.classroomQuestionRequests.clear();
       this.room.challengeDeadline = Date.now() + (this.room.timeLimitMinutes || 10) * 60 * 1000;
+      if (this.classroomDeadlineTimer) clearTimeout(this.classroomDeadlineTimer);
+      this.classroomDeadlineTimer = setTimeout(() => this.endClassroomChallenge('time-limit'), (this.room.timeLimitMinutes || 10) * 60 * 1000);
+      this.classroomDeadlineTimer.unref?.();
     }
     this.room.players.forEach(player => {
       player.challengePoints = 0;
       player.challengeCorrect = 0;
       player.challengeMisses = 0;
       player.challengeCompleted = false;
+      player.challengeAssignedCount = 0;
+      player.challengeQuestionId = null;
+      player.challengeQuestionExhausted = false;
+      player.challengeAssignmentRequestId = null;
     });
 
     this.broadcast({
@@ -566,6 +635,7 @@ class MultiplayerManager {
     });
 
     this.notifyStateListeners();
+    this.maybeEndClassroomChallenge();
   }
 
   recordChallengeAnswer(isCorrect, attempts = 1) {
@@ -586,6 +656,7 @@ class MultiplayerManager {
       misses: player.challengeMisses
     });
     this.notifyStateListeners();
+    this.maybeEndClassroomChallenge();
     return { points, total: this.room.challengeScore };
   }
 
@@ -594,7 +665,7 @@ class MultiplayerManager {
     const player = this.getLocalPlayer();
     if (!player || player.isObservant) return { points: 0, total: 0 };
     const safeAttempts = Math.max(1, Number(attempts) || 1);
-    const points = isCorrect ? Math.max(25, 100 - (safeAttempts - 1) * 25) : 0;
+    const points = isCorrect ? (safeAttempts === 1 ? 100 : safeAttempts === 2 ? 50 : 0) : 0;
     player.challengePoints = (player.challengePoints || 0) + points;
     player.challengeCorrect = (player.challengeCorrect || 0) + (isCorrect ? 1 : 0);
     player.challengeMisses = (player.challengeMisses || 0) + (isCorrect ? 0 : 1);
@@ -604,6 +675,7 @@ class MultiplayerManager {
       points: player.challengePoints,
       correct: player.challengeCorrect,
       misses: player.challengeMisses,
+      assignedCount: player.challengeAssignedCount || 0,
       completed: Boolean(player.challengeCompleted)
     });
     this.notifyStateListeners();
@@ -620,9 +692,40 @@ class MultiplayerManager {
       points: player.challengePoints || 0,
       correct: player.challengeCorrect || 0,
       misses: player.challengeMisses || 0,
+      assignedCount: player.challengeAssignedCount || 0,
       completed: true
     });
     this.notifyStateListeners();
+    this.maybeEndClassroomChallenge();
+  }
+
+  requestClassroomQuestion(questionNumber = 0) {
+    const player = this.getLocalPlayer();
+    if (!this.room || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || !player || player.isObservant) return null;
+    const requestId = `${player.id}:question:${Math.max(0, Number(questionNumber) || 0)}`;
+    this.broadcast({ type: 'CLASSROOM_QUESTION_REQUEST', playerId: player.id, requestId });
+    return requestId;
+  }
+
+  endClassroomChallenge(reason = 'host-ended') {
+    if (!this.room || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || !this.isHost() || this.room.status === ROOM_STATUS.RESULT) return;
+    this.room.status = ROOM_STATUS.RESULT;
+    this.room.challengeEndReason = reason;
+    if (this.classroomDeadlineTimer) {
+      clearTimeout(this.classroomDeadlineTimer);
+      this.classroomDeadlineTimer = null;
+    }
+    this.broadcast({ type: 'CLASSROOM_CHALLENGE_END', reason });
+    this.notifyStateListeners();
+  }
+
+  maybeEndClassroomChallenge() {
+    if (!this.isHost() || !this.room || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || this.room.status !== ROOM_STATUS.PLAYING) return;
+    if (this.classroomQuestionCursor < (this.room.questionIds || []).length) return;
+    const students = this.room.players.filter(player => !player.isObservant);
+    if (students.every(player => player.challengeCompleted)) {
+      this.endClassroomChallenge('question-bank-exhausted');
+    }
   }
 
   unlockStepByMath(stepIndex, accuracy = 1.0) {
@@ -686,6 +789,10 @@ class MultiplayerManager {
           this.eventSource.close();
         } catch (e) {}
         this.eventSource = null;
+      }
+      if (this.classroomDeadlineTimer) {
+        clearTimeout(this.classroomDeadlineTimer);
+        this.classroomDeadlineTimer = null;
       }
       if (this.pollTimer) {
         clearInterval(this.pollTimer);
