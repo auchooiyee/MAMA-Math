@@ -41,10 +41,13 @@ class MultiplayerManager {
     this.eventSource = null;
     this.pollTimer = null;
     this.hostDiscoveryTimer = null;
+    this.hostReconnectTimer = null;
+    this.hostReconnectPending = false;
     this.stateListeners = new Set();
     this.kickedListeners = new Set();
     this.classroomQuestionCursor = 0;
     this.classroomQuestionRequests = new Map();
+    this.classroomDisconnectedPlayers = new Map();
     this.classroomDeadlineTimer = null;
     this.networkStatus = realtimeRoomService.isConfigured() ? 'idle' : 'local';
     this.initChannel();
@@ -118,15 +121,19 @@ class MultiplayerManager {
       realtimeRoomService.connect(normRoomId, localPlayer, {
         onMessage: (message) => this.handleBroadcastMessage(message),
         onStatus: (status) => {
+          if (!this.room || normalizeRoomId(this.room.roomId) !== normRoomId) return;
           if (status === 'connected') {
             if (this.isHost()) {
               this.networkStatus = 'connected';
               this.broadcastSync();
             } else if (this.room?.hostId && this.room.hostId !== 'host_unknown') {
-              this.confirmHostConnection();
+              if (this.hostReconnectPending) this.networkStatus = 'waiting-host';
+              else this.confirmHostConnection();
+              this.broadcast({ type: 'PLAYER_JOINED', player: this.getLocalPlayer() });
             } else {
               this.networkStatus = 'waiting-host';
               this.armHostDiscoveryTimeout();
+              this.broadcast({ type: 'PLAYER_JOINED', player: this.getLocalPlayer() });
             }
           } else {
             this.networkStatus = status;
@@ -234,12 +241,23 @@ class MultiplayerManager {
 
       case 'PLAYER_JOINED':
         if (msg.player) {
+          if (msg.player.id === this.room.hostId && !this.isHost()) this.confirmHostConnection();
           const existingIndex = this.room.players.findIndex(p => p.id === msg.player.id);
+          const snapshot = this.isHost() && this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM
+            ? this.classroomDisconnectedPlayers.get(msg.player.id)
+            : null;
+          const knownPlayer = snapshot || (this.isHost() && this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM
+            ? this.room.players[existingIndex]
+            : null);
+          const joinedPlayer = knownPlayer
+            ? { ...msg.player, ...knownPlayer, name: msg.player.name || knownPlayer.name, role: msg.player.role || knownPlayer.role }
+            : msg.player;
           if (existingIndex >= 0) {
-            this.room.players[existingIndex] = { ...this.room.players[existingIndex], ...msg.player };
+            this.room.players[existingIndex] = { ...this.room.players[existingIndex], ...joinedPlayer };
           } else {
-            this.room.players.push(msg.player);
+            this.room.players.push(joinedPlayer);
           }
+          if (snapshot) this.classroomDisconnectedPlayers.delete(msg.player.id);
           this.notifyStateListeners();
           if (this.isHost()) {
             this.broadcastSync();
@@ -257,8 +275,19 @@ class MultiplayerManager {
 
       case 'PLAYER_LEFT':
         if (msg.playerId === this.room.hostId && msg.playerId !== this.localPlayerId) {
-          this.room.status = ROOM_STATUS.CLOSED;
-          this.networkStatus = 'host-left';
+          if (msg.voluntary) {
+            this.clearHostReconnectTimeout();
+            this.room.status = ROOM_STATUS.CLOSED;
+            this.networkStatus = 'host-left';
+          } else {
+            this.networkStatus = 'waiting-host';
+            this.armHostReconnectTimeout();
+          }
+        }
+        if (msg.voluntary) this.classroomDisconnectedPlayers.delete(msg.playerId);
+        else if (this.isHost() && this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM && this.room.status === ROOM_STATUS.PLAYING) {
+          const departing = this.room.players.find(player => player.id === msg.playerId);
+          if (departing) this.classroomDisconnectedPlayers.set(departing.id, { ...departing });
         }
         this.room.players = this.room.players.filter(p => p.id !== msg.playerId);
         this.notifyStateListeners();
@@ -267,6 +296,7 @@ class MultiplayerManager {
 
       case 'ROOM_CLOSED':
         if (!this.isHost()) {
+          this.clearHostReconnectTimeout();
           this.room.status = ROOM_STATUS.CLOSED;
           this.networkStatus = 'host-left';
           this.notifyStateListeners();
@@ -314,6 +344,7 @@ class MultiplayerManager {
           player.challengeQuestionId = null;
           player.challengeQuestionExhausted = false;
           player.challengeAssignmentRequestId = null;
+          player.challengeQuestionNumber = -1;
         });
         this.notifyStateListeners();
         break;
@@ -331,7 +362,9 @@ class MultiplayerManager {
       }
 
       case 'CLASSROOM_PLAYER_SCORE': {
-        const scorer = this.room.players.find(player => player.id === msg.playerId);
+        if (this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || this.room.status !== ROOM_STATUS.PLAYING) break;
+        const scorer = this.room.players.find(player => player.id === msg.playerId)
+          || (this.isHost() ? this.classroomDisconnectedPlayers.get(msg.playerId) : null);
         if (scorer) {
           scorer.challengePoints = Math.max(0, Number(msg.points) || 0);
           scorer.challengeCorrect = Math.max(0, Number(msg.correct) || 0);
@@ -345,18 +378,34 @@ class MultiplayerManager {
       }
 
       case 'CLASSROOM_QUESTION_REQUEST': {
-        if (!this.isHost() || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM) break;
+        if (!this.isHost() || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || this.room.status !== ROOM_STATUS.PLAYING) break;
         const requestId = String(msg.requestId || '');
-        const player = this.room.players.find(item => item.id === msg.playerId);
+        const player = this.room.players.find(item => item.id === msg.playerId)
+          || this.classroomDisconnectedPlayers.get(msg.playerId);
         if (!requestId || !player || player.isObservant) break;
+        const prefix = `${player.id}:question:`;
+        const questionSuffix = requestId.slice(prefix.length);
+        const questionNumber = Number(questionSuffix);
+        if (!requestId.startsWith(prefix) || !/^\d+$/.test(questionSuffix) || !Number.isSafeInteger(questionNumber)) break;
         let questionId;
         if (this.classroomQuestionRequests.has(requestId)) {
           questionId = this.classroomQuestionRequests.get(requestId);
         } else {
+          const latestQuestionNumber = Number.isSafeInteger(player.challengeQuestionNumber)
+            ? player.challengeQuestionNumber
+            : -1;
+          if (questionNumber > latestQuestionNumber + 1) break;
           const queue = this.room.questionIds || [];
           questionId = queue[this.classroomQuestionCursor] || null;
           if (questionId) this.classroomQuestionCursor += 1;
           this.classroomQuestionRequests.set(requestId, questionId);
+          if (questionId) player.challengeAssignedCount = (player.challengeAssignedCount || 0) + 1;
+        }
+        if (questionNumber >= (Number.isSafeInteger(player.challengeQuestionNumber) ? player.challengeQuestionNumber : -1)) {
+          player.challengeQuestionNumber = questionNumber;
+          player.challengeAssignmentRequestId = requestId;
+          player.challengeQuestionId = questionId;
+          player.challengeQuestionExhausted = !questionId;
         }
         this.broadcast({ type: 'CLASSROOM_QUESTION_ASSIGNED', requestId, playerId: player.id, questionId });
         this.maybeEndClassroomChallenge();
@@ -364,7 +413,7 @@ class MultiplayerManager {
       }
 
       case 'CLASSROOM_QUESTION_ASSIGNED': {
-        if (msg.playerId !== this.localPlayerId) break;
+        if (msg.playerId !== this.localPlayerId || this.room.status !== ROOM_STATUS.PLAYING) break;
         const player = this.getLocalPlayer();
         if (player) {
           if (player.challengeAssignmentRequestId !== msg.requestId && msg.questionId) {
@@ -373,6 +422,7 @@ class MultiplayerManager {
           player.challengeAssignmentRequestId = msg.requestId;
           player.challengeQuestionId = msg.questionId || null;
           player.challengeQuestionExhausted = !msg.questionId;
+          player.challengeQuestionNumber = Number(msg.requestId?.split(':question:')[1]) || 0;
           this.notifyStateListeners();
         }
         break;
@@ -606,6 +656,7 @@ class MultiplayerManager {
     if (this.room.gameMode === MULTIPLAYER_MODES.CLASSROOM) {
       this.classroomQuestionCursor = 0;
       this.classroomQuestionRequests.clear();
+      this.classroomDisconnectedPlayers.clear();
       this.room.challengeDeadline = Date.now() + (this.room.timeLimitMinutes || 10) * 60 * 1000;
       if (this.classroomDeadlineTimer) clearTimeout(this.classroomDeadlineTimer);
       this.classroomDeadlineTimer = setTimeout(() => this.endClassroomChallenge('time-limit'), (this.room.timeLimitMinutes || 10) * 60 * 1000);
@@ -620,6 +671,7 @@ class MultiplayerManager {
       player.challengeQuestionId = null;
       player.challengeQuestionExhausted = false;
       player.challengeAssignmentRequestId = null;
+      player.challengeQuestionNumber = -1;
     });
 
     this.broadcast({
@@ -701,7 +753,7 @@ class MultiplayerManager {
 
   requestClassroomQuestion(questionNumber = 0) {
     const player = this.getLocalPlayer();
-    if (!this.room || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || !player || player.isObservant) return null;
+    if (!this.room || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || this.room.status !== ROOM_STATUS.PLAYING || !player || player.isObservant) return null;
     const requestId = `${player.id}:question:${Math.max(0, Number(questionNumber) || 0)}`;
     this.broadcast({ type: 'CLASSROOM_QUESTION_REQUEST', playerId: player.id, requestId });
     return requestId;
@@ -722,7 +774,8 @@ class MultiplayerManager {
   maybeEndClassroomChallenge() {
     if (!this.isHost() || !this.room || this.room.gameMode !== MULTIPLAYER_MODES.CLASSROOM || this.room.status !== ROOM_STATUS.PLAYING) return;
     if (this.classroomQuestionCursor < (this.room.questionIds || []).length) return;
-    const students = this.room.players.filter(player => !player.isObservant);
+    const students = [...this.room.players, ...this.classroomDisconnectedPlayers.values()]
+      .filter(player => !player.isObservant);
     if (students.every(player => player.challengeCompleted)) {
       this.endClassroomChallenge('question-bank-exhausted');
     }
@@ -782,7 +835,8 @@ class MultiplayerManager {
       }
       this.broadcast({
         type: 'PLAYER_LEFT',
-        playerId: this.localPlayerId
+        playerId: this.localPlayerId,
+        voluntary: true
       });
       if (this.eventSource) {
         try {
@@ -794,11 +848,14 @@ class MultiplayerManager {
         clearTimeout(this.classroomDeadlineTimer);
         this.classroomDeadlineTimer = null;
       }
+      this.classroomDisconnectedPlayers.clear();
+      this.classroomQuestionRequests.clear();
       if (this.pollTimer) {
         clearInterval(this.pollTimer);
         this.pollTimer = null;
       }
       this.clearHostDiscoveryTimeout();
+      this.clearHostReconnectTimeout();
       this.room = null;
       realtimeRoomService.disconnect().catch(() => {});
       this.networkStatus = realtimeRoomService.isConfigured() ? 'idle' : 'local';
@@ -863,8 +920,33 @@ class MultiplayerManager {
     }
   }
 
+  armHostReconnectTimeout() {
+    this.clearHostReconnectTimeout();
+    this.hostReconnectPending = true;
+    const roomId = normalizeRoomId(this.room?.roomId);
+    this.hostReconnectTimer = setTimeout(() => {
+      this.hostReconnectTimer = null;
+      if (this.room && !this.isHost() && normalizeRoomId(this.room.roomId) === roomId && this.hostReconnectPending) {
+        this.hostReconnectPending = false;
+        this.room.status = ROOM_STATUS.CLOSED;
+        this.networkStatus = 'host-left';
+        this.notifyStateListeners();
+      }
+    }, 10000);
+    this.hostReconnectTimer.unref?.();
+  }
+
+  clearHostReconnectTimeout() {
+    if (this.hostReconnectTimer) {
+      clearTimeout(this.hostReconnectTimer);
+      this.hostReconnectTimer = null;
+    }
+    this.hostReconnectPending = false;
+  }
+
   confirmHostConnection() {
     this.clearHostDiscoveryTimeout();
+    this.clearHostReconnectTimeout();
     this.networkStatus = 'connected';
   }
 

@@ -5,6 +5,7 @@ import { questionManager } from '../src/managers/QuestionManager.js';
 import { economyManager } from '../src/managers/EconomyManager.js';
 import { playerManager } from '../src/managers/PlayerManager.js';
 import { multiplayerManager, MULTIPLAYER_MODES, ROLES, ROOM_STATUS } from '../src/managers/MultiplayerManager.js';
+import realtimeRoomService from '../src/services/RealtimeRoomService.js';
 import { badgeManager } from '../src/managers/BadgeManager.js';
 import { analyticsManager } from '../src/managers/AnalyticsManager.js';
 import badgesData from '../src/data/badges.json' with { type: 'json' };
@@ -435,17 +436,82 @@ if (multiplayerManager.getLocalPlayer().challengePoints !== 150 || multiplayerMa
   console.error('FAILED: Classroom scores should be stored independently per student');
   process.exit(1);
 }
+const firstAssignedQuestion = multiplayerManager.classroomQuestionRequests.get('student_peer:question:0');
+multiplayerManager.handleBroadcastMessage({ type: 'PLAYER_LEFT', playerId: 'student_peer' });
+if (multiplayerManager.classroomDisconnectedPlayers.get('student_peer')?.challengePoints !== 100) {
+  console.error('FAILED: Host should retain a disconnected student\'s score and question');
+  process.exit(1);
+}
+multiplayerManager.handleBroadcastMessage({
+  type: 'PLAYER_JOINED', player: { id: 'student_peer', name: 'Student Peer Reconnected', isObservant: false }
+});
+multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_QUESTION_REQUEST', playerId: 'student_peer', requestId: 'student_peer:question:0' });
+const restoredPeer = multiplayerManager.room.players.find(player => player.id === 'student_peer');
+if (restoredPeer.challengePoints !== 100 || restoredPeer.challengeQuestionId !== firstAssignedQuestion ||
+    restoredPeer.challengeAssignedCount !== 1 || multiplayerManager.classroomQuestionCursor !== 2) {
+  console.error('FAILED: Reconnected student should recover the same assignment without consuming another question');
+  process.exit(1);
+}
+multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_QUESTION_REQUEST', playerId: 'student_peer', requestId: 'student_peer:question:1' });
+if (multiplayerManager.classroomQuestionRequests.get('student_peer:question:1') !== null ||
+    restoredPeer.challengeQuestionExhausted !== true || multiplayerManager.classroomQuestionCursor !== 2) {
+  console.error('FAILED: Next sequential request should report exhaustion without assigning a duplicate question');
+  process.exit(1);
+}
+multiplayerManager.handleBroadcastMessage({ type: 'PLAYER_LEFT', playerId: 'student_peer_2' });
 multiplayerManager.completeClassroomChallenge();
 if (!multiplayerManager.getLocalPlayer().challengeCompleted) {
   console.error('FAILED: Individual challenge completion should sync to the teacher room');
   process.exit(1);
 }
 multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_PLAYER_SCORE', playerId: 'student_peer', points: 100, correct: 1, misses: 0, assignedCount: 1, completed: true });
+if (multiplayerManager.room.status !== ROOM_STATUS.PLAYING) {
+  console.error('FAILED: A temporarily disconnected student must not trigger early bank exhaustion');
+  process.exit(1);
+}
+multiplayerManager.handleBroadcastMessage({
+  type: 'PLAYER_JOINED', player: { id: 'student_peer_2', name: 'Student Peer 2 Reconnected', isObservant: false }
+});
 multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_PLAYER_SCORE', playerId: 'student_peer_2', points: 50, correct: 1, misses: 0, assignedCount: 1, completed: true });
 if (multiplayerManager.room.status !== ROOM_STATUS.RESULT || multiplayerManager.room.challengeEndReason !== 'question-bank-exhausted') {
   console.error('FAILED: Classroom challenge should end after the question bank is exhausted and all students finish');
   process.exit(1);
 }
+const exhaustedRequestCount = multiplayerManager.classroomQuestionRequests.size;
+multiplayerManager.handleBroadcastMessage({ type: 'CLASSROOM_QUESTION_REQUEST', playerId: 'student_peer', requestId: 'student_peer:question:1' });
+if (multiplayerManager.classroomQuestionRequests.size !== exhaustedRequestCount || multiplayerManager.classroomQuestionCursor !== 2) {
+  console.error('FAILED: Host should refuse question requests after the challenge ends');
+  process.exit(1);
+}
+const retryPayload = { type: 'CLASSROOM_QUESTION_REQUEST', roomId: 'AMC-F4-2026', requestId: 'student_peer:question:1' };
+await realtimeRoomService.send(retryPayload);
+await realtimeRoomService.send(retryPayload);
+if (realtimeRoomService.pendingMessages.length !== 1) {
+  console.error('FAILED: Offline retries should keep only one queued copy of a question request');
+  process.exit(1);
+}
+await realtimeRoomService.disconnect();
+const originalHostId = multiplayerManager.room.hostId;
+multiplayerManager.room.hostId = 'teacher_remote';
+multiplayerManager.room.status = ROOM_STATUS.PLAYING;
+multiplayerManager.handleBroadcastMessage({ type: 'PLAYER_LEFT', playerId: 'teacher_remote' });
+if (multiplayerManager.room.status !== ROOM_STATUS.PLAYING || !multiplayerManager.hostReconnectPending) {
+  console.error('FAILED: A transient host disconnect should not immediately close the classroom');
+  process.exit(1);
+}
+multiplayerManager.handleBroadcastMessage({
+  type: 'PLAYER_JOINED', player: { id: 'teacher_remote', name: 'Teacher', isHost: true, isObservant: true }
+});
+if (multiplayerManager.hostReconnectPending || multiplayerManager.getNetworkStatus() !== 'connected') {
+  console.error('FAILED: Host rejoining should cancel the room-close grace period');
+  process.exit(1);
+}
+multiplayerManager.handleBroadcastMessage({ type: 'PLAYER_LEFT', playerId: 'teacher_remote', voluntary: true });
+if (multiplayerManager.room.status !== ROOM_STATUS.CLOSED) {
+  console.error('FAILED: A deliberate host exit should close the classroom immediately');
+  process.exit(1);
+}
+multiplayerManager.room.hostId = originalHostId;
 multiplayerManager.startCoopGame('M01-01');
 const wrongChallengeScore = multiplayerManager.recordChallengeAnswer(false, 1);
 if (wrongChallengeScore.points !== 0 || wrongChallengeScore.total !== 0) {

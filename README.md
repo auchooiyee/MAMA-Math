@@ -90,6 +90,7 @@ After deployment, create a multiplayer or classroom room on one device and join 
 ### Realtime data policy
 
 - Broadcast and Presence carry temporary room actions and connected-player state.
+- During an active classroom challenge, question requests retry while waiting. The host retains each student's assignment and score through a brief connection drop, and allows 10 seconds for a disconnected host to return.
 - Scores are not written to a leaderboard database.
-- Room messages are ephemeral; refreshing after everyone leaves does not restore a room.
+- Room messages are ephemeral. Refreshing the host page loses the in-memory question queue; restart the challenge after a host refresh.
 - The current public-channel setup is suitable for a prototype or supervised trial. Before a school-wide launch, add Supabase Auth and private-channel authorization so room access can be restricted to authenticated classes.

@@ -43,9 +43,11 @@ class RealtimeRoomService {
 
     channel
       .on('broadcast', { event: 'room-event' }, ({ payload }) => {
+        if (this.channel !== channel) return;
         if (payload && onMessage) onMessage(payload);
       })
       .on('presence', { event: 'join' }, ({ newPresences }) => {
+        if (this.channel !== channel) return;
         for (const presence of newPresences || []) {
           if (!presence?.id || presence.id === player.id) continue;
           if (onMessage) onMessage({
@@ -56,6 +58,7 @@ class RealtimeRoomService {
         }
       })
       .on('presence', { event: 'leave' }, ({ leftPresences }) => {
+        if (this.channel !== channel) return;
         for (const presence of leftPresences || []) {
           if (!presence?.id || presence.id === player.id) continue;
           if (onMessage) onMessage({
@@ -66,6 +69,7 @@ class RealtimeRoomService {
         }
       })
       .subscribe(async (status, error) => {
+        if (this.channel !== channel) return;
         if (status === 'SUBSCRIBED') {
           this.status = 'connected';
           await this.updatePresence(player);
@@ -95,7 +99,14 @@ class RealtimeRoomService {
 
   async send(payload) {
     if (!this.channel || this.status !== 'connected') {
-      this.pendingMessages.push(payload);
+      // The waiting screen retries the same request while offline. Keep one
+      // pending copy; the host's request ID also makes delivery idempotent.
+      const pendingIndex = payload.type === 'CLASSROOM_QUESTION_REQUEST'
+        ? this.pendingMessages.findIndex(message =>
+            message.type === payload.type && message.roomId === payload.roomId && message.requestId === payload.requestId)
+        : -1;
+      if (pendingIndex >= 0) this.pendingMessages[pendingIndex] = payload;
+      else this.pendingMessages.push(payload);
       if (this.pendingMessages.length > 20) this.pendingMessages.shift();
       return false;
     }

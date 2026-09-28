@@ -139,6 +139,7 @@ export class MathChallengeScene extends Phaser.Scene {
 
   create() {
     this.scene.bringToTop();
+    this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => this.shutdown());
     if (this.isIndividualClassroom) {
       this.classroomUnsubscribe = multiplayerManager.onStateChange(room => {
         if (!room || this.isClassroomChallengeFinished) return;
@@ -146,6 +147,12 @@ export class MathChallengeScene extends Phaser.Scene {
           this.finishIndividualClassroomChallenge();
           return;
         }
+        if (room.status === 'CLOSED') {
+          multiplayerManager.leaveRoom();
+          this.scene.start('MultiplayerLobbyScene');
+          return;
+        }
+        if (this.questionId) return;
         const player = multiplayerManager.getLocalPlayer();
         if (!player || player.challengeAssignmentRequestId !== this.classroomAssignmentRequestId) return;
         if (player.challengeQuestionId) {
@@ -173,6 +180,15 @@ export class MathChallengeScene extends Phaser.Scene {
       const requestId = `${player?.id}:question:${this.classroomQuestionNumber}`;
       this.classroomAssignmentRequestId = requestId;
       multiplayerManager.requestClassroomQuestion(this.classroomQuestionNumber);
+      this.classroomRequestRetryEvent = this.time.addEvent({
+        delay: 2500,
+        loop: true,
+        callback: () => {
+          if (!this.isClassroomChallengeFinished && multiplayerManager.room?.status === 'PLAYING') {
+            multiplayerManager.requestClassroomQuestion(this.classroomQuestionNumber);
+          }
+        }
+      });
       if (!this.classroomDeadline) this.classroomDeadline = Date.now() + this.timeLimitMinutes * 60 * 1000;
       this.classroomTimerEvent = this.time.addEvent({ delay: 1000, loop: true, callback: () => this.updateClassroomTimer() });
       this.updateClassroomTimer();
@@ -857,6 +873,7 @@ export class MathChallengeScene extends Phaser.Scene {
     this.isClassroomChallengeFinished = true;
     multiplayerManager.completeClassroomChallenge();
     if (this.classroomTimerEvent) this.classroomTimerEvent.remove(false);
+    if (this.classroomRequestRetryEvent) this.classroomRequestRetryEvent.remove(false);
     const isPort = this.isPortrait();
     const cx = this.cameras.main.width / 2;
     const cy = this.cameras.main.height / 2;
@@ -908,6 +925,7 @@ export class MathChallengeScene extends Phaser.Scene {
     this.classroomUnsubscribe?.();
     this.classroomUnsubscribe = null;
     if (this.classroomTimerEvent) this.classroomTimerEvent.remove(false);
+    if (this.classroomRequestRetryEvent) this.classroomRequestRetryEvent.remove(false);
   }
 
   updateClassroomTimer() {

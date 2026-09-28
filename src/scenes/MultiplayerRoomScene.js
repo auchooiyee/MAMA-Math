@@ -20,6 +20,7 @@ export class MultiplayerRoomScene extends Phaser.Scene {
   }
 
   create() {
+    this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => this.shutdown());
     this.createBackground();
     this.createTopHUD();
     this.createRoomHeader();
@@ -44,6 +45,7 @@ export class MultiplayerRoomScene extends Phaser.Scene {
       }
       if (room.status === ROOM_STATUS.PLAYING) {
         if (room.gameMode === MULTIPLAYER_MODES.CLASSROOM) {
+          this.createNetworkBadge();
           if (multiplayerManager.isObservant()) {
             this.createActionButtons();
             return;
